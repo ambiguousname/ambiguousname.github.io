@@ -7,9 +7,6 @@
     <script>
       var characters = "qwertyuiopasdfghjkl;'zvbnm,./!@#$%^&*()_+";
       var originalText = [];
-      for(var i = 0 ; i < $(".hackText").length; i++){
-        originalText.push($(".hackText")[i].textContent);
-      }
       window.setInterval(function(){
         for(var x = 0; x < $(".hackText").length; x++){
           var hackedText = $(".hackText")[x];
@@ -17,9 +14,6 @@
           var finalText = "";
           for(var i = 0; i < textLength; i++){
             finalText += characters[Math.floor(Math.random() * characters.length)];
-          }
-          if(Math.random() > 0.75){
-            finalText = originalText[x];
           }
           hackedText.innerHTML = finalText;
         }
