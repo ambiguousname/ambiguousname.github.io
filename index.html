@@ -8,8 +8,7 @@
       var characters = "qwertyuiopasdfghjkl;'zvbnm,./!@#$%^&*()_+";
       window.setInterval(function(){
         $(".hackText").each(function(index, hackedText){
-          console.log(index + "" + hackedText);
-          var textLength = this.text().length;
+          var textLength = hackedText.text().length;
           var finalText = "";
           for(var i = 0; i < textLength; i++){
             finalText += Math.floor(Math.random() * characters.length);
