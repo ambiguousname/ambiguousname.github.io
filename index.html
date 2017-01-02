@@ -9,7 +9,7 @@
       window.setInterval(function(){
         for(var x = 0; x < $(".hackText").length; x++){
           var hackedText = $(".hackText")[x];
-          var textLength = hackedText.text().length;
+          var textLength = hackedText.textContent.length;
           var finalText = "";
           for(var i = 0; i < textLength; i++){
             finalText += Math.floor(Math.random() * characters.length);
