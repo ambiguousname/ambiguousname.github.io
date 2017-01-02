@@ -9,14 +9,12 @@
       window.setInterval(function(){
         for(var x = 0; x < $(".hackText").length; x++){
           var hackedText = $(".hackText")[x];
-          hackedText.slideUp();
           var textLength = hackedText.textContent.length;
           var finalText = "";
           for(var i = 0; i < textLength; i++){
             finalText += characters[Math.floor(Math.random() * characters.length)];
           }
           hackedText.innerHTML = finalText;
-          hackedText.slideDown();
         }
       }, 1000);
     </script>
