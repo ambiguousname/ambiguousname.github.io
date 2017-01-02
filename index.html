@@ -14,7 +14,8 @@
           for(var i = 0; i < textLength; i++){
             finalText += Math.floor(Math.random() * characters.length);
           }
-          hackedText.innerHTML = finalText; 
+          hackedText.innerHTML = finalText;
+          textLength = finalText.length;
         }
       }, 3000);
     </script>
