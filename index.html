@@ -8,12 +8,12 @@
       var characters = "qwertyuiopasdfghjkl;'zvbnm,./!@#$%^&*()_+";
       window.setInterval(function(){
         $(".hackText").each(function(hackedText){
-          var textLength = hackedText.text().length;
+          var textLength = this.text().length;
           var finalText = "";
           for(var i = 0; i < textLength; i++){
             finalText += Math.floor(Math.random() * characters.length);
           }
-          hackedText.text(finalText);
+          this.text(finalText);
         });
       }, 3000);
     </script>
