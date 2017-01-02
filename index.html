@@ -6,6 +6,10 @@
     <script src="assets/jquery-3.1.1.min.js"></script>
     <script>
       var characters = "qwertyuiopasdfghjkl;'zvbnm,./!@#$%^&*()_+";
+      var originalText = [];
+      for(var i = 0 ; i < $(".hackText").length; i++){
+        originalText.push($(".hackText")[i].textContent);
+      }
       window.setInterval(function(){
         for(var x = 0; x < $(".hackText").length; x++){
           var hackedText = $(".hackText")[x];
@@ -14,10 +18,12 @@
           for(var i = 0; i < textLength; i++){
             finalText += characters[Math.floor(Math.random() * characters.length)];
           }
+          if(Math.random() > 0.75){
+            finalText = originalText[x];
+          }
           hackedText.innerHTML = finalText;
-          textLength = finalText.length;
         }
-      }, 3000);
+      }, 500);
     </script>
   </head>
   <body>
