@@ -7,17 +7,20 @@
     <script src="assets/jquery-3.1.1.min.js"></script>
     <script>
       var characters = "qwertyuiopasdfghjkl;'zvbnm,./!@#$%^&*()_+";
-      window.setInterval(function(){
-        for(var x = 0; x < $(".hackText").length; x++){
-          var hackedText = $(".hackText")[x];
-          var textLength = hackedText.textContent.length;
-          var finalText = "";
-          for(var i = 0; i < textLength; i++){
-            finalText += characters[Math.floor(Math.random() * characters.length)];
+      window.setTimeout(startHack, 5000);
+      function startHack(){
+        window.setInterval(function(){
+          for(var x = 0; x < $(".hackText").length; x++){
+            var hackedText = $(".hackText")[x];
+            var textLength = hackedText.textContent.length;
+            var finalText = "";
+            for(var i = 0; i < textLength; i++){
+              finalText += characters[Math.floor(Math.random() * characters.length)];
+            }
+            hackedText.innerHTML = finalText;
           }
-          hackedText.innerHTML = finalText;
-        }
-      }, 1000);
+        }, 200);
+      }
     </script>
   </head>
   <body>
