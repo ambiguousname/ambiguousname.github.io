@@ -12,7 +12,7 @@
           var textLength = hackedText.textContent.length;
           var finalText = "";
           for(var i = 0; i < textLength; i++){
-            finalText += Math.floor(Math.random() * characters.length);
+            finalText += characters[Math.floor(Math.random() * characters.length)];
           }
           hackedText.innerHTML = finalText;
           textLength = finalText.length;
