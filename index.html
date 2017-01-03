@@ -13,19 +13,33 @@
           $(".hackText").each(function(x){
             var hackedText = $(".hackText")[x];
             var textLength = hackedText.textContent.length;
-            var text = "";
+            var text = [];
             for(var i = 0; i < hackedText.textContent.length; i++){
-              text += hackedText.textContent[i];
+              text.push(hackedText.textContent[i]);
             }
-            text[0] = "f";
-            console.log(text[0]);
             while(textLength > 0){
               textLength -= 1;
               text[textLength] = characters[Math.floor(Math.random() * characters.length)];
+              text = arrayToString(text);
               hackedText.innerHTML = text;
+              text = stringToArray(text);
             }
           });
         }, 200);
+      }
+      function arrayToString(array){
+        var string = "";
+        for(var i = 0; i < array.length; i++){
+          string += array[i];
+        }
+        return string;
+      }
+      function stringToArray(string){
+        var array = [];
+        for(var i = 0; i < string.length; i++){
+          array.push(string[i]);
+        }
+        return array;
       }
     </script>
   </head>
