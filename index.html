@@ -10,7 +10,7 @@
       window.setTimeout(startHack, 5000);
       function startHack(){
         window.setInterval(function(){
-          for(var x = 0; x < $(".hackText").length; x++){
+          $(".hackText").each(function(x){
             var hackedText = $(".hackText")[x];
             var textLength = hackedText.textContent.length;
             var finalText = "";
@@ -18,7 +18,7 @@
               finalText += characters[Math.floor(Math.random() * characters.length)];
             }
             hackedText.innerHTML = finalText;
-          }
+          });
         }, 200);
       }
     </script>
