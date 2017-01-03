@@ -13,11 +13,9 @@
           $(".hackText").each(function(x){
             var hackedText = $(".hackText")[x];
             var textLength = hackedText.textContent.length;
-            var finalText = "";
             while(textLength > 0){
-              hackedText.innerHTML[textLength - 1] = "";
-              hackedText.innerHTML += characters[Math.floor(Math.random() * characters.length)];
-              textLength = textLength - 1;
+              textLength -= 1;
+              hackedText.innerHTML[textLength] = characters[Math.floor(Math.random() * characters.length)];
             }
           });
         }, 200);
