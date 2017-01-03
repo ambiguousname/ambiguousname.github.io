@@ -17,7 +17,7 @@
             for(var i = 0; i < hackedText.textContent.length; i++){
               text += hackedText.textContent[i];
             }
-            while(textLength > 0){
+            while(textLength != 0){
               textLength -= 1;
               text[textLength] = characters[Math.floor(Math.random() * characters.length)];
               console.log(text);
