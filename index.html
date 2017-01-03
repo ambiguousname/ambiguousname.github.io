@@ -17,7 +17,7 @@
             while(textLength > 0){
               hackedText.innerHTML[textLength - 1] = "";
               hackedText.innerHTML += characters[Math.floor(Math.random() * characters.length)];
-              textLength -= 1;
+              textLength = textLength - 1;
             }
           });
         }, 200);
