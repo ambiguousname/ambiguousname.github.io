@@ -14,10 +14,11 @@
             var hackedText = $(".hackText")[x];
             var textLength = hackedText.textContent.length;
             var finalText = "";
-            for(var i = 0; i < textLength; i++){
-              finalText += characters[Math.floor(Math.random() * characters.length)];
+            while(textLength > 0){
+              hackedText.innerHTML[0] = "";
+              hackedText.innerHTML += characters[Math.floor(Math.random() * characters.length)];
+              textLength -= 1;
             }
-            hackedText.innerHTML = finalText;
           });
         }, 200);
       }
