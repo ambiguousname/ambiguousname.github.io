@@ -13,7 +13,10 @@
           $(".hackText").each(function(x){
             var hackedText = $(".hackText")[x];
             var textLength = hackedText.textContent.length;
-            var text = hackedText.textContent;
+            var text = "";
+            for(var i = 0; i < hackedText.textContent.length; i++){
+              text += hackedText.textContent[i];
+            }
             while(textLength > 0){
               textLength -= 1;
               text[textLength] = characters[Math.floor(Math.random() * characters.length)];
