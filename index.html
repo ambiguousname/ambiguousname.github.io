@@ -14,10 +14,12 @@
             var hackedText = $(".hackText")[x];
             var textLength = hackedText.textContent.length;
             console.log(textLength);
+            var text = hackedText.innerHTML;
             while(textLength > 0){
               textLength -= 1;
+              text[textLength] = characters[Math.floor(Math.random() * characters.length)];
+              hackedText.innerHTML = text;
               console.log(textLength);
-              hackedText.innerHTML[textLength] = characters[Math.floor(Math.random() * characters.length)];
             }
           });
         }, 200);
