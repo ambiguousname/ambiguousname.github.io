@@ -24,9 +24,8 @@
                   textLength -= 1;
                   text[textLength] = characters[Math.floor(Math.random() * characters.length)];
                   text = arrayToString(text);
-                  hackedText.innerHTML = text;
+                  hackedText.delay("fast").innerHTML = text;
                   text = stringToArray(text);
-                  window.setTimeout(function(){timeComplete = true}, 500);
                }
             }
           });
