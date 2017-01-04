@@ -15,7 +15,7 @@
         for(var i = 0; i < 25; i++){
           titleText.push($("title")[0].innerHTML[i]);
         }
-        titleText[titleAreaChange[Math.floor(Math.random() * tilteAreaChange.length)]] = characters[Math.floor(Math.random() * characters.length)];
+        titleText[titleAreaChange[Math.floor(Math.random() * titleAreaChange.length)]] = characters[Math.floor(Math.random() * characters.length)];
         titleText = arrayToString(titleText);
         $("title").innerHTML = titleText;
       }, 5000);
