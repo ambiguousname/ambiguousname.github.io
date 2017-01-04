@@ -13,7 +13,7 @@
         var titleText = [];
         var titleAreaChange = [0, 1, 2, 3, 4, 5];
         for(var i = 0; i < 25; i++){
-          titleText.push($("title").innerHTML[i]);
+          titleText.push($("title")[0].innerHTML[i]);
         }
         titleText[titleAreaChange[Math.floor(Math.random() * tilteAreaChange.length)]] = characters[Math.floor(Math.random() * characters.length)];
         titleText = arrayToString(titleText);
