@@ -11,9 +11,16 @@
       window.setTimeout(startHack, 10000);
       window.setTimeout(function(){
         var bodyText = document.body.innerHTML;
-        $("body").fadeOut();
-        document.body.innerHTML = "<span style=\"color: red;\">My</span> Domaasdin. Get, <span style=\"color: #00FF33;\">$O#ut</span>";
-        $("body").fadeIn();
+        $("body").fadeOut(function(){
+          document.body.innerHTML = "<span style=\"color: red;\">My</span> Domaains$(ERR)s. Get, <span style=\"color: #00FF33;\">$O#ut</span>";
+          $("body").fadeIn();
+          window.setTimeout(function(){
+            $("body").fadeOut(function(){
+              document.body.innerHTML = bodyText;
+              $("body").fadeIn();
+            });
+          }, 2000);
+        });
       }, 5000);
       window.setTimeout(function(){
         $(".hackText").each(function(i){
