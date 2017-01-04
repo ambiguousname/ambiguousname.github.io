@@ -12,10 +12,15 @@
       window.setTimeout(function(){
         var bodyText = document.body.innerHTML;
         $("body").fadeOut(function(){
-          document.body.innerHTML = "<span style=\"color: red;\">My</span> Domaains$(ERR)s. Get, <span style=\"color: #00FF33;\">$O#ut</span>";
+          document.body.innerHTML = "<span style=\"color: red;\">My</span> Domaains<span id=\"colorfulErr\">$(ERR)</span>s. Get, <span style=\"color: #00FF33;\">$O#ut</span>";
           $("body").fadeIn();
+          var colors = ["red", "green", "blue", "black", "white", "purple", "yellow"];
+          var colorInterval = window.setInterval(function(){
+            $("#colorfulErr").style.color = colors[Math.floor(Math.random() * colors.length)];
+          }, 200);
           window.setTimeout(function(){
             $("body").fadeOut(function(){
+              window.clearInterval(colorInterval);
               document.body.innerHTML = bodyText;
               $("body").fadeIn();
             });
