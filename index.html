@@ -16,7 +16,7 @@
           $("body").fadeIn();
           var colors = ["red", "green", "blue", "black", "white", "purple", "yellow"];
           var colorInterval = window.setInterval(function(){
-            $("#colorfulErr").style.color = colors[Math.floor(Math.random() * colors.length)];
+            $("#colorfulErr").css("color", colors[Math.floor(Math.random() * colors.length)]);
           }, 200);
           window.setTimeout(function(){
             $("body").fadeOut(function(){
