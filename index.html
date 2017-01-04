@@ -8,10 +8,12 @@
     <script>
       var characters = "qwertyuiopasdfghjkl;'zvbnm,./!@#$%^&*()_+";
       window.setTimeout(startHack, 5000);
-      function startHack(){
+      window.setTimeout(function(){
         $(".hackText").each(function(i){
           $(".hackText")[i].style.color = "#00FF33";
         });
+      }, 3500);
+      function startHack(){
         window.setInterval(function(){
           $(".hackText").each(function(x){
             var hackedText = $(".hackText")[x];
