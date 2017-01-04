@@ -20,9 +20,10 @@
             text[Math.floor(Math.random() * textLength)] = characters[Math.floor(Math.random() * characters.length)];
             text = arrayToString(text);
             hackedText.innerHTML = text;
+            hackedText.style.color = "#00DD33";
             text = stringToArray(text);
           });
-        }, 200);
+        }, 100);
       }
       function arrayToString(array){
         var string = "";
@@ -41,6 +42,7 @@
     </script>
   </head>
   <body>
-    <h3>Welcome, <span class="hackText">to my</span> Website!</h3>
+    <h3 id="websiteHead">Welcome, <span class="hackText">to my</span> Website!</h3>
+    <p>Welcome, to me, <span class="hackText">Tyly04's</span> website. It's full of things like <span class="hackText">Kittens</span></p>
   </body>
 </html>
