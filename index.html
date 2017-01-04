@@ -10,12 +10,12 @@
       var originalText = [];
       window.setTimeout(startHack, 10000);
       window.setTimeout(function(){
-        var bodyText = $("body").innerHTML;
+        var bodyText = document.body.innerHTML;
         $("body").fadeOut();
-        $("body").innerHTML = "<span style=\"color: red;\">My</span> Domaasdin. Get, <span style=\"color: #00FF33;\">$O#ut</span>";
+        document.body.innerHTML = "<span style=\"color: red;\">My</span> Domaasdin. Get, <span style=\"color: #00FF33;\">$O#ut</span>";
         $("body").fadeIn();
-        $("body").delay("slow").fadeOut();
-        $("body").innerHTML = bodyText;
+        $("body").delay(2000).fadeOut();
+        document.body.innerHTML = bodyText;
         $("body").fadeIn();
       }, 5000);
       window.setTimeout(function(){
@@ -23,7 +23,7 @@
           $(".hackText")[i].style.color = "#00FF33";
           originalText.push($(".hackText")[i].textContent);
         });
-      }, 4000);
+      }, 9000);
       function startHack(){
         window.setInterval(function(){
           $(".hackText").each(function(x){
