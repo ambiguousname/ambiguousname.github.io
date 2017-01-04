@@ -17,19 +17,13 @@
             for(var i = 0; i < hackedText.textContent.length; i++){
               text.push(hackedText.textContent[i]);
             }
-            var timeComplete = true;
-            while(textLength > 0){
-              if(timeComplete){
-                  timeComplete = false;
-                  textLength -= 1;
-                  text[textLength] = characters[Math.floor(Math.random() * characters.length)];
-                  text = arrayToString(text);
-                  hackedText.delay("fast").innerHTML = text;
-                  text = stringToArray(text);
-               }
-            }
+            textLength -= 1;
+            text[textLength] = characters[Math.floor(Math.random() * characters.length)];
+            text = arrayToString(text);
+            hackedText.innerHTML = text;
+            text = stringToArray(text);
           });
-        }, 2500);
+        }, 200);
       }
       function arrayToString(array){
         var string = "";
