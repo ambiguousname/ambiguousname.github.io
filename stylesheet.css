@@ -7,3 +7,10 @@ body{
 h3{
   text-align: center;
 }
+button{
+  border: none;
+  color: white;
+  background-color: #0033FF;
+  width: 100px;
+  height: 100px;
+}
