@@ -7,7 +7,7 @@ body{
 h3{
   text-align: center;
 }
-button #hackText{
+button .hackText{
   border: none;
   color: white;
   background-color: #0033FF;
