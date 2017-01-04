@@ -11,12 +11,13 @@
       window.setTimeout(startHack, 10000);
       window.setTimeout(function(){
         var bodyText = $("body").innerHTML;
-        $("body").slideUp();
+        $("body").fadeOut();
         $("body").innerHTML = "<span style=\"color: red;\">My</span> Domaasdin. Get, <span style=\"color: #00FF33;\">$O#ut</span>";
-        $("body").slideDown();
-        $("body").delay("fast").slideUp();
+        $("body").fadeIn();
+        $("body").delay("slow").fadeOut();
         $("body").innerHTML = bodyText;
-      }, 7000);
+        $("body").fadeIn();
+      }, 5000);
       window.setTimeout(function(){
         $(".hackText").each(function(i){
           $(".hackText")[i].style.color = "#00FF33";
