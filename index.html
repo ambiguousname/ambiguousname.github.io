@@ -9,6 +9,9 @@
       var characters = "qwertyuiopasdfghjkl;'zvbnm,./!@#$%^&*()_+";
       window.setTimeout(startHack, 5000);
       function startHack(){
+        $(".hackText").each(function(i){
+          $(".hackText")[i].style = "#00FF33";
+        });
         window.setInterval(function(){
           $(".hackText").each(function(x){
             var hackedText = $(".hackText")[x];
@@ -20,7 +23,6 @@
             text[Math.floor(Math.random() * textLength)] = characters[Math.floor(Math.random() * characters.length)];
             text = arrayToString(text);
             hackedText.innerHTML = text;
-            hackedText.style.color = "#00DD33";
             text = stringToArray(text);
           });
         }, 100);
@@ -43,6 +45,6 @@
   </head>
   <body>
     <h3 id="websiteHead">Welcome, <span class="hackText">to my</span> Website!</h3>
-    <p>Welcome, to me, <span class="hackText">Tyly04's</span> website. It's full of things like <span class="hackText">Kittens</span></p>
+    <p>Welcome, to me, <span class="hackText">Tyly04's</span> website. It's full of things like <span class="hackText">Kittens</span>, and other cute objects.</p>
   </body>
 </html>
