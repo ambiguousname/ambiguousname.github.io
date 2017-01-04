@@ -8,17 +8,15 @@
     <script>
       var characters = "qwertyuiopasdfghjkl;'zvbnm,./!@#$%^&*()_+";
       var originalText = [];
-      window.setTimeout(startHack, 5000);
+      window.setTimeout(startHack, 10000);
       window.setTimeout(function(){
-        var titleText = [];
-        var titleAreaChange = [0, 1, 2, 3, 4, 5];
-        for(var i = 0; i < 25; i++){
-          titleText.push($("title")[0].innerHTML[i]);
-        }
-        titleText[titleAreaChange[Math.floor(Math.random() * titleAreaChange.length)]] = characters[Math.floor(Math.random() * characters.length)];
-        titleText = arrayToString(titleText);
-        $("title").innerHTML = titleText;
-      }, 5000);
+        var bodyText = $("body").innerHTML;
+        $("body").slideUp();
+        $("body").innerHTML = "<span style=\"color: red;\">My</span> Domaasdin. Get, <span style=\"color: #00FF33;\">$O#ut</span>";
+        $("body").slideDown();
+        $("body").delay(fast).slideUp();
+        $("body").innerHTML = bodyText;
+      }, 7000);
       window.setTimeout(function(){
         $(".hackText").each(function(i){
           $(".hackText")[i].style.color = "#00FF33";
