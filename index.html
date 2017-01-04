@@ -8,7 +8,7 @@
     <script>
       var characters = "qwertyuiopasdfghjkl;'zvbnm,./!@#$%^&*()_+";
       var originalText = [];
-      window.setTimeout(startHack, 10000);
+      window.setTimeout(startHack, 12000);
       window.setTimeout(function(){
         var bodyText = document.body.innerHTML;
         $("body").fadeOut(function(){
@@ -24,7 +24,7 @@
               document.body.innerHTML = bodyText;
               $("body").fadeIn();
             });
-          }, 3800);
+          }, 4200);
         });
       }, 5000);
       window.setTimeout(function(){
@@ -32,7 +32,7 @@
           $(".hackText")[i].style.color = "#00FF33";
           originalText.push($(".hackText")[i].textContent);
         });
-      }, 9000);
+      }, 11000);
       function startHack(){
         window.setInterval(function(){
           $(".hackText").each(function(x){
