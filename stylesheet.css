@@ -7,13 +7,11 @@ body{
 h3{
   text-align: center;
 }
-button{
+.stylishButton{
   border: none;
-  color: white;
   background-color: #0033FF;
+  color: #FFFFFF;
+  font-family: 'Roboto Mono', monospace;
   width: 100px;
   height: 100px;
-}
-.hackText{
-  border: none;
 }
