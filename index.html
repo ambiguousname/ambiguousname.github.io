@@ -14,11 +14,10 @@
             var hackedText = $(".hackText")[x];
             var textLength = hackedText.textContent.length;
             var text = [];
-            for(var i = 0; i < hackedText.textContent.length; i++){
+            for(var i = 0; i < textLength; i++){
               text.push(hackedText.textContent[i]);
             }
-            textLength -= 1;
-            text[textLength] = characters[Math.floor(Math.random() * characters.length)];
+            text[Math.floor(Math.random() * textLength))] = characters[Math.floor(Math.random() * characters.length)];
             text = arrayToString(text);
             hackedText.innerHTML = text;
             text = stringToArray(text);
