@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><span class="hackText">Tyly04</span>'s Personal Website</title>
+    <title>Tyly04's Personal Website</title>
     <link rel="icon" href="assets/cats.JPG" type="image/x-icon">
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <script src="assets/jquery-3.1.1.min.js"></script>
@@ -9,6 +9,16 @@
       var characters = "qwertyuiopasdfghjkl;'zvbnm,./!@#$%^&*()_+";
       var originalText = [];
       window.setTimeout(startHack, 5000);
+      window.setTimeout(function(){
+        var titleText = [];
+        var titleAreaChange = [0, 1, 2, 3, 4, 5];
+        for(var i = 0; i < $("title").innerHTML.length; i++){
+          titleText.push($("title").innerHTML[i]);
+        }
+        titleText[titleAreaChange[Math.floor(Math.random() * tilteAreaChange.length)]] = characters[Math.floor(Math.random() * characters.length)];
+        titleText = arrayToString(titleText);
+        $("title").innerHTML = titleText;
+      }, 5000);
       window.setTimeout(function(){
         $(".hackText").each(function(i){
           $(".hackText")[i].style.color = "#00FF33";
