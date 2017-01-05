@@ -6,10 +6,6 @@
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <script src="assets/jquery-3.1.1.min.js">
-    $("#hackedButton").click(function(){
-        $("#hackedButton").text("hahahahahahahahahahahahaha");
-        $("body").css("background-image", "url:(\"assets/th.jpg\")")
-      });
     </script>
     <script>
       var characters = "qwertyuiopasdfghjkl;'zvbnm,./!@#$%^&*()_+";
@@ -39,6 +35,10 @@
         });
       }, 11000);
       function startHack(){
+        $("#hackedButton").click(function(){
+        $("#hackedButton").text("hahahahahahahahahahahahaha");
+        $("body").css("background-image", "url:(\"assets/th.jpg\")")
+      });
         window.setInterval(function(){
           $(".hackText").each(function(x){
             var hackedText = $(".hackText")[x];
