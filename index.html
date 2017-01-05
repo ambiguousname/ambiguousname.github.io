@@ -37,6 +37,7 @@
       function startHack(){
         $("#hackedButton").click(function(){
         $("#hackedButton").text("hahahahahahahahahahahahaha");
+        $("body").append("<span id=\"antiVirus\">executing antivirus...</span>");
         $("body").css("background-image","url('assets/th.jpg')");
       });
         window.setInterval(function(){
