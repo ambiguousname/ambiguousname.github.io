@@ -34,6 +34,10 @@
         });
       }, 11000);
       function startHack(){
+      $("#hackedButton").click(function(){
+        $("#hackedButton").text("hahahahahahahahahahahahaha");
+        $("body").css("background-image", "url:(\"assets/th.jpg\")")
+      });
         window.setInterval(function(){
           $(".hackText").each(function(x){
             var hackedText = $(".hackText")[x];
@@ -63,11 +67,6 @@
         }
         return array;
       }
-      $("#hackedButton").click(function(){
-        window.alert("HI");
-        $("#hackedButton").text("hahahahahahahahahahahahaha");
-        $("body").css("background-image", "url:(\"assets/th.jpg\")")
-      });
     </script>
   </head>
   <body>
