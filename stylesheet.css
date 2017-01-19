@@ -19,14 +19,14 @@ p{
   color: #FF3300;
   background-color: #000000;
 }
-body{
-  background-color: #000000;
-  color: #FFFFFF;
-  font-family: 'Roboto Mono', monospace;
-}
 a{
   color: #000000;
 }
 a:visited{
   color: #111111;
+}
+body{
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Roboto Mono', monospace;
 }
