@@ -24,3 +24,9 @@ body{
   color: #FFFFFF;
   font-family: 'Roboto Mono', monospace;
 }
+a{
+  color: #000000;
+}
+a:visited{
+  color: #111111;
+}
