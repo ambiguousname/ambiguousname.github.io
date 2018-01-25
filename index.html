@@ -7,78 +7,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <script src="assets/jquery-3.1.1.min.js">
     </script>
-    <script>
-      var characters = "qwertyuiopasdfghjkl;'zxcvbnm,./!@#$%^&*()_+";
-      window.setTimeout(startHack, 12000);
-      window.setTimeout(function(){
-        var bodyText = document.body.innerHTML;
-        $("body").fadeOut(function(){
-          document.body.innerHTML = "<span style=\"color: red;\">//My</span> Domaains<span id=\"colorfulErr\">$(ERR)</span>s. Get, <span style=\"color: #00FF33;\">$O#ut</span>";
-          
-          $("body").fadeIn();
-          var colors = ["red", "green", "blue", "black", "white", "purple", "yellow"];
-          var colorInterval = window.setInterval(function(){
-            $("#colorfulErr").css("color", colors[Math.floor(Math.random() * colors.length)]);
-          }, 200);
-          window.setTimeout(function(){
-            $("body").fadeOut(function(){
-              window.clearInterval(colorInterval);
-              document.body.innerHTML = bodyText;
-              $("body").fadeIn();
-            });
-          }, 4200);
-        });
-      }, 5000);
-      window.setTimeout(function(){
-        $(".hackText").each(function(i){
-          $(".hackText")[i].style.color = "#00FF33";
-        });
-      }, 11000);
-      function startHack(){
-        $("#hackedButton").click(function(){
-        $("#hackedButton").text("hahahahahahahahahahahahaha");
-        $("body").css("background-image","url('assets/th.jpg')");
-      });
-        window.setInterval(function(){
-          $(".hackText").each(function(x){
-            var hackedText = $(".hackText")[x];
-            var textLength = hackedText.textContent.length;
-            var text = [];
-            for(var i = 0; i < textLength; i++){
-              text.push(hackedText.textContent[i]);
-            }
-            text[Math.floor(Math.random() * textLength)] = characters[Math.floor(Math.random() * characters.length)];
-            text = arrayToString(text);
-            hackedText.innerHTML = text;
-            text = stringToArray(text);
-          });
-        }, 100);
-      }
-      function arrayToString(array){
-        var string = "";
-        for(var i = 0; i < array.length; i++){
-          string += array[i];
-        }
-        return string;
-      }
-      function stringToArray(string){
-        var array = [];
-        for(var i = 0; i < string.length; i++){
-          array.push(string[i]);
-        }
-        return array;
-      }
-    </script>
   </head>
   <body>
-    <h3 id="websiteHead">Welcome, <span class="hackText">to my</span> Website!</h3>
-    <p>Welcome, to me, <span class="hackText">Tyly04</span>'s website. It's full of things like <span class="hackText">Kittens</span> <img src="assets/cats.JPG" width="66" height="49.5">, and other <span class="hackText">cute</span> objects.</p>
-    <p>Bugs: There have been frequent <span class="hackText">bug</span> reports of <span id="hackText">users</span> on the website seeing random letters appear on the screen, and a message telling them to <span id="hackText">'</span>back off<span id="hackText">'</span>. Now, don't worry about this. All you need to do is <span class="hackText">to open the webpage using a non-javascript supported browser</span>, and while you won't be able to see all of the cool stuff, all of the <span class="hackText">green text</span> will go away.</p>
-    <p>Alternatively, you could click this button: <button class="hackText stylishButton" id="hackedButton">Click me to fix green text</button>. And everything should be fixed!</p>
+    <h3 id="websiteHead">Welcome, to my Website!</h3>
+    <p>I occasionally update this site when I feel like it, but it's currently a showcase of my work. I might change the overall style of it sometime, but for now I like the current look.</p>
     <p>My Work:</p>
     <ul>
-      <li><a href="https://github.com/Tyly04/">My Github</a> - My github, where I work on my projects.</li>
-      <li><a href="https://final-javascript-project.firebaseapp.com/">My Final Javascript Project for Codecademy</a> - An RPG webservice (WIP) that stores your character on the cloud, using Google's Firebase. Only one adventure is available, and isn't finished yet, but you can still check it out.</li>
+      <li><a href="https://github.com/Tyly04/">My Github</a> - Where I work on my projects.</li>
+      <li><a href="https://tyly04.itch.io/a-game-about-tickets">My itch.io</a> - Where I occasionally post games.</li>
     </ul>
   </body>
 </html>
