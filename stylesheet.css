@@ -15,10 +15,6 @@ h3{
 p{
   background-color: #000000;
 }
-#antivirus{
-  color: #FF3300;
-  background-color: #000000;
-}
 a{
   color: #cccccc;
 }
@@ -26,7 +22,7 @@ a:visited{
   color: #bbbbbb;
 }
 body{
-  background-color: #000000;
+  background-color: #AAAAAA;
   color: #FFFFFF;
   font-family: 'Roboto Mono', monospace;
 }
