@@ -5,3 +5,11 @@
 .large-font{
   font-size: 25px;
 }
+p{
+  overflow-wrap: normal;
+  hyphens: auto;
+  max-width: 40vw;
+  margin: auto;
+  text-align: center;
+  line-height: 1.5;
+}
