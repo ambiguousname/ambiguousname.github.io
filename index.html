@@ -1,20 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Tyly04's Personal Website</title>
-    <link rel="icon" href="assets/cats.JPG" type="image/x-icon">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <script src="assets/jquery-3.1.1.min.js">
-    </script>
+    <!--Welcome, to the secret world behind the webpage! Here, we prefer to use WYSINWYG, rather than WYSIWYG, WYSITUTWYG, or WYSIHYD (xkcd.com/1341)-->
+    <meta charset="UTF-8" />
+    <!-- adding icon later. <link rel="icon" href="./assets/" type="image/x-icon" />-->
+    <meta name="description" content="Portfolio for Tyler" />
+    <meta name="author" content="Tyler K." />
+    <title>Tyler's Portfolio</title>
+    <script type="text/javascript" src="./assets/jquery-3.1.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="./stylesheet.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/bootstrap.min.css" />
+    <script type="text/javascript" src="./assets/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
   </head>
   <body>
-    <h3 id="websiteHead">Welcome, to my Website!</h3>
-    <p>I occasionally update this site when I feel like it, but it's currently a showcase of my work. I might change the overall style of it sometime, but for now I like the current look.</p>
-    <p>My Work:</p>
-    <ul>
-      <li><a href="https://github.com/Tyly04/">My Github</a> - Where I work on my projects.</li>
-      <li><a href="https://tyly04.itch.io">My itch.io</a> - Where I occasionally post games.</li>
-    </ul>
+    <div class="content">
+      <ul class="nav justify-content-center nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/projects.html">Current Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/about.html">About Me</a>
+        </li>
+      </ul>
+      <div class="center">
+        <h1 id="name">Tyler K.</h1>
+        <p id="description">
+          Making Video Games, Webpages, and other random stuff.
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>Developer For:</h2>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  HTML
+                </li>
+                <li class="list-group-item">
+                  Javascript (and Node.js)
+                </li>
+                <li class="list-group-item">
+                  CSS
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h2>Familiar With:</h2>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  Python
+                </li>
+                <li class="list-group-item">
+                  C#
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h2>Tinkering With:</h2>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  C++
+                </li>
+                <li class="list-group-item">
+                  Lua
+                </li>
+                <li class="list-group-item">
+                  Java
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <footer class="mastfoot">
+
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

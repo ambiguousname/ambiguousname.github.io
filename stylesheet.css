@@ -1,28 +1,21 @@
-::selection{
-  color: #00FF33;
-  background-color: none;
-}
-h3{
+.center{
   text-align: center;
+  line-height: 30vh;
+  height: 100vh;
 }
-.stylishButton{
-  border: none;
-  background-color: #0033FF;
-  color: #FFFFFF;
-  font-family: 'Roboto Mono', monospace;
-  height: 50px;
+.center p, h1{
+  vertical-align: middle;
+  line-height: 1.5;
+  display: inline;
 }
-p{
-  background-color: #000000;
+.center p{
+  display: block;
 }
-a{
-  color: #cccccc;
-}
-a:visited{
-  color: #bbbbbb;
+.center div{
+  vertical-align: middle;
+  line-height: 1.5;
 }
 body{
-  background-color: #AAAAAA;
-  color: #FFFFFF;
-  font-family: 'Roboto Mono', monospace;
+  /*For cleanliness. Hopefully everything is visible, but that's why we do testing.*/
+  overflow: hidden;
 }
