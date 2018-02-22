@@ -1,0 +1,11 @@
+.center{
+  text-align: center;
+  padding: 25vh;
+}
+.large-font{
+  font-size: 25px;
+}
+body{
+  /*For cleanliness. Hopefully everything is visible, but that's why we do testing.*/
+  overflow: hidden;
+}
