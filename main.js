@@ -8,7 +8,7 @@ function fadeInChildren(){
   });
   var currentIndex = 0;
   var currentInterval = window.setInterval(function(){
-    queue[currentIndex].fadeIn(500);
+    queue[currentIndex].slideDown(500);
     currentIndex += 1;
     if(currentIndex >= queue.length){
       window.clearInterval(currentInterval);
