@@ -1,7 +1,7 @@
 function fadeInChildren(){
   var queue = [];
   $(".content .container .row").children().each(function(){
-    queue.push($(this).find("h4"));
+    queue.push($(this).find("h5"));
     $(this).find(".list-group").children().each(function(){
       queue.push($(this));
     });
@@ -25,7 +25,7 @@ window.onload = function(){
     $("#name").fadeOut(0);
     $("#description").fadeOut(0);
     $(".content .container .row").children().each(function(){
-      $(this).find("h4").fadeOut(0);
+      $(this).find("h5").fadeOut(0);
       $(this).find(".list-group").children().each(function(){
         $(this).fadeOut(0);
       });
