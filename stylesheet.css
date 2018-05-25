@@ -19,3 +19,26 @@ body{
   /*For cleanliness. Hopefully everything is visible, but that's why we do testing.*/
   overflow: hidden;
 }
+.nav-link{
+  transition-duration: 0.4s;
+  overflow: none;
+}
+@keyframes border{
+  0% {opacity: 1;}
+  25% {opacity: 0.2;}
+}
+.nav-link:hover{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.nav-link:active{
+  animation-name: border;
+  animation-duration: 1s;
+  opacity: 0.2;
+}
+.list-group-item{
+  transition-duration: 0.3s;
+}
+.list-group-item:hover{
+  margin: 1%;
+}
