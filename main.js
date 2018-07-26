@@ -8,12 +8,7 @@ function fadeInChildren(){
   });
   var currentIndex = 0;
   var currentInterval = window.setInterval(function(){
-    if(queue[currentIndex].hasClass("list-group-item")){
-      queue[currentIndex].fadeIn(500);
-    } else {
-      //For some reason, slideDown isn't working for list-group-item.
-      queue[currentIndex].slideDown(500);
-    }
+    queue[currentIndex].slideDown(500);
     currentIndex += 1;
     if(currentIndex >= queue.length){
       window.clearInterval(currentInterval);
