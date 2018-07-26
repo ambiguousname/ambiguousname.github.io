@@ -37,7 +37,9 @@ body{
   opacity: 0.2;
 }
 .list-group-item{
-  transition-duration: 0.3s;
+  margin: 0%;
+  -webkit-transition: margin 1s;
+  transition: margin 1s;
 }
 .list-group-item:hover{
   margin: 1%;
