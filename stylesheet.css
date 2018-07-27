@@ -38,9 +38,12 @@ body{
 }
 .list-group-item{
   margin: 0%;
-  -webkit-transition: margin 1s;
-  transition: margin 1s;
+  -webkit-transition: margin 0.5s;
+  transition: margin 0.5s;
 }
 .list-group-item:hover{
   margin: 1%;
+}
+.list-group-item:active{
+  margin: 2%;
 }

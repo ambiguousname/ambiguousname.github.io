@@ -34,10 +34,19 @@ function isReady(){
       });
     });
     $("#navbar").fadeOut(0);
+    $(".center").html(function(){
+      var h = $(".center").html();
+      h += "<h1 id=\"welcome\">Welcome.</h1>";
+      return h;
+    });
+    $("#welcome").fadeOut(0);
+    $("#welcome").fadeIn(1000);
     setTimeout(function(){
       $(".background").animate({height: "100%"}, 2000, function(){
-        $("#name").fadeIn(1000, fadeInDescription);
+        $("#welcome").fadeOut(1000, function(){
+          $("#name").fadeIn(1000, fadeInDescription);
+        });
       });
-    }, 500);
+    }, 1000);
   }
 }
