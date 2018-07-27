@@ -1,3 +1,9 @@
+h6 a{
+  text-decoration: underline;
+}
+h6 a:hover{
+  color: #cccccc;
+}
 .center{
   text-align: center;
   padding: 70px;

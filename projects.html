@@ -2,25 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="../assets/Identicon.png" type="image/x-icon" />
+    <link rel="icon" href="./assets/Identicon.png" type="image/x-icon" />
     <meta name="description" content="Portfolio for Tyler" />
     <meta name="author" content="Tyler K." />
     <title>Tyler's Portfolio</title>
     <script type="text/javascript" src="./assets/jquery-3.1.1.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="./pages-stylesheet.css" />
     <link type="text/css" rel="stylesheet" href="./assets/bootstrap.min.css" />
     <script type="text/javascript" src="./assets/bootstrap.min.js"></script>
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script type="text/babel" src="./navbar.js"></script>
+    <script type="text/javascript" src="./background.js"></script>
+    <script type="text/javascript" src="./navbar.js"></script>
+    <link type="text/css" rel="stylesheet" href="./pages-stylesheet.css" />
+    <link type="text/css" rel="stylesheet" href="animatedbackground.css"/>
   </head>
   <body>
     <div class="content">
+      <div id="background"></div>
       <div id="navbar"></div>
       <div class="center">
-        <p class="large-font">
+        <h6 class="large-font">
           I have a few projects that I am working on:
-        </p>
+        </h6>
         <div class="container">
           <div class="row">
             <div class="col">
@@ -45,9 +48,9 @@
             </div>
           </div>
         </div>
-        <p class="large-font">
+        <h6 class="large-font">
           A few notable projects:
-        </p>
+        </h6>
         <div class="container">
           <div class="row">
             <div class="col">

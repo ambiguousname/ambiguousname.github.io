@@ -21,13 +21,12 @@ var NavItem = function (_React$Component) {
   _createClass(NavItem, [{
     key: "render",
     value: function render() {
-      console.log(this.props);
       return React.createElement(
         "li",
         { className: "nav-item" },
         React.createElement(
           "a",
-          { className: "nav-link" + (this.props.active ? " active" : ""), href: "./" + this.props.url + ".html" },
+          { className: "nav-link" + (this.props.active ? " active" : ""), href: (this.props.active) ? "#" : "./" + this.props.url + ".html"  },
           this.props.name
         )
       );
@@ -49,13 +48,12 @@ var Navbar = function (_React$Component2) {
   _createClass(Navbar, [{
     key: "render",
     value: function render() {
-      var pages = ["", "projects", "about"];
+      var pages = ["index", "projects", "about"];
       var names = ["Home", "My Projects", "Contact/About"];
       var url = window.location.pathname;
       var items = [];
       for (var i = 0; i < pages.length; i++) {
-        console.log(url.indexOf(pages[i]));
-        if (url.indexOf(pages[i]) !== -1) {
+        if (url.indexOf(pages[i]) !== -1 || url === "") {
           items.push(React.createElement(NavItem, { active: true, key: pages[i], name: names[i], url: pages[i] }));
         } else {
           items.push(React.createElement(NavItem, { active: false, key: pages[i], name: names[i], url: pages[i] }));
@@ -73,4 +71,11 @@ var Navbar = function (_React$Component2) {
 }(React.Component);
 window.onload = function(){
 ReactDOM.render(React.createElement(Navbar, null), document.getElementById('navbar'));
+
+if(callReady){
+  callReady();
+}
+if(isReady){
+isReady();
+}
 }

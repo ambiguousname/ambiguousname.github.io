@@ -14,6 +14,7 @@ function fadeInChildren(){
     if(currentIndex >= queue.length){
       window.clearInterval(currentInterval);
       //Goodbye, fadeouts.
+      $("#navbar").slideDown(500);
       localStorage.setItem('finished', 'true');
     }
   }, 1000);
@@ -21,9 +22,10 @@ function fadeInChildren(){
 function fadeInDescription(){
   $("#description").fadeIn(1000, fadeInChildren);
 }
-window.onload = function(){
+function isReady(){
   if(localStorage.getItem('finished') !== 'true'){
     $("#name").fadeOut(0);
+    $(".background").animate({height: "0"}, 0);
     $("#description").fadeOut(0);
     $(".content .container .row").children().each(function(){
       $(this).find("h5").fadeOut(0);
@@ -31,6 +33,11 @@ window.onload = function(){
         $(this).fadeOut(0);
       });
     });
-    $("#name").fadeIn(1000, fadeInDescription);
+    $("#navbar").fadeOut(0);
+    setTimeout(function(){
+      $(".background").animate({height: "100%"}, 2000, function(){
+        $("#name").fadeIn(1000, fadeInDescription);
+      });
+    }, 500);
   }
 }
