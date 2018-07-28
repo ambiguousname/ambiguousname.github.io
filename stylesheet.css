@@ -29,19 +29,22 @@ body{
 }
 @keyframes pullout{
   100%{
-    padding: 5%;
+    padding: 0.5rem 1rem;
   }
 }
 .nav-link:hover{
   animation-name: pullout;
-  animation-duration: 1s;
-  animation-iteration-count: 2;
-  animation-direction: alternate;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  padding: 5%;
 }
 .nav-link:active{
   animation-name: border;
   animation-duration: 1s;
   opacity: 0.2;
+  padding: 0.5rem 1rem;
 }
 .list-group-item{
   margin: 0%;

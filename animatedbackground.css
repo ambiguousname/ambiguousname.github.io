@@ -9,6 +9,7 @@
   animation-name: backnforth;
   animation-duration: 5s;
   animation-direction:alternate-reverse;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .background .row .bg-warning{
@@ -17,6 +18,7 @@
   animation-direction:alternate-reverse;
   animation-iteration-count: infinite;
   animation-delay: 5s;
+  animation-timing-function: ease-in-out;
 }
 .background .row .bg-danger{
   animation-name: backnforth;
@@ -24,6 +26,7 @@
   animation-direction:alternate-reverse;
   animation-iteration-count: infinite;
   animation-delay: 13s;
+  animation-timing-function: ease-in-out;
 }
 .background .row .bg-primary{
   animation-name: backnforth;
@@ -31,6 +34,7 @@
   animation-direction:alternate-reverse;
   animation-iteration-count: infinite;
   animation-delay: 19s;
+  animation-timing-function: ease-in-out;
 }
 .background{
   -webkit-filter: blur(100px);
