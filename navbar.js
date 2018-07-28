@@ -53,7 +53,7 @@ var Navbar = function (_React$Component2) {
       var url = window.location.pathname;
       var items = [];
       for (var i = 0; i < pages.length; i++) {
-        if (url.indexOf(pages[i]) !== -1 || (pages[i] === "/" && url === "/")) {
+        if (url.indexOf(pages[i]) !== -1 || (pages[i] === "index" && url === "/")) {
           items.push(React.createElement(NavItem, { active: true, key: pages[i], name: names[i], url: pages[i] }));
         } else {
           items.push(React.createElement(NavItem, { active: false, key: pages[i], name: names[i], url: pages[i] }));
