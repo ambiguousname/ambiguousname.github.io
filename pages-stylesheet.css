@@ -40,7 +40,10 @@ a{
 }
 .jumbotron-fluid{
   transition-duration: 0.5s;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #282828aa;
+}
+.jumbotron p{
+  color: white;
 }
 .jumbotron-fluid:hover{
 margin-left: -1%;
