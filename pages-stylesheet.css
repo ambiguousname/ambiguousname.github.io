@@ -40,6 +40,7 @@ a{
 }
 .jumbotron-fluid{
   transition-duration: 0.5s;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .jumbotron-fluid:hover{
 margin-left: -1%;
