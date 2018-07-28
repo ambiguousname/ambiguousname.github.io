@@ -27,9 +27,16 @@ body{
   0% {opacity: 1;}
   25% {opacity: 0.2;}
 }
+@keyframes pullout{
+  100%{
+    padding: 5%;
+  }
+}
 .nav-link:hover{
-  padding-left: 10%;
-  padding-right: 10%;
+  animation-name: pullout;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 .nav-link:active{
   animation-name: border;
