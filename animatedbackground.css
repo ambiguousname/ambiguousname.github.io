@@ -1,3 +1,6 @@
+body{
+  background: linear-gradient(to right, #77B300, #FF8800, #CC0000, #2A9FD6);
+}
 @keyframes backnforth{
   0%{flex-grow: 0};
   100%{flex-grow: 1};
