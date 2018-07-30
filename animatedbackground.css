@@ -42,4 +42,5 @@ body{
 .background{
   -webkit-filter: blur(100px);
   filter: blur(100px);
+  -ms-filter: blur(100px);
 }
