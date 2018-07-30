@@ -26,6 +26,7 @@ function isReady(){
   if(localStorage.getItem('finished') !== 'true'){
     $("#name").fadeOut(0);
     $(".background").animate({height: "0"}, 0);
+    $("body").css("background", "#000000");
     $("#description").fadeOut(0);
     $(".content .container .row").children().each(function(){
       $(this).find("h5").fadeOut(0);
