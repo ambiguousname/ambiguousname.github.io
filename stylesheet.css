@@ -27,7 +27,7 @@ a{
   text-decoration: none;
 }
 .nav-link:hover{
-  opacity: 0.2;
+  background-color: #00000033;
   padding: 0.5rem 1rem;
 }
 .list-group-item{
