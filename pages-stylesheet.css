@@ -1,5 +1,6 @@
 h6 a{
   text-decoration: underline;
+  color: #000000;
 }
 h6 a:hover{
   color: #cccccc;
