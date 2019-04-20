@@ -24,9 +24,9 @@ var Background = function (_React$Component) {
         React.createElement(
           "div",
           { className: "row", style: { width: "100%", height: "100%", margin: "0" } },
-          React.createElement("div", { className: "col bg-success"}),
+          React.createElement("div", { className: "col bg-danger"}),
           React.createElement("div", { className: "col bg-warning" }),
-          React.createElement("div", { className: "col bg-danger" }),
+          React.createElement("div", { className: "col bg-success" }),
           React.createElement("div", { className: "col bg-primary" })
         )
       );
