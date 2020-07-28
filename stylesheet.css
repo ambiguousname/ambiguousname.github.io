@@ -1,3 +1,11 @@
+::selection{
+  color: #282828;
+  background-color: #ffffff;
+}
+::-moz-selection{
+  color: #282828;
+  background-color: #ffffff;
+}
 .center{
   text-align: center;
   line-height: 30vh;
@@ -21,7 +29,10 @@ body{
 }
 .nav-link{
   transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
   overflow: none;
+  font-size: 3vh;
+  background-color: #282828aa;
 }
 a{
   text-decoration: none;
@@ -33,10 +44,15 @@ a{
   margin: 0%;
   -webkit-transition: margin 0.5s;
   transition: margin 0.5s;
+  background-color: #282828aa;
+  border:none;
+  color: #ffffff;
 }
 .list-group-item:hover{
   margin: 1%;
+  background-color: #282828cc;
 }
 .list-group-item:active{
   margin: 2%;
+  background-color: #282828ee;
 }

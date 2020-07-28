@@ -61,7 +61,7 @@ var Navbar = function (_React$Component2) {
       }
       return React.createElement(
         "ul",
-        { className: "nav justify-content-center nav-pills nav-fill" },
+        { className: "nav justify-content-center nav-pills nav-fill"},
         items
       );
     }
@@ -71,7 +71,6 @@ var Navbar = function (_React$Component2) {
 }(React.Component);
 window.onload = function(){
 ReactDOM.render(React.createElement(Navbar, null), document.getElementById('navbar'));
-
 if(callReady){
   callReady();
 }
