@@ -71,10 +71,4 @@ var Navbar = function (_React$Component2) {
 }(React.Component);
 window.onload = function(){
 ReactDOM.render(React.createElement(Navbar, null), document.getElementById('navbar'));
-if(callReady){
-  callReady();
-}
-if(isReady){
-isReady();
-}
 }

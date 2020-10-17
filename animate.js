@@ -1,3 +1,4 @@
+/* Everything runs slower with animation, and I suck at it. So I'm getting rid of it.
 function fadeInChildren(){
   var queue = [];
   $(".content .container .row").children().each(function(){
@@ -77,3 +78,4 @@ function isReady(){
     }, 1500);
   }
 }
+*/
