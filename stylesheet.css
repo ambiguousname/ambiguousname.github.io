@@ -1,0 +1,50 @@
+::selection{
+    color: #282828;
+    background-color: #ffffff;
+  }
+  ::-moz-selection{
+    color: #282828;
+    background-color: #ffffff;
+}
+body {
+    color: #ffffff;
+    background: #1a8377;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.content {
+    max-width: 50%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #dddddd;
+}
+
+.jumbotron {
+    background-color: #00000099;
+    margin: 20px 10px 20px 10px;
+    padding: 40px;
+    padding-bottom: 25px;
+    transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+}
+
+.jumbotron:hover {
+    margin: 20px 15px 20px 15px;
+    background-color: #000000aa;
+}
+
+.jumbotron:active{
+    margin: 20px 20px 20px 20px;
+    background-color: #000000bb;
+}
+h1 {
+    font-size: 50px;
+}
