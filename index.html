@@ -4,11 +4,11 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" href="./Identicon.png?v=1" type="image/x-icon" />
+        <link rel="icon" href="/assets/images/Identicon.png?v=1" type="image/x-icon" />
         <meta name="description" content="Tyler's Portfolio/Website thingamajigger" />
         <meta name="author" content="Tyler K." />
         <title>Tyler's Portfolio</title>
-        <link rel="stylesheet" href="./stylesheet.css" />
+        <link rel="stylesheet" href="/assets/css/stylesheet.css" />
     </head>
     <body>
         <div class="content">
@@ -22,7 +22,7 @@
             <h1>A Few Notable Projects:</h1>
 
             {% for project in site.projects %}
-            <div class="jumbotron" style="background-image: url({{ project.img }})">
+            <div class="jumbotron" style="background-image: url(/assets/images/{{ project.img }})">
                 <div class="jumbotron-content">
                     <h1> {{ project.name }} </h1>
                     {{ project.content }}

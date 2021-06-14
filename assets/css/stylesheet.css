@@ -55,3 +55,10 @@ a:visited {
 h1 {
     font-size: 50px;
 }
+
+.post-content{
+    margin: 20px 10px 20px 10px;
+    display: inline-grid;
+    transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+}
