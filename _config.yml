@@ -1,11 +1,5 @@
 collections:
-  projects:
-    order:
-      - sscl.md
-      - gg.md
-      - jackbox.md
-      - ucla.md
-      - heatsig.md
+ - projects
 lsi: false
 safe: true
 source: .
