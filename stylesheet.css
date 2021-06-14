@@ -29,7 +29,8 @@ a:visited {
 
 .jumbotron {
     margin: 20px 10px 20px 10px;
-    max-width: 50%;
+    width: 500px;
+    max-width: 100%;
     height: 500px;
     display: inline-grid;
 }
