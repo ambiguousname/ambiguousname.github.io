@@ -28,22 +28,28 @@ a:visited {
 }
 
 .jumbotron {
-    background-color: #00000099;
     margin: 20px 10px 20px 10px;
+    width: 630px;
+    height: 500px;
+    display: inline-grid;
+}
+
+.jumbotron-content{
+    background-color: #00000099;
+    color: #ffffff;
     padding: 40px;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
     transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
 }
 
-.jumbotron:hover {
-    margin: 20px 15px 20px 15px;
-    background-color: #000000aa;
+.jumbotron-content:hover {
+    background-color: #000000cc;
+    color: #ffffffff;
 }
 
-.jumbotron:active{
-    margin: 20px 20px 20px 20px;
-    background-color: #000000bb;
+.jumbotron-content:active{
+    background-color: #000000dd;
 }
 h1 {
     font-size: 50px;

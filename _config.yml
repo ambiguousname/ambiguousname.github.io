@@ -1,0 +1,8 @@
+collections:
+  projects:
+    order:
+      - sscl.md
+      - gg.md
+      - jackbox.md
+      - ucla.md
+      - heatsig.md

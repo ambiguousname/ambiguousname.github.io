@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
     <!-- Things to add: Images and Videos, What I Did and How it Works for the notable projects section.-->
@@ -13,20 +15,21 @@
         <div class="content">
             <h1>Hello!</h1>
             <p>I'm Tyler, I've been coding since I was 10, and I do programming things.</p>
-            <p>Follow me on <a href="https://www.twitter.com/ambiguousnames/">Twitter</a>, see my projects on <a href="https://www.github.com/ambiguousname/">Github</a>, and play my games on <a href="https://ambiguous-name.itch.io/">Itch.io</a></p>
-            <h1>A Few Notable Projects: </h1>
-            <div class="jumbotron">
-                <h1>Jackbox Custom Content</h1>
-                Software that allows you to add custom content to the Jackbox Party Pack 7. <p>Download it <a href="https://github.com/ambiguousname/jackbox-custom-content">here</a>.</p>
+            <p>Follow me on <a href="https://www.twitter.com/ambiguousnames/">Twitter</a>, see my 
+                projects on <a href="https://www.github.com/ambiguousname/">Github</a>, and play my 
+                games on <a href="https://ambiguous-name.itch.io/">Itch.io</a>
+            </p>
+
+            <h1>A Few Notable Projects:</h1>
+
+            {% for project in site.projects %}
+            <div class="jumbotron" style="background-image: url({{ project.img }})">
+                <div class="jumbotron-content">
+                    <h1> {{ project.name }} </h1>
+                    {{ project.content }}
+                </div>
             </div>
-            <div class="jumbotron">
-                <h1>UCLA Game Lab Summer Institute</h1>
-                I attended the UCLA's Summer Institute, trying out <p><a href="http://si.games.ucla.edu/2019/#thetubulartempleofturbulenttrust" target="_blank">game design</a>, <a href="https://ambiguous-name.itch.io/office" target="_blank">world building</a>, <a href="https://problematic-shooter.firebaseapp.com/" target="_blank">programming</a>, and <a href="https://ambiguous-name.itch.io/cyclops" target="_blank">3d modelling and animation</a>.</p>
-            </div>
-            <div class="jumbotron">
-                <h1>Heat Signature Mobile</h1>
-                This is a project I worked on that allows you to play the steam game Heat Signature on your phone using AutoHotKey and Chrome Remote Desktop. <p>Link <a href="https://github.com/ambiguousname/heatsig-mobile" target="_blank">here</a>.</p>
-            </div>
+            {% endfor %}
         </div>
     </body>
 </html>
