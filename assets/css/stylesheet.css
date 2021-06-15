@@ -61,4 +61,8 @@ h1 {
     display: inline-grid;
     transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
+    text-align: left;
+    line-height: 2em;
+    background-color: #00000055;
+    padding: 40px;
 }
