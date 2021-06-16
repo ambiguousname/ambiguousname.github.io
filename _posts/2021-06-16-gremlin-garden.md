@@ -47,11 +47,11 @@ In this way, the Terrain Variant class allows you to make Track Modules highly c
 
 The only real drawback to using this system is that every time you want to set up the formula for calculating speed for a new stat, you have to create an entirely new C# class from which to create the scriptable object, which isn't very designer friendly. I still stand by my decision, though. I didn't have the time (or the need) to set up an entire designer scripting language, and this system allowed designers to pretty easily change track behavior with just a drag and a drop.
 
-And that's pretty much it. That's how the races in Gremlin Garden work.
-
-If you're interested, all the code for the Racing system is [here](https://github.com/GDACollab/GremlinGarden/blob/79bf9ee5296d1868e420cc5f70533e16080f1bd8/Gremlin%20Gardens/Assets/Scripts/Racing%20System/).
+And that's pretty much it. That's how the races in Gremlin Garden work, and the end result looks pretty good!
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Pwoe7MPbeyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+If you're interested, all the code for the Racing system is [here](https://github.com/GDACollab/GremlinGarden/blob/79bf9ee5296d1868e420cc5f70533e16080f1bd8/Gremlin%20Gardens/Assets/Scripts/Racing%20System/).
 
 ## What I Didn't Cover (That I'll briefly cover right now)
 
