@@ -34,7 +34,7 @@ Here's an early prototype of all these systems in place.
 
 <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="cy" dir="ltr">Cylinder Ninja Warrior <a href="https://t.co/Hkxm4EwKNK">pic.twitter.com/Hkxm4EwKNK</a></p>&mdash; Tyler K (@ambiguousnames) <a href="https://twitter.com/ambiguousnames/status/1350890591622627330?ref_src=twsrc%5Etfw">January 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-Of course, in order for this system to work, I needed a way to calculate the modified speed of a gremlin based on both the type of track the gremlin was racing on, and their stats. The only real problem was that design had not told me how a gremlin's speed would be calculated during races, or if the formula for speed calculation would even use the same formula for every different Track Module. So I turned to Scriptable Objects.
+In order for this system to work, I needed a way to calculate the modified speed of a gremlin based on both the type of track the gremlin was racing on, and their stats. The only real problem was that design had not told me how a gremlin's speed would be calculated during races, or if the formula for speed calculation would even use the same formula for every different Track Module. So I turned to Scriptable Objects.
 
 ## Scriptable Objects
 
@@ -48,6 +48,8 @@ In this way, the Terrain Variant class allows you to make Track Modules highly c
 The only real drawback to using this system is that every time you want to set up the formula for calculating speed for a new stat, you have to create an entirely new C# class from which to create the scriptable object, which isn't very designer friendly. I still stand by my decision, though. I didn't have the time (or the need) to set up an entire designer scripting language, and this system allowed designers to pretty easily change track behavior with just a drag and a drop.
 
 And that's pretty much it. That's how the races in Gremlin Garden work.
+
+If you're interested, all the code for the Racing system is [here](https://github.com/GDACollab/GremlinGarden/blob/79bf9ee5296d1868e420cc5f70533e16080f1bd8/Gremlin%20Gardens/Assets/Scripts/Racing%20System/).
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Pwoe7MPbeyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

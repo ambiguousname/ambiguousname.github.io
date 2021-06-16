@@ -16,20 +16,41 @@ First thing's first, I didn't actually make the code for the passive waves the g
 
 IMAGE
 
-But of course, I needed the sea to actually be "filled in", so the sea could actually have a texture and look believable. I tried a few experiments using Unity's line component.
+But the sea isn't made out of dots, so to "fill in" the sea, I turned to calculus. 
+
+### CALCULUS
+
+I love calculus. I know it's not everybody's favorite subject, but... I love calculus. The problem is a classic example of one of the fundamental concepts of calculus, that is, finding the area under a given curve. Imagine our sea is a function, with each dot representing a known point on that function. From our function (the sea), the process of "filling in" the sea requires us to generate a mesh on the fly based on each of the points on our sea, in effect finding the area under the curve of our sea.
 
 IMAGE
 
-That got me part of the way there, but it wasn't really the right tactic. I would have to use...
-
-## CALCULUS
-
-I love calculus. I know it's not everybody's favorite subject, but... I love calculus. In case you don't love calculus, I'll try to make my problem solving process clear to you.
-
-Alright, here's our sea. Right now, it's represented by a bunch of points, like so.
+Now, luckily for us, there's a concept in calculus that fits quite neatly with drawing geometrical shapes under curves to find their area. [Riemann sums](https://en.wikipedia.org/wiki/Riemann_sum)! Imagine drawing a trapezoid in between each point, and shading it in. By drawing that trapezoid, we have found our area under the sea. Unity doesn't use trapezoids in drawing meshes (it uses triangles), so between each point in the sea are two triangles.
 
 IMAGE
 
-We want it to look like this:
+And that's how you generate a wave to then texture with a mesh! If you're interested in the actual code that generates the mesh, you can view that [here](https://github.com/GDACollab/SeaStarCrossedLovers/blob/5ff95accde1a4d569a0b5c9efb9496f927d42ad8/Sea%20Star%20Crossed%20Lovers/Assets/Scripts/Tower%20Obstacles/Waves/Waves.cs#L173).
+
+## Waves as Obstacles
+The waves in Sea Star Crossed Lovers are more than window dressing, they'll sometimes come and knock over your tower. Unlike Calculus, I would have to use
+
+#### PRECALCULUS (Which isn't as exciting as Calculus, which is why it's in this smaller font size)
+
+The basic way the system works is that there's such a thing called a Disruptive Wave (which is a class, when it should have probably been a struct). When a Disruptive Wave is created, it gets added to an array of Disruptive Waves, and that array is evaluated every time the game also tries to simulate the motion of the sea. Each Disruptive Wave is treated as a segment of a sine/cosine wave that is then added on top of the existing particles based on how far the wave has moved along the sea.
 
 IMAGE
+
+After the waves displace the particle system, they're then moved further along and eventually removed. Since the Disruptive Waves actually displace the particles upward, block collision is detected using Unity's own particle collision detection system (but I didn't write that part, so I won't go into depth on that).
+
+If you're interested, the parameters for creating these waves are determined by [this equation](https://www.desmos.com/calculator/jgudrypofv) that I've replicated on Desmos, and the entirety of the waves code is [here](https://github.com/GDACollab/SeaStarCrossedLovers/blob/5ff95accde1a4d569a0b5c9efb9496f927d42ad8/Sea%20Star%20Crossed%20Lovers/Assets/Scripts/Tower%20Obstacles/Waves/Waves.cs) on Github.
+
+## Regrets
+
+There is one bug that I did not fix that is very irritating. If the top right of the waves mesh is out of view, the entirety of the waves will disappear. This probably has something to do with how Unity renders meshes or the particle system, and if it were critical, I would have fixed it. Luckily, it was not critical, but it is irritating. I'd show you the bug in an image, but you can't really communicate invisibility visually. I'll try, though.
+
+<p style="height: 10em;"></p>
+
+Do you see it?
+
+Bug regardless, I'm pretty proud of what I accomplished here.
+
+Thank you for taking the time to read this, and remember that your fingers only wrinkle in water because our brains want them to.
