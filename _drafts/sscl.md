@@ -24,11 +24,15 @@ I love calculus. I know it's not everybody's favorite subject, but... I love cal
 
 ![Dots with a line connecting them](/assets/images/sscl/wavevisualization.png)
 
-All we have to do to generate our sea's mesh is to find the area under the curve between all of the points in our function. Now, luckily for us, there's a concept in calculus that fits quite neatly with drawing geometrical shapes under curves to find their area. [Riemann sums](https://en.wikipedia.org/wiki/Riemann_sum)! Imagine drawing a trapezoid in between each point, and shading it in. By drawing that trapezoid, we have found our area under the sea. Unity doesn't use trapezoids in drawing meshes (it uses triangles), so between each point in the sea are two triangles.
+All we have to do to generate our sea's mesh is to find the area under the curve between all of the points in our function. Now, luckily for us, there's a concept in calculus that fits quite neatly with drawing geometrical shapes under curves to find their area. [Riemann sums](https://en.wikipedia.org/wiki/Riemann_sum)! Imagine drawing a trapezoid in between each point, and shading it in. By drawing that trapezoid, we have found our area under the sea.
 
-![Waves represented with triangles](/assets/images/sscl/wavetriangles.png)
+![Waves "filled in" with trapezoids](/assets/images/sscl/wavetrapezoids.png)
 
-And that's how you generate a wave to then texture with a mesh! If you're interested in the actual code that generates the mesh, you can view that [here](https://github.com/GDACollab/SeaStarCrossedLovers/blob/5ff95accde1a4d569a0b5c9efb9496f927d42ad8/Sea%20Star%20Crossed%20Lovers/Assets/Scripts/Tower%20Obstacles/Waves/Waves.cs#L173).
+Unity doesn't use trapezoids in drawing meshes, so instead of trapezoids we draw two triangles.
+
+![Waves "filled in" with trianges](/assets/images/sscl/wavetriangles.png)
+
+ And that's how you generate a wave to then texture with a mesh! If you're interested in the actual code that generates the mesh, you can view that [here](https://github.com/GDACollab/SeaStarCrossedLovers/blob/5ff95accde1a4d569a0b5c9efb9496f927d42ad8/Sea%20Star%20Crossed%20Lovers/Assets/Scripts/Tower%20Obstacles/Waves/Waves.cs#L173).
 
 ## Waves as Obstacles
 The waves in Sea Star Crossed Lovers are more than window dressing, they'll sometimes come and knock over your tower. Unlike Calculus, I would have to use
