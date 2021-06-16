@@ -3,7 +3,7 @@ layout: post
 title: "What I Did and How It Works: Gremlin Garden"
 ---
 
-Hello. I wanted to spend some time today talking about the races for Gremlin Garden, which I worked on. If you haven't played [Gremlin Garden](https://gggda.itch.io/garden) already, you should. This post will make more sense if you have.
+Hello, and welcome to this explanation of how the racing system for Gremlin Garden works. If you haven't played [Gremlin Garden](https://gggda.itch.io/garden) already, you should. This post will make more sense if you have.
 
 Now, I did do a lot of miscellaneous programming for Gremlin Garden, but the main thing I worked on was the... entirety of the races.
 
@@ -63,7 +63,7 @@ I also created an adjustable difficulty system each race that mimics how most pe
 
 ## Reflection
 
-I have three big regrets:
+Looking back on everything, I have three big regrets:
 
 First is how gliding works. The formula for gliding never actually checks to see if the gremlin hits the ground, it only tries to detect when the gremlin is at the x-intercept for the equation, so I had to do some hacking to get the gremlin to look like it actually had landed before the formula thought it did. If I could go back and do it again, I'd make a formula that actually detects when a gremlin hits the ground.
 
