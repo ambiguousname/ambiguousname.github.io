@@ -1,32 +1,33 @@
 ---
 layout: post
 title: "What I Did and How It Works: Gremlin Garden"
+updated: "07/31/2021"
 ---
 
-Hello, and welcome to this explanation of how the racing system for Gremlin Garden works. If you haven't played [Gremlin Garden](https://gggda.itch.io/garden) already, you should. This post will make more sense if you have.
+Hello, and welcome to this explanation of how the racing system for Gremlin Garden works. If you haven't played [Gremlin Garden](https://gggda.itch.io/garden) already, you should. It's got literally everything you could ever want out of a game that has the wild combination of gremlins and gardens.
 
-Now, I did do a lot of miscellaneous programming for Gremlin Garden, but the main thing I worked on was the... entirety of the races.
+Now, I did do a lot of miscellaneous programming for Gremlin Garden, but the main thing I worked on was the entirety of the races.
 
 ## The Basics
 
 Well, not the *entirety*. A huge debt of gratitude goes to the [Bézier Path Curve tool by Sebastian Lague](https://assetstore.unity.com/packages/tools/utilities/b-zier-path-creator-136082#description). Without it, the workflow for creating races would have been so much more complicated.
 
-In its most basic form, the way that gremlins race in Gremlin Garden is that they simply follow a pre-constructed path. So a basic racetrack would look something like this:
+In its most basic form, the way that gremlins race in Gremlin Garden is that they simply follow a pre-constructed path made using the Bézier Path Curve tool. So a basic racetrack would look something like this:
 
 ![A Gremlin Garden Basic Race](/assets/images/gg/basicrace.png)
 
-Of course, we need more than just objects following paths. Each gremlin in Gremlin Garden has a stat that influences how fast or slow they move along that path. There are also specific animations and particles that appear on certain segments of each race, and separate QTE prompts.
+It may not be entirely obvious to you, but a race is more than just lines. It's how fast or slow something is going on those lines that makes a real race. Each gremlin in Gremlin Garden has a stat that influences how fast or slow they move along our pre-constructed paths. There are also specific animations and particles that appear on certain segments of each race, and separate QTE prompts.
 
-The eventual solution (after a brief dalliance attempting to assign attributes to individual nodes) was to divide each part of the track into sections, with each section being
-assigned a path and a "Track Module" component. The Track Module component is in charge of moving the gremlin that is on it along the path.
+In order to make a gremlin's actions dependent on the type of path they were currently racing on, I divided each part of the track into sections. Each section is 
+composed of a path and a "Track Module" component. The Track Module component is in charge of moving the gremlin it is assigned along the path. The Track Module will also do things that are specific to this part of the race, like showing a certain QTE prompt, displaying different particle effects, or slowing/speeding up the gremlin based on the gremlin's stats.
 
 ![Track Module Illustration](/assets/images/gg/trackmodule.png)
 
-Each Track Module is also parented to a Track Manager object, which keeps track of where a gremlin is along the race, as well as telling the game to change animations, particles, and QTE prompts on the fly as the gremlin transitions from Track Module to Track Module.
+Each Track Module is also parented to a Track Manager object. In simplest terms, the Track Manager tells the gremlin which Track Module to be on.
 
 ![Track Manager Illustration](/assets/images/gg/trackmanager.png)
 
-Each Track Module also needed a system for getting gremlins to move faster or slower on their track based on their stats, so each Track Module has two variables: a base speed (which can be adjusted by the designer), and a modified speed (which is calculated by the Track Module based on the gremlin's stats). The base speed is how fast a gremlin is supposed to move on that Track Module with average stats. 
+To slow or speed up gremlins based on their statistics, each Track Module has two variables: a base speed (which can be adjusted by the designer), and a modified speed (which is calculated by the Track Module based on the gremlin's stats). The base speed is how fast a gremlin is supposed to move on that Track Module with average stats.
 
 The modified speed is simply a percentage of how much to move the gremlin derived from the base speed. So if the modified speed is 100%, then the gremlin moves 100% of the base speed. If the modified speed is 50%, the gremlin moves at 50% of the base speed. I also didn't know if art would be able to come up with animations for gremlins at different speeds, so the modified speed also gets applied to the speed of a gremlin's animation. So at lower modified speeds, you'll see your gremlin have a slower movement speed AND animation time.
 
@@ -34,14 +35,17 @@ Here's an early prototype of all these systems in place.
 
 <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="cy" dir="ltr">Cylinder Ninja Warrior <a href="https://t.co/Hkxm4EwKNK">pic.twitter.com/Hkxm4EwKNK</a></p>&mdash; Tyler K (@ambiguousnames) <a href="https://twitter.com/ambiguousnames/status/1350890591622627330?ref_src=twsrc%5Etfw">January 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-In order for this system to work, I needed a way to calculate the modified speed of a gremlin based on both the type of track the gremlin was racing on, and their stats. The only real problem was that design had not told me how a gremlin's speed would be calculated during races, or if the formula for speed calculation would even use the same formula for every different Track Module. So I turned to Scriptable Objects.
+Okay, but now there's another problem. I needed a way to set the modified speed based on the gremlin's stats. The only real obstacle was that design had not told me how a gremlin's speed would be calculated during races, or if the formula for speed calculation would even use the same formula for every Track Module. So I turned to Scriptable Objects.
 
 ## Scriptable Objects
 
-In case you're not familiar with Scriptable Objects, they're a feature Unity has where you can basically save data in Unity's editor and share across scenes. There's a much better and in-depth explanation [available on Unity's website](https://unity.com/how-to/architect-game-code-scriptable-objects), if you're interested.
+In case you're not familiar with Scriptable Objects, they're a feature Unity has where you can basically save data in Unity's editor and share that data across multiple scenes. Changing the data stored in a ScriptableObject means that every script referencing that ScriptableObject will see that data being changed. There's a much better and in-depth explanation [available on Unity's website](https://unity.com/how-to/architect-game-code-scriptable-objects), if you're interested.
 
 So, each Track Module in the game takes a ScriptableObject called a Terrain Variant as input. A Terrain Variant is a ScriptableObject with only one function we really care about:
+
 relativeSpeed, which takes the Gremlin's data and the current module and returns a percentage. The current version of Terrain Variants also have extra parameters to specify things like what QTE prompt should be used and what particles to play.
+
+The TrackModule then looks at the data the Terrain Variant provides and uses that to modify its own internal variables for a different gremlin racing experience for each new TrackModule.
 
 In this way, the Terrain Variant class allows you to make Track Modules highly customizable. You can slot in the Running Terrain Variant (a class derived from Terrain Variant) into all the tracks that need to calculate the speed for gremlins running, and if you don't like any one aspect of how the particulars of gremlins running looks, you can change the inner workings of that Running Terrain Variant class, and all the tracks that use the Running Terrain Variant scriptable object will change accordingly.
 
