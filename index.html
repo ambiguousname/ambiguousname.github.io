@@ -21,6 +21,7 @@
 
             <h1>A Few Notable Projects:</h1>
 
+            {% assign projects = site.projects | sort: 'order' %}
             {% for project in site.projects %}
             <div class="jumbotron" style="background-image: url(/assets/images/{{ project.img }})">
                 <div class="jumbotron-content">
