@@ -1,5 +1,6 @@
 ---
 name: UCLA Game Lab Summer Institute
+order: 1
 ---
 
 I attended the UCLA's Summer Institute, trying out

@@ -1,20 +1,5 @@
 collections:
- projects:
-    led:
-      order: 6
-    microgamejam:
-      order: 5
-    sscl:
-      order: 4
-    gg:
-      order: 3
-    jackbox:
-      order: 2
-    ucla:
-      order: 1
-    heatsig:
-      order: 0
-    
+  - projects
       
 lsi: false
 safe: true

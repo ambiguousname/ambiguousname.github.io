@@ -1,5 +1,6 @@
 ---
 name: Jackbox Custom Content
+order: 2
 ---
 
 Software that allows you to add custom content to the Jackbox Party Pack 7.
