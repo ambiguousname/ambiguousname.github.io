@@ -34,6 +34,10 @@ a:visited {
     display: inline-grid;
 }
 
+.jumbotron video {
+    max-width: 100%;
+}
+
 .jumbotron-content{
     background-color: #00000099;
     color: #ffffff;

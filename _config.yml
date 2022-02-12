@@ -1,5 +1,6 @@
 collections:
   - projects
+  - animations
       
 lsi: false
 safe: true

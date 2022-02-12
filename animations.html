@@ -1,0 +1,27 @@
+---
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/assets/images/Identicon.png?v=1" type="image/x-icon" />
+        <meta name="description" content="Tyler's Portfolio/Website thingamajigger" />
+        <meta name="author" content="Tyler K." />
+        <title>Tyler's Portfolio</title>
+        <link rel="stylesheet" href="/assets/css/stylesheet.css" />
+    </head>
+    <body>
+        <div class="content">
+            <a href="/" style="text-decoration: none;"><h1>My Animations</h1></a>
+            {% assign animations = site.animations | sort: 'order' | reverse%}
+            {% for animation in animations %}
+            <div class="jumbotron">
+                <div class="jumbotron-content">
+                    <h1>{{animation.title}}</h1>
+                    <video src="/assets/animations/{{ animation.name }}" controls="true"></video>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
