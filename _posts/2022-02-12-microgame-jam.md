@@ -122,4 +122,4 @@ I already have a list of things I want to improve, and here they are:
 
 5. For those of you who may have browsed my Github, you might have noticed I submitted a game to the Microgame Jam WHILE the jam was in progress. "This'll be easy," I thought, "I can help coordinate the jam and write a game for it really quick!" I won't say I was wrong, but I wasn't exactly right either. No more participating in events WHILE I'm organizing them.
 
-With all of this in mind, I have some pretty great improvements in mind. For those, you'll just have to wait and see.
+With all of this in mind, I have some pretty great potential improvements. For those, you'll just have to wait and see (assuming we ever do this again).
