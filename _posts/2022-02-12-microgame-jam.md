@@ -110,7 +110,7 @@ Oh, and don't give people access to a framework unless you're 100% certain it's 
 
 ## Things to improve
 
-I already have a list of things I want to improve, and here they are:
+Don't get me wrong, despite the amount of bugs, this whole project was AWESOME to work on. And I'm constantly brainstorming ways to improve it. Here's a whole list:
 
 1. If I had to use this format again, I probably would do as much as I could to avoid yet more conflict. If we're all being honest, people have trouble following directions, and it was my fault that I did not minimize the amount of directions and guidance we had to give them. Let the games do as much of their own thing as possible, focus only on loading them.
 
@@ -123,3 +123,5 @@ I already have a list of things I want to improve, and here they are:
 5. For those of you who may have browsed my Github, you might have noticed I submitted a game to the Microgame Jam WHILE the jam was in progress. "This'll be easy," I thought, "I can help coordinate the jam and write a game for it really quick!" I won't say I was wrong, but I wasn't exactly right either. No more participating in events WHILE I'm organizing them.
 
 With all of this in mind, I have some pretty great potential improvements. For those, you'll just have to wait and see (assuming we ever do this again).
+
+Thank you for taking the time to read this, and remember that run time errors suck.
