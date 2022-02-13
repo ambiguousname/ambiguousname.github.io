@@ -68,3 +68,7 @@ h1 {
     background-color: #00000055;
     padding: 40px;
 }
+
+.post-content img {
+    max-width: 100%;
+}
