@@ -18,7 +18,7 @@
             <div class="jumbotron">
                 <div class="jumbotron-content">
                     <h1>{{animation.title}}</h1>
-                    <video src="/assets/animations/{{ animation.name }}" controls="true"></video>
+                    <video src="/assets/animations/{{ animation.name }}" controls="true" {% if animation.loop %} loop="" {% endif %} ></video>
                 </div>
             </div>
             {% endfor %}
