@@ -1,6 +1,8 @@
 collections:
-  - projects
-  - animations
+  projects:
+  animations:
+  readmefiles:
+    output: true
       
 lsi: false
 safe: true
@@ -12,3 +14,4 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+excerpt_separator: <!--more-->
