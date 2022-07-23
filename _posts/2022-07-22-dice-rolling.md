@@ -40,7 +40,7 @@ Now that we've gotten basic dice theory out of the way, it's time to discuss how
 
 Let's take a look at, as of writing, the top 3 games in the [GMTK Game Jam 2022](https://itch.io/jam/gmtk-jam-2022) that model multiple die faces in three dimensions.
 
-First up, [Stompey Dicey](https://badpiggy.itch.io/stompey-dicey). There are actually quite a few games that use two dimensional dice rolling (without 3D faces), and I *relatively* no qualms with that. Would I prefer 3D representations of dice? Absolutely. It's no question that 3D dice are generally superior to 2D dice in every way. But what I do have a problem with is the *monumental* avalanche of lies that Stompey Dicey propagates through its innacurate 3D dice rolling:
+First up, [Stompey Dicey](https://badpiggy.itch.io/stompey-dicey). There are actually quite a few games that use two dimensional dice rolling (without 3D faces), and I have *relatively* no qualms with that. Would I prefer 3D representations of dice? Absolutely. It's no question that 3D dice are generally superior to 2D dice in every way. But what I do have a problem with is the *monumental* avalanche of lies that Stompey Dicey propagates through its innacurate 3D dice rolling:
 
 ![It Was Heresy](/assets/images/dice/HERETIC.PNG)
 
