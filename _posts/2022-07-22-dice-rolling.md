@@ -12,7 +12,7 @@ It's time we had a chat about representing dice accurately. Not everyone is guil
 
 ## Dice Conventions
 
-Let's get to the real meat of the issue: When making a die, there are official, unmovable standards when it comes to the placement of faces and their orientation.
+Let's get to the real meat of the issue: When making a die, there are official, proper, and nigh-immovable standards when it comes to the placement of faces and their orientation.
 
 Well, not really. But there *should* be. There are a lot of dice to cover, but for the sake of this post (and since nearly everyone in the jam went with a d6 for their imagery), we'll discuss the d6[^1]. Here's a model of what your typical d6 should look like, based on the many d6s I just so happen to carry around with me at all times[^2]:
 
