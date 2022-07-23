@@ -21,7 +21,7 @@ Well, not really. But there *should* be. There are a lot of dice to cover, but f
 
 <model-viewer alt="A REAL Six Sided Die" src="/assets/models/d6.glb" camera-controls disable-zoom style="width: 400px; height: 400px; margin-left: auto; margin-right: auto;"></model-viewer>
 
-At any point, feel free to drag around this 100% accurate model of the average the d6 for your own demonstrative purposes. If you somehow don't trust the painstaking accuracy I took in modelling the die, feel free to sample as many d6s from your own collection[^collection] as possible to prove my point.
+At any point, feel free to drag around this 100% accurately modelled d6 for your own demonstrative purposes. If you somehow don't trust the painstaking effort I took when crafting this die, feel free to sample as many d6s from your own collection[^collection] as possible to prove my point.
 
 [^collection]: I assume you happen to keep a collection of d6s with you. If you don't happen to have many d6s with you, I would advise rectifying this problem by *immediately* driving to your local board game store and buying as many dice as possible from as many different manufacturers as you can. Personally, I prefer [Steve Jackson dice](http://www.sjgames.com/dice/), but *nearly* any dice manufacturer will get it right.
 
