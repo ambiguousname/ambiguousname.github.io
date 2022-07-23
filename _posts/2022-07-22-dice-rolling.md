@@ -62,7 +62,7 @@ AND LO! THE MAIN OFFENDER! A 6 face and a 1 face next to each other. This is bey
 
 ![Dice Souls](/assets/images/dice/dicesouls.PNG)
 
-I wish I could sample every game, but you can see for yourself that at least one game out of all games submitted to the jam gets it wrong. And by some law of statistics, that means nearly 90% of the games I haven't shown are in ***violation of dice-crime***. Don't just take my word for it. Just after Dice Souls is [Roll a 7](https://fm233.itch.io/roll-a-7), which not only uses a 6 sided die to represents what should be a 7 sided die, the 2 pips on the die **aren't even slanted**!
+I wish I could sample every game, but you can see for yourself that at least one game out of all games submitted to the jam gets it wrong. And by some law of statistics, that means nearly 90% of the games I haven't shown are in ***violation of dice-law***. Don't just take my word for it. Just after Dice Souls is [Roll a 7](https://fm233.itch.io/roll-a-7), which not only uses a 6 sided die to represents what should be a 7 sided die, the 2 pips on the die **aren't even slanted**!
 
 ![Roll a 7](/assets/images/dice/Rolla7.PNG)
 
