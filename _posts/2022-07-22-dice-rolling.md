@@ -17,7 +17,7 @@ Well... no... but there *should* be. Let's start with the basic d6[^1]. Here's a
 [^1]: For you non-dice nerds, first of all: HOW DARE YOU. Secondly, xdy means x number of y sided dice.
 [^2]: I carry roughly 100 six sided dice with me in a bag at all times, plus about 6 giant foam six sided dice, just in case. LOOK, DON'T JUDGE ME, OKAY? I NEED THEM TO PROVE A POINT. I BOUGHT THEM FOR REASONS UNRELATED TO THIS POST, BECAUSE I'M COOL, UNLIKE YOU.
 
-<model-viewer alt="A REAL Six Sided Die" src="https://www.dropbox.com/s/epc23gsi4b29j90/d6.glb?dl=0" camera-controls disable-zoom style="width: 400px; height: 400px; margin-left: auto; margin-right: auto;"></model-viewer>
+<model-viewer alt="A REAL Six Sided Die" src="/assets/models/d6.glb" camera-controls disable-zoom style="width: 400px; height: 400px; margin-left: auto; margin-right: auto;"></model-viewer>
 
 At any point, feel free to drag around this 100% accurate model of the average the d6 to PROVE the correctness of my argument. In fact, why don't you get your own dice to confirm? A variety of d6s from different manufacturers should help to sell you on the sense of what is or isn't proper in terms of the rough standard for d6s.
 
