@@ -37,7 +37,7 @@ You'll notice on any good d6, 6 and 1 are opposite each other[^3], same with opp
 [^3]: 6 + 1 = 7.
 [^4]: 5 + 2 = 7.
 [^5]: 4 + 3 = 7.
-[^source]: I'm pretty sure William McKinley said something about using the gold standard on d6s specifically to appease the great normal distribution of America.
+[^source]: I'm pretty sure William McKinley said something about using the gold standard on d6s specifically to appease the Great Normal Distribution of 1898.
 
 ## What do I do if a die is presented incorrectly?
 
