@@ -86,3 +86,37 @@ Alright, one more:
 I thought maybe the back of the card wasn't crowded enough, so I added some more symmetry to make it look better? I also tried to stick with one font, and focused on removing as much unnecessary text as possible. It looks cleaner, but I'm not particularly thrilled because I kind of like writing quotes. Art is not my strong suit.
 
 One potential thought, making the front and back of the card the same? Especially if I want people to be able to read information from other's hands.
+
+## Week 4 of Fall
+
+I wrote down some card ideas:
+
+Old Coot - Spontaneous Organ Failure, Back In My Day
+Overeager Tactician - Useless Stratagem
+Egomaniacal Fencer - Pure Bluster
+Fraudulent Accountant - Tax Evasion
+Muddled Magician - Runcible Spoon
+Rebellious Youth - Reckless Endangerment, Child's Play
+Clown - Honk
+Bumbling Patroller - Must have been nothing
+Useless Underminer - Do Nothing
+Impious Pretender - Disheartening Service
+Devious Drunkard - Extreme Hangovers
+
+
+And some potential card abilities:
+
+Swap cards with your opponent
+Use one of your opponent's abilities (high cost + the ability's cost?)
+Counterattack - Put life tokens on the character, if anything BUT the card is attacked, do life token damage or remove cards?
+Other counterattack: Play immediate life tokens to stop any ability?
+Directly attack opponent
+Sap life tokens from opponent?
+Reveal opponent cards (maybe by just asking if they exist?)
+Heal yourself... somehow? Maybe by taking more cards?
+Disable cards?
+Give cards to your opponent (shouldn't be immediate)
+Card is useless, discard for 4 extra life tokens???
+Replace an ability's cost with drawing cards?
+Rewind a turn?
+Keep a card flipped over once it's been revealed.
