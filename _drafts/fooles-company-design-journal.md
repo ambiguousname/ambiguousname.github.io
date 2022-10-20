@@ -89,7 +89,9 @@ One potential thought, making the front and back of the card the same? Especiall
 
 ## Week 4 of Fall
 
-I wrote down some card ideas:
+I had the weekend to think, so when I thought of something, I wrote it down!
+
+Here are some card ideas:
 
 Old Coot - Spontaneous Organ Failure, Back In My Day
 Overeager Tactician - Useless Stratagem
@@ -120,3 +122,18 @@ Card is useless, discard for 4 extra life tokens???
 Replace an ability's cost with drawing cards?
 Rewind a turn?
 Keep a card flipped over once it's been revealed.
+
+And then I made this initial draft of cards yesterday (sort of, I updated the Accountant in between now and then):
+
+![](../assets/images/fooles-company/initialcards.png)
+
+Then I added the full set of cards that I plan on using in the final game:
+
+![](../assets/images/fooles-company/fullcards.png)
+
+I wanted 12 cards in total so that there would be 2 cards left over in an "unused" pile to contribute to the amount of misinformation that each player has. So initially, you're unsure of what cards your opponent has, and what's in the "unused" pile.
+
+I also left a lot of the card descriptions vague on purpose to create for some interesting bending of the rules. This is obviously going to be super difficult to word correctly. But nonetheless, I have a plan. I need to write the rules first though:
+
+### The Rules
+
