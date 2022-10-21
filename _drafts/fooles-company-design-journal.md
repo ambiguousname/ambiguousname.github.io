@@ -169,7 +169,7 @@ The game is divided into turns, with each player taking a turn. Here's how the t
 1. The player places any number of their life tokens on as many of their cards as they so wish. This removes those life tokens from the player's pool, and they cannot be recovered (maybe change some card abilities and this rule to take advantage of this?). The recommended way of doing this is to remove the card from your hand and place it face-down, then place the life tokens on top of it. You can then peek at the card whenever you like in order to read it.
 2. The player flips cards face up that they wish to play.
 3. The player chooses ONE ability from each card that they wish to use.
-4. The player executes each ability in whatever order they so desire.
+4. The player executes each ability in whatever order they so desire. They must pay the associated life token cost with each ability. If the ability name has "react" in the text, it cannot be used. The "react" ability will specify conditions when it is activated on its own.
 5. Once all abilities are executed, the player flips all their cards face-down, and removes as many life tokens from their pool as there are cards in their hand.
 6. Then it's the opposing player's turn.
 
