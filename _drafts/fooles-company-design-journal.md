@@ -125,11 +125,11 @@ Keep a card flipped over once it's been revealed.
 
 And then I made this initial draft of cards yesterday (sort of, I updated the Accountant in between now and then):
 
-![](../assets/images/fooles-company/initialcards.png)
+![](/assets/images/fooles-company/initialcards.png)
 
 Then I added the full set of cards that I plan on using in the final game:
 
-![](../assets/images/fooles-company/fullcards.png)
+![](/assets/images/fooles-company/fullcards.png)
 
 I wanted 12 cards in total so that there would be 2 cards left over in an "unused" pile to contribute to the amount of misinformation that each player has. So initially, you're unsure of what cards your opponent has, and what's in the "unused" pile.
 
@@ -137,3 +137,84 @@ I also left a lot of the card descriptions vague on purpose to create for some i
 
 ### The Rules
 
+Congratulations, mercenary captain! You have been assigned a completely meaningless role in some random backwater. Celebrate! We will also be giving you a crack-team of five specialists that you must pay out-of-pocket. What could make this deal better? Absolutely nothing, barring the possibility you somehow manage to ditch all "specialists" before they end up draining your supplies and accidentally killing you. Or getting rid of your opposing contract-holder so you can get the job done faster.
+
+Foole's Company is a 1v1 strategy card game that relies almost completely on strategy. The only luck you'll see is at the beginning of the game. And speaking of:
+
+#### Setting Up
+1. Place all Foole's Company cards in the center.
+2. Shuffle the cards.
+3. Draw five cards each.
+4. Any cards that you do NOT draw should remain there. They are now part of the "unused" pile. You might use these cards later.
+5. Give each player 30 life tokens (the red blobs).
+6. Pick a player to go first. We recommend you pick the player by rolling a die and seeing who gets the higher roll, but this process is entirely up to you.
+
+That's it! You are now set up.
+
+#### Cards
+This is what cards will generally look like:
+
+![](/assets/images/fooles-company/cardexample.PNG)
+
+When you execute a card's ability you will either: pay life tokens (as indicated above), or wait until a condition is met (mentioned for REACT abilities). 
+
+See the "Vocabulary" section for more info on what each ability might ask of you.
+
+See the "Card List" section for a full list of the available cards and their abilities.
+
+#### Playing
+
+The game is divided into turns, with each player taking a turn. Here's how the turn order goes:
+
+1. The player places any number of their life tokens on as many of their cards as they so wish. This removes those life tokens from the player's pool, and they cannot be recovered (maybe change some card abilities and this rule to take advantage of this?). The recommended way of doing this is to remove the card from your hand and place it face-down, then place the life tokens on top of it. You can then peek at the card whenever you like in order to read it.
+2. The player flips cards face up that they wish to play.
+3. The player chooses ONE ability from each card that they wish to use.
+4. The player executes each ability in whatever order they so desire.
+5. Once all abilities are executed, the player flips all their cards face-down, and removes as many life tokens from their pool as there are cards in their hand.
+6. Then it's the opposing player's turn.
+
+#### "Winning"
+
+The game continues until one player is EITHER: Out of life tokens, or loses all their cards.
+
+If a player runs out of life tokens, then the opposing player wins!
+
+If a player loses all their cards, then they win!
+
+(You may note that because of the way turns work, one player is going to run out of tokens faster than the other BUT also gets to play cards first. This is intentional)
+
+#### Vocabulary
+
+##### REACT abilities
+Some cards will have text that says "React" above them. That just means that you won't activate them on their own, those will activate with conditions the card specifies. When a card's react ability is activated, you must flip it over to prove that you are using the reaction. 
+
+##### DISCARDing cards
+As with all card games, you should have a discard pile. That is, a pile for getting rid of cards that will (most likely) no longer be used in the game. When a card tells you to DISCARD another card, place it in this discard pile. It is no longer apart of your hand.
+
+##### SWAPping cards
+When a card tells you to SWAP one card with another, that means you must physically switch their places. For example: say you have Card A in your hand, and your opponent has Card B in their hand. If you play an ability where you SWAP Card A with Card B, then you should place Card B in your hand, and Card A in your opponent's hand.
+
+This similarly goes for swapping with other piles. Provided it isn't expressly forbidden by the card, you can swap with the unused pile and discard pile.
+
+##### LOSING Cards
+When a card tells you about the loss of other cards (LOSE, LOSING, etc.), then it means when a card is EITHER discarded, swapped, or otherwise removed from your hand.
+
+##### Pointing at a card
+When a card tells you to "point at a card", that means to point at ANY card (as long as it belongs to this game, Foole's Company). Shuffling is STRONGLY discouraged. If a player is clever enough to figure out that the rules don't expressly forbid shuffling, they should make it clear to their opponent that they wish to allow shuffling. Even then, we would STRONGLY suggest that you only shuffle your cards at the start of your turn. Part of the game's design is meant to allow for the obfuscation of information, and information cannot stay constant if you're always shifting your cards around.
+
+Any player violating the suggestions on implementing shuffling will automatically forfeit.
+
+##### Naming a card
+When a card tells you to "name a card", that means stating aloud the FULL name of whatever valid Foole's Company card you have in mind (we also suggest including a shit-eating grin for dramatic effect). So Debbie Downer can't say "I'm playing Reckless Endangerment, and I name the Accountant card". Exciting Edgar instead says "I PLAY RUNCIBLE SPOON! I AM TARGETING THE FRAUDULENT ACCOUNTANT!" You can say whatever you want to preface the name, just as long as you make it clear that the card name you are about to say is your intended target. For a list of card names (and their abilities), see the Card List below.
+
+#### Card List
+Working on this, not done yet!
+
+#### Interpreting Rules
+When in doubt, refer to the card's text. Then refer to these rules. Cards will usually lay out exceptions for the rules mentioned here, so those take precedent.
+
+If you're still in doubt about what rule means what thing, consult a third party. The third party doesn't have to be neutral for them to interpret the rules, but ideally they will have played this game before so they can get a sense of the rules.
+
+### End of Rules
+
+After writing these rules, I realize that some card text doesn't match my intentions, so I'll update that.
