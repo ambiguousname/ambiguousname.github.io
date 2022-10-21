@@ -94,40 +94,65 @@ I had the weekend to think, so when I thought of something, I wrote it down!
 Here are some card ideas:
 
 Old Coot - Spontaneous Organ Failure, Back In My Day
+
 Overeager Tactician - Useless Stratagem
+
 Egomaniacal Fencer - Pure Bluster
+
 Fraudulent Accountant - Tax Evasion
+
 Muddled Magician - Runcible Spoon
+
 Rebellious Youth - Reckless Endangerment, Child's Play
+
 Clown - Honk
+
 Bumbling Patroller - Must have been nothing
+
 Useless Underminer - Do Nothing
+
 Impious Pretender - Disheartening Service
+
 Devious Drunkard - Extreme Hangovers
 
 
 And some potential card abilities:
 
 Swap cards with your opponent
+
 Use one of your opponent's abilities (high cost + the ability's cost?)
+
 Counterattack - Put life tokens on the character, if anything BUT the card is attacked, do life token damage or remove cards?
+
 Other counterattack: Play immediate life tokens to stop any ability?
+
 Directly attack opponent
+
 Sap life tokens from opponent?
+
 Reveal opponent cards (maybe by just asking if they exist?)
+
 Heal yourself... somehow? Maybe by taking more cards?
+
 Disable cards?
+
 Give cards to your opponent (shouldn't be immediate)
+
 Card is useless, discard for 4 extra life tokens???
+
 Replace an ability's cost with drawing cards?
+
 Rewind a turn?
+
 Keep a card flipped over once it's been revealed.
 
 And then I made this initial draft of cards yesterday (sort of, I updated the Accountant in between now and then):
 
 ![](/assets/images/fooles-company/initialcards.png)
 
-Then I added the full set of cards that I plan on using in the final game:
+I updated the visual direction. I updated the font (and made it bigger), and I tried to remove as much clutter as possible. It's just text now, because I like text. Yay.
+
+Then I added the full set of cards that I plan on using in the final game (feel free to zoom in, it's high-res!):
 
 ![](/assets/images/fooles-company/fullcards.png)
 

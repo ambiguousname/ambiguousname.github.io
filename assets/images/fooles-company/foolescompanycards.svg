@@ -67,10 +67,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="557.99999"
-     inkscape:cy="433.99999"
+     inkscape:cx="2102.9999"
+     inkscape:cy="353.99999"
      inkscape:document-units="mm"
-     inkscape:current-layer="g2654"
+     inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
      showgrid="true"
      showguides="false"
@@ -2811,7 +2811,10 @@
      inkscape:label="Front">
     <g
        id="g2654"
-       transform="matrix(0.98189095,0,0,0.98189095,-6.8201851,0.16298291)">
+       transform="matrix(0.98189095,0,0,0.98189095,-6.8201851,0.16298291)"
+       inkscape:export-filename="..\..\..\..\..\..\Downloads\g2654.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <rect
          ry="0"
          y="9.5255785"
@@ -2846,14 +2849,14 @@
          inkscape:export-ydpi="96"><tspan
            x="82.014603"
            y="106.75938"
-           id="tspan223080"><tspan
+           id="tspan224702"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223078">Point at any card. Move it into the </tspan></tspan><tspan
+             id="tspan224700">Point at any card. Move it into the </tspan></tspan><tspan
            x="82.014603"
            y="111.92435"
-           id="tspan223084"><tspan
+           id="tspan224706"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223082">DISCARD pile if it isn't there already.</tspan></tspan></text>
+             id="tspan224704">DISCARD pile if it isn't there already.</tspan></tspan></text>
       <text
          xml:space="preserve"
          style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.238728"
@@ -2878,19 +2881,19 @@
          inkscape:export-ydpi="96"><tspan
            x="114.64721"
            y="106.75938"
-           id="tspan223088"><tspan
+           id="tspan224710"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223086">Name a card from the DISCARD/</tspan></tspan><tspan
+             id="tspan224708">Name a card from the DISCARD/</tspan></tspan><tspan
            x="114.64721"
            y="111.92435"
-           id="tspan223092"><tspan
+           id="tspan224714"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223090">UNUSED piles. If that card is present, </tspan></tspan><tspan
+             id="tspan224712">UNUSED piles. If that card is present, </tspan></tspan><tspan
            x="114.64721"
            y="117.08932"
-           id="tspan223096"><tspan
+           id="tspan224718"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223094">add it to your hand.</tspan></tspan></text>
+             id="tspan224716">add it to your hand.</tspan></tspan></text>
       <g
          id="g3513-6"
          transform="matrix(0.90227957,0,0,0.90228274,-14.229591,-54.35167)"
@@ -2965,24 +2968,24 @@
          inkscape:export-ydpi="96"><tspan
            x="116.9382"
            y="106.75938"
-           id="tspan223100"><tspan
+           id="tspan224722"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan223098">&quot;Yes, yes, yes! Can I tell you, this is the </tspan></tspan><tspan
+             id="tspan224720">&quot;Yes, yes, yes! Can I tell you, this is the </tspan></tspan><tspan
            x="116.9382"
            y="112.10385"
-           id="tspan223104"><tspan
+           id="tspan224726"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan223102">greatest moment of my life? I promise, </tspan></tspan><tspan
+             id="tspan224724">greatest moment of my life? I promise, </tspan></tspan><tspan
            x="116.9382"
            y="117.44831"
-           id="tspan223108"><tspan
+           id="tspan224730"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan223106">promise that I won't set anything on fire. </tspan></tspan><tspan
+             id="tspan224728">promise that I won't set anything on fire. </tspan></tspan><tspan
            x="116.9382"
            y="122.79278"
-           id="tspan223112"><tspan
+           id="tspan224734"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan223110">You have my word on that! This is great!&quot;</tspan></tspan></text>
+             id="tspan224732">You have my word on that! This is great!&quot;</tspan></tspan></text>
       <text
          transform="matrix(0.90227957,0,0,0.90228275,-48.997884,-29.318202)"
          id="text837-1"
@@ -2994,9 +2997,9 @@
          inkscape:export-ydpi="96"><tspan
            x="65.303276"
            y="51.271126"
-           id="tspan223116"><tspan
+           id="tspan224738"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223114">Blithering Fool</tspan></tspan></text>
+             id="tspan224736">Blithering Fool</tspan></tspan></text>
     </g>
     <rect
        ry="0"
@@ -3007,7 +3010,8 @@
        id="rect10-0-2"
        style="fill:none;stroke:#000000;stroke-width:1.03212;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2.png" />
     <text
        id="text3174-97-0"
        y="61.77692"
@@ -3032,34 +3036,34 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan223120"><tspan
+         id="tspan224742"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223118">If your opponent plays an ability where </tspan></tspan><tspan
+           id="tspan224740">If your opponent plays an ability where </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan223124"><tspan
+         id="tspan224746"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223122">you end up LOSING any card *other* </tspan></tspan><tspan
+           id="tspan224744">you end up LOSING any card *other* </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan223128"><tspan
+         id="tspan224750"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223126">than Old Coot, gain twice as many life </tspan></tspan><tspan
+           id="tspan224748">than Old Coot, gain twice as many life </tspan></tspan><tspan
          x="82.014603"
          y="122.25429"
-         id="tspan223132"><tspan
+         id="tspan224754"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223130">tokens as there are life tokens on this </tspan></tspan><tspan
+           id="tspan224752">tokens as there are life tokens on this </tspan></tspan><tspan
          x="82.014603"
          y="127.41926"
-         id="tspan223136"><tspan
+         id="tspan224758"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223134">card. Remove any life tokens presently on </tspan></tspan><tspan
+           id="tspan224756">card. Remove any life tokens presently on </tspan></tspan><tspan
          x="82.014603"
          y="132.58424"
-         id="tspan223140"><tspan
+         id="tspan224762"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223138">this card after.</tspan></tspan></text>
+           id="tspan224760">this card after.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -3071,9 +3075,9 @@
        transform="matrix(0.98189095,0,0,0.98189095,64.010435,-2.1370174)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan223144"><tspan
+         id="tspan224766"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223142">x1 - Organ Failure</tspan></tspan></text>
+           id="tspan224764">x1 - Organ Failure</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
@@ -3085,24 +3089,24 @@
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan223148"><tspan
+         id="tspan224770"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223146">Remove twice as many life tokens from </tspan></tspan><tspan
+           id="tspan224768">Remove twice as many life tokens from </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan223152"><tspan
+         id="tspan224774"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223150">your opponent's pool as there are life </tspan></tspan><tspan
+           id="tspan224772">your opponent's pool as there are life </tspan></tspan><tspan
          x="147.57413"
          y="117.08932"
-         id="tspan223156"><tspan
+         id="tspan224778"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223154">tokens on this card. Remove any life </tspan></tspan><tspan
+           id="tspan224776">tokens on this card. Remove any life </tspan></tspan><tspan
          x="147.57413"
          y="122.25429"
-         id="tspan223160"><tspan
+         id="tspan224782"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223158">tokens presently on this card after.</tspan></tspan></text>
+           id="tspan224780">tokens presently on this card after.</tspan></tspan></text>
     <g
        id="g3513-4-8-5"
        transform="matrix(0.88594014,0,0,0.88594326,52.853655,-81.853681)"
@@ -3153,9 +3157,9 @@
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan223164"><tspan
+         id="tspan224786"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan223162">&quot;Wait, what?&quot;</tspan></tspan></text>
+           id="tspan224784">&quot;Wait, what?&quot;</tspan></tspan></text>
     <text
        transform="matrix(0.88594014,0,0,0.88594327,35.725055,-28.811383)"
        id="text837-1-1"
@@ -3167,9 +3171,9 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan223168"><tspan
+         id="tspan224790"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223166">Old Coot</tspan></tspan></text>
+           id="tspan224788">Old Coot</tspan></tspan></text>
     <rect
        ry="0"
        y="9.5160618"
@@ -3179,7 +3183,8 @@
        id="rect10-0-2-3"
        style="fill:none;stroke:#000000;stroke-width:1.03212;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2-3.png" />
     <text
        id="text3174-97-0-3"
        y="61.77684"
@@ -3204,23 +3209,23 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan223174"><tspan
+         id="tspan224796"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223170">Point at a card. That card </tspan><tspan
+           id="tspan224792">Point at a card. That card </tspan><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223172">cannot be </tspan></tspan><tspan
+           id="tspan224794">cannot be </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan223180"><tspan
+         id="tspan224802"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223176">USED or LOST </tspan><tspan
+           id="tspan224798">USED or LOST </tspan><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223178">until the start of your </tspan></tspan><tspan
+           id="tspan224800">until the start of your </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan223184"><tspan
+         id="tspan224806"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223182">next turn.</tspan></tspan></text>
+           id="tspan224804">next turn.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.02998px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -3232,9 +3237,9 @@
        transform="matrix(0.98188835,0,0,0.98189095,133.67948,-2.1370201)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan223188"><tspan
+         id="tspan224810"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223186">x3 - Terrible Idea</tspan></tspan></text>
+           id="tspan224808">x3 - Terrible Idea</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
@@ -3246,28 +3251,28 @@
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan223192"><tspan
+         id="tspan224814"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223190">Point at a card, and flip it over. You may </tspan></tspan><tspan
+           id="tspan224812">Point at a card, and flip it over. You may </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan223196"><tspan
+         id="tspan224818"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223194">choose one ability from that card to play </tspan></tspan><tspan
+           id="tspan224816">choose one ability from that card to play </tspan></tspan><tspan
          x="147.57413"
          y="117.08932"
-         id="tspan223202"><tspan
+         id="tspan224824"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223198">for yourself. </tspan><tspan
+           id="tspan224820">for yourself. </tspan><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223200">You must also pay the </tspan></tspan><tspan
+           id="tspan224822">You must also pay the </tspan></tspan><tspan
          x="147.57413"
          y="122.25429"
-         id="tspan223208"><tspan
+         id="tspan224830"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223204">associated life token </tspan><tspan
+           id="tspan224826">associated life token </tspan><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223206">cost with that card.</tspan></tspan></text>
+           id="tspan224828">cost with that card.</tspan></tspan></text>
     <g
        id="g3513-6-4-5"
        transform="matrix(0.8859378,0,0,0.88594328,117.70799,-49.904433)"
@@ -3342,14 +3347,14 @@
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan223212"><tspan
+         id="tspan224834"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan223210">&quot;This is just like the battle of... um. Hold </tspan></tspan><tspan
+           id="tspan224832">&quot;This is just like the battle of... um. Hold </tspan></tspan><tspan
          x="116.9382"
          y="112.10385"
-         id="tspan223216"><tspan
+         id="tspan224838"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan223214">on, I'll get there in a second.&quot;</tspan></tspan></text>
+           id="tspan224836">on, I'll get there in a second.&quot;</tspan></tspan></text>
     <text
        transform="matrix(0.8859378,0,0,0.88594329,88.594265,-28.811218)"
        id="text837-1-1-3"
@@ -3361,12 +3366,15 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan223220"><tspan
+         id="tspan224842"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223218">Overeager Tactician</tspan></tspan></text>
+           id="tspan224840">Overeager Tactician</tspan></tspan></text>
     <g
        id="g2654-4"
-       transform="matrix(0.98189095,0,0,0.98189095,-6.8201851,99.162982)">
+       transform="matrix(0.98189095,0,0,0.98189095,-6.8201851,99.162982)"
+       inkscape:export-filename="..\..\..\..\..\..\Downloads\g2654-4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <rect
          ry="0"
          y="9.5255785"
@@ -3401,24 +3409,24 @@
          inkscape:export-ydpi="96"><tspan
            x="82.014603"
            y="106.75938"
-           id="tspan223224"><tspan
+           id="tspan224846"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223222">Point at a card. Remove any number of </tspan></tspan><tspan
+             id="tspan224844">Point at a card. Remove any number of </tspan></tspan><tspan
            x="82.014603"
            y="111.92435"
-           id="tspan223228"><tspan
+           id="tspan224850"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223226">life tokens on that card, and place half of </tspan></tspan><tspan
+             id="tspan224848">life tokens on that card, and place half of </tspan></tspan><tspan
            x="82.014603"
            y="117.08932"
-           id="tspan223232"><tspan
+           id="tspan224854"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223230">those tokens (rounded down) on a card of </tspan></tspan><tspan
+             id="tspan224852">those tokens (rounded down) on a card of </tspan></tspan><tspan
            x="82.014603"
            y="122.25429"
-           id="tspan223236"><tspan
+           id="tspan224858"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223234">your choice.</tspan></tspan></text>
+             id="tspan224856">your choice.</tspan></tspan></text>
       <text
          xml:space="preserve"
          style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.238728"
@@ -3443,14 +3451,14 @@
          inkscape:export-ydpi="96"><tspan
            x="114.64721"
            y="106.75938"
-           id="tspan223240"><tspan
+           id="tspan224862"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223238">Remove 2 life tokens from your </tspan></tspan><tspan
+             id="tspan224860">Remove 2 life tokens from your </tspan></tspan><tspan
            x="114.64721"
            y="111.92435"
-           id="tspan223244"><tspan
+           id="tspan224866"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223242">opponent's pool.</tspan></tspan></text>
+             id="tspan224864">opponent's pool.</tspan></tspan></text>
       <g
          id="g3513-6-6"
          transform="matrix(0.90227957,0,0,0.90228274,-11.174264,-54.35167)"
@@ -3525,14 +3533,14 @@
          inkscape:export-ydpi="96"><tspan
            x="116.9382"
            y="106.75938"
-           id="tspan223248"><tspan
+           id="tspan224870"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan223246">&quot;I'm a better at swords than Benedict ever </tspan></tspan><tspan
+             id="tspan224868">&quot;I'm a better at swords than Benedict ever </tspan></tspan><tspan
            x="116.9382"
            y="112.10385"
-           id="tspan223252"><tspan
+           id="tspan224874"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan223250">was, you stupid jerks!&quot;</tspan></tspan></text>
+             id="tspan224872">was, you stupid jerks!&quot;</tspan></tspan></text>
       <text
          transform="matrix(0.90227957,0,0,0.90228275,-48.997884,-29.318202)"
          id="text837-1-5"
@@ -3544,9 +3552,9 @@
          inkscape:export-ydpi="96"><tspan
            x="65.303276"
            y="51.271126"
-           id="tspan223256"><tspan
+           id="tspan224878"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223254">Egomaniacal Fencer</tspan></tspan></text>
+             id="tspan224876">Egomaniacal Fencer</tspan></tspan></text>
     </g>
     <rect
        ry="0"
@@ -3557,7 +3565,8 @@
        id="rect10-0-2-4"
        style="fill:none;stroke:#000000;stroke-width:1.03212;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2-4.png" />
     <text
        id="text3174-97-0-1"
        y="150.17645"
@@ -3582,39 +3591,39 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan223260"><tspan
+         id="tspan224882"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223258">Every time you swap cards with your </tspan></tspan><tspan
+           id="tspan224880">Every time you swap cards with your </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan223264"><tspan
+         id="tspan224886"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223262">opponent, they take as much damage as </tspan></tspan><tspan
+           id="tspan224884">opponent, they take as much damage as </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan223268"><tspan
+         id="tspan224890"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223266">there are life tokens on the card you give </tspan></tspan><tspan
+           id="tspan224888">there are life tokens on the card you give </tspan></tspan><tspan
          x="82.014603"
          y="122.25429"
-         id="tspan223272"><tspan
+         id="tspan224894"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223270">them. You also take as much damage as </tspan></tspan><tspan
+           id="tspan224892">them. You also take as much damage as </tspan></tspan><tspan
          x="82.014603"
          y="127.41926"
-         id="tspan223276"><tspan
+         id="tspan224898"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223274">there are life tokens on the card given to </tspan></tspan><tspan
+           id="tspan224896">there are life tokens on the card given to </tspan></tspan><tspan
          x="82.014603"
          y="132.58424"
-         id="tspan223280"><tspan
+         id="tspan224902"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223278">you. Remove life tokens from both cards </tspan></tspan><tspan
+           id="tspan224900">you. Remove life tokens from both cards </tspan></tspan><tspan
          x="82.014603"
          y="137.74922"
-         id="tspan223284"><tspan
+         id="tspan224906"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223282">after the swap.</tspan></tspan></text>
+           id="tspan224904">after the swap.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -3626,9 +3635,9 @@
        transform="matrix(0.98189095,0,0,0.98189095,64.010455,96.862985)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan223288"><tspan
+         id="tspan224910"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223286">x3 - Tax Evasion</tspan></tspan></text>
+           id="tspan224908">x3 - Tax Evasion</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
@@ -3640,14 +3649,14 @@
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan223292"><tspan
+         id="tspan224914"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223290">Point at a card. SWAP that card with any </tspan></tspan><tspan
+           id="tspan224912">Point at a card. SWAP that card with any </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan223296"><tspan
+         id="tspan224918"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223294">card in your hand.</tspan></tspan></text>
+           id="tspan224916">card in your hand.</tspan></tspan></text>
     <g
        id="g3513-4-8-5-6"
        transform="matrix(0.88594042,0,0,0.88594326,52.853665,17.146319)"
@@ -3698,9 +3707,9 @@
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan223300"><tspan
+         id="tspan224922"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan223298">&quot;Everything is 100% legit, trust me.&quot;</tspan></tspan></text>
+           id="tspan224920">&quot;Everything is 100% legit, trust me.&quot;</tspan></tspan></text>
     <text
        transform="matrix(0.88594042,0,0,0.88594327,17.124785,70.188622)"
        id="text837-1-1-4"
@@ -3712,9 +3721,9 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan223304"><tspan
+         id="tspan224926"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223302">Fraudulent Accountant</tspan></tspan></text>
+           id="tspan224924">Fraudulent Accountant</tspan></tspan></text>
     <rect
        ry="0"
        y="108.51608"
@@ -3724,7 +3733,8 @@
        id="rect10-0-2-3-8"
        style="fill:none;stroke:#000000;stroke-width:1.03212;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2-3-8.png" />
     <text
        id="text3174-97-0-3-4"
        y="160.77687"
@@ -3749,29 +3759,29 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan223308"><tspan
+         id="tspan224930"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223306">If your opponent plays an ability where </tspan></tspan><tspan
+           id="tspan224928">If your opponent plays an ability where </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan223312"><tspan
+         id="tspan224934"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223310">you end up LOSING this card, remove </tspan></tspan><tspan
+           id="tspan224932">you end up LOSING this card, remove </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan223316"><tspan
+         id="tspan224938"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223314">twice as many life tokens from your </tspan></tspan><tspan
+           id="tspan224936">twice as many life tokens from your </tspan></tspan><tspan
          x="82.014603"
          y="122.25429"
-         id="tspan223320"><tspan
+         id="tspan224942"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223318">opponent's pool as there are life tokens on </tspan></tspan><tspan
+           id="tspan224940">opponent's pool as there are life tokens on </tspan></tspan><tspan
          x="82.014603"
          y="127.41926"
-         id="tspan223324"><tspan
+         id="tspan224946"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223322">this card.</tspan></tspan></text>
+           id="tspan224944">this card.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.02998px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -3783,9 +3793,9 @@
        transform="matrix(0.98188862,0,0,0.98189095,132.57948,96.862975)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan223328"><tspan
+         id="tspan224950"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223326">x2 - Runcible Spoon</tspan></tspan></text>
+           id="tspan224948">x2 - Runcible Spoon</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
@@ -3797,19 +3807,19 @@
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan223332"><tspan
+         id="tspan224954"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223330">Name a card. If your opponent has that </tspan></tspan><tspan
+           id="tspan224952">Name a card. If your opponent has that </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan223336"><tspan
+         id="tspan224958"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223334">card in your hand, they must show it to </tspan></tspan><tspan
+           id="tspan224956">card in your hand, they must show it to </tspan></tspan><tspan
          x="147.57413"
          y="117.08932"
-         id="tspan223340"><tspan
+         id="tspan224962"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223338">you.</tspan></tspan></text>
+           id="tspan224960">you.</tspan></tspan></text>
     <g
        id="g3513-4-8-5-1-2"
        transform="matrix(0.88593807,0,0,0.88594328,121.42272,17.146319)"
@@ -3860,14 +3870,14 @@
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan223344"><tspan
+         id="tspan224966"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan223342">&quot;I am a SORCERER of the weirding ways. </tspan></tspan><tspan
+           id="tspan224964">&quot;I am a SORCERER of the weirding ways. </tspan></tspan><tspan
          x="116.9382"
          y="112.10385"
-         id="tspan223348"><tspan
+         id="tspan224970"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan223346">Best me if you... wait! Pick another card.&quot;</tspan></tspan></text>
+           id="tspan224968">Best me if you... wait! Pick another card.&quot;</tspan></tspan></text>
     <text
        transform="matrix(0.88593807,0,0,0.88594329,90.994765,70.188787)"
        id="text837-1-1-3-9"
@@ -3879,9 +3889,9 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan223352"><tspan
+         id="tspan224974"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223350">Muddled Magician</tspan></tspan></text>
+           id="tspan224972">Muddled Magician</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
@@ -4617,7 +4627,10 @@
     </g>
     <g
        id="g2654-5"
-       transform="matrix(0.98189095,0,0,0.98189095,433.17983,0.16298291)">
+       transform="matrix(0.98189095,0,0,0.98189095,433.17983,0.16298291)"
+       inkscape:export-filename="..\..\..\..\..\..\Downloads\g2654-5.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <rect
          ry="0"
          y="9.5255785"
@@ -4652,19 +4665,19 @@
          inkscape:export-ydpi="96"><tspan
            x="82.014603"
            y="106.75938"
-           id="tspan223356"><tspan
+           id="tspan224978"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223354">Point at 3 cards that are NOT in the </tspan></tspan><tspan
+             id="tspan224976">Point at 3 cards that are NOT in the </tspan></tspan><tspan
            x="82.014603"
            y="111.92435"
-           id="tspan223360"><tspan
+           id="tspan224982"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223358">discard pile. Your opponent must pick </tspan></tspan><tspan
+             id="tspan224980">discard pile. Your opponent must pick </tspan></tspan><tspan
            x="82.014603"
            y="117.08932"
-           id="tspan223364"><tspan
+           id="tspan224986"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223362">ONE to go into the discard pile.</tspan></tspan></text>
+             id="tspan224984">ONE to go into the discard pile.</tspan></tspan></text>
       <text
          xml:space="preserve"
          style="font-size:4.6707px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.238729"
@@ -4689,28 +4702,28 @@
          inkscape:export-ydpi="96"><tspan
            x="114.64721"
            y="106.75938"
-           id="tspan223368"><tspan
+           id="tspan224990"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223366">Name a card. If your opponent has that </tspan></tspan><tspan
+             id="tspan224988">Name a card. If your opponent has that </tspan></tspan><tspan
            x="114.64721"
            y="111.92435"
-           id="tspan223372"><tspan
+           id="tspan224994"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223370">card, they must EITHER: DISCARD it, </tspan></tspan><tspan
+             id="tspan224992">card, they must EITHER: DISCARD it, </tspan></tspan><tspan
            x="114.64721"
            y="117.08932"
-           id="tspan223378"><tspan
+           id="tspan225000"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223374">pay 3 </tspan><tspan
+             id="tspan224996">pay 3 </tspan><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223376">life tokens to keep it, or SWAP it for </tspan></tspan><tspan
+             id="tspan224998">life tokens to keep it, or SWAP it for </tspan></tspan><tspan
            x="114.64721"
            y="122.25429"
-           id="tspan223384"><tspan
+           id="tspan225006"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223380">this </tspan><tspan
+             id="tspan225002">this </tspan><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223382">card.</tspan></tspan></text>
+             id="tspan225004">card.</tspan></tspan></text>
       <g
          id="g3513-4-8-2"
          transform="matrix(0.90228386,0,0,0.90228273,-15.640551,-50.531744)"
@@ -4789,14 +4802,14 @@
          inkscape:export-ydpi="96"><tspan
            x="116.9382"
            y="106.75938"
-           id="tspan223388"><tspan
+           id="tspan225010"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan223386">&quot;I promise I can handle it, honest! Just... </tspan></tspan><tspan
+             id="tspan225008">&quot;I promise I can handle it, honest! Just... </tspan></tspan><tspan
            x="116.9382"
            y="112.10385"
-           id="tspan223392"><tspan
+           id="tspan225014"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan223390">don't trust me with anything important.&quot;</tspan></tspan></text>
+             id="tspan225012">don't trust me with anything important.&quot;</tspan></tspan></text>
       <text
          transform="matrix(0.90227957,0,0,0.90228275,-48.183257,-29.318202)"
          id="text837-1-3"
@@ -4808,9 +4821,9 @@
          inkscape:export-ydpi="96"><tspan
            x="65.303276"
            y="51.271126"
-           id="tspan223396"><tspan
+           id="tspan225018"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223394">Rebellious Youth</tspan></tspan></text>
+             id="tspan225016">Rebellious Youth</tspan></tspan></text>
     </g>
     <rect
        ry="0"
@@ -4821,7 +4834,8 @@
        id="rect10-0-2-2"
        style="fill:none;stroke:#000000;stroke-width:1.03212;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2-2.png" />
     <text
        id="text3174-97-0-8"
        y="72.27742"
@@ -4846,24 +4860,24 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan223400"><tspan
+         id="tspan225022"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223398">At the end of your turn, gain as many life </tspan></tspan><tspan
+           id="tspan225020">At the end of your turn, gain as many life </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan223404"><tspan
+         id="tspan225026"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223402">points as you have horn duplicates. Horn </tspan></tspan><tspan
+           id="tspan225024">points as you have horn duplicates. Horn </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan223408"><tspan
+         id="tspan225030"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223406">duplicates DO NOT count towards your </tspan></tspan><tspan
+           id="tspan225028">duplicates DO NOT count towards your </tspan></tspan><tspan
          x="82.014603"
          y="122.25429"
-         id="tspan223412"><tspan
+         id="tspan225034"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223410">card total.</tspan></tspan></text>
+           id="tspan225032">card total.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -4875,9 +4889,9 @@
        transform="matrix(0.98189095,0,0,0.98189095,511.11043,-5.9370195)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan223416"><tspan
+         id="tspan225038"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223414">x2 - Honk</tspan></tspan></text>
+           id="tspan225036">x2 - Honk</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
@@ -4889,44 +4903,44 @@
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan223420"><tspan
+         id="tspan225042"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223418">Remove ONE life token from your pool, </tspan></tspan><tspan
+           id="tspan225040">Remove ONE life token from your pool, </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan223424"><tspan
+         id="tspan225046"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223422">now representing a horn duplicate. If you </tspan></tspan><tspan
+           id="tspan225044">now representing a horn duplicate. If you </tspan></tspan><tspan
          x="147.57413"
          y="117.08932"
-         id="tspan223428"><tspan
+         id="tspan225050"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223426">are forced to LOSE the horn duplicate, </tspan></tspan><tspan
+           id="tspan225048">are forced to LOSE the horn duplicate, </tspan></tspan><tspan
          x="147.57413"
          y="122.25429"
-         id="tspan223432"><tspan
+         id="tspan225054"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223430">discard it. If your opponent forces you to </tspan></tspan><tspan
+           id="tspan225052">discard it. If your opponent forces you to </tspan></tspan><tspan
          x="147.57413"
          y="127.41926"
-         id="tspan223436"><tspan
+         id="tspan225058"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223434">SWAP the horn duplicate with any other </tspan></tspan><tspan
+           id="tspan225056">SWAP the horn duplicate with any other </tspan></tspan><tspan
          x="147.57413"
          y="132.58424"
-         id="tspan223440"><tspan
+         id="tspan225062"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223438">card, that card must remain where it is. </tspan></tspan><tspan
+           id="tspan225060">card, that card must remain where it is. </tspan></tspan><tspan
          x="147.57413"
          y="137.74922"
-         id="tspan223444"><tspan
+         id="tspan225066"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223442">Horn duplicates remain in your hand if </tspan></tspan><tspan
+           id="tspan225064">Horn duplicates remain in your hand if </tspan></tspan><tspan
          x="147.57413"
          y="142.9142"
-         id="tspan223448"><tspan
+         id="tspan225070"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223446">this card is LOST.</tspan></tspan></text>
+           id="tspan225068">this card is LOST.</tspan></tspan></text>
     <g
        id="g3513-4-8-5-69"
        transform="matrix(0.88594014,0,0,0.88594326,499.95365,-85.653681)"
@@ -4977,9 +4991,9 @@
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan223452"><tspan
+         id="tspan225074"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan223450">&quot;HONK!&quot;</tspan></tspan></text>
+           id="tspan225072">&quot;HONK!&quot;</tspan></tspan></text>
     <text
        transform="matrix(0.88594014,0,0,0.88594327,475.32511,-28.811217)"
        id="text837-1-1-6"
@@ -4991,9 +5005,9 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan223456"><tspan
+         id="tspan225078"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223454">Horn Guy</tspan></tspan></text>
+           id="tspan225076">Horn Guy</tspan></tspan></text>
     <rect
        ry="0"
        y="9.5160618"
@@ -5003,7 +5017,8 @@
        id="rect10-0-2-3-7"
        style="fill:none;stroke:#000000;stroke-width:1.03212;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2-3-7.png" />
     <text
        id="text3174-97-0-3-3"
        y="65.576851"
@@ -5028,19 +5043,19 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan223460"><tspan
+         id="tspan225082"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223458">Discard up to 3 cards from your hand. </tspan></tspan><tspan
+           id="tspan225080">Discard up to 3 cards from your hand. </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan223464"><tspan
+         id="tspan225086"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223462">You must skip your turn for as many </tspan></tspan><tspan
+           id="tspan225084">You must skip your turn for as many </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan223468"><tspan
+         id="tspan225090"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223466">times as you discarded cards.</tspan></tspan></text>
+           id="tspan225088">times as you discarded cards.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.02998px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -5052,9 +5067,9 @@
        transform="matrix(0.98188835,0,0,0.98189095,573.6795,-2.1370171)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan223472"><tspan
+         id="tspan225094"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223470">x2 - It's Nothing</tspan></tspan></text>
+           id="tspan225092">x2 - It's Nothing</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
@@ -5066,24 +5081,24 @@
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan223476"><tspan
+         id="tspan225098"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223474">Point at 2 cards and place them side by side </tspan></tspan><tspan
+           id="tspan225096">Point at 2 cards and place them side by side </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan223480"><tspan
+         id="tspan225102"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223478">face-down. Do not shuffle them. Your </tspan></tspan><tspan
+           id="tspan225100">face-down. Do not shuffle them. Your </tspan></tspan><tspan
          x="147.57413"
          y="117.08932"
-         id="tspan223484"><tspan
+         id="tspan225106"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223482">opponent must pick ONE to take. You </tspan></tspan><tspan
+           id="tspan225104">opponent must pick ONE to take. You </tspan></tspan><tspan
          x="147.57413"
          y="122.25429"
-         id="tspan223488"><tspan
+         id="tspan225110"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223486">take the other.</tspan></tspan></text>
+           id="tspan225108">take the other.</tspan></tspan></text>
     <g
        id="g3513-6-4-5-7"
        transform="matrix(0.8859378,0,0,0.88594328,558.50799,-46.104433)"
@@ -5158,14 +5173,14 @@
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan223492"><tspan
+         id="tspan225114"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan223490">&quot;There's no problem with the castle walls! </tspan></tspan><tspan
+           id="tspan225112">&quot;There's no problem with the castle walls! </tspan></tspan><tspan
          x="116.9382"
          y="112.10385"
-         id="tspan223496"><tspan
+         id="tspan225118"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan223494">I'm out there everyday and I see nothing.&quot;</tspan></tspan></text>
+           id="tspan225116">I'm out there everyday and I see nothing.&quot;</tspan></tspan></text>
     <text
        transform="matrix(0.8859378,0,0,0.88594329,530.29427,-28.811217)"
        id="text837-1-1-3-3"
@@ -5177,12 +5192,15 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan223500"><tspan
+         id="tspan225122"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223498">Bumbling Patroller</tspan></tspan></text>
+           id="tspan225120">Bumbling Patroller</tspan></tspan></text>
     <g
        id="g2654-4-2"
-       transform="matrix(0.98189095,0,0,0.98189095,433.17983,99.162985)">
+       transform="matrix(0.98189095,0,0,0.98189095,433.17983,99.162985)"
+       inkscape:export-filename="..\..\..\..\..\..\Downloads\g2654-4-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <rect
          ry="0"
          y="9.5255785"
@@ -5217,24 +5235,24 @@
          inkscape:export-ydpi="96"><tspan
            x="82.014603"
            y="106.75938"
-           id="tspan223504"><tspan
+           id="tspan225126"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223502">If this card remains front-facing over by </tspan></tspan><tspan
+             id="tspan225124">If this card remains front-facing over by </tspan></tspan><tspan
            x="82.014603"
            y="111.92435"
-           id="tspan223508"><tspan
+           id="tspan225130"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223506">the start of your turn, flip it back. Your </tspan></tspan><tspan
+             id="tspan225128">the start of your turn, flip it back. Your </tspan></tspan><tspan
            x="82.014603"
            y="117.08932"
-           id="tspan223512"><tspan
+           id="tspan225134"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223510">opponent loses as many life points as </tspan></tspan><tspan
+             id="tspan225132">opponent loses as many life points as </tspan></tspan><tspan
            x="82.014603"
            y="122.25429"
-           id="tspan223516"><tspan
+           id="tspan225138"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223514">cards they did NOT USE last turn.</tspan></tspan></text>
+             id="tspan225136">cards they did NOT USE last turn.</tspan></tspan></text>
       <text
          xml:space="preserve"
          style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.238728"
@@ -5259,14 +5277,14 @@
          inkscape:export-ydpi="96"><tspan
            x="114.64721"
            y="106.75938"
-           id="tspan223520"><tspan
+           id="tspan225142"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223518">Keep this card flipped over after your turn </tspan></tspan><tspan
+             id="tspan225140">Keep this card flipped over after your turn </tspan></tspan><tspan
            x="114.64721"
            y="111.92435"
-           id="tspan223524"><tspan
+           id="tspan225146"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223522">ends.</tspan></tspan></text>
+             id="tspan225144">ends.</tspan></tspan></text>
       <g
          id="g3513-4-8-6-2"
          transform="matrix(0.90227957,0,0,0.90228274,-1.6877416,-81.18688)"
@@ -5317,9 +5335,9 @@
          inkscape:export-ydpi="96"><tspan
            x="116.9382"
            y="106.75938"
-           id="tspan223528"><tspan
+           id="tspan225150"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan223526">&quot;I'll deal with it later.&quot;</tspan></tspan></text>
+             id="tspan225148">&quot;I'll deal with it later.&quot;</tspan></tspan></text>
       <text
          transform="matrix(0.90227957,0,0,0.90228275,-48.284964,-29.318202)"
          id="text837-1-5-3"
@@ -5331,9 +5349,9 @@
          inkscape:export-ydpi="96"><tspan
            x="65.303276"
            y="51.271126"
-           id="tspan223532"><tspan
+           id="tspan225154"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan223530">Useless Underminer</tspan></tspan></text>
+             id="tspan225152">Useless Underminer</tspan></tspan></text>
     </g>
     <rect
        ry="0"
@@ -5344,7 +5362,8 @@
        id="rect10-0-2-4-9"
        style="fill:none;stroke:#000000;stroke-width:1.03212;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2-4-9.png" />
     <text
        xml:space="preserve"
        style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:60.4857;display:inline;stroke-width:0.238728"
@@ -5356,9 +5375,9 @@
        transform="matrix(0.98189095,0,0,0.98189095,496.71043,108.66298)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan223536"><tspan
+         id="tspan225158"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223534">x3 - Disheartening Service</tspan></tspan></text>
+           id="tspan225156">x3 - Disheartening Service</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
@@ -5370,39 +5389,39 @@
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan223540"><tspan
+         id="tspan225162"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223538">Point at up to 4 cards not in your hand, </tspan></tspan><tspan
+           id="tspan225160">Point at up to 4 cards not in your hand, </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan223544"><tspan
+         id="tspan225166"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223542">and add them to your hand. For each card </tspan></tspan><tspan
+           id="tspan225164">and add them to your hand. For each card </tspan></tspan><tspan
          x="147.57413"
          y="117.08932"
-         id="tspan223548"><tspan
+         id="tspan225170"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223546">you've drawn, gain 2 temporary life </tspan></tspan><tspan
+           id="tspan225168">you've drawn, gain 2 temporary life </tspan></tspan><tspan
          x="147.57413"
          y="122.25429"
-         id="tspan223552"><tspan
+         id="tspan225174"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223550">tokens; they are removed after you have </tspan></tspan><tspan
+           id="tspan225172">tokens; they are removed after you have </tspan></tspan><tspan
          x="147.57413"
          y="127.41926"
-         id="tspan223556"><tspan
+         id="tspan225178"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223554">played all your abilities, before you take </tspan></tspan><tspan
+           id="tspan225176">played all your abilities, before you take </tspan></tspan><tspan
          x="147.57413"
          y="132.58424"
-         id="tspan223560"><tspan
+         id="tspan225182"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223558">damage based on the number of cards in </tspan></tspan><tspan
+           id="tspan225180">damage based on the number of cards in </tspan></tspan><tspan
          x="147.57413"
          y="137.74922"
-         id="tspan223564"><tspan
+         id="tspan225186"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223562">your hand.</tspan></tspan></text>
+           id="tspan225184">your hand.</tspan></tspan></text>
     <g
        id="g3513-4-8-5-6-8"
        transform="matrix(0.88594042,0,0,0.88594326,485.55364,28.946319)"
@@ -5453,9 +5472,9 @@
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan223568"><tspan
+         id="tspan225190"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan223566">&quot;And Josiah begat... someone.&quot;</tspan></tspan></text>
+           id="tspan225188">&quot;And Josiah begat... someone.&quot;</tspan></tspan></text>
     <text
        transform="matrix(0.88594042,0,0,0.88594327,462.52469,70.188625)"
        id="text837-1-1-4-3"
@@ -5467,9 +5486,9 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan223572"><tspan
+         id="tspan225194"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223570">Impious Pretender</tspan></tspan></text>
+           id="tspan225192">Impious Pretender</tspan></tspan></text>
     <rect
        ry="0"
        y="108.51608"
@@ -5479,7 +5498,8 @@
        id="rect10-0-2-3-8-1"
        style="fill:none;stroke:#000000;stroke-width:1.03212;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2-3-8-1.png" />
     <text
        id="text3174-97-0-3-4-7"
        y="160.77687"
@@ -5504,24 +5524,24 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan223576"><tspan
+         id="tspan225198"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223574">If your opponent ever invokes a </tspan></tspan><tspan
+           id="tspan225196">If your opponent ever invokes a </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan223580"><tspan
+         id="tspan225202"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223578">REACTion, you may give them as many </tspan></tspan><tspan
+           id="tspan225200">REACTion, you may give them as many </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan223584"><tspan
+         id="tspan225206"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223582">cards as there are life tokens on this card </tspan></tspan><tspan
+           id="tspan225204">cards as there are life tokens on this card </tspan></tspan><tspan
          x="82.014603"
          y="122.25429"
-         id="tspan223588"><tspan
+         id="tspan225210"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223586">halved and rounded down.</tspan></tspan></text>
+           id="tspan225208">halved and rounded down.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.02998px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -5533,9 +5553,9 @@
        transform="matrix(0.98188862,0,0,0.98189095,574.47948,96.862978)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan223592"><tspan
+         id="tspan225214"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223590">x4 - Hangover</tspan></tspan></text>
+           id="tspan225212">x4 - Hangover</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
@@ -5547,14 +5567,14 @@
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan223596"><tspan
+         id="tspan225218"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223594">Name a card. If that card is NOT in the </tspan></tspan><tspan
+           id="tspan225216">Name a card. If that card is NOT in the </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan223600"><tspan
+         id="tspan225222"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan223598">discard, add it to your hand.</tspan></tspan></text>
+           id="tspan225220">discard, add it to your hand.</tspan></tspan></text>
     <g
        id="g3513-4-8-5-1-2-3"
        transform="matrix(0.88593807,0,0,0.88594328,563.32272,17.146322)"
@@ -5633,9 +5653,9 @@
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan223604"><tspan
+         id="tspan225226"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan223602">&quot;This calls for a celebratory drink!&quot;</tspan></tspan></text>
+           id="tspan225224">&quot;This calls for a celebratory drink!&quot;</tspan></tspan></text>
     <text
        transform="matrix(0.88593807,0,0,0.88594329,530.99478,70.18879)"
        id="text837-1-1-3-9-7"
@@ -5647,8 +5667,8 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan223608"><tspan
+         id="tspan225230"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan223606">Devious Drunkard</tspan></tspan></text>
+           id="tspan225228">Devious Drunkard</tspan></tspan></text>
   </g>
 </svg>
