@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="215.90002mm"
+   width="215.90005mm"
    height="279.39999mm"
-   viewBox="0 0 215.90003 279.39999"
+   viewBox="0 0 215.90006 279.39999"
    version="1.1"
    id="svg8"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
@@ -12,6 +12,7 @@
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -19,6 +20,12 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2">
+    <rect
+       x="3418"
+       y="61"
+       width="950.6863"
+       height="138.94113"
+       id="rect23492" />
     <linearGradient
        id="linearGradient4678"
        inkscape:swatch="solid">
@@ -57,6 +64,12 @@
          offset="0"
          id="stop2795" />
     </linearGradient>
+    <rect
+       x="3418"
+       y="61"
+       width="936.68628"
+       height="86.941132"
+       id="rect23492-6" />
   </defs>
   <sodipodi:namedview
      units="mm"
@@ -66,9 +79,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="696"
-     inkscape:cy="622"
+     inkscape:zoom="2"
+     inkscape:cx="2367.75"
+     inkscape:cy="178"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -85,7 +98,7 @@
     <inkscape:page
        x="0"
        y="0"
-       width="215.90002"
+       width="215.90007"
        height="279.39999"
        id="page1831" />
     <inkscape:page
@@ -106,6 +119,15 @@
        width="215.90002"
        height="279.39999"
        id="page89240" />
+    <inkscape:page
+       x="891.79999"
+       y="0"
+       width="215.90002"
+       height="279.39999"
+       id="page14474" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid20603" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -139,7 +161,7 @@
          style="stroke-width:0.264583" /></text>
     <g
        id="g4777"
-       transform="matrix(0.84017445,0,0,0.83966351,37.919728,-3.556972)">
+       transform="matrix(0.84017445,0,0,0.83966351,37.919782,4.381028)">
       <rect
          ry="0"
          y="9.5825005"
@@ -301,7 +323,7 @@
     </g>
     <g
        id="g4777-1"
-       transform="matrix(0.84017445,0,0,0.83966351,102.41055,-3.556972)">
+       transform="matrix(0.84017445,0,0,0.83966351,102.41061,4.381028)">
       <rect
          ry="0"
          y="9.5825005"
@@ -463,7 +485,7 @@
     </g>
     <g
        id="g4777-1-4"
-       transform="matrix(0.84017445,0,0,0.83966351,166.90135,-3.556972)">
+       transform="matrix(0.84017445,0,0,0.83966351,166.90141,4.381028)">
       <rect
          ry="0"
          y="9.5825005"
@@ -625,7 +647,7 @@
     </g>
     <g
        id="g4777-3"
-       transform="matrix(0.84017445,0,0,0.83966351,37.919728,90.334061)">
+       transform="matrix(0.84017445,0,0,0.83966351,37.919782,98.272061)">
       <rect
          ry="0"
          y="9.5825005"
@@ -787,7 +809,7 @@
     </g>
     <g
        id="g4777-1-7"
-       transform="matrix(0.84017445,0,0,0.83966351,102.41055,90.334061)">
+       transform="matrix(0.84017445,0,0,0.83966351,102.41061,98.272061)">
       <rect
          ry="0"
          y="9.5825005"
@@ -949,7 +971,7 @@
     </g>
     <g
        id="g4777-1-4-3"
-       transform="matrix(0.84017445,0,0,0.83966351,166.90135,90.334061)">
+       transform="matrix(0.84017445,0,0,0.83966351,166.90141,98.272061)">
       <rect
          ry="0"
          y="9.5825005"
@@ -1111,7 +1133,7 @@
     </g>
     <g
        id="g4777-7"
-       transform="matrix(0.84017445,0,0,0.83966351,483.81967,-3.556972)">
+       transform="matrix(0.84017449,0,0,0.83966351,483.81963,4.381028)">
       <rect
          ry="0"
          y="9.5825005"
@@ -1273,7 +1295,7 @@
     </g>
     <g
        id="g4777-1-5"
-       transform="matrix(0.84017445,0,0,0.83966351,548.31048,-3.556972)">
+       transform="matrix(0.84017449,0,0,0.83966351,548.31044,4.381028)">
       <rect
          ry="0"
          y="9.5825005"
@@ -1435,7 +1457,7 @@
     </g>
     <g
        id="g4777-1-4-4"
-       transform="matrix(0.84017445,0,0,0.83966351,612.80128,-3.556972)">
+       transform="matrix(0.84017449,0,0,0.83966351,612.80125,4.381028)">
       <rect
          ry="0"
          y="9.5825005"
@@ -1597,7 +1619,7 @@
     </g>
     <g
        id="g4777-3-1"
-       transform="matrix(0.84017445,0,0,0.83966351,483.81967,90.334061)">
+       transform="matrix(0.84017449,0,0,0.83966351,483.81963,98.272061)">
       <rect
          ry="0"
          y="9.5825005"
@@ -1759,7 +1781,7 @@
     </g>
     <g
        id="g4777-1-7-5"
-       transform="matrix(0.84017445,0,0,0.83966351,548.31048,90.334061)">
+       transform="matrix(0.84017449,0,0,0.83966351,548.31044,98.272061)">
       <rect
          ry="0"
          y="9.5825005"
@@ -1921,7 +1943,7 @@
     </g>
     <g
        id="g4777-1-4-3-4"
-       transform="matrix(0.84017445,0,0,0.83966351,612.80128,90.334061)">
+       transform="matrix(0.84017449,0,0,0.83966351,612.80125,98.272061)">
       <rect
          ry="0"
          y="9.5825005"
@@ -2081,730 +2103,6 @@
            style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
       </g>
     </g>
-    <g
-       id="g35710"
-       transform="matrix(0.95071501,0,0,0.95071388,448.19712,-4.5564243)">
-      <g
-         id="g3513-2"
-         transform="matrix(3.7173776,0,0,3.7173776,-122.99005,-239.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-3"
-         transform="matrix(3.7173776,0,0,3.7173776,-122.99005,-212.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-1"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-9"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-6"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-3-5"
-         transform="matrix(3.7173776,0,0,3.7173776,-102.99005,-212.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-1-8"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-9-9"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-6-1"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-3-5-1"
-         transform="matrix(3.7173776,0,0,3.7173776,-82.990042,-212.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-1-8-5"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-9-9-0"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-6-1-3"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6"
-         transform="matrix(3.7173776,0,0,3.7173776,-102.99004,-239.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5"
-         transform="matrix(3.7173776,0,0,3.7173776,-82.990045,-239.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-4"
-         transform="matrix(3.7173776,0,0,3.7173776,-62.990045,-239.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-6"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-4"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-9"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-41"
-         transform="matrix(3.7173776,0,0,3.7173776,-42.990045,-239.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-4"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-3"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-2"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-5"
-         transform="matrix(3.7173776,0,0,3.7173776,-22.990045,-239.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-69"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-9"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-8"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-5-9"
-         transform="matrix(3.7173776,0,0,3.7173776,-2.9900435,-239.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-69-5"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-9-4"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-8-6"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-5-2"
-         transform="matrix(3.7173776,0,0,3.7173776,17.009955,-239.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-69-3"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-9-9"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-8-67"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-5-92"
-         transform="matrix(3.7173776,0,0,3.7173776,37.009955,-239.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-69-0"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-9-1"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-8-4"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-5-8"
-         transform="matrix(3.7173776,0,0,3.7173776,57.009955,-239.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-69-08"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-9-6"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-8-2"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-2"
-         transform="matrix(3.7173764,0,0,3.7173776,-123.69001,-185.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-2"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-8"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-9"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-3"
-         transform="matrix(3.7173764,0,0,3.7173776,-103.69001,-185.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-1"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-7"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-6"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-0"
-         transform="matrix(3.7173764,0,0,3.7173776,-83.690007,-185.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-1"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-6"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-7"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-4-9"
-         transform="matrix(3.7173764,0,0,3.7173776,-63.690011,-185.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-6-1"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-4-4"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-9-1"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-41-0"
-         transform="matrix(3.7173764,0,0,3.7173776,-43.690018,-185.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-4-2"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-3-5"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-2-6"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-5-5"
-         transform="matrix(3.7173764,0,0,3.7173776,-23.690024,-185.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-69-53"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-9-7"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-8-9"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-5-9-3"
-         transform="matrix(3.7173764,0,0,3.7173776,-3.6900311,-185.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-69-5-6"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-9-4-9"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-8-6-2"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-5-2-3"
-         transform="matrix(3.7173764,0,0,3.7173776,16.309967,-185.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-69-3-0"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-9-9-8"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-8-67-0"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-5-92-9"
-         transform="matrix(3.7173764,0,0,3.7173776,36.309961,-185.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-69-0-2"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-9-1-6"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-8-4-3"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-6-5-5-8-3"
-         transform="matrix(3.7173764,0,0,3.7173776,56.309955,-185.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-9-5-69-08-7"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-7-2-9-6-4"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-8-3-8-2-8"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-3-5-8"
-         transform="matrix(3.7173776,0,0,3.7173776,-62.990042,-212.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-1-8-4"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-9-9-8"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-6-1-5"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-3-5-12"
-         transform="matrix(3.7173776,0,0,3.7173776,-42.990042,-212.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-1-8-6"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-9-9-9"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-6-1-32"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-3-5-2"
-         transform="matrix(3.7173776,0,0,3.7173776,-22.990042,-212.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-1-8-9"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-9-9-1"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-6-1-2"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-3-5-5"
-         transform="matrix(3.7173776,0,0,3.7173776,-2.9900397,-212.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-1-8-2"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-9-9-2"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-6-1-6"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-3-5-3"
-         transform="matrix(3.7173776,0,0,3.7173776,17.009958,-212.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-1-8-41"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-9-9-3"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-6-1-65"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-3-5-0"
-         transform="matrix(3.7173776,0,0,3.7173776,37.009958,-212.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-1-8-90"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-9-9-95"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-6-1-9"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-      <g
-         id="g3513-2-3-5-4"
-         transform="matrix(3.7173776,0,0,3.7173776,57.009958,-212.98027)"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <ellipse
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path3147-8-0-6-1-8-3"
-           cx="36.69809"
-           cy="125.42045"
-           rx="2.0553911"
-           ry="2.1428547" />
-        <circle
-           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-           id="path3151-6-2-1-9-9-04"
-           cx="38.010384"
-           cy="123.63028"
-           r="1.5629885" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
-           id="path3170-0-2-6-6-1-38"
-           sodipodi:nodetypes="cccccc" />
-      </g>
-    </g>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -2812,7 +2110,7 @@
      inkscape:label="Front">
     <g
        id="g2654"
-       transform="matrix(0.93349847,0,0,0.93349736,441.71306,-4.4014741)"
+       transform="matrix(0.93349847,0,0,0.93349736,441.71303,3.5365258)"
        inkscape:export-filename="..\..\..\..\..\..\Downloads\cards1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
@@ -2850,14 +2148,14 @@
          inkscape:export-ydpi="96"><tspan
            x="82.014603"
            y="106.75938"
-           id="tspan111771"><tspan
+           id="tspan167473"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111769">Point at any card. Move it into the </tspan></tspan><tspan
+             id="tspan167471">Point at any card. Move it into the </tspan></tspan><tspan
            x="82.014603"
            y="111.92435"
-           id="tspan111775"><tspan
+           id="tspan167477"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111773">DISCARD pile if it isn't there already.</tspan></tspan></text>
+             id="tspan167475">DISCARD pile if it isn't there already.</tspan></tspan></text>
       <text
          xml:space="preserve"
          style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.238728"
@@ -2882,19 +2180,19 @@
          inkscape:export-ydpi="96"><tspan
            x="114.64721"
            y="106.75938"
-           id="tspan111779"><tspan
+           id="tspan167481"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111777">Name a card from the DISCARD/</tspan></tspan><tspan
+             id="tspan167479">Name a card from the DISCARD/</tspan></tspan><tspan
            x="114.64721"
            y="111.92435"
-           id="tspan111783"><tspan
+           id="tspan167485"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111781">UNUSED piles. If that card is present, </tspan></tspan><tspan
+             id="tspan167483">UNUSED piles. If that card is present, </tspan></tspan><tspan
            x="114.64721"
            y="117.08932"
-           id="tspan111787"><tspan
+           id="tspan167489"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111785">add it to your hand.</tspan></tspan></text>
+             id="tspan167487">add it to your hand.</tspan></tspan></text>
       <g
          id="g3513-6"
          transform="matrix(0.90227957,0,0,0.90228274,-14.229591,-54.35167)"
@@ -2969,24 +2267,24 @@
          inkscape:export-ydpi="96"><tspan
            x="116.9382"
            y="106.75938"
-           id="tspan111791"><tspan
+           id="tspan167493"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan111789">&quot;Yes, yes, yes! Can I tell you, this is the </tspan></tspan><tspan
+             id="tspan167491">&quot;Yes, yes, yes! Can I tell you, this is the </tspan></tspan><tspan
            x="116.9382"
            y="112.10385"
-           id="tspan111795"><tspan
+           id="tspan167497"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan111793">greatest moment of my life? I promise, </tspan></tspan><tspan
+             id="tspan167495">greatest moment of my life? I promise, </tspan></tspan><tspan
            x="116.9382"
            y="117.44831"
-           id="tspan111799"><tspan
+           id="tspan167501"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan111797">promise that I won't set anything on fire. </tspan></tspan><tspan
+             id="tspan167499">promise that I won't set anything on fire. </tspan></tspan><tspan
            x="116.9382"
            y="122.79278"
-           id="tspan111803"><tspan
+           id="tspan167505"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan111801">You have my word on that! This is great!&quot;</tspan></tspan></text>
+             id="tspan167503">You have my word on that! This is great!&quot;</tspan></tspan></text>
       <text
          transform="matrix(0.90227957,0,0,0.90228275,-48.997884,-29.318202)"
          id="text837-1"
@@ -2998,14 +2296,14 @@
          inkscape:export-ydpi="96"><tspan
            x="65.303276"
            y="51.271126"
-           id="tspan111807"><tspan
+           id="tspan167509"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111805">Blithering Fool</tspan></tspan></text>
+             id="tspan167507">Blithering Fool</tspan></tspan></text>
     </g>
     <rect
        ry="0"
-       y="4.4906278"
-       x="516.97852"
+       y="12.428628"
+       x="516.97845"
        height="92.505249"
        width="63.098057"
        id="rect10-0-2"
@@ -3015,19 +2313,19 @@
        inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2.png" />
     <text
        id="text3174-97-0"
-       y="54.175785"
-       x="525.70105"
+       y="62.113785"
+       x="525.70099"
        style="font-size:4.75417px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.222852"
        xml:space="preserve"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.75417px;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';stroke-width:0.222852"
-         y="54.175785"
-         x="525.70105"
+         y="62.113785"
+         x="525.70099"
          id="tspan3172-4-0"
          sodipodi:role="line">React - Faulty Memory</tspan></text>
     <text
-       transform="matrix(0.84227659,0,0,0.84227856,449.81752,-28.727063)"
+       transform="matrix(0.84227659,0,0,0.84227856,449.81749,-20.789063)"
        id="text3187-8-6"
        y="106.75938"
        x="82.014603"
@@ -3037,34 +2335,34 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan111811"><tspan
+         id="tspan167513"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111809">If your opponent plays an ability where </tspan></tspan><tspan
+           id="tspan167511">If your opponent plays an ability where </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan111815"><tspan
+         id="tspan167517"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111813">you end up LOSING any card *other* </tspan></tspan><tspan
+           id="tspan167515">you end up LOSING any card *other* </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan111819"><tspan
+         id="tspan167521"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111817">than Old Coot, point at a card. You may </tspan></tspan><tspan
+           id="tspan167519">than Old Coot, point at a card. You may </tspan></tspan><tspan
          x="82.014603"
          y="122.25429"
-         id="tspan111823"><tspan
+         id="tspan167525"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111821">take as many life tokens from that card as </tspan></tspan><tspan
+           id="tspan167523">take as many life tokens from that card as </tspan></tspan><tspan
          x="82.014603"
          y="127.41926"
-         id="tspan111827"><tspan
+         id="tspan167529"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111825">you would like and place half rounded </tspan></tspan><tspan
+           id="tspan167527">you would like and place half rounded </tspan></tspan><tspan
          x="82.014603"
          y="132.58424"
-         id="tspan111831"><tspan
+         id="tspan167533"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111829">down into your life token pool.</tspan></tspan></text>
+           id="tspan167531">down into your life token pool.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -3073,49 +2371,49 @@
        id="text3174-9-9-1"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
-       transform="matrix(0.93349847,0,0,0.93349736,509.0528,-6.5881165)"><tspan
+       transform="matrix(0.93349847,0,0,0.93349736,509.05277,1.3498834)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan111835"><tspan
+         id="tspan167537"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan111833">x1 - Organ Failure</tspan></tspan></text>
+           id="tspan167535">x1 - Organ Failure</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
        x="147.57413"
        y="106.75938"
        id="text3187-4-4-8"
-       transform="matrix(0.84227659,0,0,0.84227856,394.02815,-59.53626)"
+       transform="matrix(0.84227659,0,0,0.84227856,394.02812,-51.59826)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan111839"><tspan
+         id="tspan167541"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111837">Remove as many life tokens from your </tspan></tspan><tspan
+           id="tspan167539">Remove as many life tokens from your </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan111843"><tspan
+         id="tspan167545"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111841">opponent's pool as there are life tokens on </tspan></tspan><tspan
+           id="tspan167543">opponent's pool as there are life tokens on </tspan></tspan><tspan
          x="147.57413"
          y="117.08932"
-         id="tspan111847"><tspan
+         id="tspan167549"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111845">ALL of your cards. Remove the life tokens </tspan></tspan><tspan
+           id="tspan167547">ALL of your cards. Remove the life tokens </tspan></tspan><tspan
          x="147.57413"
          y="122.25429"
-         id="tspan111851"><tspan
+         id="tspan167553"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111849">you used to damage your opponent from </tspan></tspan><tspan
+           id="tspan167551">you used to damage your opponent from </tspan></tspan><tspan
          x="147.57413"
          y="127.41926"
-         id="tspan111855"><tspan
+         id="tspan167557"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111853">play.</tspan></tspan></text>
+           id="tspan167555">play.</tspan></tspan></text>
     <g
        id="g3513-4-8-5"
-       transform="matrix(0.84227659,0,0,0.84227856,498.44588,-82.375854)"
+       transform="matrix(0.84227659,0,0,0.84227856,498.44585,-74.437854)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <g
@@ -3146,8 +2444,8 @@
        id="rect3915-0"
        width="31.413931"
        height="10.133066"
-       x="533.26044"
-       y="4.1718822"
+       x="533.26038"
+       y="12.109882"
        rx="0.51664394"
        ry="0.67702281"
        inkscape:export-xdpi="96"
@@ -3158,16 +2456,16 @@
        x="116.9382"
        y="106.75938"
        id="text3187-8-3-6"
-       transform="matrix(0.84227659,0,0,0.84227856,420.50996,-0.02198827)"
+       transform="matrix(0.84227659,0,0,0.84227856,420.50993,7.9160116)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan111859"><tspan
+         id="tspan167561"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan111857">&quot;Wait, what?&quot;</tspan></tspan></text>
+           id="tspan167559">&quot;Wait, what?&quot;</tspan></tspan></text>
     <text
-       transform="matrix(0.84227659,0,0,0.84227858,482.16146,-31.947806)"
+       transform="matrix(0.84227659,0,0,0.84227858,482.16143,-24.009806)"
        id="text837-1-1"
        y="51.271126"
        x="65.303276"
@@ -3177,13 +2475,13 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan111863"><tspan
+         id="tspan167565"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan111861">Old Coot</tspan></tspan></text>
+           id="tspan167563">Old Coot</tspan></tspan></text>
     <rect
        ry="0"
-       y="4.4906278"
-       x="581.31244"
+       y="12.428628"
+       x="581.31238"
        height="92.505249"
        width="63.097885"
        id="rect10-0-2-3"
@@ -3193,19 +2491,19 @@
        inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2-3.png" />
     <text
        id="text3174-97-0-3"
-       y="54.175709"
-       x="594.88275"
+       y="62.113708"
+       x="594.88269"
        style="font-size:4.69547px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.222852"
        xml:space="preserve"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.69547px;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';stroke-width:0.222852"
-         y="54.175709"
-         x="594.88275"
+         y="62.113708"
+         x="594.88269"
          id="tspan3172-4-0-6"
          sodipodi:role="line">x5 - Useless Stratagem</tspan></text>
     <text
-       transform="matrix(0.84227437,0,0,0.84227858,514.15163,-28.727065)"
+       transform="matrix(0.84227437,0,0,0.84227858,514.1516,-20.789065)"
        id="text3187-8-6-6"
        y="106.75938"
        x="82.014603"
@@ -3215,23 +2513,23 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan111869"><tspan
+         id="tspan167571"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111865">Point at a card. That card </tspan><tspan
+           id="tspan167567">Point at a card. That card </tspan><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111867">cannot be </tspan></tspan><tspan
+           id="tspan167569">cannot be </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan111875"><tspan
+         id="tspan167577"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111871">USED or LOST </tspan><tspan
+           id="tspan167573">USED or LOST </tspan><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111873">until the start of your </tspan></tspan><tspan
+           id="tspan167575">until the start of your </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan111879"><tspan
+         id="tspan167581"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111877">next turn.</tspan></tspan></text>
+           id="tspan167579">next turn.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.02998px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -3240,48 +2538,48 @@
        id="text3174-9-9-1-6"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
-       transform="matrix(0.93349599,0,0,0.93349736,575.2882,-6.588119)"><tspan
+       transform="matrix(0.93349599,0,0,0.93349736,575.28817,1.3498809)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan111883"><tspan
+         id="tspan167585"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan111881">x3 - Terrible Idea</tspan></tspan></text>
+           id="tspan167583">x2 - Terrible Idea</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
        x="147.57413"
        y="106.75938"
        id="text3187-4-4-8-5"
-       transform="matrix(0.84227437,0,0,0.84227858,458.36242,-59.536266)"
+       transform="matrix(0.84227437,0,0,0.84227858,458.36239,-51.598266)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan111887"><tspan
+         id="tspan167589"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111885">Point at a card, and flip it over. You may </tspan></tspan><tspan
+           id="tspan167587">Point at a card, and reveal it. You may </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan111891"><tspan
+         id="tspan167593"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111889">choose one ability from that card to play </tspan></tspan><tspan
+           id="tspan167591">choose one ability from that card to play </tspan></tspan><tspan
          x="147.57413"
          y="117.08932"
-         id="tspan111897"><tspan
+         id="tspan167599"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111893">for yourself. </tspan><tspan
+           id="tspan167595">for yourself. </tspan><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111895">You must also pay the </tspan></tspan><tspan
+           id="tspan167597">You must also pay the </tspan></tspan><tspan
          x="147.57413"
          y="122.25429"
-         id="tspan111903"><tspan
+         id="tspan167605"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111899">associated life token </tspan><tspan
+           id="tspan167601">associated life token </tspan><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111901">cost with that card.</tspan></tspan></text>
+           id="tspan167603">cost with that card.</tspan></tspan></text>
     <g
        id="g3513-6-4-5"
-       transform="matrix(0.84227437,0,0,0.84227858,560.10387,-52.001262)"
+       transform="matrix(0.84227437,0,0,0.84227858,560.10384,-44.063262)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <ellipse
@@ -3305,7 +2603,7 @@
     </g>
     <g
        id="g3513-4-8-5-1"
-       transform="matrix(0.84227437,0,0,0.84227858,564.68131,-82.375856)"
+       transform="matrix(0.84227437,0,0,0.84227858,564.68128,-74.437856)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <g
@@ -3336,8 +2634,8 @@
        id="rect3915-0-2"
        width="55.493263"
        height="10.022431"
-       x="585.55463"
-       y="4.2272"
+       x="585.55457"
+       y="12.1652"
        rx="0.91266072"
        ry="0.66963112"
        inkscape:export-xdpi="96"
@@ -3348,21 +2646,21 @@
        x="116.9382"
        y="106.75938"
        id="text3187-8-3-6-1"
-       transform="matrix(0.84227437,0,0,0.84227858,484.84416,-2.2086327)"
+       transform="matrix(0.84227437,0,0,0.84227858,484.84413,5.7293672)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan111907"><tspan
+         id="tspan167609"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan111905">&quot;This is just like the battle of... um. Hold </tspan></tspan><tspan
+           id="tspan167607">&quot;This is just like the battle of... um. Hold </tspan></tspan><tspan
          x="116.9382"
          y="112.10385"
-         id="tspan111911"><tspan
+         id="tspan167613"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan111909">on, I'll get there in a second.&quot;</tspan></tspan></text>
+           id="tspan167611">on, I'll get there in a second.&quot;</tspan></tspan></text>
     <text
-       transform="matrix(0.84227437,0,0,0.84227859,532.42502,-31.947651)"
+       transform="matrix(0.84227437,0,0,0.84227859,532.42499,-24.009651)"
        id="text837-1-1-3"
        y="51.271126"
        x="65.303276"
@@ -3372,12 +2670,12 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan111915"><tspan
+         id="tspan167617"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan111913">Overeager Tactician</tspan></tspan></text>
+           id="tspan167615">Overeager Tactician</tspan></tspan></text>
     <g
        id="g2654-4"
-       transform="matrix(0.93349847,0,0,0.93349736,441.71306,89.719199)"
+       transform="matrix(0.93349847,0,0,0.93349736,441.71303,97.657199)"
        inkscape:export-filename="..\..\..\..\..\..\Downloads\g2654-4.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
@@ -3415,24 +2713,24 @@
          inkscape:export-ydpi="96"><tspan
            x="82.014603"
            y="106.75938"
-           id="tspan111919"><tspan
+           id="tspan167621"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111917">Point at a card. Remove any number of </tspan></tspan><tspan
+             id="tspan167619">Point at a card. Remove any number of </tspan></tspan><tspan
            x="82.014603"
            y="111.92435"
-           id="tspan111923"><tspan
+           id="tspan167625"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111921">life tokens on that card, and place half of </tspan></tspan><tspan
+             id="tspan167623">life tokens on that card, and place half of </tspan></tspan><tspan
            x="82.014603"
            y="117.08932"
-           id="tspan111927"><tspan
+           id="tspan167629"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111925">those tokens (rounded down) on a card of </tspan></tspan><tspan
+             id="tspan167627">those tokens (rounded down) on a card of </tspan></tspan><tspan
            x="82.014603"
            y="122.25429"
-           id="tspan111931"><tspan
+           id="tspan167633"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111929">your choice.</tspan></tspan></text>
+             id="tspan167631">your choice.</tspan></tspan></text>
       <text
          xml:space="preserve"
          style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.238728"
@@ -3457,14 +2755,14 @@
          inkscape:export-ydpi="96"><tspan
            x="114.64721"
            y="106.75938"
-           id="tspan111935"><tspan
+           id="tspan167637"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111933">Remove 5 life tokens from your </tspan></tspan><tspan
+             id="tspan167635">Remove 4 life tokens from your </tspan></tspan><tspan
            x="114.64721"
            y="111.92435"
-           id="tspan111939"><tspan
+           id="tspan167641"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111937">opponent's pool.</tspan></tspan></text>
+             id="tspan167639">opponent's pool.</tspan></tspan></text>
       <g
          id="g3513-6-6"
          transform="matrix(0.90227957,0,0,0.90228274,-11.174264,-54.35167)"
@@ -3539,14 +2837,14 @@
          inkscape:export-ydpi="96"><tspan
            x="116.9382"
            y="106.75938"
-           id="tspan111943"><tspan
+           id="tspan167645"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan111941">&quot;I'm a better at swords than Benedict ever </tspan></tspan><tspan
+             id="tspan167643">&quot;I'm a better at swords than Benedict ever </tspan></tspan><tspan
            x="116.9382"
            y="112.10385"
-           id="tspan111947"><tspan
+           id="tspan167649"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan111945">was, you stupid jerks!&quot;</tspan></tspan></text>
+             id="tspan167647">was, you stupid jerks!&quot;</tspan></tspan></text>
       <text
          transform="matrix(0.90227957,0,0,0.90228275,-48.997884,-29.318202)"
          id="text837-1-5"
@@ -3558,14 +2856,14 @@
          inkscape:export-ydpi="96"><tspan
            x="65.303276"
            y="51.271126"
-           id="tspan111951"><tspan
+           id="tspan167653"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan111949">Egomaniacal Fencer</tspan></tspan></text>
+             id="tspan167651">Egomaniacal Fencer</tspan></tspan></text>
     </g>
     <rect
        ry="0"
-       y="98.61132"
-       x="516.97852"
+       y="106.54932"
+       x="516.97845"
        height="92.505249"
        width="63.098057"
        id="rect10-0-2-4"
@@ -3575,19 +2873,19 @@
        inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2-4.png" />
     <text
        id="text3174-97-0-1"
-       y="138.21849"
-       x="533.49689"
+       y="146.15649"
+       x="533.49683"
        style="font-size:4.75417px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.222852"
        xml:space="preserve"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.75417px;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';stroke-width:0.222852"
-         y="138.21849"
-         x="533.49689"
+         y="146.15649"
+         x="533.49683"
          id="tspan3172-4-0-4"
          sodipodi:role="line">React - Arson</tspan></text>
     <text
-       transform="matrix(0.84227686,0,0,0.84227856,449.81752,53.50969)"
+       transform="matrix(0.84227686,0,0,0.84227856,449.81749,61.44769)"
        id="text3187-8-6-0"
        y="106.75938"
        x="82.014603"
@@ -3597,49 +2895,49 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan111955"><tspan
+         id="tspan167657"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111953">Every time you swap cards with your </tspan></tspan><tspan
+           id="tspan167655">Every time you swap cards with your </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan111959"><tspan
+         id="tspan167661"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111957">opponent, you *may* use this reaction. </tspan></tspan><tspan
+           id="tspan167659">opponent, you *may* use this reaction. </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan111963"><tspan
+         id="tspan167665"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111961">Your opponent takes as half as much </tspan></tspan><tspan
+           id="tspan167663">Your opponent takes as half as much </tspan></tspan><tspan
          x="82.014603"
          y="122.25429"
-         id="tspan111967"><tspan
+         id="tspan167669"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111965">damage rounded down as there are life </tspan></tspan><tspan
+           id="tspan167667">damage rounded down as there are life </tspan></tspan><tspan
          x="82.014603"
          y="127.41926"
-         id="tspan111971"><tspan
+         id="tspan167673"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111969">tokens on the card you give them. You </tspan></tspan><tspan
+           id="tspan167671">tokens on the card you give them. You </tspan></tspan><tspan
          x="82.014603"
          y="132.58424"
-         id="tspan111975"><tspan
+         id="tspan167677"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111973">also take half as much damage rounded </tspan></tspan><tspan
+           id="tspan167675">also take half as much damage rounded </tspan></tspan><tspan
          x="82.014603"
          y="137.74922"
-         id="tspan111979"><tspan
+         id="tspan167681"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111977">down as there are life tokens on the card </tspan></tspan><tspan
+           id="tspan167679">down as there are life tokens on the card </tspan></tspan><tspan
          x="82.014603"
          y="142.9142"
-         id="tspan111983"><tspan
+         id="tspan167685"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111981">given to you. You may keep the life </tspan></tspan><tspan
+           id="tspan167683">given to you. You may keep the life </tspan></tspan><tspan
          x="82.014603"
          y="148.07917"
-         id="tspan111987"><tspan
+         id="tspan167689"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111985">tokens on the cards after SWAP.</tspan></tspan></text>
+           id="tspan167687">tokens on the cards after SWAP.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -3648,34 +2946,34 @@
        id="text3174-9-9-1-2"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
-       transform="matrix(0.93349847,0,0,0.93349736,509.05282,87.532559)"><tspan
+       transform="matrix(0.93349847,0,0,0.93349736,509.05279,95.470559)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan111991"><tspan
+         id="tspan167693"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan111989">x3 - Tax Evasion</tspan></tspan></text>
+           id="tspan167691">x3 - Tax Evasion</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
        x="147.57413"
        y="106.75938"
        id="text3187-4-4-8-0"
-       transform="matrix(0.84227686,0,0,0.84227856,394.02815,34.965063)"
+       transform="matrix(0.84227686,0,0,0.84227856,394.02812,42.903063)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan111995"><tspan
+         id="tspan167697"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111993">Point at a card. SWAP that card with any </tspan></tspan><tspan
+           id="tspan167695">Point at a card. SWAP that card with any </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan111999"><tspan
+         id="tspan167701"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan111997">card in your hand.</tspan></tspan></text>
+           id="tspan167699">card in your hand.</tspan></tspan></text>
     <g
        id="g3513-4-8-5-6"
-       transform="matrix(0.84227686,0,0,0.84227856,498.44589,11.744819)"
+       transform="matrix(0.84227686,0,0,0.84227856,498.44586,19.682819)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <g
@@ -3706,8 +3004,8 @@
        id="rect3915-0-8"
        width="60.964046"
        height="10.001068"
-       x="518.10529"
-       y="98.358566"
+       x="518.10522"
+       y="106.29657"
        rx="1.002635"
        ry="0.66820371"
        inkscape:export-xdpi="96"
@@ -3718,16 +3016,16 @@
        x="116.9382"
        y="106.75938"
        id="text3187-8-3-6-9"
-       transform="matrix(0.84227686,0,0,0.84227856,420.50994,94.954332)"
+       transform="matrix(0.84227686,0,0,0.84227856,420.50991,102.89233)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan112003"><tspan
+         id="tspan167705"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan112001">&quot;Everything is 100% legit, trust me.&quot;</tspan></tspan></text>
+           id="tspan167703">&quot;Everything is 100% legit, trust me.&quot;</tspan></tspan></text>
     <text
-       transform="matrix(0.84227686,0,0,0.84227858,464.47791,62.172873)"
+       transform="matrix(0.84227686,0,0,0.84227858,464.47788,70.110873)"
        id="text837-1-1-4"
        y="51.271126"
        x="65.303276"
@@ -3737,13 +3035,13 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan112007"><tspan
+         id="tspan167709"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan112005">Fraudulent Accountant</tspan></tspan></text>
+           id="tspan167707">Fraudulent Accountant</tspan></tspan></text>
     <rect
        ry="0"
-       y="98.61132"
-       x="581.31244"
+       y="106.54932"
+       x="581.31238"
        height="92.505249"
        width="63.097885"
        id="rect10-0-2-3-8"
@@ -3753,19 +3051,19 @@
        inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2-3-8.png" />
     <text
        id="text3174-97-0-3-4"
-       y="148.29648"
-       x="591.84015"
+       y="156.23448"
+       x="591.84009"
        style="font-size:4.69547px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.222852"
        xml:space="preserve"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.69547px;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';stroke-width:0.222852"
-         y="148.29648"
-         x="591.84015"
+         y="156.23448"
+         x="591.84009"
          id="tspan3172-4-0-6-3"
          sodipodi:role="line">React - Rabbit in a Hat</tspan></text>
     <text
-       transform="matrix(0.84227462,0,0,0.84227858,514.15164,65.393614)"
+       transform="matrix(0.84227462,0,0,0.84227858,514.15161,73.331614)"
        id="text3187-8-6-6-8"
        y="106.75938"
        x="82.014603"
@@ -3775,29 +3073,29 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan112011"><tspan
+         id="tspan167713"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112009">If your opponent plays an ability where </tspan></tspan><tspan
+           id="tspan167711">If your opponent plays an ability where </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan112015"><tspan
+         id="tspan167717"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112013">you end up LOSING this card, remove </tspan></tspan><tspan
+           id="tspan167715">you end up LOSING this card, remove </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan112019"><tspan
+         id="tspan167721"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112017">twice as many life tokens from your </tspan></tspan><tspan
+           id="tspan167719">twice as many life tokens from your </tspan></tspan><tspan
          x="82.014603"
          y="122.25429"
-         id="tspan112023"><tspan
+         id="tspan167725"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112021">opponent's pool as there are life tokens on </tspan></tspan><tspan
+           id="tspan167723">opponent's pool as there are life tokens on </tspan></tspan><tspan
          x="82.014603"
          y="127.41926"
-         id="tspan112027"><tspan
+         id="tspan167729"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112025">this card.</tspan></tspan></text>
+           id="tspan167727">this card.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.02998px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -3806,39 +3104,39 @@
        id="text3174-9-9-1-6-2"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
-       transform="matrix(0.93349626,0,0,0.93349736,574.24242,87.532551)"><tspan
+       transform="matrix(0.93349626,0,0,0.93349736,574.24239,95.470551)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan112031"><tspan
+         id="tspan167733"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan112029">x2 - Runcible Spoon</tspan></tspan></text>
+           id="tspan167731">x2 - Runcible Spoon</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
        x="147.57413"
        y="106.75938"
        id="text3187-4-4-8-5-0"
-       transform="matrix(0.84227462,0,0,0.84227858,458.36242,34.584409)"
+       transform="matrix(0.84227462,0,0,0.84227858,458.36239,42.522409)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan112035"><tspan
+         id="tspan167737"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112033">Name a card. If your opponent has that </tspan></tspan><tspan
+           id="tspan167735">Name a card. If your opponent has that </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan112039"><tspan
+         id="tspan167741"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112037">card in your hand, they must show it to </tspan></tspan><tspan
+           id="tspan167739">card in your hand, they must show it to </tspan></tspan><tspan
          x="147.57413"
          y="117.08932"
-         id="tspan112043"><tspan
+         id="tspan167745"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112041">you.</tspan></tspan></text>
+           id="tspan167743">you.</tspan></tspan></text>
     <g
        id="g3513-4-8-5-1-2"
-       transform="matrix(0.84227462,0,0,0.84227858,563.63552,11.744819)"
+       transform="matrix(0.84227462,0,0,0.84227858,563.63549,19.682819)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <g
@@ -3869,8 +3167,8 @@
        id="rect3915-0-2-6"
        width="55.493263"
        height="10.022431"
-       x="585.55463"
-       y="98.347862"
+       x="585.55457"
+       y="106.28587"
        rx="0.91266072"
        ry="0.66963112"
        inkscape:export-xdpi="96"
@@ -3881,21 +3179,21 @@
        x="116.9382"
        y="106.75938"
        id="text3187-8-3-6-1-1"
-       transform="matrix(0.84227462,0,0,0.84227858,484.84417,91.912038)"
+       transform="matrix(0.84227462,0,0,0.84227858,484.84414,99.850038)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan112047"><tspan
+         id="tspan167749"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan112045">&quot;I am a SORCERER of the weirding ways. </tspan></tspan><tspan
+           id="tspan167747">&quot;I am a SORCERER of the weirding ways. </tspan></tspan><tspan
          x="116.9382"
          y="112.10385"
-         id="tspan112051"><tspan
+         id="tspan167753"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan112049">Best me if you... wait! Pick another card.&quot;</tspan></tspan></text>
+           id="tspan167751">Best me if you... wait! Pick another card.&quot;</tspan></tspan></text>
     <text
-       transform="matrix(0.84227462,0,0,0.84227859,534.70721,62.173031)"
+       transform="matrix(0.84227462,0,0,0.84227859,534.70718,70.111031)"
        id="text837-1-1-3-9"
        y="51.271126"
        x="65.303276"
@@ -3905,9 +3203,9 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan112055"><tspan
+         id="tspan167757"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan112053">Muddled Magician</tspan></tspan></text>
+           id="tspan167755">Muddled Magician</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
@@ -3919,7 +3217,7 @@
        inkscape:export-ydpi="96" />
     <g
        id="g35710-2"
-       transform="matrix(0.89591664,0,0,0.8959143,14.668393,9.2999127)">
+       transform="matrix(0.90733629,0,0,0.90733392,13.473842,9.513366)">
       <g
          id="g3513-2-9"
          transform="matrix(3.7173776,0,0,3.7173776,-122.99005,-239.98027)"
@@ -4642,8 +3940,732 @@
       </g>
     </g>
     <g
+       id="g35710-2-2"
+       transform="matrix(0.90733629,0,0,0.90733392,451.18848,10.916875)">
+      <g
+         id="g3513-2-9-7"
+         transform="matrix(3.7173776,0,0,3.7173776,-122.99005,-239.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-17-5"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-94-3"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-65-7"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-3-2-4"
+         transform="matrix(3.7173776,0,0,3.7173776,-122.99007,-212.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-1-4-8"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-9-4-7"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-6-14-9"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-3-5-52-9"
+         transform="matrix(3.7173776,0,0,3.7173776,-102.99007,-212.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-1-8-51-9"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-9-9-6-2"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-6-1-96-7"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-3-5-1-6-8"
+         transform="matrix(3.7173776,0,0,3.7173776,-82.990062,-212.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-1-8-5-1-5"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-9-9-0-9-9"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-6-1-3-0-0"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-9-0"
+         transform="matrix(3.7173776,0,0,3.7173776,-102.99004,-239.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-14-9"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-0-3"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-7-8"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-8-8"
+         transform="matrix(3.7173776,0,0,3.7173776,-82.990045,-239.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-8-2"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-97-4"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-71-4"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-4-3-8"
+         transform="matrix(3.7173776,0,0,3.7173776,-62.990045,-239.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-6-8-3"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-4-1-5"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-9-7-4"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-41-03-8"
+         transform="matrix(3.7173776,0,0,3.7173776,-42.990045,-239.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-4-24-8"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-3-51-8"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-2-60-7"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-5-1-5"
+         transform="matrix(3.7173776,0,0,3.7173776,-22.990045,-239.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-69-4-2"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-9-0-1"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-8-42-0"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-5-9-8-0"
+         transform="matrix(3.7173776,0,0,3.7173776,-2.9900435,-239.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-69-5-7-2"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-9-4-7-2"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-8-6-4-8"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-5-2-1-7"
+         transform="matrix(3.7173776,0,0,3.7173776,17.009955,-239.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-69-3-2-3"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-9-9-7-7"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-8-67-3-6"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-5-92-2-4"
+         transform="matrix(3.7173776,0,0,3.7173776,37.009955,-239.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-69-0-6-9"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-9-1-5-1"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-8-4-0-6"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-5-8-4-8"
+         transform="matrix(3.7173776,0,0,3.7173776,57.009955,-239.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-69-08-6-8"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-9-6-9-4"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-8-2-7-8"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-2-5-3"
+         transform="matrix(3.7173764,0,0,3.7173776,-123.69001,-185.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-2-9-5"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-8-2-3"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-9-0-3"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-3-0-4"
+         transform="matrix(3.7173764,0,0,3.7173776,-103.69001,-185.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-1-5-1"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-7-6-4"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-6-4-9"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-0-0-9"
+         transform="matrix(3.7173764,0,0,3.7173776,-83.690007,-185.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-1-0-6"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-6-5-9"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-7-2-6"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-4-9-4-8"
+         transform="matrix(3.7173764,0,0,3.7173776,-63.690011,-185.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-6-1-5-3"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-4-4-2-5"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-9-1-0-7"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-41-0-7-0"
+         transform="matrix(3.7173764,0,0,3.7173776,-43.690018,-185.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-4-2-2-3"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-3-5-9-9"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-2-6-0-9"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-5-5-7-6"
+         transform="matrix(3.7173764,0,0,3.7173776,-23.690024,-185.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-69-53-4-1"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-9-7-8-2"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-8-9-1-3"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-5-9-3-5-6"
+         transform="matrix(3.7173764,0,0,3.7173776,-3.6900311,-185.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-69-5-6-8-2"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-9-4-9-4-1"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-8-6-2-2-3"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-5-2-3-3-8"
+         transform="matrix(3.7173764,0,0,3.7173776,16.309967,-185.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-69-3-0-1-5"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-9-9-8-3-1"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-8-67-0-9-8"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-5-92-9-4-8"
+         transform="matrix(3.7173764,0,0,3.7173776,36.309961,-185.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-69-0-2-1-1"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-9-1-6-7-5"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-8-4-3-4-9"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-6-5-5-8-3-5-9"
+         transform="matrix(3.7173764,0,0,3.7173776,56.309955,-185.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-9-5-69-08-7-0-8"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-7-2-9-6-4-4-6"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-8-3-8-2-8-5-4"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-3-5-8-0-2"
+         transform="matrix(3.7173776,0,0,3.7173776,-62.990062,-212.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-1-8-4-4-5"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-9-9-8-9-1"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-6-1-5-8-7"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-3-5-12-5-7"
+         transform="matrix(3.7173776,0,0,3.7173776,-42.990062,-212.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-1-8-6-0-7"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-9-9-9-2-9"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-6-1-32-0-1"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-3-5-2-6-0"
+         transform="matrix(3.7173776,0,0,3.7173776,-22.990062,-212.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-1-8-9-1-8"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-9-9-1-5-3"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-6-1-2-1-0"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-3-5-5-4-5"
+         transform="matrix(3.7173776,0,0,3.7173776,-2.9900597,-212.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-1-8-2-0-5"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-9-9-2-1-4"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-6-1-6-5-8"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-3-5-3-1-4"
+         transform="matrix(3.7173776,0,0,3.7173776,17.009938,-212.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-1-8-41-8-3"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-9-9-3-2-3"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-6-1-65-9-8"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-3-5-0-3-1"
+         transform="matrix(3.7173776,0,0,3.7173776,37.009938,-212.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-1-8-90-5-0"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-9-9-95-7-6"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-6-1-9-5-2"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+      <g
+         id="g3513-2-3-5-4-7-8"
+         transform="matrix(3.7173776,0,0,3.7173776,57.009938,-212.98027)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <ellipse
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3147-8-0-6-1-8-3-3-2"
+           cx="36.69809"
+           cy="125.42045"
+           rx="2.0553911"
+           ry="2.1428547" />
+        <circle
+           style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.425;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="path3151-6-2-1-9-9-04-1-7"
+           cx="38.010384"
+           cy="123.63028"
+           r="1.5629885" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:0.725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.560668,123.4629 c 0.05084,0.18377 -0.05263,0.36117 -0.06921,0.42423 l 0.113845,0.44704 c 0.145531,0.28566 0.316771,0.5324 0.737461,0.7355 l 0.829374,0.11684 c 0.108665,-0.0319 0.118508,-0.0941 0.365279,-0.0982"
+           id="path3170-0-2-6-6-1-38-6-2"
+           sodipodi:nodetypes="cccccc" />
+      </g>
+    </g>
+    <g
        id="g2654-5"
-       transform="matrix(0.93349855,0,0,0.9334974,1.7130677,3.5360249)"
+       transform="matrix(0.93349855,0,0,0.9334974,1.7130618,3.5360249)"
        inkscape:export-filename="..\..\..\..\..\..\Downloads\cards2.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
@@ -4681,19 +4703,19 @@
          inkscape:export-ydpi="96"><tspan
            x="82.014603"
            y="106.75938"
-           id="tspan112059"><tspan
+           id="tspan167761"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112057">Point at 3 cards that are NOT in the </tspan></tspan><tspan
+             id="tspan167759">Point at 3 cards that are NOT in the </tspan></tspan><tspan
            x="82.014603"
            y="111.92435"
-           id="tspan112063"><tspan
+           id="tspan167765"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112061">discard pile. Your opponent must pick </tspan></tspan><tspan
+             id="tspan167763">discard pile. Your opponent must pick </tspan></tspan><tspan
            x="82.014603"
            y="117.08932"
-           id="tspan112067"><tspan
+           id="tspan167769"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112065">ONE to go into the discard pile.</tspan></tspan></text>
+             id="tspan167767">ONE to go into the discard pile.</tspan></tspan></text>
       <text
          xml:space="preserve"
          style="font-size:4.6707px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.238729"
@@ -4718,28 +4740,28 @@
          inkscape:export-ydpi="96"><tspan
            x="114.64721"
            y="106.75938"
-           id="tspan112071"><tspan
+           id="tspan167773"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112069">Name a card. If your opponent has that </tspan></tspan><tspan
+             id="tspan167771">Name a card. If your opponent has that </tspan></tspan><tspan
            x="114.64721"
            y="111.92435"
-           id="tspan112075"><tspan
+           id="tspan167777"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112073">card, they must EITHER: DISCARD it, </tspan></tspan><tspan
+             id="tspan167775">card, they must EITHER: DISCARD it, </tspan></tspan><tspan
            x="114.64721"
            y="117.08932"
-           id="tspan112081"><tspan
+           id="tspan167783"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112077">pay 3 </tspan><tspan
+             id="tspan167779">pay 3 </tspan><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112079">life tokens to keep it, or SWAP it for </tspan></tspan><tspan
+             id="tspan167781">life tokens to keep it, or SWAP it for </tspan></tspan><tspan
            x="114.64721"
            y="122.25429"
-           id="tspan112087"><tspan
+           id="tspan167789"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112083">this </tspan><tspan
+             id="tspan167785">this </tspan><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112085">card.</tspan></tspan></text>
+             id="tspan167787">card.</tspan></tspan></text>
       <g
          id="g3513-4-8-2"
          transform="matrix(0.90228386,0,0,0.90228273,-15.640551,-50.531744)"
@@ -4818,14 +4840,14 @@
          inkscape:export-ydpi="96"><tspan
            x="116.9382"
            y="106.75938"
-           id="tspan112091"><tspan
+           id="tspan167793"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan112089">&quot;I promise I can handle it, honest! Just... </tspan></tspan><tspan
+             id="tspan167791">&quot;I promise I can handle it, honest! Just... </tspan></tspan><tspan
            x="116.9382"
            y="112.10385"
-           id="tspan112095"><tspan
+           id="tspan167797"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan112093">don't trust me with anything important.&quot;</tspan></tspan></text>
+             id="tspan167795">don't trust me with anything important.&quot;</tspan></tspan></text>
       <text
          transform="matrix(0.90227957,0,0,0.90228275,-48.183257,-29.318202)"
          id="text837-1-3"
@@ -4837,14 +4859,14 @@
          inkscape:export-ydpi="96"><tspan
            x="65.303276"
            y="51.271126"
-           id="tspan112099"><tspan
+           id="tspan167801"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112097">Rebellious Youth</tspan></tspan></text>
+             id="tspan167799">Rebellious Youth</tspan></tspan></text>
     </g>
     <rect
        ry="0"
        y="12.428126"
-       x="76.978607"
+       x="76.978592"
        height="92.505249"
        width="63.098061"
        id="rect10-0-2-2"
@@ -4854,19 +4876,19 @@
        inkscape:export-filename="..\..\..\..\..\..\Downloads\rect10-0-2-2.png" />
     <text
        id="text3174-97-0-8"
-       y="72.09626"
-       x="86.841644"
+       y="64.952507"
+       x="88.958298"
        style="font-size:4.75417px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.222852"
        xml:space="preserve"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.75417px;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';stroke-width:0.222852"
-         y="72.09626"
-         x="86.841644"
+         y="64.952507"
+         x="88.958298"
          id="tspan3172-4-0-2"
          sodipodi:role="line">React - Horn Army</tspan></text>
     <text
-       transform="matrix(0.84227666,0,0,0.84227862,9.8171177,-13.468969)"
+       transform="matrix(0.84227666,0,0,0.84227862,9.8171118,-20.612719)"
        id="text3187-8-6-2"
        y="106.75938"
        x="82.014603"
@@ -4876,24 +4898,19 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan112103"><tspan
+         id="tspan167805"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112101">At the end of your turn, gain as many life </tspan></tspan><tspan
+           id="tspan167803">If your opponent uses an ability on a card </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan112107"><tspan
+         id="tspan167809"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112105">points as you have horn duplicates. Horn </tspan></tspan><tspan
+           id="tspan167807">that has at least three life tokens, you may </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan112111"><tspan
+         id="tspan167813"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112109">duplicates DO NOT count towards your </tspan></tspan><tspan
-         x="82.014603"
-         y="122.25429"
-         id="tspan112115"><tspan
-           style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112113">card total.</tspan></tspan></text>
+           id="tspan167811">discard one card from the cards you own.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -4902,64 +4919,39 @@
        id="text3174-9-9-1-1"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
-       transform="matrix(0.93349855,0,0,0.9334974,75.802868,-2.263332)"><tspan
+       transform="matrix(0.93349855,0,0,0.9334974,79.63932,-2.263332)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan112119"><tspan
+         id="tspan167817"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan112117">x2 - Honk</tspan></tspan></text>
+           id="tspan167815">x1 - Honk</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
        x="147.57413"
        y="106.75938"
        id="text3187-4-4-8-53"
-       transform="matrix(0.84227666,0,0,0.84227862,-45.971832,-55.211472)"
+       transform="matrix(0.84227666,0,0,0.84227862,-45.971838,-55.211472)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan112123"><tspan
+         id="tspan167821"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112121">Remove ONE life token from your pool, </tspan></tspan><tspan
+           id="tspan167819">Remove as many life tokens from your </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan112127"><tspan
+         id="tspan167825"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112125">now representing a horn duplicate. If you </tspan></tspan><tspan
+           id="tspan167823">pool as you would like, and place them on </tspan></tspan><tspan
          x="147.57413"
          y="117.08932"
-         id="tspan112131"><tspan
+         id="tspan167829"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112129">are forced to LOSE the horn duplicate, </tspan></tspan><tspan
-         x="147.57413"
-         y="122.25429"
-         id="tspan112135"><tspan
-           style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112133">discard it. If your opponent forces you to </tspan></tspan><tspan
-         x="147.57413"
-         y="127.41926"
-         id="tspan112139"><tspan
-           style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112137">SWAP the horn duplicate with any other </tspan></tspan><tspan
-         x="147.57413"
-         y="132.58424"
-         id="tspan112143"><tspan
-           style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112141">card, that card must remain where it is. </tspan></tspan><tspan
-         x="147.57413"
-         y="137.74922"
-         id="tspan112147"><tspan
-           style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112145">Horn duplicates remain in your hand if </tspan></tspan><tspan
-         x="147.57413"
-         y="142.9142"
-         id="tspan112151"><tspan
-           style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112149">this card is LOST.</tspan></tspan></text>
+           id="tspan167827">one of your opponent's cards.</tspan></tspan></text>
     <g
        id="g3513-4-8-5-69"
-       transform="matrix(0.84227666,0,0,0.84227862,65.195948,-78.051072)"
+       transform="matrix(0.84227666,0,0,0.84227862,69.0324,-78.051072)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <g
@@ -4990,7 +4982,7 @@
        id="rect3915-0-7"
        width="31.413933"
        height="10.133065"
-       x="93.260468"
+       x="93.260452"
        y="12.109385"
        rx="0.516644"
        ry="0.67702293"
@@ -5002,16 +4994,16 @@
        x="116.9382"
        y="106.75938"
        id="text3187-8-3-6-97"
-       transform="matrix(0.84227666,0,0,0.84227862,-19.490022,10.102316)"
+       transform="matrix(0.84227666,0,0,0.84227862,-19.490028,10.102316)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan112155"><tspan
+         id="tspan167833"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan112153">&quot;HONK!&quot;</tspan></tspan></text>
+           id="tspan167831">&quot;HONK!&quot;</tspan></tspan></text>
     <text
-       transform="matrix(0.84227666,0,0,0.84227862,41.781228,-24.01015)"
+       transform="matrix(0.84227666,0,0,0.84227862,41.781222,-24.01015)"
        id="text837-1-1-6"
        y="51.271126"
        x="65.303276"
@@ -5021,13 +5013,13 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan112159"><tspan
+         id="tspan167837"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan112157">Horn Guy</tspan></tspan></text>
+           id="tspan167835">Horn Guy</tspan></tspan></text>
     <rect
        ry="0"
        y="12.428126"
-       x="141.31247"
+       x="141.31252"
        height="92.505249"
        width="63.097889"
        id="rect10-0-2-3-7"
@@ -5038,18 +5030,18 @@
     <text
        id="text3174-97-0-3-3"
        y="65.725937"
-       x="155.64328"
+       x="155.64333"
        style="font-size:4.69548px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.222852"
        xml:space="preserve"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.69548px;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';stroke-width:0.222852"
          y="65.725937"
-         x="155.64328"
+         x="155.64333"
          id="tspan3172-4-0-6-7"
          sodipodi:role="line">x1 - Sheer Ignorance</tspan></text>
     <text
-       transform="matrix(0.84227442,0,0,0.84227862,74.151648,-17.176852)"
+       transform="matrix(0.84227442,0,0,0.84227862,74.151642,-17.176852)"
        id="text3187-8-6-6-0"
        y="106.75938"
        x="82.014603"
@@ -5059,19 +5051,23 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan112163"><tspan
+         id="tspan167841"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112161">Discard up to 3 cards from your hand. </tspan></tspan><tspan
+           id="tspan167839">Discard up to 3 cards from the cards you </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan112167"><tspan
+         id="tspan167847"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112165">You must skip your turn for as many </tspan></tspan><tspan
+           id="tspan167843">own. </tspan><tspan
+           style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
+           id="tspan167845">You must skip your turn for as </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan112171"><tspan
+         id="tspan167853"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112169">times as you discarded cards.</tspan></tspan></text>
+           id="tspan167849">many </tspan><tspan
+           style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
+           id="tspan167851">times as you discarded cards.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.02998px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -5083,38 +5079,38 @@
        transform="matrix(0.93349606,0,0,0.9334974,135.28822,1.349383)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan112175"><tspan
+         id="tspan167857"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan112173">x2 - It's Nothing</tspan></tspan></text>
+           id="tspan167855">x2 - It's Nothing</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
        x="147.57413"
        y="106.75938"
        id="text3187-4-4-8-5-2"
-       transform="matrix(0.84227442,0,0,0.84227862,18.362428,-51.598766)"
+       transform="matrix(0.84227442,0,0,0.84227862,18.362422,-51.598766)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan112179"><tspan
+         id="tspan167861"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112177">Point at 2 cards and place them side by side </tspan></tspan><tspan
+           id="tspan167859">Point at 2 cards and place them side by side </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan112183"><tspan
+         id="tspan167865"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112181">face-down. Do not shuffle them. Your </tspan></tspan><tspan
+           id="tspan167863">face-down. Do not shuffle them. Your </tspan></tspan><tspan
          x="147.57413"
          y="117.08932"
-         id="tspan112187"><tspan
+         id="tspan167869"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112185">opponent must pick ONE to take. You </tspan></tspan><tspan
+           id="tspan167867">opponent must pick ONE to take. You </tspan></tspan><tspan
          x="147.57413"
          y="122.25429"
-         id="tspan112191"><tspan
+         id="tspan167873"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112189">take the other.</tspan></tspan></text>
+           id="tspan167871">take the other.</tspan></tspan></text>
     <g
        id="g3513-6-4-5-7"
        transform="matrix(0.84227442,0,0,0.84227862,120.86443,-40.451051)"
@@ -5172,7 +5168,7 @@
        id="rect3915-0-2-9"
        width="55.493267"
        height="10.022431"
-       x="145.5546"
+       x="145.55464"
        y="12.164699"
        rx="0.91266078"
        ry="0.66963106"
@@ -5184,21 +5180,21 @@
        x="116.9382"
        y="106.75938"
        id="text3187-8-3-6-1-4"
-       transform="matrix(0.84227442,0,0,0.84227862,44.844168,5.7288656)"
+       transform="matrix(0.84227442,0,0,0.84227862,44.844162,5.7288656)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan112195"><tspan
+         id="tspan167877"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan112193">&quot;There's no problem with the castle walls! </tspan></tspan><tspan
+           id="tspan167875">&quot;There's no problem with the castle walls! </tspan></tspan><tspan
          x="116.9382"
          y="112.10385"
-         id="tspan112199"><tspan
+         id="tspan167881"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan112197">I'm out there everyday and I see nothing.&quot;</tspan></tspan></text>
+           id="tspan167879">I'm out there everyday and I see nothing.&quot;</tspan></tspan></text>
     <text
-       transform="matrix(0.84227442,0,0,0.84227862,94.041238,-24.01015)"
+       transform="matrix(0.84227442,0,0,0.84227862,94.041232,-24.01015)"
        id="text837-1-1-3-3"
        y="51.271126"
        x="65.303276"
@@ -5208,12 +5204,12 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan112203"><tspan
+         id="tspan167885"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan112201">Bumbling Patroller</tspan></tspan></text>
+           id="tspan167883">Bumbling Patroller</tspan></tspan></text>
     <g
        id="g2654-4-2"
-       transform="matrix(0.93349855,0,0,0.9334974,1.7130677,97.656701)"
+       transform="matrix(0.93349855,0,0,0.9334974,1.7130618,97.656701)"
        inkscape:export-filename="..\..\..\..\..\..\Downloads\g2654-4-2.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
@@ -5251,24 +5247,24 @@
          inkscape:export-ydpi="96"><tspan
            x="82.014603"
            y="106.75938"
-           id="tspan112207"><tspan
+           id="tspan167889"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112205">If this card remains front-facing over by </tspan></tspan><tspan
+             id="tspan167887">If this card remains front-facing over by </tspan></tspan><tspan
            x="82.014603"
            y="111.92435"
-           id="tspan112211"><tspan
+           id="tspan167893"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112209">the start of your turn, flip it back. Your </tspan></tspan><tspan
+             id="tspan167891">the start of your turn, flip it back. Your </tspan></tspan><tspan
            x="82.014603"
            y="117.08932"
-           id="tspan112215"><tspan
+           id="tspan167897"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112213">opponent loses as many life tokens as </tspan></tspan><tspan
+             id="tspan167895">opponent loses as many life tokens as </tspan></tspan><tspan
            x="82.014603"
            y="122.25429"
-           id="tspan112219"><tspan
+           id="tspan167901"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112217">cards they did NOT USE last turn.</tspan></tspan></text>
+             id="tspan167899">cards they did NOT USE last turn.</tspan></tspan></text>
       <text
          xml:space="preserve"
          style="font-size:5.09286px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.238728"
@@ -5293,14 +5289,14 @@
          inkscape:export-ydpi="96"><tspan
            x="114.64721"
            y="106.75938"
-           id="tspan112223"><tspan
+           id="tspan167905"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112221">Keep this card flipped over after your turn </tspan></tspan><tspan
+             id="tspan167903">Keep this card flipped over after your turn </tspan></tspan><tspan
            x="114.64721"
            y="111.92435"
-           id="tspan112227"><tspan
+           id="tspan167909"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112225">ends.</tspan></tspan></text>
+             id="tspan167907">ends.</tspan></tspan></text>
       <g
          id="g3513-4-8-6-2"
          transform="matrix(0.90227957,0,0,0.90228274,-1.6877416,-81.18688)"
@@ -5351,9 +5347,9 @@
          inkscape:export-ydpi="96"><tspan
            x="116.9382"
            y="106.75938"
-           id="tspan112231"><tspan
+           id="tspan167913"><tspan
              style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-             id="tspan112229">&quot;I'll deal with it later.&quot;</tspan></tspan></text>
+             id="tspan167911">&quot;I'll deal with it later.&quot;</tspan></tspan></text>
       <text
          transform="matrix(0.90227957,0,0,0.90228275,-48.284964,-29.318202)"
          id="text837-1-5-3"
@@ -5365,14 +5361,14 @@
          inkscape:export-ydpi="96"><tspan
            x="65.303276"
            y="51.271126"
-           id="tspan112235"><tspan
+           id="tspan167917"><tspan
              style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-             id="tspan112233">Useless Underminer</tspan></tspan></text>
+             id="tspan167915">Useless Underminer</tspan></tspan></text>
     </g>
     <rect
        ry="0"
        y="106.54883"
-       x="76.978607"
+       x="76.978592"
        height="92.505249"
        width="63.098061"
        id="rect10-0-2-4-9"
@@ -5388,59 +5384,59 @@
        id="text3174-9-9-1-2-3"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
-       transform="matrix(0.93349855,0,0,0.9334974,62.112568,106.68848)"><tspan
+       transform="matrix(0.93349855,0,0,0.9334974,62.112562,106.68848)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan112239"><tspan
+         id="tspan167921"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan112237">x3 - Disheartening Service</tspan></tspan></text>
+           id="tspan167919">x3 - Disheartening Service</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
        x="147.57413"
        y="106.75938"
        id="text3187-4-4-8-0-3"
-       transform="matrix(0.84227691,0,0,0.84227862,-45.971832,54.120988)"
+       transform="matrix(0.84227691,0,0,0.84227862,-45.971838,54.120988)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan112243"><tspan
+         id="tspan167925"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112241">Point at up to 4 cards not in your hand, </tspan></tspan><tspan
+           id="tspan167923">Point at up to 4 cards that you do not own, </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan112247"><tspan
+         id="tspan167929"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112245">and add them to your hand. For each card </tspan></tspan><tspan
+           id="tspan167927">and add them to your hand. For each card </tspan></tspan><tspan
          x="147.57413"
          y="117.08932"
-         id="tspan112251"><tspan
+         id="tspan167933"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112249">you've drawn, gain 2 temporary life </tspan></tspan><tspan
+           id="tspan167931">you've drawn, gain 2 temporary life </tspan></tspan><tspan
          x="147.57413"
          y="122.25429"
-         id="tspan112255"><tspan
+         id="tspan167937"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112253">tokens; they are removed after you have </tspan></tspan><tspan
+           id="tspan167935">tokens; they are removed after you have </tspan></tspan><tspan
          x="147.57413"
          y="127.41926"
-         id="tspan112259"><tspan
+         id="tspan167941"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112257">played all your abilities, before you take </tspan></tspan><tspan
+           id="tspan167939">played all your abilities, before you take </tspan></tspan><tspan
          x="147.57413"
          y="132.58424"
-         id="tspan112263"><tspan
+         id="tspan167945"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112261">damage based on the number of cards in </tspan></tspan><tspan
+           id="tspan167943">damage based on the number of cards you </tspan></tspan><tspan
          x="147.57413"
          y="137.74922"
-         id="tspan112267"><tspan
+         id="tspan167949"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112265">your hand.</tspan></tspan></text>
+           id="tspan167947">own.</tspan></tspan></text>
     <g
        id="g3513-4-8-5-6-8"
-       transform="matrix(0.84227691,0,0,0.84227862,51.505638,30.900743)"
+       transform="matrix(0.84227691,0,0,0.84227862,51.505632,30.900743)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <g
@@ -5471,7 +5467,7 @@
        id="rect3915-0-8-3"
        width="51.043015"
        height="10.040637"
-       x="83.065826"
+       x="83.065811"
        y="106.27628"
        rx="0.83947039"
        ry="0.67084754"
@@ -5483,16 +5479,16 @@
        x="116.9382"
        y="106.75938"
        id="text3187-8-3-6-9-9"
-       transform="matrix(0.84227691,0,0,0.84227862,-19.490052,99.849543)"
+       transform="matrix(0.84227691,0,0,0.84227862,-19.490058,99.849543)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan112271"><tspan
+         id="tspan167953"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan112269">&quot;And Josiah begat... someone.&quot;</tspan></tspan></text>
+           id="tspan167951">&quot;And Josiah begat... someone.&quot;</tspan></tspan></text>
     <text
-       transform="matrix(0.84227691,0,0,0.84227862,29.611668,70.110377)"
+       transform="matrix(0.84227691,0,0,0.84227862,29.611662,70.110377)"
        id="text837-1-1-4-3"
        y="51.271126"
        x="65.303276"
@@ -5502,13 +5498,13 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan112275"><tspan
+         id="tspan167957"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan112273">Impious Pretender</tspan></tspan></text>
+           id="tspan167955">Impious Pretender</tspan></tspan></text>
     <rect
        ry="0"
        y="106.54883"
-       x="141.31247"
+       x="141.31252"
        height="92.505249"
        width="63.097889"
        id="rect10-0-2-3-8-1"
@@ -5519,18 +5515,18 @@
     <text
        id="text3174-97-0-3-4-7"
        y="156.23398"
-       x="145.9454"
+       x="145.94545"
        style="font-size:4.69548px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.222852"
        xml:space="preserve"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.69548px;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';stroke-width:0.222852"
          y="156.23398"
-         x="145.9454"
+         x="145.94545"
          id="tspan3172-4-0-6-3-5"
          sodipodi:role="line">REACT - Double Hangover</tspan></text>
     <text
-       transform="matrix(0.84227467,0,0,0.84227862,74.151658,73.331118)"
+       transform="matrix(0.84227467,0,0,0.84227862,74.151652,73.331118)"
        id="text3187-8-6-6-8-5"
        y="106.75938"
        x="82.014603"
@@ -5540,29 +5536,29 @@
        inkscape:export-ydpi="96"><tspan
          x="82.014603"
          y="106.75938"
-         id="tspan112279"><tspan
+         id="tspan167961"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112277">If your opponent ever invokes a </tspan></tspan><tspan
+           id="tspan167959">If your opponent ever invokes a </tspan></tspan><tspan
          x="82.014603"
          y="111.92435"
-         id="tspan112283"><tspan
+         id="tspan167965"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112281">REACTion, you may pay 5 life tokens to </tspan></tspan><tspan
+           id="tspan167963">REACTion, you may pay 5 life tokens to </tspan></tspan><tspan
          x="82.014603"
          y="117.08932"
-         id="tspan112287"><tspan
+         id="tspan167969"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112285">remove as many life tokens from their </tspan></tspan><tspan
+           id="tspan167967">remove as many life tokens from their </tspan></tspan><tspan
          x="82.014603"
          y="122.25429"
-         id="tspan112291"><tspan
+         id="tspan167973"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112289">pool as there are life tokens on this card </tspan></tspan><tspan
+           id="tspan167971">pool as there are life tokens on this card </tspan></tspan><tspan
          x="82.014603"
          y="127.41926"
-         id="tspan112295"><tspan
+         id="tspan167977"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112293">halved and rounded down.</tspan></tspan></text>
+           id="tspan167975">halved and rounded down.</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.02998px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:54.0074;display:inline;stroke-width:0.238728"
@@ -5574,28 +5570,28 @@
        transform="matrix(0.93349631,0,0,0.9334974,136.04877,95.470054)"><tspan
          x="24.567699"
          y="33.122105"
-         id="tspan112299"><tspan
+         id="tspan167981"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan112297">x4 - Hangover</tspan></tspan></text>
+           id="tspan167979">x4 - Hangover</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.98195px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;inline-size:71.8087;display:inline;stroke-width:0.264583"
        x="147.57413"
        y="106.75938"
        id="text3187-4-4-8-5-0-1"
-       transform="matrix(0.84227467,0,0,0.84227862,18.362428,42.521912)"
+       transform="matrix(0.84227467,0,0,0.84227862,18.362422,42.521912)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="147.57413"
          y="106.75938"
-         id="tspan112303"><tspan
+         id="tspan167985"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112301">Name a card. If that card is NOT in the </tspan></tspan><tspan
+           id="tspan167983">Name a card. If that card is NOT in the </tspan></tspan><tspan
          x="147.57413"
          y="111.92435"
-         id="tspan112307"><tspan
+         id="tspan167989"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
-           id="tspan112305">discard, add it to your hand.</tspan></tspan></text>
+           id="tspan167987">discard, add it to your hand.</tspan></tspan></text>
     <g
        id="g3513-4-8-5-1-2-3"
        transform="matrix(0.84227467,0,0,0.84227862,125.44187,19.682321)"
@@ -5629,7 +5625,7 @@
        id="rect3915-0-2-6-5"
        width="55.493267"
        height="10.022431"
-       x="145.5546"
+       x="145.55464"
        y="106.28536"
        rx="0.91266078"
        ry="0.66963106"
@@ -5641,16 +5637,16 @@
        x="116.9382"
        y="106.75938"
        id="text3187-8-3-6-1-1-2"
-       transform="matrix(0.84227467,0,0,0.84227862,44.844178,99.849543)"
+       transform="matrix(0.84227467,0,0,0.84227862,44.844172,99.849543)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="116.9382"
          y="106.75938"
-         id="tspan112311"><tspan
+         id="tspan167993"><tspan
            style="font-style:italic;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text Italic';text-align:center;text-anchor:middle"
-           id="tspan112309">&quot;This calls for a celebratory drink!&quot;</tspan></tspan></text>
+           id="tspan167991">&quot;This calls for a celebratory drink!&quot;</tspan></tspan></text>
     <text
-       transform="matrix(0.84227467,0,0,0.84227862,94.707218,70.110534)"
+       transform="matrix(0.84227467,0,0,0.84227862,94.707212,70.110534)"
        id="text837-1-1-3-9-7"
        y="51.271126"
        x="65.303276"
@@ -5660,8 +5656,103 @@
        inkscape:export-ydpi="96"><tspan
          x="65.303276"
          y="51.271126"
-         id="tspan112315"><tspan
+         id="tspan167997"><tspan
            style="font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text'"
-           id="tspan112313">Devious Drunkard</tspan></tspan></text>
+           id="tspan167995">Devious Drunkard</tspan></tspan></text>
+    <g
+       id="g75731-6"
+       transform="translate(-33.809741,64.692969)" />
+    <g
+       id="g75731-6-5"
+       transform="matrix(0.84046056,0,0,0.84046056,216.67824,116.10929)">
+      <circle
+         style="opacity:0.999;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.404795;stroke-opacity:1"
+         id="path60068-5-6"
+         cx="-193.30847"
+         cy="979.85651"
+         r="58.503014"
+         transform="rotate(-94.72608)" />
+      <text
+         xml:space="preserve"
+         id="text23490-1-7"
+         style="font-size:11.2889px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;display:inline"
+         transform="matrix(0.87598632,0,0,0.87598632,123.19648,14.038263)"><textPath
+           xlink:href="#path60068-5-6"
+           startOffset="50%"
+           id="textPath69740-9-5"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
+             id="tspan32273-6-1">0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30</tspan></textPath></text>
+      <circle
+         style="opacity:0.999;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.465;stroke-opacity:1"
+         id="path99012"
+         cx="992.45209"
+         cy="111.91873"
+         r="6.3499999" />
+    </g>
+    <path
+       style="opacity:0.999;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.340214;stroke-opacity:1"
+       id="path60068-5"
+       transform="rotate(-82.382122)"
+       sodipodi:type="arc"
+       sodipodi:cx="-82.458717"
+       sodipodi:cy="965.94891"
+       sodipodi:rx="49.169476"
+       sodipodi:ry="49.169476"
+       sodipodi:start="0"
+       sodipodi:end="6.0213859"
+       sodipodi:arc-type="slice"
+       d="m -33.289242,965.94891 a 49.169476,49.169476 0 0 1 -45.953638,49.06419 49.169476,49.169476 0 0 1 -51.96466,-42.64628 49.169476,49.169476 0 0 1 39.156333,-54.6426 49.169476,49.169476 0 0 1 57.086556,35.4987 l -47.494066,12.72599 z" />
+    <g
+       id="g75731-6-5-2"
+       transform="matrix(0.84046056,0,0,0.84046056,217.10051,-10.204521)">
+      <circle
+         style="opacity:0.999;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.404795;stroke-opacity:1"
+         id="path60068-5-6-4"
+         cx="-193.30847"
+         cy="979.85651"
+         r="58.503014"
+         transform="rotate(-94.72608)" />
+      <text
+         xml:space="preserve"
+         id="text23490-1-7-3"
+         style="font-size:11.2889px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;display:inline"
+         transform="matrix(0.87598632,0,0,0.87598632,123.19648,14.038263)"><textPath
+           xlink:href="#path60068-5-6-4"
+           startOffset="50%"
+           id="textPath69740-9-5-5"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';text-align:center;text-anchor:middle"
+             id="tspan32273-6-1-9">0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30</tspan></textPath></text>
+      <circle
+         style="opacity:0.999;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.465;stroke-opacity:1"
+         id="path99012-0"
+         cx="992.45209"
+         cy="112.81397"
+         r="6.3499999" />
+    </g>
+    <path
+       style="opacity:0.999;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.340214;stroke-opacity:1"
+       id="path60068-5-1"
+       transform="rotate(-82.382122)"
+       sodipodi:type="arc"
+       sodipodi:cx="42.796246"
+       sodipodi:cy="949.62262"
+       sodipodi:rx="49.169476"
+       sodipodi:ry="49.169476"
+       sodipodi:start="0"
+       sodipodi:end="6.0213859"
+       sodipodi:arc-type="slice"
+       d="m 91.965721,949.62262 a 49.169476,49.169476 0 0 1 -45.953638,49.0642 49.169476,49.169476 0 0 1 -51.9646612,-42.6463 49.169476,49.169476 0 0 1 39.1563342,-54.6426 49.169476,49.169476 0 0 1 57.086556,35.4987 l -47.494066,12.726 z" />
+    <circle
+       style="opacity:0.999;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.390814;stroke-opacity:1"
+       id="path99012-9"
+       cx="946.49255"
+       cy="209.97618"
+       r="5.3369246" />
+    <circle
+       style="opacity:0.999;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.390814;stroke-opacity:1"
+       id="path99012-9-5"
+       cx="946.91486"
+       cy="83.662376"
+       r="5.3369246" />
   </g>
 </svg>
