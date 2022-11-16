@@ -599,7 +599,7 @@ Congratulations, mercenary captain! You have been assigned a completely meaningl
 Foole's Company is a 1v1 strategy card game that relies almost completely on strategy. The only luck you'll see is at the beginning of the game. And speaking of:
 
 #### The Play Area
-(TODO: Image)
+![](/assets/images/fooles-company/PlayArea.png)
 
 #### Setting Up
 1. Place all Foole's Company cards in the center.
