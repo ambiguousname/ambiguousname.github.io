@@ -918,6 +918,12 @@ This is an optional setup rule that you can use instead of randomly drawing card
 
 ## Final Week
 
+Thinking on all this, I think I'm okay with how the game has turned out. I'm not overly proud, but I don't hate it either. I think the biggest obstacle to improving it right now is my process for development. Because after every playtest I need to update the cards, update the rules, but the rules and cards are separate documents, and changing one usually means I have to go back and alter the images of the other.
+
+It makes it slower to iterate on than it might normally be, especially if I want images to illustrate what's happening in the rules. I think if I were to approach the project again, I'd try to take a more programmatical approach in creating the cards so that every change I make can ripple out.
+
+The other key factor is just... time I spent on this project. I was super busy over the quarter, so I didn't spend as much time playtesting and refining the game as I'd like. You win some you lose some, I guess.
+
 ### The Rules
 
 Congratulations, mercenary captain! You have been given the great honor of... hmmm. I can't seem to find the entry. It doesn't matter. Celebrate! Your compatriots are specialists all, and we've made them promise to stop accidentally killing people. Apropos of nothing, please don't try to kill the other mercenary captain here, or ditch any of your team. It's not something that happens, but **don't do it**.
@@ -942,7 +948,6 @@ That's it! You are now set up.
 This is what cards will generally look like:
 
 ![](/assets/images/fooles-company/cardexample.PNG)
-(TODO: Point to card description.)
 
 When you execute a card's ability you will either: pay life tokens placed on the card (cost indicated by ability), or wait until a condition is met (mentioned for REACT abilities).
 
@@ -958,8 +963,9 @@ The game is divided into turns, with each player taking a turn. Here's how the t
 You will place life tokens on your cards to pay for abilities for future phases/turns.
 
 * During this phase, you may choose to remove life tokens from your **life token pool** and distribute them on your cards however you'd like. 
-* Life tokens placed on cards can be redistributed at the start of your turn, but <u>cannot</u> be returned to your **life token pool** (unless a card ability says otherwise).
-* Life tokens remain on a card even if it is DISCARDed or SWAPped.
+* Decrement your life token counter by the amount of life tokens you remove.
+   * Life tokens placed on cards can be redistributed at the start of your turn, but <u>cannot</u> be returned to your **life token pool** (unless a card ability says otherwise).
+   * Life tokens remain on a card even if it is DISCARDed or SWAPped.
 
 If life tokens are distributed on your cards to your liking, move to Phase Two.
 ##### Phase Two
@@ -1015,26 +1021,47 @@ General Vor, Terror of a Thousand Worlds, Butcher of Blveltka, etc., etc.
 
 Quaigh
 
-(TODO: Gonna add pictures. Sorry, please use your imagination!)
 Vor and Quaigh begin by drawing five cards each from the center and placing 30 life tokens in their respective pools. They each place their five cards face down in front of them.
+
+![](/assets/images/fooles-company/ExampleTurn0.png)
+
+It is **Phase One** of Vor's turn.
 
 Vor peeks at all of their cards. They then distribute life tokens on their cards: 8 tokens on Vor Card #1, 5 on Vor Card #2, 2 on Vor Card #4, and 7 on Vor Card #5:
 
-Vor then flips over Vor Cards #2 & #4: Useless Underminer and Rebellious Youth.
+![](/assets/images/fooles-company/ExampleTurnVorStart.png)
 
-Vor activates Useless Underminer's "Useless" ability first, leaving the card face-up until the start of Vor's next turn. Vor removes 3 life tokens from Useless Underminer (the ability's cost), leaving 2 tokens remaining on the card:
+It is **Phase Two** of Vor's turn. Vor flips over Vor Card #2: Useless Underminer:
 
-Vor then activates Rebellious Youth's "Child's Play" ability. Vor removes 2 life tokens from Rebellious Youth (the ability's cost), leaving 0 life tokens remaining on the card. Vor points at Vor Card #1, Vor Card #3, and Vor Card #5. Quaigh selects Vor Card #5, and Vor places Card #5 in the discard:
+![](/assets/images/fooles-company/ExampleTurnVorPhaseTwoStart.png)
 
-Vor has played one ability from each card flipped over, so Vor flips the cards back over. Vor also removes 4 life tokens from their pool for each card in their hand. Vor's turn is over. Vor now has 11 cards in their pool, and 7 life tokens remaining on their cards:
+Vor activates Useless Underminer's "Useless" ability first, leaving the card face-up until the start of Vor's next turn. Vor removes 2 life tokens from Useless Underminer (the ability's cost), leaving 3 tokens remaining on the card.
 
-It is Quaigh's turn. Quaigh places 10 tokens on Card #1, and flips over Quaigh Card #1: Fraudulent Accountant.
+Vor then flips over Card #4: Rebellious youth, and activates Rebellious Youth's "Child's Play" ability. Vor removes 2 life tokens from Rebellious Youth (the ability's cost), leaving 0 life tokens remaining on the card. Vor points at Vor Card #1, Vor Card #3, and Vor Card #5. Quaigh selects Vor Card #5, and Vor places Card #5 in the discard:
 
-Quaigh pays 3 life tokens to use Tax Evasion, and swaps Fraudulent Accountant with Vor Card #2: Useless Underminer. Quaigh uses Fraudulent Accountant's "Arson" Reaction to remove life tokens from each of their pools based on the number of life tokens on the card they've each been given, halved and rounded down. Useless Underminer currently has 2 life tokens on it, so Quaigh removes 1 life token from their pool. Fraudulent Accountant has 7 life tokens on it, so Vor removes 3 life tokens from their pool:
+![](/assets/images/fooles-company/ExampleTurnVorPhaseTwoEnd.png)
 
-Because Quaigh has used a REACTion, Vor flips over Card #1: Devious Drunkard, and uses the "Double Hangover" ability to remove 5 life tokens from Quaigh's life token pool:
+It is now **Phase Three** of Vor's turn. Vor has flipped over all the cards they intend to play, so Vor flips them back. Vor also removes 4 life tokens from their pool for each card in their hand. Vor's turn is over. Vor now has 11 life tokens on their cards, and 4 life tokens remaining in their life token pool:
 
-And thus ends a sample set of turns! What will happen next? Dunno, you figure it out.
+![](/assets/images/fooles-company/ExampleTurnVorPhaseThree.png)
+
+It is Quaigh's turn. For **Phase One** Quaigh places 10 tokens on Card #1, and for **Phase Two** flips over Quaigh Card #1: Fraudulent Accountant.
+
+![](/assets/images/fooles-company/ExampleTurnQuaighStart.png)
+
+Quaigh pays 3 life tokens to use Tax Evasion, and swaps Fraudulent Accountant with Vor Card #2: Useless Underminer. Quaigh uses Fraudulent Accountant's "Arson" Reaction to remove life tokens from each of their pools based on the number of life tokens on the card they've each been given, halved and rounded down. Useless Underminer currently has 3 life tokens on it, so Quaigh removes 1 life token from their pool. Fraudulent Accountant has 7 life tokens on it, so Vor removes 3 life tokens from their pool:
+
+![](/assets/images/fooles-company/ExampleTurnQuaighPhaseTwo.png)
+
+Because Quaigh has used a REACTion, Vor flips over Card #1: Devious Drunkard, and uses the "Double Hangover" ability to remove 8 life tokens from Quaigh's life token pool:
+
+![](/assets/images/fooles-company/ExampleTurnQuaighPhaseTwoEnd.png)
+
+Quaigh has done everything they'd like for Phase Two, so it's now **Phase Three** of Quaigh's turn. Quaigh and Vor flip over their face-up cards to face-down, and Quaigh takes 5 damage for the 5 cards they have in their hand:
+
+![](/assets/images/fooles-company/ExampleTurnQuaighPhaseThree.png)
+
+And thus ends a sample set of turns! What will happen next? Dunno, you figure it out. But Vor's probably gonna lose on their next turn.
 
 #### Vocabulary
 
@@ -1086,10 +1113,67 @@ You may shuffle ANY of your FACE-DOWN cards at any time. If your card is face-up
 When a card tells you to "name a card", that means stating aloud the FULL name of whatever valid Foole's Company card you have in mind (we also suggest including a shit-eating grin for dramatic effect). So Debbie Downer can't say "I'm playing Reckless Endangerment, and I name the Accountant card". Exciting Edgar instead says "I PLAY RUNCIBLE SPOON! I AM TARGETING THE FRAUDULENT ACCOUNTANT!" You can say whatever you want to preface the name, just as long as you make it clear that the card name you are about to say is your intended target. For a list of card names (and their abilities), see the Card List below.
 
 #### Card List
-![](/assets/images/fooles-company/week8/cards1.png)
-![](/assets/images/fooles-company/week8/cards2.png)
+![](/assets/images/fooles-company/final/cards1.png)
+![](/assets/images/fooles-company/final/cards2.png)
 
-(TODO: I will add actual card text descriptions here when the final product is finished. I don't want to have to make it and then update with each new iteration.)
+* Rebellious Youth
+   * x2 - Child's Play
+      * Point at 3 cards that are NOT in the discard pile. Your opponent must pick ONE to go into the discard pile.
+   * x3 - Reckless Endangerment
+      * Name a card. If your opponent has that card, they must EITHER: Pay 4 life tokens to keep it, or SWAP it for this card.
+* Useless Underminer
+   * x2 - Useless
+      * Keep this card front-facing after your turn ends.
+   * React - Useless
+      * If this card is front-facing on the start of your turn, flip it face-down. Your opponent loses as many life tokens as cards they did NOT USE last turn. 
+* Horn Guy
+   * x1 - Honk
+      * Remove as many life tokens from this card as you would like, and place them on one of your opponent's cards.
+   * React - Horn Army
+      * If your opponent flips a card face-up that has four life token, you may discard one card from the cards you own.
+* Impious Pretender
+   * x3 - Disheartening Service
+      * Point at up to 4 cards that you do not own, and take them. For each card you've drawn, gain 2 life tokens.
+* Bumbling Patroller
+   * x2 - It's Nothing
+      * Point at 2 cards and place them side by side face-down. Do not shuffle them. Your opponent must pick ONE to take. You take the other.
+   * x1 - Sheer Ignorance
+      * DISCARD  up to 3 cards from the cards you own, except for this card. You must skip your turn for as many times as you discarded cards.
+* Devious Drunkard
+   * x4 - Hangover
+      * Name a card. If that card is NOT in the discard, take it.
+   * React - Double Hangover
+      * If your opponent ever invokes a REACTion, remove as many life tokens from your opponent's pool as there are life tokens on this card. This invokes AFTER your opponent's REACTion is resolved. Keep the life tokens on this card.
+* Blithering Fool
+   * x2 - Tactics of Mistake
+      * Name a card from the DISCARD. If that card is present, take it.
+   * x4 - Misplaced Stockpile
+      * Point at any card. Move it into the DISCARD pile if it isn't there already.
+* Egomaniacal Fencer
+   * x2 - Pure Bluster
+      * Remove 3 life tokens from your opponent's pool.
+   * x5 - Mis-timed Feint
+      * Point at a card. Remove any number of life tokens on that card, and place half of those tokens (rounded down) on a card of your choice. Place the remainder tokens in your life pool.
+* Old Coot
+   * x1 - Organ Failure
+      * Remove as many life tokens from your opponent's pool as there are life tokens on ALL of your cards. Remove the life tokens you used to damage your opponent from play.
+   * React - Faulty Memory
+      * If your opponent plays an ability where you end up LOSING any card *other* than Old Coot, point at a card. You may take as many life tokens from that card as you would like and place them into your life token pool.
+* Fraudulent Accountant
+   * x3 - Tax Evasion
+      * Point at a card. SWAP that card with any card you own.
+   * React - Arson
+      * If you swap cards with your opponent, you each remove half as many life tokens from your pools as there are life tokens on the card that each of you have been given. Keep the life tokens on the cards after SWAPping.
+* Overeager Tactician
+   * x2 - Terrible Idea
+      * Point at a card, and reveal it. You may choose one ability from that card to play for yourself. You must additionally pay the associated life token cost with that ability from the life tokens on this card.
+   * x5 - Useless Stratagem
+      * Point at a card. That card cannot be USED or LOST until the start of your next turn.
+* Muddled Magician
+   * x2 - Runcible Spoon
+      * Name a card. If your opponent owns that card, they must show it to you.
+   * React - Rabbit in a Hat
+      * If your opponent plays an ability where you end up LOSING this card, remove twice as many life tokens from your opponent's pool as there are life tokens on this card. Keep the life tokens on this card.
 
 #### Interpreting Rules
 When in doubt, refer to the card's text. Then refer to these rules. Cards will usually lay out exceptions for the rules mentioned here, so those take precedent.
