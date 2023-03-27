@@ -1,6 +1,5 @@
 ---
 ---
-<!DOCTYPE html>
 <html>
     <head>
         <script src="thumbsup.js"></script>
@@ -8,10 +7,14 @@
     </head>
     <body>
         <div class="content">
-            <textarea placeholder="Input" id="input"></textarea>
-            <button onclick="encode()">Encode</button>
-            <textarea placeholder="Output" id="output"></textarea>
-            <button onclick="decode()">Decode</button>
+            <p>
+                <textarea placeholder="Input" id="input"></textarea>
+                <button onclick="encode()">Encode</button>
+            </p>
+            <p>
+                <textarea placeholder="Output" id="output"></textarea>
+                <button onclick="decode()">Decode</button>
+            </p>
         </div>
     </body>
 </html>

@@ -92,6 +92,7 @@ input, textarea, button {
     color: white;
     font-size: 20px;
     font-family: sans-serif;
+    border: none;
 }
 
 button {
