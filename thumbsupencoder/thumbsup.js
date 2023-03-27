@@ -1,4 +1,5 @@
 var thumbs = ['👍', '👍🏻', '👍🏼', '👍🏽', '👍🏾', '👍🏿'];
+const THUMBS_PER_BYTE = 4;
 
 function encode() {
     var textToEncode = document.getElementById("input").value;
@@ -7,7 +8,7 @@ function encode() {
     var thumbsUpEncoded = "";
     for (var i in encoded) {
         var toBase6 = encoded[i].toString(6);
-        var startingZeroes = (3 - toBase6.length);
+        var startingZeroes = (THUMBS_PER_BYTE - toBase6.length);
         for (var j = 0; j < startingZeroes; j++) {
             thumbsUpEncoded += thumbs[0];
         } 
@@ -34,17 +35,17 @@ function decode() {
             }
         }
     }
-    if (thumbBase6.length % 3 !== 0) {
+    if (thumbBase6.length % THUMBS_PER_BYTE !== 0) {
         document.getElementById("input").value = "Improperly formatted";
         return;
     }
     
-    var fullLength = thumbBase6.length / 3;
+    var fullLength = thumbBase6.length / THUMBS_PER_BYTE;
     var decoded = new Uint8Array(fullLength);
     for (var i = 0; i < fullLength; i++) {
         var fromBase6 = "";
-        for (var j = 0; j < 3; j++) {
-            fromBase6 += thumbBase6[i * 3 + j];
+        for (var j = 0; j < THUMBS_PER_BYTE; j++) {
+            fromBase6 += thumbBase6[i * THUMBS_PER_BYTE + j];
         }
         decoded[i] = parseInt(fromBase6, 6);
     }
