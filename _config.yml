@@ -22,4 +22,4 @@ plugins:
 jekyll_analytics:
     Plausible:
       domain: 'ambiguousname.github.io'   # The domain configured in plausible
-      source: 'https://plausible.example.com/js/plausible.js' # The source of the javascript
+      source: 'https://plausible.io/js/plausible.js' # The source of the javascript
