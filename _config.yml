@@ -15,11 +15,3 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 excerpt_separator: <!--more-->
-
-plugins:
-  - jekyll-analytics
-
-jekyll_analytics:
-    Plausible:
-      domain: 'ambiguousname.github.io'   # The domain configured in plausible
-      source: 'https://plausible.io/js/plausible.js' # The source of the javascript
