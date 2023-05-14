@@ -2,7 +2,7 @@
 ---
 <!DOCTYPE html>
 <html>
-    <head>
+	<head>
         <meta charset="UTF-8" />
         <link rel="icon" href="/assets/images/Identicon.png?v=1" type="image/x-icon" />
         <meta name="description" content="Tyler's Portfolio/Website thingamajigger" />
@@ -15,11 +15,10 @@
         {% endif %}
         <title>{{ page.title }}</title>
         <link rel="stylesheet" href="/assets/css/stylesheet.css" />
-        <script defer data-domain="ambiguousname.github.io" src="https://plausible.io/js/script.js"></script>
-        <script defer data-domain="ambiguousname.github.io" src="https://plausible.io/js/script.outbound-links.js"></script>
-    </head>
-    <body>
-        <div class="content">
+		<meta name="robots" content="noindex">
+	</head>
+	<body>
+		<div class="content">
             <a href="/" style="text-decoration: none;"><h1>{{ page.title }}</h1></a>
             {% if page.updated %} 
             <h3> Last Updated {{ page.updated }}</h3>
@@ -28,5 +27,5 @@
                 {{ content }}
             </div>
         </div>
-    </body>
+	</body>
 </html>
