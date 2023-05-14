@@ -15,6 +15,7 @@ But it's also published on the internet, so... feel free to look at things I wan
 	- [Rollerdrome](https://www.humblebundle.com/store/rollerdrome)
 	- [Legend of Zelda: Tears of the Kingdom](https://www.humblebundle.com/store/the-legend-of-zelda-tears-of-the-kingdom-switch)
 		- Wait until it's on sale though. No one should pay $70 for a video game.
+	- [Advance Wars 1 + 2: Re-Boot Camp](https://www.humblebundle.com/store/advance-wars-12-reboot-camp-switch)
 	- [MOLEK-SYNTEZ](https://www.gog.com/en/game/moleksyntez)
 	- [Potion Craft: Alchemist Simulator](https://www.gog.com/en/game/potion_craft_alchemist_simulator)
 	- [Case of the Golden Idol](https://www.gog.com/en/game/the_case_of_the_golden_idol)
