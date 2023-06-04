@@ -15,8 +15,6 @@ Oh, and if you happen to be a member of GDA who stumbled onto this wishlist? I w
 	- [Evil West](https://www.humblebundle.com/store/evil-west)
 	- [Mount & Blade 2: Bannerlord](https://www.gog.com/en/game/mount_blade_ii_bannerlord)
 	- [Rollerdrome](https://www.humblebundle.com/store/rollerdrome)
-	- [Legend of Zelda: Tears of the Kingdom](https://www.humblebundle.com/store/the-legend-of-zelda-tears-of-the-kingdom-switch)
-		- Wait until it's on sale though. No one should pay $70 for a video game.
 	- [Advance Wars 1 + 2: Re-Boot Camp](https://www.humblebundle.com/store/advance-wars-12-reboot-camp-switch)
 	- [MOLEK-SYNTEZ](https://www.gog.com/en/game/moleksyntez)
 	- [Potion Craft: Alchemist Simulator](https://www.gog.com/en/game/potion_craft_alchemist_simulator)
