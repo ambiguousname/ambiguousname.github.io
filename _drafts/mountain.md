@@ -1,4 +1,251 @@
 ---
 layout: post
-title: "I Decompiled Mountain (2014)"
+title: "Does Mountain (2014) Use Your Drawings? Yes. Sort of."
+updated: "06/12/2023"
 ---
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+Temper your expectations, it's disappointing.
+
+For context, I was talking to my friend stargyaru (you can check them out here: ) about Jacob Geller's [new video](https://www.youtube.com/watch?v=DliX_YFiSX4). And I'm not gonna spend my time deconstructing his argument about games, art, forms, affordances, and how games/software advertise themselves. But there is a question that Geller poses, and one that I am prepared to answer: at the beginning of the game Mountain, you're presented with three drawings. Then a Mountain is made.
+
+![Mountain Gameplay](/assets/images/mountain/mountainGame.png)
+
+## Do the Drawings in Mountain (2014) Do Anything For The Mountain?
+
+Yes. Sort of.
+
+But before we get to the longer answer, I want to demonstrate how you can come to this conclusion yourself. The only tools you will need are:
+
+1. Some kind of monitor for viewing what your kernel is doing and why. Particularly for monitoring read/write access. On Windows you can use [ProcessMonitor](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon).
+2. [ILSpy](https://github.com/icsharpcode/ILSpy), for looking at the internals of how Mountain works (since it runs on Unity).
+
+ILSpy is gonna do most of the heavy lifting for us. Once I open Mountain (2014)'s Assemlby-Csharp.dll, we can see everything that Mountain uses in how it operates.
+
+## How does Mountain (2014) Create and Read Drawings?
+
+And the thing that stands out most is the class `Drawings`. This is gonna be what's storing all of the drawings that Mountain makes. There's also the class `DrawingCapture`, which stores the Drawings that you draw at the beginning. Once `DrawingCapture` gets input from the user that a drawing is done, it will save the drawings to:
+
+`%appdata%\..\LocalLow\David OReilly\Mountain`[^path]
+
+[^path]: If you're not on Windows, drawings are stored to Unity's [persistent application data path](https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html). If you're on Apple TV[^appletv], it will save to a temporary cache path.
+[^appletv]: Yes, [Mountain is available on AppleTV](https://apps.apple.com/us/app/mountain/id891528055?platform=appleTV).
+
+Finally, the images are loaded BACK in using a combination of the class `Drawings`, and the `CoolStuff.LoadImage` function:
+
+{% highlight csharp %}
+// Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// CoolStuff
+using System;
+using System.IO;
+using UnityEngine;
+
+public static bool LoadImage(string path, Texture2D tex)
+{
+	try
+	{
+		if (File.Exists(path))
+		{
+			BinaryReader binaryReader = new BinaryReader(File.Open(path, FileMode.Open, FileAccess.Read));
+			byte[] data = binaryReader.ReadBytes((int)binaryReader.BaseStream.Length);
+			binaryReader.Close();
+			if (!tex.LoadImage(data))
+			{
+				Debug.LogError("LoadImage failed to load the image data!");
+				return false;
+			}
+			return true;
+		}
+	}
+	catch (FileNotFoundException)
+	{
+		Debug.LogError("Loading image failed. " + path + " not found.");
+	}
+	catch (Exception ex2)
+	{
+		Debug.LogError("Loading image failed: " + ex2.ToString());
+	}
+	return false;
+}
+{% endhighlight %}
+
+Which to translate, just loads an image from a filepath if the file at the path exists.
+
+Luckily for us, these are the only three classes that we really care about. Although, I feel like I should lay some groundwork to prove that these are the ONLY classes that we should be concerned with. We'll start with one assumption:
+
+1. `%appdata%\..LocalLow\David OReilly\Mountain` is the ONLY place that drawings are saved and loaded from.
+
+This was the only place that I could find the drawings being stored to and loaded from, and I seriously doubt there are any other places where drawings are saved to or accessed from. If you feel like proving otherwise, go ahead. But based on that assumption, the rest of this will be a proof by induction. First, how do we know that `CoolStuff.LoadImage` is the ONLY function that loads files? Well, we can look at Mountain's process during start-up and image creation:
+
+![Mountain (2014) Process Calls](/assets/images/mountain/filereads.png)
+
+We have the same pattern repeated throughout: CreateFile[^createfile] called by Mountain.exe, then a QueryBasicInformation, then finally a CloseFile. There's a whole lot of extra calls here for querying information that we can skip over. Every time the files are opened and closed, there's only ever one real call to read and then close the file[^fileread]. That's at the end when the process is done reading the file and its associated metadata.
+
+[^createfile]: In this case, is actually used to EITHER create or open the file.
+[^fileread]: You can look at the Category column for Event Details to see what's a Metadata Read vs. an actual Read of the file.
+
+And to double check, `File.Open` (to read the images) is only ever called once by the entirety of the program[^calledonce], by `CoolStuff.LoadImage`.
+
+[^calledonce]: Checked using ILSpy's Analysis tool.
+
+This pattern is repeated three times, once with each different image that's created. That shows us that there's only one call at startup to load all images, and there's only one place it could come from: `CoolStuff.LoadImage`. Which means, by induction, every function that calls `CoolStuff.LoadImage` are the only things that have access to those images[^deletefiles]. And whatever calls those functions in turn potentially have second-hand access to the data gathered from `CoolStuff.LoadImage`.
+
+[^deletefiles]: In the code for Mountain, that is. Fun sidenote: If you delete the files, ProcessMonitor also shows that Steam's cloud system will re-acquire them as soon as you run Mountain again BEFORE Mountain access the files itself.
+
+### Where do the Drawings Go?
+
+Okay, so let's work up now. We have a loaded image. The next piece of the puzzle is the function that calls `CoolStuff.LoadImage`, and there's only one relevant call which comes from `Drawings`:
+
+{% highlight csharp %}
+// Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// Drawings
+using System.IO;
+using UnityEngine;
+
+public static Texture2D GetDrawing(int drawingId)
+{
+	Texture2D result = null;
+	if (!s_loaded[drawingId])
+	{
+		if (s_drawings[drawingId] == null)
+		{
+			s_drawings[drawingId] = new Texture2D(4, 4, TextureFormat.RGBA32, mipmap: true);
+			s_drawings[drawingId].name = "Drawing";
+		}
+		string path = Path.Combine(saveFilePath, SaveGame.GetDrawingFileName(drawingId));
+		s_loaded[drawingId] = CoolStuff.LoadImage(path, s_drawings[drawingId]);
+		if (s_loaded[drawingId])
+		{
+			s_drawings[drawingId].name = Path.GetFileNameWithoutExtension(path);
+			result = s_drawings[drawingId];
+		}
+	}
+	else
+	{
+		result = s_drawings[drawingId];
+	}
+	return result;
+}
+
+{% endhighlight %}
+
+Again, to translate: this will load a drawing and then cache that loaded drawing for future uses. Everything that needs drawing data for something will call this function first.
+
+Now, I won't bore you with the rest of the chain of calling `GetDrawing`, but if you keep going up the line you will eventually find the functions that Mountain (2014) uses in actual gameplay for drawings.
+
+## What the Drawings Actually Do
+
+### Drawing #1
+
+The first drawing is used in `Thoughts.WeatherThought`. What is that? Sometimes Mountain (2014) will show bits of text on the screen:
+
+![Mountain (2014) having a thought](/assets/images/mountain/mountainText.png)
+
+It calls these bits of text "thoughts". And a weather thought is one related to the weather. And based on the in-game hour and season, it will pick a pixel on first drawing the game presented you. If the pixel is black, the thought will be sad. If the pixel is white, the thought will be happy. And so the possible texts that you can see will change based on that[^text].
+
+[^text]: Finding what text is written is a whole other matter of hunting through memory for the right values. And so I've elected not to. Because I have a final in three days and I'm cranking this out for fun in the meantime.
+
+### Drawing #3
+
+The third drawing is used in both `SpaceDebrisManager.SpawnDebris` and `SpaceDebrisManager.LoadCo`.
+
+And sometimes your Mountain from Mountain (2014) will have debris that falls on the Mountain:
+
+IMAGE HERE
+
+And for the relevant functions, they each use exactly the same formula:
+
+{% highlight csharp %}
+/* To simplify, I'm also including the values of DebrisLifetimeHoursMin and DebrisLifetimeHoursMax as part of the code
+ * (although they're stored elsewhere, and the values are subject to change based on your version of Mountain (2014)):
+ */
+struct currentPlatform {
+    float DebrisLifetimeHoursMin = 1f;
+    float DebrisLifetimeHoursMax = 10f;
+}
+
+float lifetime = 3600f * Mathf.Lerp(DebrisLifetimeHoursMin, currentPlatform.DebrisLifetimeHoursMax, Drawings.RandomValue(2));
+{% endhighlight %}
+
+So to discuss this formula, 3600 represents a baseline number of seconds (or a baseline of 1 hour). `Mathf.Lerp` provides a value between 1 and 10, chosen randomly by the third drawing. `Drawings.RandomValue` picks a decimal between 0 and 1 by picking 100 random pixels on the third drawing. If the pixel is black, it will add 0.01 to a total. It will then return the total. Then `Mathf.Lerp` uses that value as a way to interpolate between 1 and 10 hours.
+
+So for instance, a value of 0 from `Drawings.RandomValue` would mean that `lifetime = 1 hour`. But a value of 1 from `Drawings.RandomValue` would mean that `lifetime = 10 hours`.
+
+So the third drawing determines how long your space debris gets to live for. The more you've drawn, the more likely it is that your debris will live longer than an hour.
+
+### Drawing #2
+
+This is probably the saddest story of all. Remember that whole debacle with actually READING the drawings? Well uhhh, while the second drawing is indeed read (same as all the rest), there's a separate function `Drawings.GetDrawingFileSize`:
+
+{% highlight csharp %}
+// Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// Drawings
+using System;
+using System.IO;
+using UnityEngine;
+
+public static long GetDrawingFileSize(int drawingId)
+{
+	string text = Path.Combine(saveFilePath, SaveGame.GetDrawingFileName(drawingId));
+	if (File.Exists(text))
+	{
+		try
+		{
+			FileInfo fileInfo = new FileInfo(text);
+			return fileInfo.Length;
+		}
+		catch (Exception ex)
+		{
+			Debug.LogError("Couldn't get file info for " + text + ": " + ex.Message);
+		}
+	}
+	else
+	{
+		Debug.Log("There is no file at " + text);
+	}
+	return UnityEngine.Random.Range(2000, 23000);
+}
+{% endhighlight %}
+
+Which returns the size of the file in bytes. And this function is used in `TimeSaver.Start`, where `TimeSaver` is Mountain (2014)'s way of internally tracking how much time has passed. Are you ready? Because here's the whole formula:
+
+{% highlight csharp %}
+// Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// TimeSaver
+private void Start()
+{
+	if (!SaveGame.IsLoading)
+	{
+		Sky.Cycle.Hour = (Hour = World.Settings.NewGameTimeOfDay);
+		PlatformSpecificSettings currentPlatform = World.Settings.CurrentPlatform;
+		float dayLengthInMinutesMin = currentPlatform.DayLengthInMinutesMin;
+		float num = (currentPlatform.DayLengthInMinutesMax - dayLengthInMinutesMin) * 60f;
+		long drawingFileSize = Drawings.GetDrawingFileSize(1);
+		DayLengthInMinutes = (Sky.Components.Time.DayLengthInMinutes = dayLengthInMinutesMin + (float)drawingFileSize % num / 60f);
+		IsLoaded = true;
+	}
+}
+{% endhighlight %}
+
+Let me focus on the important part: 
+{% highlight csharp %}
+// For clarity, dayLengthInMinutesMin = 6 minutes. But it can also be platform-dependent.
+float dayLengthInMinutesMin = currentPlatform.DayLengthInMinutesMin;
+// Same with DayLengthInMinutesMax. The default value is 10 minutes.
+// So num is equal to 240 seconds by default.
+float num = (currentPlatform.DayLengthInMinutesMax - dayLengthInMinutesMin) * 60f;
+long drawingFileSize = Drawings.GetDrawingFileSize(1);
+// To parenthesize (at least I hope that's how this is interpreted, otherwise the value would always be 6):
+// 6 + ((drawingFileSize % num)/60).
+DayLengthInMinutes = (Sky.Components.Time.DayLengthInMinutes = dayLengthInMinutesMin + (float)drawingFileSize % num / 60f);
+{% endhighlight %}
+
+To simplify the formula: the size of your file determines how long your day is in minutes. And there's no easy correlation between what you've drawn and how long your day is, as that `%` operator takes the modulus of the file size so that the possible value is constrained to be between 0 and `num`.
+
+## That's it.
+
+Some platforms will skip the drawing entirely and just use random variables, but if you have a drawing, congrats! By a very technical definition of the word "technically", the drawings do indeed do something to influence Mountain (2014)'s gameplay.
+
+Oh, and to leave you with one more fun fact, the Mountain from Mountain (2014) is not actually generated. Sure, they put some trees randomly on top of it, but the actual base mountain model itself is always the same. Here it is!
+
+<model-viewer alt="Six Sided Die Option 2" src="/assets/models/M_Tall2(Clone).glb" camera-controls disable-zoom style="width: 400px; height: 400px; margin-left: auto; margin-right: auto;"></model-viewer>

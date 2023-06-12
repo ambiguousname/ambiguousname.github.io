@@ -106,3 +106,11 @@ button:hover {
     cursor: pointer;
     background-color: #000000cc;
 }
+
+.highlight pre {
+    padding-left: 1%;
+    overflow: scroll;
+    font-size: 0.7em;
+    line-height: 1.5em;
+    tab-size: 2;
+}
