@@ -12,6 +12,8 @@ Oh, and if you happen to be a member of GDA who stumbled onto this wishlist? I w
 	- [Baldur's Gate 3](https://www.gog.com/en/game/baldurs_gate_iii)
 	- [Dwarf Fortress](https://kitfoxgames.itch.io/dwarf-fortress)
 	- [ULTRAKILL](https://www.humblebundle.com/store/ultrakill)
+	- [Trepang2](https://www.humblebundle.com/store/trepang2)
+		- [There's also the ULTRAPANG bundle for both](https://store.steampowered.com/bundle/33227/Ultrapang/)
 	- [Evil West](https://www.humblebundle.com/store/evil-west)
 	- [Mount & Blade 2: Bannerlord](https://www.gog.com/en/game/mount_blade_ii_bannerlord)
 	- [Rollerdrome](https://www.humblebundle.com/store/rollerdrome)
