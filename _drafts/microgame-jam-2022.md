@@ -68,7 +68,7 @@ PICO-8 was interesting to build an extension for because it doesn't necessarily 
 ## Making the framework
 So yeah! We cranked out the extensions over the summer, and the rest of the work had to be making sure that the web framework around everything would work just fine.
 
-This is where we really overshot in terms of scope.
+This is where we really overshot in terms of scope. Because the framework had too much going on. I wanted controller support,
 
 # The Bad
 

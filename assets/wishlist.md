@@ -8,8 +8,10 @@ But it's also published on the internet, so... feel free to look at things I wan
 
 Oh, and if you happen to be a member of GDA who stumbled onto this wishlist? I will know. **Don't even think about it**.
 
+- Miscellaneous
+	- Some sort of [USB-C Phone Controller](https://playbackbone.com/products/backbone-one-usb-c/) would be nice.
+	- Legos.
 - Video Games
-	- [Baldur's Gate 3](https://www.gog.com/en/game/baldurs_gate_iii)
 	- [Dwarf Fortress](https://kitfoxgames.itch.io/dwarf-fortress)
 	- [ULTRAKILL](https://www.humblebundle.com/store/ultrakill)
 	- [Trepang2](https://www.humblebundle.com/store/trepang2)
@@ -17,7 +19,6 @@ Oh, and if you happen to be a member of GDA who stumbled onto this wishlist? I w
 	- [Evil West](https://www.humblebundle.com/store/evil-west)
 	- [Mount & Blade 2: Bannerlord](https://www.gog.com/en/game/mount_blade_ii_bannerlord)
 	- [Rollerdrome](https://www.humblebundle.com/store/rollerdrome)
-	- [Advance Wars 1 + 2: Re-Boot Camp](https://www.humblebundle.com/store/advance-wars-12-reboot-camp-switch)
 	- [MOLEK-SYNTEZ](https://www.gog.com/en/game/moleksyntez)
 	- [Potion Craft: Alchemist Simulator](https://www.gog.com/en/game/potion_craft_alchemist_simulator)
 	- [Case of the Golden Idol](https://www.gog.com/en/game/the_case_of_the_golden_idol)
@@ -30,6 +31,7 @@ Oh, and if you happen to be a member of GDA who stumbled onto this wishlist? I w
 	- [Fiasco Expansions](https://bullypulpitgames.com/collections/fiasco-expansions)
 	- Anything from [Always Checkers Publishing](https://alwayscheckers.com/)
 	- [Button Shy Games](https://buttonshygames.com/) seem cool.
+		- Already have Sprawlopolis and Tussie Mussie.
 	- [Blood On the Clocktower](https://bloodontheclocktower.com/products/blood-on-the-clocktower-the-game)
 	- [High Society](https://ospreypublishing.com/us/high-society-9781472827777/)
 	- [Steve Jackson Dice](http://www.sjgames.com/dice/)
