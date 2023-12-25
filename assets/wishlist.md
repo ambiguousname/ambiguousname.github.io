@@ -9,7 +9,6 @@ But it's also published on the internet, so... feel free to look at things I wan
 Oh, and if you happen to be a member of GDA who stumbled onto this wishlist? I will know. **Don't even think about it**.
 
 - Miscellaneous
-	- Some sort of [USB-C Phone Controller](https://playbackbone.com/products/backbone-one-usb-c/) would be nice.
 	- Legos.
 - Video Games
 	- [Dwarf Fortress](https://kitfoxgames.itch.io/dwarf-fortress)
@@ -18,25 +17,20 @@ Oh, and if you happen to be a member of GDA who stumbled onto this wishlist? I w
 		- [There's also the ULTRAPANG bundle for both](https://store.steampowered.com/bundle/33227/Ultrapang/)
 	- [Evil West](https://www.humblebundle.com/store/evil-west)
 	- [Mount & Blade 2: Bannerlord](https://www.gog.com/en/game/mount_blade_ii_bannerlord)
-	- [Rollerdrome](https://www.humblebundle.com/store/rollerdrome)
 	- [MOLEK-SYNTEZ](https://www.gog.com/en/game/moleksyntez)
 	- [Potion Craft: Alchemist Simulator](https://www.gog.com/en/game/potion_craft_alchemist_simulator)
 	- [Case of the Golden Idol](https://www.gog.com/en/game/the_case_of_the_golden_idol)
 	- [Dread Templar](https://www.gog.com/en/game/dread_templar/)
 	- [Carrier Command 2](https://store.steampowered.com/app/1489630/)
-	- [Vampire Survivors](https://store.steampowered.com/app/1794680/Vampire_Survivors/)
 	- [MEATGRINDER](https://store.steampowered.com/app/1968710/MEATGRINDER/)
 	- [Fights in Tight Spaces](https://store.steampowered.com/app/1265820/Fights_in_Tight_Spaces/)
 - Board Games
-	- [Fiasco Expansions](https://bullypulpitgames.com/collections/fiasco-expansions)
 	- Anything from [Always Checkers Publishing](https://alwayscheckers.com/)
 	- [Button Shy Games](https://buttonshygames.com/) seem cool.
 		- Already have Sprawlopolis and Tussie Mussie.
 	- [Blood On the Clocktower](https://bloodontheclocktower.com/products/blood-on-the-clocktower-the-game)
 	- [High Society](https://ospreypublishing.com/us/high-society-9781472827777/)
 	- [Steve Jackson Dice](http://www.sjgames.com/dice/)
-	- [Paranoia](https://www.mongoosepublishing.com/products/paranoia-red-clearance-starter-set-1)
-	- [Traveller](https://www.mongoosepublishing.com/products/traveller-core-rulebook-update-2022)
 	- Asunder, [The Seeker's Guide](https://giftedrebels.com/products/the-seekers-guide-hardcover?variant=41151010734246) and [The Keeper's Tome](https://giftedrebels.com/products/the-keepers-tome-hardcover)
 - Fun Hacking Things that'd be cool to try
 	- Hak 5 tools
