@@ -35,8 +35,6 @@ a:visited {
     width: 500px;
     max-width: 100%;
     height: 500px;
-    max-width: 500px;
-    max-height: 500px;
     display: inline-grid;
 }
 
@@ -51,6 +49,7 @@ a:visited {
     padding-bottom: 40px;
     transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
+    overflow: hidden;
 }
 
 .jumbotron-content:hover {
