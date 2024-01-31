@@ -77,6 +77,10 @@ h1 {
     padding: 40px;
 }
 
+.post-content * {
+    max-width: 100%;
+}
+
 .post-content img {
     max-width: 100%;
 }

@@ -1,5 +1,5 @@
 ## Week 3 of Fall
-I guess we're doing this. This whole idea started I-don't-know-how-many-years-ago when I wrote down an idea in the ideas section of my phone:
+I guess we're doing this. <!--more--> This whole idea started I-don't-know-how-many-years-ago when I wrote down an idea in the ideas section of my phone:
 
 ```
 Card game where the player's teams and strategies are fluid.
