@@ -1,7 +1,7 @@
 ---
 name: Decompiling Mountain (2014)
-img: /mountain/mountainText.png
-order: 10
+image: /mountain/mountainText.png
+date: 2023-06-19
 ---
 
 Does Mountain (2014) actually use your drawings from the start of the game?

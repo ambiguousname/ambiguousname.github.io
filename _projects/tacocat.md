@@ -1,7 +1,7 @@
 ---
 name: TacoCat
-img: tacocat.png
-order: 9
+image: tacocat.png
+date: 2023-07-11
 ---
 
 I was Lead Officer for [GDA Collab](http://gdacollab.com/) this year. I assisted on production and programming for the whole process. I also did some character rigging.

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "What I Did and How It Works: Gremlin Garden"
-updated: "07/31/2021"
+updated: 2021-07-31
 ---
 
-Hello, and welcome to this explanation of how the racing system for Gremlin Garden works. If you haven't played [Gremlin Garden](https://gggda.itch.io/garden) already, you should. It's got literally everything you could ever want out of a game that has the wild combination of gremlins and gardens.
+Hello, and welcome to this explanation of how the racing system for Gremlin Garden works. If you haven't played [Gremlin Garden](https://gggda.itch.io/garden) already, you should<!--more-->. It's got literally everything you could ever want out of a game that has the wild combination of gremlins and gardens.
 
 Now, I did do a lot of miscellaneous programming for Gremlin Garden, but the main thing I worked on was the entirety of the races.
 

@@ -10,14 +10,17 @@
         <meta name="og:site_name" content="Tyler's Portfolio/Website thingamajigger"></meta>
         <meta name="og:title" content="{{ page.title }}"></meta>
         <meta name="og:type" content="website"></meta>
-        {% if page.img %}
-            <meta name="og:image" content="{{ page.img }}"></meta>
+        {% if page.image %}
+            <meta name="og:image" content="{{ page.image }}"></meta>
         {% endif %}
         <title>{{ page.title }}</title>
         <link rel="stylesheet" href="/assets/css/stylesheet.css" />
         <link rel="stylesheet" href="/assets/css/monokai.css"/>
         <script defer data-domain="ambiguous.name" src="https://plausible.io/js/script.js"></script>
         <script defer data-domain="ambiguous.name" src="https://plausible.io/js/script.outbound-links.js"></script>
+        {% if page.hidden %}
+		    <meta name="robots" content="noindex">
+        {% endif %}
     </head>
     <body>
         <div class="content">

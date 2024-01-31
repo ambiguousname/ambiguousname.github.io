@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Everyone's Modelling Dice Wrong
-img: /assets/images/dicebanner.png
-updated: "07/23/2022"
+image: /assets/images/dicebanner.png
+updated: 2022-07-23
 ---
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 I didn't think I'd ever make this post, but here we are.
 
-Sure, it's been kicking around in the back of my head for a while, but now that the [GMTK Game Jam 2022](https://itch.io/jam/gmtk-jam-2022) is over, and its theme specifically deals with dice...
+Sure, it's been kicking around in the back of my head for a while, but now that the [GMTK Game Jam 2022](https://itch.io/jam/gmtk-jam-2022) is over <!--more-->, and its theme specifically deals with dice...
 
 It's time we had a chat about representing dice accurately. Not everyone is guilty of this, especially if you've never modelled a die before. But there are some who, intentionally or not, misrepresent dice in their games. And you'd better hope that it was an accident, because if not, I'll be reporting you to the proper dice authorities.
 

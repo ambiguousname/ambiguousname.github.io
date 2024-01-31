@@ -2,6 +2,9 @@ plugins:
   - jekyll-feed
 domain: ambiguous.name
 url: https://ambiguous.name
+title: ambiguous.name - Blog
+description: CS major and Applied Math minor geeks out about stuff.
+author: ambiguousname
 
 collections:
   projects:

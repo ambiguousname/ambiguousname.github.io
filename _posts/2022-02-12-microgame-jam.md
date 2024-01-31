@@ -3,7 +3,7 @@ layout: post
 title: "What I Did and How It Works: The Microgame Jam"
 ---
 
-Play the [Microgame Jam](https://game-design-art-collab.itch.io/speed-and-size) if you haven't already, it'll provide important context!
+Play the [Microgame Jam](https://game-design-art-collab.itch.io/speed-and-size) if you haven't already, it'll provide important context<!--more-->!
 
 You can view the source code for the jam [here](https://github.com/GDACollab/Microgame-Game-Jam).
 

@@ -1,0 +1,25 @@
+---
+---
+<!DOCTYPE html>
+<html>
+	{% include_relative _templates/header.html %}
+	<title>ambiguous.name Blog Posts</title>
+	<body>
+		<div class="content">
+			<a href="/" style="text-decoration: none;"><h1>Blog Posts</h1></a>
+			<a href="/feed.xml"><h2>RSS Feed</h2></a>
+			<h3>If you like my stuff, let me know! <code>ambiguousname (at) this website's URL/domain name</code></h3>
+			{% for post in site.posts %}
+			<div class="jumbotron" style="background-image: url({{ post.image }});">
+				<div class="jumbotron-content">
+					<a href="{{ post.url }}" style="text-decoration: none;"><h1>
+						{{ post.title }}
+					</h1></a>
+					<div class="post-excerpt">{{ post.excerpt }}</div>
+					<a href="{{ post.url }}">Read More</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>

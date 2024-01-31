@@ -1,6 +1,7 @@
 ---
 title: "My Wishlist"
-layout: hiddenpost
+layout: post
+hidden: true
 ---
 This is a private page. Not that I mind you being here, it's just weird that you are. This is a private wishlist for things I want because Amazon's wishlist system is weird.
 
