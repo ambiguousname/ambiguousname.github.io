@@ -10,5 +10,5 @@ But it's also published on the internet, so... feel free to look at things I wan
 Oh, and if you happen to be a member of GDA who stumbled onto this wishlist? I will know. **Don't even think about it**.
 
 - Peace on earth
-- MicroSD, portable external hard drive (around 1-2TB combined storage)
+- MicroSD, portable external hard drive/SSD (around 1-2TB combined storage)
 - Freedombox looks cool: https://freedombox.org/
