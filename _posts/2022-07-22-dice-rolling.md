@@ -2,7 +2,7 @@
 layout: post
 title: Everyone's Modelling Dice Wrong
 image: /assets/images/dicebanner.png
-updated: 2022-07-23
+last_modified_at: 2022-07-23 09:30 PDT
 ---
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 I didn't think I'd ever make this post, but here we are.

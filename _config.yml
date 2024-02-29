@@ -4,7 +4,8 @@ domain: ambiguous.name
 url: https://ambiguous.name
 title: ambiguous.name
 description: CS major and Applied Math minor geeks out about stuff.
-author: ambiguousname
+author:
+  name: ambiguousname
 
 collections:
   projects:

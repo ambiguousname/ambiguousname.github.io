@@ -27,13 +27,15 @@
             <a href="/blog"><h1>{{ page.title }}</h1></a>
             {% if page.author %}
             <h2>Written by 
-                {% for author in page.author %}
-                {{ author }}{% if forloop.last != true %},{% endif %}
-                {% endfor %}
+                {% if page.author.name %}
+                    <a href="{{ page.author.uri }}">{{ page.author.name }}</a>
+                {% else %}
+                    {{ page.author }}
+                {% endif %}
             </h2>
             {% endif %}
-            {% if page.updated %} 
-            <h3> Last Updated {{ page.updated }}</h3>
+            {% if page.last_modified_at %}
+            <h3> Last Updated {{ page.last_modified_at | date: "%D %H:%M %Z" }}</h3>
             {% endif %}
             <div class="post-content">
                 {{ content }}
