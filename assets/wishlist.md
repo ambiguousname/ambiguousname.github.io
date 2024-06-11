@@ -10,19 +10,18 @@ Look at this if you want, makes no difference to me.
 - Miscellaneous
 	- Legos.
 - Video Games
-	- [Dwarf Fortress](https://kitfoxgames.itch.io/dwarf-fortress)
-	- [ULTRAKILL](https://www.humblebundle.com/store/ultrakill)
-	- [Trepang2](https://www.humblebundle.com/store/trepang2)
-		- [There's also the ULTRAPANG bundle for both](https://store.steampowered.com/bundle/33227/Ultrapang/)
-	- [Evil West](https://www.humblebundle.com/store/evil-west)
-	- [Mount & Blade 2: Bannerlord](https://www.gog.com/en/game/mount_blade_ii_bannerlord)
-	- [MOLEK-SYNTEZ](https://www.gog.com/en/game/moleksyntez)
 	- [Potion Craft: Alchemist Simulator](https://www.gog.com/en/game/potion_craft_alchemist_simulator)
 	- [Case of the Golden Idol](https://www.gog.com/en/game/the_case_of_the_golden_idol)
 	- [Dread Templar](https://www.gog.com/en/game/dread_templar/)
 	- [Carrier Command 2](https://store.steampowered.com/app/1489630/)
-	- [MEATGRINDER](https://store.steampowered.com/app/1968710/MEATGRINDER/)
-	- [Fights in Tight Spaces](https://store.steampowered.com/app/1265820/Fights_in_Tight_Spaces/)
+	- [WALL-E](https://store.steampowered.com/app/331750/)
+	- [Gloomwood](https://store.steampowered.com/app/1150760/)
+	- [RimWorld - Biotech](https://store.steampowered.com/app/1826140/)
+	- [Pizza Tower](https://store.steampowered.com/app/2231450/)
+	- [Turbo Overkill](https://www.gog.com/en/game/turbo_overkill)
+	- [Slay the Princess](https://www.gog.com/en/game/slay_the_princess)
+	- [Animal Well](https://store.steampowered.com/app/813230/)
+	- [Bomb Rush Cyberfunk](https://www.gog.com/en/game/bomb_rush_cyberfunk)
 - Board Games
 	- Anything from [Always Checkers Publishing](https://alwayscheckers.com/)
 	- [Button Shy Games](https://buttonshygames.com/) seem cool.
