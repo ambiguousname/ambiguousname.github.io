@@ -24,6 +24,7 @@ Look at this if you want, makes no difference to me.
 	- [Bomb Rush Cyberfunk](https://www.gog.com/en/game/bomb_rush_cyberfunk)
 - Board Games
 	- Anything from [Always Checkers Publishing](https://alwayscheckers.com/)
+		- Already have A Complicated Profession and LAST SENTINELS
 	- [Button Shy Games](https://buttonshygames.com/) seem cool.
 		- Already have Sprawlopolis and Tussie Mussie.
 	- [Blood On the Clocktower](https://bloodontheclocktower.com/products/blood-on-the-clocktower-the-game)
