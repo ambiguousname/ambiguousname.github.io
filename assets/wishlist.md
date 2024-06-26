@@ -10,8 +10,6 @@ Look at this if you want, makes no difference to me.
 - Miscellaneous
 	- Legos.
 - Video Games
-	- [Potion Craft: Alchemist Simulator](https://www.gog.com/en/game/potion_craft_alchemist_simulator)
-	- [Case of the Golden Idol](https://www.gog.com/en/game/the_case_of_the_golden_idol)
 	- [Dread Templar](https://www.gog.com/en/game/dread_templar/)
 	- [Carrier Command 2](https://store.steampowered.com/app/1489630/)
 	- [WALL-E](https://store.steampowered.com/app/331750/)
