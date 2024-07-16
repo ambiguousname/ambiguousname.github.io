@@ -4,7 +4,7 @@ tags: ["Google Summer of Code", "SFMOMA"]
 image:
 ---
 
-This is an update post to my [previous post]({% post_url 2024-06-21-summer-plans %}) sent at the start of summer. 
+This is an update post to my [previous post]({% post_url 2024-05-01-summer-plans %}) sent at the start of summer. 
 
 ## Update One
 This one is smaller, but fairly significant! You'll see some of my work at SFMOMA's Artcade, opening sometime around mid-October. SFMOMA is calling it their "Artcade".
