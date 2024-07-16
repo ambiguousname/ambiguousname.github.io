@@ -4,7 +4,7 @@ tags: ["Google Summer of Code", "SFMOMA"]
 image: /assets/images/UltraXtremeGodot.png
 ---
 
-This is an update post to my [previous post]({% post_url 2024-05-01-summer-plans %}) sent at the start of summer<!-- more -->.
+This is an update post to my [previous post]({% post_url 2024-05-01-summer-plans %}) sent at the start of summer<!--more-->.
 
 ## Update One
 This one is smaller, but fairly significant! You'll see some of my work at SFMOMA's Artcade, opening sometime around mid-October. SFMOMA is calling it their "Artcade".
