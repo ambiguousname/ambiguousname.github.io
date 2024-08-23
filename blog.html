@@ -10,7 +10,7 @@
 			<a href="/feed.xml"><h2>RSS Feed</h2></a>
 			<h3>If you like my stuff, email me! <code>ambiguousname (at) this website's URL/domain name</code></h3>
 			{% for post in site.posts %}
-			<div class="jumbotron" style="background-image: url({{ post.image }});">
+			<div class="jumbotron" style="background-image: url({{ post.image }}); {% if post.scale %} background-size: {{ post.scale }}; {% endif %}">
 				<div class="jumbotron-content">
 					<a href="{{ post.url }}" style="text-decoration: none;"><h1>
 						{{ post.title }}

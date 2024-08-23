@@ -2,6 +2,7 @@
 layout: post
 title: "GSoC 2024: A Near Post-Mortem"
 image: /assets/images/diagram.jpg
+scale: 150%
 ---
 
 I'm used to calling most of these kinds of posts postmortems. As part of final submissions though, I need a final report *before* the project is done. So it's almost a post-mortem<!--more-->. The patient's not quite dead yet, but I'm sure we can get there by the end.
