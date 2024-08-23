@@ -31,7 +31,7 @@
 
             {% assign projects = site.projects | sort: 'date' | reverse%}
             {% for project in projects %}
-            <div class="jumbotron" style="background-image: url(/assets/images/{{ project.image }})">
+            <div class="jumbotron" style="background-image: url(/assets/images/{{ project.image }}); {% if project.scale %}background-size: {{ project.scale }}; {% endif %}">
                 <div class="jumbotron-content">
                     <h1>{{ project.name }}</h1>
                     {{ project.content }}
