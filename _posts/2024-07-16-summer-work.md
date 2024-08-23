@@ -48,7 +48,7 @@ But we at least remember Charles Babbage and Ada Lovelace. How long will Diploma
 
 [^birthday]: My old and embarrassing website was preserved, as well as me wishing a happy birthday to one of the HackClub founders.
 
-There's so much that matters to me that I wish was preserved. My favorite songs, books, games, jokes from a dream that I wrote down in my phone. Why can't it all be remembered? I think [Jacob Geller](https://www.youtube.com/watch?v=ukJ_UA-JS5o) has a fantastic video on this: we remember so much, and it does nothing but offer the promise of a slightly longer memory. I want to live through history, but the fundamental law of entropy makes it a near-certainty that so much will be forgotten. I keep thinking bigger and bigger until I can concieve of nothing but an empty Universe with nothing of us left in it.
+There's so much that matters to me that I wish was preserved. My favorite songs, books, games, jokes from a dream that I wrote down in my phone. Why can't it all be remembered? I think [Jacob Geller](https://www.youtube.com/watch?v=ukJ_UA-JS5o) has a fantastic video on this: we remember so much, and it does nothing but offer the promise of a slightly longer memory. I want to live through history, but the fundamental law of entropy makes it a near-certainty that so much will be forgotten. I keep thinking bigger and bigger until I can conceive of nothing but an empty Universe with nothing of us left in it.
 
 Why does this all matter so much?
 
