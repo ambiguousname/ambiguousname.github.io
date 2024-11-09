@@ -5,4 +5,4 @@ date: 2024-08-23
 scale: 150%
 ---
 
-I've contributed to [ICU4X](https://github.com/unicode-org/icu4x/) and [Diplomat](https://github.com/rust-diplomat/diplomat/), both Unicode Consortium projects, under GSoC 2024. You can [read my blog post about it]({% post_url 2024-08-23-google-summer-of-code %})!
+I've contributed to [ICU4X](https://github.com/unicode-org/icu4x/) and [Diplomat](https://github.com/rust-diplomat/diplomat/), both Unicode Consortium projects, under GSoC 2024. You can [read my blog post about it]({% post_url 2024-08-23-google-summer-of-code %})! I also presented my work at [UTW 2024](https://youtu.be/a7IruGTJiJc).
