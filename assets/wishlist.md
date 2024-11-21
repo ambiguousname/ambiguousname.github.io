@@ -11,7 +11,6 @@ Look at this if you want, makes no difference to me.
 	- Legos.
 - Video Games
 	- [Dread Templar](https://www.gog.com/en/game/dread_templar/)
-	- [Carrier Command 2](https://store.steampowered.com/app/1489630/)
 	- [WALL-E](https://store.steampowered.com/app/331750/)
 	- [Gloomwood](https://store.steampowered.com/app/1150760/)
 	- [RimWorld - Biotech](https://store.steampowered.com/app/1826140/)
@@ -20,6 +19,8 @@ Look at this if you want, makes no difference to me.
 	- [Slay the Princess](https://www.gog.com/en/game/slay_the_princess)
 	- [Animal Well](https://store.steampowered.com/app/813230/)
 	- [Bomb Rush Cyberfunk](https://www.gog.com/en/game/bomb_rush_cyberfunk)
+	- [Tiny Glade](https://store.steampowered.com/app/2198150/Tiny_Glade)
+	- [UFO 50](https://store.steampowered.com/app/1147860/UFO_50/)
 - Board Games
 	- Anything from [Always Checkers Publishing](https://alwayscheckers.com/)
 		- Already have A Complicated Profession and LAST SENTINELS
@@ -30,11 +31,9 @@ Look at this if you want, makes no difference to me.
 	- [Steve Jackson Dice](http://www.sjgames.com/dice/)
 	- Asunder, [The Seeker's Guide](https://giftedrebels.com/products/the-seekers-guide-hardcover?variant=41151010734246) and [The Keeper's Tome](https://giftedrebels.com/products/the-keepers-tome-hardcover)
 - Fun Things that would be nice
-	- MicroSD, portable external hard drive/SSD (around 1-2TB combined storage)
-	- Freedombox looks cool: https://freedombox.org/
+	- Oscilloscope
+	- EEPROM Programmer
 	- Hak 5 tools
 		- [Rubber ducky](https://hak5.org/products/usb-rubber-ducky)
 		- [Wifi Pineapple](https://hak5.org/products/wifi-pineapple)
 	- [Flipper Zero](https://shop.flipperzero.one/)
-	- It'd be awesome to try out Van Eck Phreaking sometime, something akin to this [research paper](https://www.usenix.org/legacy/events/sec09/tech/full_papers/vuagnoux.pdf)
-		- Probably would need a good antenna
