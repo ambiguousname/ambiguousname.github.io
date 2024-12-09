@@ -3,7 +3,7 @@ layout: post
 title: Skyrim in Minecraft
 ---
 
-It's been ported to Xbox, Playstation, Nintendo Switch, Alexa, and even your smart fridge. Why not Minecraft?
+It's been ported to Xbox, Playstation, Nintendo Switch, Alexa, and even your smart fridge. Why not Minecraft<!--more-->?
 
 > DISCLAIMER
 
@@ -140,7 +140,7 @@ Here's the UTF-8 representation:
 ```
 GR
 UP^z��GMST�����K
-�����GMST
+�����GMST ...
 ```
 
 Now we settle back into the routine of reading bytes:
@@ -153,6 +153,157 @@ Now we settle back into the routine of reading bytes:
 - Version Control (uint16). We can ignore this one, but its hex value is `0x0A00`.
 - Some unknown value (uint32). We ignore this one, and its hex value is `0x00000000`.
 
-Finally TODO:
+Finally, we've hit the second `GMST`. This actually represents the `GMST` record that [UESP documents for us](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/GMST).
 
-[^math]: From UESP's documentation, I calculated Y = (74/12 + 3) % 10 = 9, M = (74 % 12) + 1 = 3, D = 12. So (assuming my math is right), this would be March 12th, 2009.
+So we have some practice reading `.esm` files! Let's put it all together.
+
+[^math]: From UESP's documentation, I calculated Y = (74/12 + 3) % 10 = 9, M = (74 % 12) + 1 = 3, D = 12. So (assuming my math and guesses as to the time format are right), this would be March 12th, 2009.
+
+#### Putting it all together
+
+Now that we've read UESP's documentation on `.esm`, I think we can extrapolate a fairly simple hierarchy:
+
+- TES4 Record
+	- Record Header (size, flags, ID, timestamp, etc.)
+	- TES4 Record Data
+- Groups
+	- Group Header (size, label, type, timestamp, etc.)
+	- Group Data
+		- Records/Subgroups[^subgroup]
+			- Record/Subgroup Header
+			- Record Data
+
+[^subgroup]: We treat the subgroup the same as a Group, just with a different type.
+
+So this makes reasing `.esm` a cinch. We just need to find the right group associated with the data we want, and read from that. UESP lists all of the groups that Skyrim contains:
+
+```
+GMST, KYWD, LCRT, AACT, TXST, GLOB, CLAS, FACT, HDPT, HAIR, EYES, RACE, SOUN, ASPC,
+MGEF, SCPT, LTEX, ENCH, SPEL, SCRL, ACTI, TACT, ARMO, BOOK, CONT, DOOR, INGR, LIGH,
+MISC, APPA, STAT, SCOL, MSTT, PWAT, GRAS, TREE, CLDC, FLOR, FURN, WEAP, AMMO, NPC_,
+LVLN, KEYM, ALCH, IDLM, COBJ, PROJ, HAZD, SLGM, LVLI, WTHR, CLMT, SPGD, RFCT, REGN,
+NAVI, CELL, WRLD, DIAL, QUST, IDLE, PACK, CSTY, LSCR, LVSP, ANIO, WATR, EFSH, EXPL,
+DEBR, IMGS, IMAD, FLST, PERK, BPTD, ADDN, AVIF, CAMS, CPTH, VTYP, MATT, IPCT, IPDS,
+ARMA, ECZN, LCTN, MESG, RGDL, DOBJ, LGTM, MUSC, FSTP, FSTS, SMBN, SMQN, SMEN, DLBR,
+MUST, DLVW, WOOP, SHOU, EQUP, RELA, SCEN, ASTP, OTFT, ARTO, MATO, MOVT, HAZD, SNDR,
+DUAL, SNCT, SOPM, COLL, CLFM, REVB
+```
+
+In fact, you may recognize some of these names from somewhere...
+
+![Creation Kit "Object Window" that shows a list of potential objects. Lots of objects are listed, including Actor, Music Track, Class, and Faction objects.]
+
+`NPC_` represents actors. `MUST`, music tracks. `CLAS`, classes. `FACT`, factions.
+
+This is all the data you're directly editing when you work with Creation Kit. Except now we have the tools to read through all of these directly. CreationKit isn't even strictly necessarily. You could, if you were so inclined, write a Skyrim mod entirely in a hex editor (or notepad, if you're really twisted inside).
+
+In fact, because there's so much information here, we'll be cross-referencing what we can read ourselves with what CreationKit can tell us[^ck].
+
+[^ck]: If you're interested in following along, [please install CreationKit](https://ck.uesp.net/wiki/Category:Getting_Started)! Make sure CreationKit is installed on the same drive as Skyrim, as otherwise you'll encounter a `missing steamapi.dll` error like I did the first time I tried this.
+
+Regardless, there's a lot of data here. For the purposes of this thought experiment, we don't need all of it. We're only interested in the `WRLD` group, which contains the information we need. That is, world data!
+
+### Part Two: Reading WRLD
+Let's just go to the start of the `WRLD` group and see what's there.
+
+![Hex data from the WRLD group](/assets/images/skyrim/esm_wrld_group.png)
+
+There's a lot here. Let's grab the first 80 bytes or so:
+
+```
+                                 47 52 55 50 99
+7C 7D 0A 57 52 4C 44 00 00 00 00 03 3D 02 00 00
+00 00 00 57 52 4C 44 75 11 16 00 00 00 00 00 3C
+00 00 00 2F 30 1E 00 2C 00 0C 00 45 44 49 44 08
+00 54 61 6D 72 69 65 6C 00 52 4E 41 4D 10 01 E4
+FF 02 00 21 00 00 00 FC EB 10 00
+```
+
+In UTF-8, we get:
+
+```
+GRUP™
+|}�WRLD�����=���
+���WRLDu�������<
+���/0��,���EDID�
+�Tamriel�RNAM��ä
+ÿ��!���üë��
+```
+
+We're just going to skip everything up until the second `WRLD`, since we've read all this group information before. That helpfully eliminates 24 bytes, bringing us to the `WRLD` Record.
+
+I'll just print some information about this `WRLD` record before we dig into the real data:
+
+- Size of 1,446,261 bytes (1.44 MB)
+- No flags
+- FormID of 60 (0x3C000000)
+- Internal Version of 44
+
+Skipping over the rest of the information, we can see this `WRLD` record has an `EDID` (Editor ID) of Tamriel.
+
+Where have I seen that name before?
+
+![Skyrim's Tamriel Object information in Creation Kit](/assets/images/skyrim/tamriel.png)
+
+And there's our FormID! Note that it's flipped because CreationKit is trying to represent the least significant digit last (to make it human readable, whereas `.esm` actually represents things Little Endian).
+
+Before we go any further, let's see what [UESP has to say about `WRLD`](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/WRLD).
+
+There's a bunch of `RNAM` data, which UESP tells us are just references to large Base Objects that will be placed, somehow.
+
+Reading the first `RNAM` record, we can verify this information is correct when we grab the following info:
+
+- It has an initial coordinate of (-28, 2). This is presumably where we're standing from to see these large objects.
+- It counts 33 large objects from this location.
+- The first object is at coordinates (-30, 4) and has FormID `0xFCEB1000`.
+
+Translating the FormID into human-readable format: (`0x0010EBFC`), look for the reference in CreationKit using the Edit->Find Text functionality:
+
+![REFR Form " (0010EBFC) to STAT form 'SkyrimCloudDistant04_0_50' (00027437) in Cell 'Wilderness' (00009960) (4, -30) in Wor...](/assets/images/skyrim/found_reference.png)
+
+Looks like when you stand at (-28, 2), you'll see a big cloud located at (-30, 4). Cool!
+
+There's a lot more `RNAM` records, but it seems like these are not the droids we are looking for. UESP also mentions that each `WRLD` record is followed by group containing a `CELL` record and then multiple sub-`GRUP`s, each containing `CELL` records.
+
+So let's skip ahead 1,446,261 bytes to our first sub-`GRUP` record:
+
+```
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+47 52 55 50 CC 03 22 09 3C 00 00 00 01 00 00 00
+02 48 0A 00 58 B8 17 03 43 45 4C 4C 8B 00 00 00
+00 04 04 00 74 0D 00 00 0F 68 3E 00 28 00 04 00
+```
+
+In UTF-8:
+
+```
+����������������
+GRUPÌ�"�<�������
+�H��X¸��CELL‹���
+����t�����h>�(���
+```
+
+You know the drill. We read the `GRUP` information, and then we skip ahead to `CELL`. Although, hold on one second.
+
+`CELL`'s flags are `0x00040400`. Which in human-readable form is still (coincidentally) `0x00040400`. These flags are:
+
+`0x00040000` - Data is compressed with ZLIB.
+
+`0x00000400` - Persistent Cell.
+
+Let's not bother decompressing `CELL`. In fact, `CELL` doesn't [contain any useful terrain data](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/CELL). It's used for location, lighting, and placing objects. This will be useful for knowing *where* to place terrain data, but we're still not there just yet.
+
+TODO:
+
+I'll just skip ahead to the type of record I know we want. `LAND`:
+
+```
+47 52 55 50 84 58 00 00 E3 90 00 00 09 00 00 00 02 48 0A 00 38 DF 12 00 4C 41 4E 44 CA 2B 00 00 00 00 04 00 E3 A0 00 00 0B 67 3A 00 25 00 0B 00
+```
+
+```
+GRUP„X��ã��������H
+�8ß��LANDÊ+������ã����g:�%���
+```
+
+### Part Three: Minecraft!
