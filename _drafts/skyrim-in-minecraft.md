@@ -191,7 +191,7 @@ DUAL, SNCT, SOPM, COLL, CLFM, REVB
 
 In fact, you may recognize some of these names from somewhere...
 
-![Creation Kit "Object Window" that shows a list of potential objects. Lots of objects are listed, including Actor, Music Track, Class, and Faction objects.]
+![Creation Kit "Object Window" that shows a list of potential objects. Lots of objects are listed, including Actor, Music Track, Class, and Faction objects.](/assets/images/skyrim/ck_objects.png)
 
 `NPC_` represents actors. `MUST`, music tracks. `CLAS`, classes. `FACT`, factions.
 
