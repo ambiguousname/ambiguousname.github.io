@@ -70,7 +70,7 @@ C5 26 01 00 49 4E 43 43 04 00 4E 02 00 00
 
 78 bytes in total.
 
-But of course, the ASCII representation will also be very helpful to us. I'm going to replace every non-ASCII character with � for clarity:
+But of course, the UTF-8 representation will also be very helpful to us. I'm going to replace every human unreadable character with � for clarity:
 
 ```
 TES46�����������
@@ -135,7 +135,7 @@ Let's read the `GRUP` that's right after the `TES4` record:
 
 The `...` symbolizes lots more bytes because, as we'll find out, there are lots more bytes than this!
 
-Here's the ASCII representation:
+Here's the UTF-8 representation:
 
 ```
 GR
