@@ -402,7 +402,7 @@ A Minecraft block's length is 1 meter.
 
 So one Minecraft block length is 70 in-game units.
 
-We also have to factor in build-heights.
+It also makes since to look at Minecraft's build limit to see what sort of height range we have.
 
 Theoretically, Skyrim has a maximum height limit of around 16 billion in-game units, and a minimum height limit of roughly negative 16 billion in game units. This is patently ridiculous, however. Instead, we're more concerned with the largest height the devs ever threw in the game. For that, Skyrim has a maximum height of around 122,000 in-game units and a minimum height of around -8,200 in-game units. For a total maximum height of 130,000 units from top to bottom.
 
