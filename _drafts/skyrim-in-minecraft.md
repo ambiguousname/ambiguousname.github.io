@@ -42,7 +42,7 @@ Here's what we get when we look at `Data/Skyrim.esm`:
 
 ![Hex editor data](/assets/images/skyrim/esm_start.png)
 
-The first four bytes are recognizable right away: `TES4` (0x54455334) refers to The Elder Scrolls IV: Oblivion. A lot of Skyrim's data is based directly on Oblivion, so we'll see some references to that while we go through these files. I'm not sure I understand the rest of these bytes.
+The first four bytes are recognizable right away: `TES4` (`0x54455334`) refers to The Elder Scrolls IV: Oblivion. A lot of Skyrim's data is based directly on Oblivion, so we'll see some references to that while we go through these files. I'm not sure I understand the rest of these bytes.
 
 This is where Skyrim's active modding community comes to save the day. After entering a few different search terms, I eventually find this page: [https://en.uesp.net/wiki/Skyrim_Mod:File_Formats](https://en.uesp.net/wiki/Skyrim_Mod:File_Formats).
 
@@ -146,11 +146,11 @@ UP^z��GMST�����K
 Now we settle back into the routine of reading bytes:
 
 - Record type (char\[4\]). This is just `GRUP`.
-- Size of the group including our group header (uint32). This is `0x5E7A0100`, or 96,862 bytes!
+- Size of the group including our group header (uint32). This is `0x00017A5E`, or 96,862 bytes!
 - Label (uint8\[4\]). How the label is formatted depends on our type, but this is clearly read as `GMST`, or "Game Settings".
 - Group Type (int32). This is `0x00000000`, so `GMST` is a top group.
-- Timestamp (uint16). There's some math[^math] to calculate the timestamp from our value of `0x0C4B`.
-- Version Control (uint16). We can ignore this one, but its hex value is `0x0A00`.
+- Timestamp (uint16). There's some math[^math] to calculate the timestamp from our value of `0x4B0C`.
+- Version Control (uint16). We can ignore this one, but its hex value is `0x000A`.
 - Some unknown value (uint32). We ignore this one, and its hex value is `0x00000000`.
 
 Finally, we've hit the second `GMST`. This actually represents the `GMST` record that [UESP documents for us](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/GMST).
@@ -236,7 +236,7 @@ I'll just print some information about this `WRLD` record before we dig into the
 
 - Size of 1,446,261 bytes (1.44 MB)
 - No flags
-- FormID of 60 (0x3C000000)
+- FormID of 60 (`0x0000003C`)
 - Internal Version of 44
 
 Skipping over the rest of the information, we can see this `WRLD` record has an `EDID` (Editor ID) of Tamriel.
@@ -249,23 +249,11 @@ And there's our FormID! Note that it's flipped because CreationKit is trying to 
 
 Before we go any further, let's see what [UESP has to say about `WRLD`](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/WRLD).
 
-There's a bunch of `RNAM` data, which UESP tells us are just references to large Base Objects that will be placed, somehow.
+Well already, most of this information doesn't look helpful. We're interested in raw vertex data. But we have at least confirmed that we are looking at the World data for Skyrim, which will hold the vertex data we want.
 
-Reading the first `RNAM` record, we can verify this information is correct when we grab the following info:
+UESP mentions that each `WRLD` record is followed by group containing a `CELL` record and then multiple sub-`GRUP`s, each containing Exterior Cell Block information.
 
-- It has an initial coordinate of (-28, 2). This is presumably where we're standing from to see these large objects.
-- It counts 33 large objects from this location.
-- The first object is at coordinates (-30, 4) and has FormID `0xFCEB1000`.
-
-Translating the FormID into human-readable format: (`0x0010EBFC`), look for the reference in CreationKit using the Edit->Find Text functionality:
-
-![REFR Form " (0010EBFC) to STAT form 'SkyrimCloudDistant04_0_50' (00027437) in Cell 'Wilderness' (00009960) (4, -30) in Wor...](/assets/images/skyrim/found_reference.png)
-
-Looks like when you stand at (-28, 2), you'll see a big cloud located at (-30, 4). Cool!
-
-There's a lot more `RNAM` records, but it seems like these are not the droids we are looking for. UESP also mentions that each `WRLD` record is followed by group containing a `CELL` record and then multiple sub-`GRUP`s, each containing `CELL` records.
-
-So let's skip ahead 1,446,261 bytes to our first sub-`GRUP` record:
+So let's skip ahead 1,446,261 bytes past `WRLD` to get our first sub-`GRUP` record:
 
 ```
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -285,25 +273,110 @@ GRUPÌ�"�<�������
 
 You know the drill. We read the `GRUP` information, and then we skip ahead to `CELL`. Although, hold on one second.
 
-`CELL`'s flags are `0x00040400`. Which in human-readable form is still (coincidentally) `0x00040400`. These flags are:
+`CELL`'s flags are `0x00040400`. These flags are:
 
 `0x00040000` - Data is compressed with ZLIB.
 
-`0x00000400` - Persistent Cell.
+`0x00000400` - Persistent[^temp] Cell.
 
-Let's not bother decompressing `CELL`. In fact, `CELL` doesn't [contain any useful terrain data](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/CELL). It's used for location, lighting, and placing objects. This will be useful for knowing *where* to place terrain data, but we're still not there just yet.
+While we might be interested in this `CELL` later on, [`CELL` does not contain any useful terrain data](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/CELL) that we're interested in. It's used for location, lighting, and placing objects. This will be useful for knowing *where* to place terrain data, but we're still not there just yet.
 
-TODO:
-
-I'll just skip ahead to the type of record I know we want. `LAND`:
+Theoretically you could keep reading through `GRUP`s and sub-`GRUP`s until you get to the right `GRUP` that has the information you need, but let's just skip there for convenience's sake. That is, we're interested in the `LAND` record:
 
 ```
-47 52 55 50 84 58 00 00 E3 90 00 00 09 00 00 00 02 48 0A 00 38 DF 12 00 4C 41 4E 44 CA 2B 00 00 00 00 04 00 E3 A0 00 00 0B 67 3A 00 25 00 0B 00
+                                 47 52 55 50 84
+58 00 00 E3 90 00 00 09 00 00 00 02 48 0A 00 38
+DF 12 00 4C 41 4E 44 CA 2B 00 00 00 00 04 00 E3
+A0 00 00 0B 67 3A 00 25 00 0B 00 FE 44 00 00 78
 ```
 
 ```
-GRUP„X��ã��������H
-�8ß��LANDÊ+������ã����g:�%���
+GRUP„
+X��ã��������H��8
+ß��LANDÊ+������ã
+����g:�%���þD��x
 ```
+
+The group:
+
+- Is 22,660 bytes long (including the 24 byte header).
+- Is a child of an Exterior Cell Sub-Block
+	- This group holds the children of a temporary[^temp] cell.
+	- The temporary cell associated with this `GRUP` is a `CELL`, FormID `0x000090E3`.
+
+[^temp]: A persistent cell is a cell that is designed to remember what stuff is in it when you leave. It's what allows bodies to persist in towns once you come back. A temporary cell is just the opposite: it will be unloaded when you leave and will reset when you come back.
+
+Meanwhile, `LAND`:
+
+- Is 11,210 bytes long.
+- Is compressed.
+- Has FormID `0x0000A0E3`.
+
+Let's look for this FormID in the Creation Kit! We use Edit->Find Text.
+
+![Search window with result text: LAND Form " (0000A0E3)](/assets/images/skyrim/esm_land.png)
+
+Land ho! Let's load this sucker in.
+
+![Shot of some dirt and tree leaves](/assets/images/skyrim/land_ho.png)
+
+Looking around, we can actually see that we're very close to the city of Whiterun:
+
+![Shot of a hilly landscape and the city of Whiterun in the background](/assets/images/skyrim/land_whiterun.png)
+
+Exciting! Let's figure out how to actually read `LAND`, since it's compressed. [UESP tells us](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format#Records) that compressed records give the first 4 bytes as the decompressed size.
+
+In this case, that's 
+
+```
+FE 44 00 00
+```
+
+Or 17,662 bytes.
+
+We can't just decompress a little bit of `LAND` to read it, we have to decompress the whole thing.
+
+So we decompress with Zlib's DEFLATE[^decompress]:
+
+```
+44 41 54 41 04 00 1F 00 00 00 56 4E 4D 4C
+```
+
+```
+DATA������VNML
+```
+
+`VNML` is just vertex normals, so we jump to `VHGT`:
+
+```
+               56 48 47 54 48 04 00 80 39 C4 00 F9
+F9 FA FA FA FA FB FB FB FC FC FE FF FF FD FD FE FD
+```
+
+```
+VHGTH��€9Ä�ùù
+úúúúûûûüüþÿÿýýþý
+```
+
+Now UESP tells us how we can exactly [read vertex heights](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/LAND).
+
+- The first 4 bytes represent our offset height, and the height of the land at the southwest of our Cell.
+	- This is `0xC4398000`, or -742. 
+- Each subsequent byte represents some height value.
+	- So the next byte `0x00` represents no change in height at Row 0, Column 1.
+	- The next byte `0xF9` represents a change in height by -7 at Row 0, Column 2.
+	- And so on.
+
+Congrats, now we're reading height data!
+
+We can verify this is the correct height data by opening the heightmap in Creation Kit. Looking at our Cell's reference, the Cell is at coordinates (7, 7). We look at the southwest corner of the cell:
+
+![Cursor hovering over the southwest corner of Cell (7, 7). Z = -5936 at this position.](/assets/images/skyrim/cell_height.png)
+
+Now we just have to take our height value (-742), and multiply it by 8 to get our in-game units height.
+
+-742 * 8 = -5936. This is our Z-value exactly!
+
+Alright. We know how to read `.esm`. We know how to interpret vertex data. Let's move into Minecraft.
 
 ### Part Three: Minecraft!
