@@ -87,25 +87,26 @@ Reading back through UESP's documentation, we see that "TES4 record" is not just
 So, a Record is made up of:
 
 - A type (uint8\[4\], 4 bytes). This is `TES4` (`0x54455334`), which we already know.
-- The size of the data field (uint32, 4 bytes). `.esm` files are Little Endian, so the least significant byte is first. We read `0x36000000` as 54.
+- The size of the data field (uint32, 4 bytes). `.esm` byte order is Little Endian, so the least significant byte is first. So we interpret `0x36000000` as `0x00000036`, which is 54.
+	- For all future numbers, I will automatically re-arrange the bytes to account for Little Endian ordering.
 	- The whole record is 78 bytes, so we know that this doesn't include the information that all records must contain.
-- The flag (uint32, 4 bytes). We read `0x81000000`. Because this is Little Endian, we read this as `0x00000080` | `0x00000001`, or:
+- The flag (uint32, 4 bytes). This a value of `0x00000081`. Or:
 	- `0x00000001` - TES4 Master (ESM) file
 	- `0x00000080` - Localized, loads string files associated with this module.
 - The record form identifier (uint32, 4 bytes). This is `0x00000000`, or 0. 
 - The timestamp (uint16, 2 bytes). This is `0x0000`, or 0.
 - Version control info (uint16, 2 bytes). This is also `0x0000`.
-- Internal version info (uint16, 2 bytes). This is `0x2C00`, or 44.
+- Internal version info (uint16, 2 bytes). This is `0x002C`, or 44.
 - Some unknown value (uint16, 2 bytes). This is `0x0000`.
 
 After parsing each of these, we've finally reached `HEDR`! We've just read 24 bytes, and we know the whole record is 78 bytes. Therefore, as the size told us, we have exactly 64 bytes left to read before we read the whole record. Great!
 
 `HEDR` is a [field](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format#Field) is made up of 12 + 6 bytes:
 - Field type (uint8\[4\], 4 bytes). This is `HEDR` (`0x48454452`).
-- Size of the field (uint16, 2 bytes). As UESP tells us, this value is `0x0C00`, or 12 bytes.
+- Size of the field (uint16, 2 bytes). As UESP tells us, this value is `0x000C`, or 12 bytes.
 - Version (float32, 4 bytes). This is `0x48E1DA3F`, or roughly 1.71.
-- Number of records and groups (uint32, 4 bytes). We get `0x750A0E00`, or 920181. WOW! That's a lot of records and groups.
-- Next available object ID (uint32, 4 bytes). This is `0x930F00FF`, or 4278194067.
+- Number of records and groups (uint32, 4 bytes). We get `0x000E0A75`, or 920,181 groups and records. WOW! That's a lot of records and groups.
+- Next available object ID (uint32, 4 bytes). This is the object ID `0xFF000F93`.
 
 The next few fields we also read fairly easily.
 
