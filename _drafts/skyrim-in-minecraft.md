@@ -280,6 +280,8 @@ You know the drill. We read the `GRUP` information, and then we skip ahead to `C
 
 `0x00000400` - Persistent[^temp] Cell.
 
+[^temp]: A persistent cell is a cell that is designed to remember what stuff is in it when you leave. It's what allows bodies to persist in towns once you come back. A temporary cell is just the opposite: it will be unloaded when you leave and will reset when you come back.
+
 While we might be interested in this `CELL` later on, [`CELL` does not contain any useful terrain data](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/CELL) that we're interested in. It's used for location, lighting, and placing objects. This will be useful for knowing *where* to place terrain data, but we're still not there just yet.
 
 Theoretically you could keep reading through `GRUP`s and sub-`GRUP`s until you get to the right `GRUP` that has the information you need, but let's just skip there for convenience's sake. That is, we're interested in the `LAND` record:
@@ -302,10 +304,10 @@ The group:
 
 - Is 22,660 bytes long (including the 24 byte header).
 - Is a child of an Exterior Cell Sub-Block
-	- This group holds the children of a temporary[^temp] cell.
-	- The temporary cell associated with this `GRUP` is a `CELL`, FormID `0x000090E3`.
+	- This group holds the temporary children of a cell[^tempchild].
+	- The cell associated with this `GRUP` is a `CELL`, FormID `0x000090E3`.
 
-[^temp]: A persistent cell is a cell that is designed to remember what stuff is in it when you leave. It's what allows bodies to persist in towns once you come back. A temporary cell is just the opposite: it will be unloaded when you leave and will reset when you come back.
+[^tempchild]: These are children that the game does not keep track of when we have unloaded.
 
 Meanwhile, `LAND`:
 
@@ -390,24 +392,49 @@ Forget everything you know about video games. We're going to put Skyrim in Minec
 
 Or at least, a little bit of Skyrim's terrain.
 
-TODO:
+There's a lot of information we're going to need in taking Skyrim's heightmap and moving it into Minecraft. That is:
 
-#### Units!
+1. Unit conversion
+3. Tooling
+
+#### Unit Conversion
 
 There are so many debates about this, but we don't want to jump into the deep end on things. Let's make things super simple for ourselves.
 
+##### Width
+
 [UESP says that each Cell is 4096 in-game units by 4096 in-game units](https://ck.uesp.net/wiki/Exterior_Cells). This is equivalent, apparently, to 58.5 meters. 
 
-A Minecraft block's length is 1 meter.
+A Minecraft block's length is 1 meter. So one Minecraft block length is 70 in-game units.
 
-So one Minecraft block length is 70 in-game units.
+A Minecraft chunk is 16 x 16 blocks, so about 1,120 x 1,120 Skyrim units. This means one Skyrim Cell is around 3.6 Minecraft Chunks. Skyrim has a width of 120 x 95 cells in the Tamriel `WRLD`, so our Minecraft world is going to be 432 x 342 Chunks.
+
+##### Height
 
 It also makes since to look at Minecraft's build limit to see what sort of height range we have.
 
 Theoretically, Skyrim has a maximum height limit of around 16 billion in-game units, and a minimum height limit of roughly negative 16 billion in game units. This is patently ridiculous, however. Instead, we're more concerned with the largest height the devs ever threw in the game. For that, Skyrim has a maximum height of around 122,000 in-game units and a minimum height of around -8,200 in-game units. For a total maximum height of 130,000 units from top to bottom.
 
-Minecraft's maximum build height, starting from the bottom of the world to the top (at least, in custom worlds) is 4,064 blocks.
+Minecraft's maximum build height, starting from the bottom of the world to the top (at least, in custom worlds) seems to be 6,128 blocks. However, the game lags once you even begin to approach that point.
 
-Given our 70 in-game units conversion, Minecraft gives us a coverage of around 284,480 Skyrim units. That's more than satisfactory for our purposes.
+So we're going to go with a height limit of around 2,048 blocks, which covers 143,360 Skyrim units. That's more than satisfactory for our purposes.
 
-TODO: Mention that each vertex is 128 units apart (or roughly 1.82 meters apart) (https://ck.uesp.net/wiki/Exterior_Cells)
+#### Tooling
+Now that we've evaluated our problems, we have a few options:
+
+1. Create a Minecraft Java Mod
+	a. This would be ideal for a long term project.
+	b. I'm going to rule this one out though, as it will most likely involve getting very technically involved in understanding how Minecraft does world generation to load the `.esm` file in real-time.
+2. Create a Datapack
+	a. Will have to use this anyways to increase the height limit.
+	b. But I've heard `.mcfunction` files are a pain to work with, so we will be minimizing our use as much as possible.
+3. Modify World Data with an external tool (i.e., Python)
+	a. Easiest to set up and modify, assuming we can find a library to read Minecraft's [Anvil file format]().
+	b. I found this [Rust library](https://docs.rs/fastanvil/0.31.0/fastanvil/), which seems to be able to correctly parse the datapack I've created.
+
+So, we're going to try to modify a Minecraft save with a Datapack and a Rust library. Let's hop to it.
+
+#### The Process
+
+
+TODO: Additionally, each [vertex from `VHGT` is 128 units apart](https://ck.uesp.net/wiki/Exterior_Cells). This means that each Minecraft block covers around 1.82 vertices. That's soemthing to keep in mind when we actually 
