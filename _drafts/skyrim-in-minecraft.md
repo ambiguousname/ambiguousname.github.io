@@ -339,6 +339,8 @@ We can't just decompress a little bit of `LAND` to read it, we have to decompres
 
 So we decompress with Zlib's DEFLATE[^decompress]:
 
+[^decompress]: I actually just copied the raw data into a txt file and used `openssl zlib -d < data.txt > out.txt` on the command line, if you're curious as to how to do this yourself.
+
 ```
 44 41 54 41 04 00 1F 00 00 00 56 4E 4D 4C
 ...
