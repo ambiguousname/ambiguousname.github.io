@@ -380,3 +380,27 @@ Now we just have to take our height value (-742), and multiply it by 8 to get ou
 Alright. We know how to read `.esm`. We know how to interpret vertex data. Let's move into Minecraft.
 
 ### Part Three: Minecraft!
+
+Forget everything you know about video games. We're going to put Skyrim in Minecraft.
+
+Or at least, a little bit of Skyrim's terrain.
+
+TODO:
+
+#### Units!
+
+There are so many debates about this, but we don't want to jump into the deep end on things. Let's make things super simple for ourselves.
+
+[UESP says that each Cell is 4096 in-game units by 4096 in-game units](https://ck.uesp.net/wiki/Exterior_Cells). This is equivalent, apparently, to 58.5 meters. 
+
+A Minecraft block's length is 1 meter.
+
+So one Minecraft block length is 70 in-game units.
+
+We also have to factor in build-heights.
+
+Theoretically, Skyrim has a maximum height limit of around 16 billion in-game units, and a minimum height limit of roughly negative 16 billion in game units. This is patently ridiculous, however. Instead, we're more concerned with the largest height the devs ever threw in the game. For that, Skyrim has a maximum height of around 122,000 in-game units and a minimum height of around -8,200 in-game units. For a total maximum height of 130,000 units from top to bottom.
+
+Minecraft's maximum build height, starting from the bottom of the world to the top (at least, in custom worlds) is 4,064 blocks.
+
+Given our 70 in-game units conversion, Minecraft gives us a coverage of around 284,480 Skyrim units. That's more than satisfactory for our purposes.
