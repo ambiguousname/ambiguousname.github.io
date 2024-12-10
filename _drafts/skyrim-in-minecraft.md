@@ -3,7 +3,7 @@ layout: post
 title: Skyrim in Minecraft
 ---
 
-It's been ported to Xbox, Playstation, Nintendo Switch, Alexa, and even your smart fridge. Why not Minecraft<!--more-->?
+It's been ported to PC, Xbox, Playstation, Nintendo Switch, PC (Again), Xbox (Again), Playstation (Again), PC (Again Again), Xbox (Again Again), Playstation (Again Again), and even Alexa. Why not Minecraft<!--more-->?
 
 > DISCLAIMER
 
