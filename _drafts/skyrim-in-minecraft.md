@@ -340,21 +340,23 @@ So we decompress with Zlib's DEFLATE[^decompress]:
 
 ```
 44 41 54 41 04 00 1F 00 00 00 56 4E 4D 4C
+...
 ```
 
 ```
 DATA������VNML
+...
 ```
 
 `VNML` is just vertex normals, so we jump to `VHGT`:
 
 ```
-               56 48 47 54 48 04 00 80 39 C4 00 F9
+...            56 48 47 54 48 04 00 80 39 C4 00 F9
 F9 FA FA FA FA FB FB FB FC FC FE FF FF FD FD FE FD
 ```
 
 ```
-VHGTH��€9Ä�ùù
+... VHGTH��€9Ä�ùù
 úúúúûûûüüþÿÿýýþý
 ```
 
@@ -404,3 +406,5 @@ Theoretically, Skyrim has a maximum height limit of around 16 billion in-game un
 Minecraft's maximum build height, starting from the bottom of the world to the top (at least, in custom worlds) is 4,064 blocks.
 
 Given our 70 in-game units conversion, Minecraft gives us a coverage of around 284,480 Skyrim units. That's more than satisfactory for our purposes.
+
+TODO: Mention that each vertex is 128 units apart (or roughly 1.82 meters apart) (https://ck.uesp.net/wiki/Exterior_Cells)
