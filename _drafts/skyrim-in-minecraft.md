@@ -407,7 +407,9 @@ There are so many debates about this, but we don't want to jump into the deep en
 
 A Minecraft block's length is 1 meter. So one Minecraft block length is 70 in-game units.
 
-A Minecraft chunk is 16 x 16 blocks, so about 1,120 x 1,120 Skyrim units. This means one Skyrim Cell is around 3.6 Minecraft Chunks. Skyrim has a grid of 119 x 94 cells in the Tamriel `WRLD`, so our Minecraft world is going to be roughly 428.4 x 338.4 Chunks.
+But we're going to instead scale the of Skyrim up just a little, by about 9.4%. This way, we can say that one Minecraft block will be 64 Skyrim Units.
+
+A Minecraft chunk is 16 x 16 blocks, so about 1,024 x 1,1024 Skyrim units. So we say one Skyrim Cell is 4 Minecraft Chunks. Skyrim has a grid of 119 x 94 cells in the Tamriel `WRLD`, so our Minecraft world is going to be roughly 476 * 376 Chunks.
 
 ##### Height
 
@@ -417,7 +419,7 @@ Theoretically, Skyrim has a maximum height limit of around 16 billion in-game un
 
 Minecraft's maximum build height, starting from the bottom of the world to the top (at least, in custom worlds) seems to be 6,128 blocks. However, the game lags once you even begin to approach that point.
 
-So we're going to go with a height limit of around 2,048 blocks, which covers 143,360 Skyrim units. That's more than satisfactory for our purposes.
+So we're going to go with a height limit of around 2,048 blocks, which covers 131,072 Skyrim units. That's more than satisfactory for our purposes.
 
 #### Tooling
 Now that we've evaluated our problems, we have a few options:
