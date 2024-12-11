@@ -407,7 +407,7 @@ There are so many debates about this, but we don't want to jump into the deep en
 
 A Minecraft block's length is 1 meter. So one Minecraft block length is 70 in-game units.
 
-A Minecraft chunk is 16 x 16 blocks, so about 1,120 x 1,120 Skyrim units. This means one Skyrim Cell is around 3.6 Minecraft Chunks. Skyrim has a width of 120 x 95 cells in the Tamriel `WRLD`, so our Minecraft world is going to be 432 x 342 Chunks.
+A Minecraft chunk is 16 x 16 blocks, so about 1,120 x 1,120 Skyrim units. This means one Skyrim Cell is around 3.6 Minecraft Chunks. Skyrim has a grid of 119 x 94 cells in the Tamriel `WRLD`, so our Minecraft world is going to be roughly 428.4 x 338.4 Chunks.
 
 ##### Height
 
