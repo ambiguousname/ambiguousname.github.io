@@ -407,7 +407,7 @@ There are so many debates about this, but we don't want to jump into the deep en
 
 A Minecraft block's length is 1 meter. So one Minecraft block length is 70 in-game units.
 
-But we're going to instead scale the of Skyrim up just a little, by about 9.4%. This way, we can say that one Minecraft block will be 64 Skyrim Units.
+70 does not create nice and even divisions however, so we're going to instead scale Skyrim up just a little, by about 9.4%. This way, we can say that one Minecraft block will be 64 Skyrim Units.
 
 A Minecraft chunk is 16 x 16 blocks, so about 1,024 x 1,1024 Skyrim units. So we say one Skyrim Cell is 4 Minecraft Chunks. Skyrim has a grid of 119 x 94 cells in the Tamriel `WRLD`, so our Minecraft world is going to be roughly 476 * 376 Chunks.
 
