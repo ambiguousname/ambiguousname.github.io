@@ -412,11 +412,11 @@ We also need to know how many blocks are in a vertex, so we know how many blocks
 
 It also makes since to look at Minecraft's build limit to see what sort of height range we have.
 
-Theoretically, Skyrim has a maximum height limit of around 16 billion in-game units, and a minimum height limit of roughly negative 16 billion in game units. This is patently ridiculous, however. Instead, we're more concerned with the largest height the devs ever threw in the game. For that, Skyrim has a maximum height of around 122,000 in-game units and a minimum height of around -8,200 in-game units. For a total maximum height of 130,000 units from top to bottom.
+Theoretically, Skyrim has a maximum height limit of around 16 billion in-game units, and a minimum height limit of roughly negative 16 billion in game units. This is patently ridiculous, however. Instead, we're more concerned with the largest height the devs ever threw in the game. For that, Skyrim has a maximum height of 39,392 in-game units and a minimum height of -37,032 in-game units[^minmax]. For a total maximum height of around 80,000 units from top to bottom.
 
-Converting to Minecraft units, our lowest point is at -128 blocks, while our highest is at 1,906 blocks. That gives us roughly 2,034 blocks to render top to bottom. Generating a world with a height limit of 2,048 blocks creates a lot of performance problems however, and some scaling for performance reasons is A-OK with me.
+[^minmax]: Funnily enough, Skyrim's heightmap editor lies about these min and max heights for whatever reason. So I had to read all vertex data across all `LAND` tags to grab the lowest and tallest points.
 
-So we're going to use a height of 1440 blocks, which is about 70% of Skyrim's height.
+Converting to Minecraft units, our lowest point can be captured by -592 blocks, while our highest at 624 blocks. That gives us roughly 1,216 blocks to render top to bottom, which Minecraft can handle using custom world files.
 
 Now that we know how to draw our blocks, let's get to putting them in Minecraft!
 
@@ -489,13 +489,36 @@ Ta-da! Now to generate the rest of the terrain.
 
 I'll skip over a few more hours of debugging and math corrections. After a healthy dose of persistence (along with all of the self-imposed breaks that requires) we finally can see the end:
 
-![]()
+![Full stone landscape in Minecraft](/assets/images/skyrim/7,7full.png)
 
 ## Wrapping Up
+
+Feel free to [download the world]() and try things out for yourself!
 
 > NOTE
 
 > It's probably a good idea to turn down your render distance before downloading the world. I have mine set to 16 chunks.
+
+You can get any chunk's X and Z coordinates in blocks from a Cell's X and Y:
+
+Chunk X Block = Cell X * 4 * 16
+Chunk Z Block = Cell Z * 4 * 16
+
+You can also get any block's coordinates from Skyrim Units:
+
+Block X = Skyrim X / 64
+Block Y = Skyrim Z / 64
+Block Z = Skyrim Y / 64
+
+Some choice locations for you to try:
+
+- Helgen is 286, 143, -1241
+- Whiterun is 301, 55, -119
+- The College of Winterhold is 1816, 120, 1742
+- The Dark Brotherhood Sanctuary is -650, -68, -1309
+- The Throat of the World is 880, 568, -758
+
+You can [grab lots more coordinates from this map](https://gamemap.uesp.net/sr/?world=skyrim)!
 
 ### Improvements
 
@@ -503,3 +526,5 @@ There are a few things I can think of off the top of my head that could be done 
 
 - Threading support
 	- 
+- Water
+- Vertex Color/Texture Sampling
