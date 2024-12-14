@@ -1,15 +1,9 @@
 ---
 layout: post
-title: Skyrim in Minecraft
+title: Porting Skyrim's Terrain to Minecraft
 ---
 
 It's been ported to PC, Xbox, Playstation, Nintendo Switch, PC (Again), Xbox (Again), Playstation (Again), PC (Again Again), Xbox (Again Again), Playstation (Again Again), and even Alexa. Why not Minecraft<!--more-->?
-
-> DISCLAIMER
-
-> I am about to engage in a hypothetical thought experiment.
-
-> There will unfortunately, be no playable version of what I am about to describe.
 
 ## Background
 
@@ -25,11 +19,11 @@ Like maybe say... Minecraft?
 
 ## Skyrim in Minecraft
 
-I'm going to tap the 
+I'm going to put a big
 
 > DISCLAIMER
 
-sign before we get started. Making Minecraft into a `.esm` reader is a daunting task. Even picking one facet of Skyrim to port over would take months to get running in Minecraft. But it's fun to imagine doing things, and so I'm going to pick a simple task for us to hypothetically tackle.
+sign here before we get started. Making Minecraft into a `.esm` reader is a daunting task. Even picking one facet of Skyrim to port over would take months to get running in Minecraft. But it's fun to imagine doing things, and so I'm going to pick a (relatively) simple task for us to tackle.
 
 Say, taking Skyrim's landscape and converting it into a world map for Minecraft.
 
@@ -390,18 +384,19 @@ Alright. We know how to read `.esm`. We know how to interpret vertex data. Let's
 
 Forget everything you know about video games. We're going to put Skyrim in Minecraft.
 
-Or at least, a little bit of Skyrim's terrain.
+Or at least, Skyrim's terrain.
 
-There's a lot of information we're going to need in taking Skyrim's heightmap and moving it into Minecraft. That is:
+Now that we've actually got Skyrim's terrain data, there are two things we need to deal with before we have a working map.
 
-1. Unit conversion
-3. Tooling
+First, converting Skyrim units to Minecraft blocks.
+
+Second, knowing how to make Minecraft parse that block data.
 
 #### Unit Conversion
 
 There are so many debates about this, but we don't want to jump into the deep end on things. Let's make things super simple for ourselves.
 
-##### Width
+##### Width and Length
 
 [UESP says that each Cell is 4096 in-game units by 4096 in-game units](https://ck.uesp.net/wiki/Exterior_Cells). This is equivalent, apparently, to 58.5 meters. 
 
@@ -411,32 +406,100 @@ A Minecraft block's length is 1 meter. So one Minecraft block length is 70 in-ga
 
 A Minecraft chunk is 16 x 16 blocks, so about 1,024 x 1,1024 Skyrim units. So we say one Skyrim Cell is 4 Minecraft Chunks. Skyrim has a grid of 119 x 94 cells in the Tamriel `WRLD`, so our Minecraft world is going to be roughly 476 * 376 Chunks.
 
+We also need to know how many blocks are in a vertex, so we know how many blocks to place for each vertex we read. Luckily, UESP has this info too! Each [vertex from `VHGT` is 128 units apart](https://ck.uesp.net/wiki/Exterior_Cells). So each vertex covers 2 x 2 blocks, which means we'll be placing groups of 4 blocks for each vertex.
+
 ##### Height
 
 It also makes since to look at Minecraft's build limit to see what sort of height range we have.
 
 Theoretically, Skyrim has a maximum height limit of around 16 billion in-game units, and a minimum height limit of roughly negative 16 billion in game units. This is patently ridiculous, however. Instead, we're more concerned with the largest height the devs ever threw in the game. For that, Skyrim has a maximum height of around 122,000 in-game units and a minimum height of around -8,200 in-game units. For a total maximum height of 130,000 units from top to bottom.
 
-Minecraft's maximum build height, starting from the bottom of the world to the top (at least, in custom worlds) seems to be 6,128 blocks. However, the game lags once you even begin to approach that point.
+Converting to Minecraft units, our lowest point is at -128 blocks, while our highest is at 1,906 blocks. That gives us roughly 2,034 blocks to render top to bottom. Generating a world with a height limit of 2,048 blocks creates a lot of performance problems however, and some scaling for performance reasons is A-OK with me.
 
-So we're going to go with a height limit of around 2,048 blocks, which covers 131,072 Skyrim units. That's more than satisfactory for our purposes.
+So we're going to use a height of 1440 blocks, which is about 70% of Skyrim's height.
 
-#### Tooling
-Now that we've evaluated our problems, we have a few options:
+Now that we know how to draw our blocks, let's get to putting them in Minecraft!
 
-1. Create a Minecraft Java Mod
-	a. This would be ideal for a long term project.
-	b. I'm going to rule this one out though, as it will most likely involve getting very technically involved in understanding how Minecraft does world generation to load the `.esm` file in real-time.
-2. Create a Datapack
-	a. Will have to use this anyways to increase the height limit.
-	b. But I've heard `.mcfunction` files are a pain to work with, so we will be minimizing our use as much as possible.
-3. Modify World Data with an external tool (i.e., Python)
-	a. Easiest to set up and modify, assuming we can find a library to read Minecraft's [Anvil file format]().
-	b. I found this [Rust library](https://docs.rs/fastanvil/0.31.0/fastanvil/), which seems to be able to correctly parse the datapack I've created.
+#### Parsing Block Data
+We have a few options for ensuring Minecraft can parse the block data we want to give it:
 
-So, we're going to try to modify a Minecraft save with a Datapack and a Rust library. Let's hop to it.
+##### Option 1: Minecraft Java Mod
 
-#### The Process
+This would be ideal for long term projects looking to actually mod Skyrim INTO Minecraft.
 
+This is the most technically involved, as we'd basically be looking to recreate major chunks of the Skyrim executable in Minecraft Java. This would be parsing terrain data in real-time and generating blocks on the fly from that streamed data.
 
-TODO: Additionally, each [vertex from `VHGT` is 128 units apart](https://ck.uesp.net/wiki/Exterior_Cells). This means that each Minecraft block covers around 1.82 vertices. That's soemthing to keep in mind when we actually 
+For obvious reasons, this one is out. I am not going to be the guy who spends 50 years of his life making a total conversion Skyrim mod in Minecraft. No thank you.
+
+##### Option 2: Datapack
+
+Datapacks offer us nice `.mcfunction` files that we can use to execute commands like say, placing blocks.
+
+This is also out, for a few reasons. For one, `.mcfunction`s are notoriously limiting. We'd have to use something like a pre-processor to encode ALL of the blocks we want to place. Then we'd have to open a Minecraft save and place them all at once. For two, performance is a huge issue here. Even without factoring in heights, we would be placing 45,817,856 blocks. Minecraft cannot possibly handle all of that in real time.
+
+We're still going to be using Datapacks to increase the height limit of the world, but we're going to have to use something else to create the terrain data for us.
+
+##### Option 3: World Save
+
+We can have a program generate a Minecraft save for us to use.
+
+This is the most convenient, as all Minecraft Java worlds use the `.mca` file format for terrain data. If we can just write chunk data into these files, then we're golden.
+
+I found the [Fastanvil](https://docs.rs/fastanvil/0.31.0/fastanvil/) Rust library for parsing Chunk data. It even has a function for writing Chunk byte data to `.mca` files!
+
+Unfortunately, I did not realize that Fastanvil is primarily designed for *reading* Chunk data, and does not provide any helpers for creating Chunk byte data in Rust.
+
+That's okay! We'll just have to write our own serializer. Fastanvil uses serde, which is great news for us because I can just define a few structs:
+
+```rs
+#[derive(Serialize, Debug)]
+#[serde(rename_all="PascalCase")]
+pub struct Chunk {
+	pub data_version : i32,
+
+	#[serde(rename="xPos")]
+	pub x_pos : i32,
+	#[serde(rename="zPos")]
+	pub z_pos : i32,
+	#[serde(rename="yPos")]
+	pub y_pos : i32,
+	
+	pub status : String,
+
+	#[serde(rename="sections")]
+	pub sections : Vec<Section>,
+}
+```
+
+And serde handles the serialization into Minecraft's NBT format for us!
+
+So, hack out a Rust parser of the `.esm` file format (like we talked about) and a Rust Minecraft save file writer over the course of a few days or so, and we can finally test the results of all our hard work.
+
+Let's generate the first Cell we found at (7, 7) to see what we get:
+
+![Huge chunk of stone rising into the air that eventually flattens out](/assets/images/skyrim/7,7huge.png)
+
+Well, clearly there's something wrong here. No way that we should be getting such huge jumps between our vertices.
+
+Thankfully, this was just an issue of me reading vertex offset data as an unsigned byte instead of a signed byte. A quick fix and:
+
+![More reasonable chunk of stone, that looks like a descending gradient](/assets/images/skyrim/7,7chunk.png)
+
+Ta-da! Now to generate the rest of the terrain.
+
+I'll skip over a few more hours of debugging and math corrections. After a healthy dose of persistence (along with all of the self-imposed breaks that requires) we finally can see the end:
+
+![]()
+
+## Wrapping Up
+
+> NOTE
+
+> It's probably a good idea to turn down your render distance before downloading the world. I have mine set to 16 chunks.
+
+### Improvements
+
+There are a few things I can think of off the top of my head that could be done to improve the project:
+
+- Threading support
+	- 
