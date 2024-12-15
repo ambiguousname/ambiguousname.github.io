@@ -537,7 +537,7 @@ There are a few things I can think of off the top of my head that I might (or an
 
 Of course, if anyone really wanted to take this project to its logical conclusion, they could develop a Minecraft mod that streams all this data live and on-the-fly in-game. Then you could convert object models to Minecraft models in real-time. Then weapons. Spells. NPCs. Quests. You could be running Skyrim IN Minecraft. Then it'd be super simple to port Skyrim expansions into Minecraft. Then mods. Then you could start adding support for all past Elder Scrolls games. Morrowind? Oblivion? In Minecraft? You got it. The Fallout games run on the same engine, you could move them in there too. Starfield. Once you've put it all in Minecraft, then you don't even need Bethesda anymore. You can make Elder Scrolls VI in Minecraft without even playing it. Anything is possible so long as you sacrifice your meaningless time to such daunting tasks. Your life is but one of many; if you falter in this quest there will be others. Skyrim will be of them, and of you, for so long as there is life in the body. And even after? You will be of service in Sovngarde.
 
-Regardless, that whole racket is probably not for me. I have better things to do with my life, but if anyone wants to put themselves through such a Sisyphean task, I would be excited to see it happen.
+Regardless, that whole racket is probably not for me. I have better things to do with my life, but if anyone wants to put themselves through such an arduous task, I would be excited to see it happen.
 
 ### Lessons Learned
 
