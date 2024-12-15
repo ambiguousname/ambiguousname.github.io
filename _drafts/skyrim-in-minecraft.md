@@ -493,7 +493,7 @@ I'll skip over a few more hours of debugging and math corrections. After a healt
 
 ## Wrapping Up
 
-Feel free to [download the world]() and try things out for yourself!
+Feel free to [download the world](https://drive.proton.me/urls/HVWNDC03T0#VKyc404VoD40) and try things out for yourself!
 
 > NOTE
 
@@ -520,11 +520,27 @@ Some choice locations for you to try:
 
 You can [grab lots more coordinates from this map](https://gamemap.uesp.net/sr/?world=skyrim)!
 
+All of the [code I used to generate the world is open source](https://github.com/ambiguousname/Skyrim2Minecraft), so feel free to make your own stuff with it! I'd also be delighted to accept any PRs. Speaking of:
+
 ### Improvements
 
-There are a few things I can think of off the top of my head that could be done to improve the project:
+There are a few things I can think of off the top of my head that I might (or anyone else could!) do if I ever decide to revisit this project:
 
 - Threading support
-	- 
+	- I wrote most of this code for generation over the course of a few days. Of course, it's *wildly* inefficient because I was focused on making sure it was running, not that it was good. Improving the efficiency with threads would be a great next step.
 - Water
+	- Each `CELL` record holds information about the height of associated bodies of water. It'd be a cinch to read that data and turn it into `minecraft:water` blocks.
 - Vertex Color/Texture Sampling
+	- Everything is all stone, all the time, forever. `LAND` records also hold information about the colors of each vertex (and their texture information!) so this would be a super simple first step to actually adding life and color by swapping out blocks based on this info.
+
+Of course, if anyone really wanted to take this project to its logical conclusion, they could develop a Minecraft mod that streams all this data live and on-the-fly in-game. Then you could convert object models to Minecraft models in real-time. Then weapons. Spells. NPCs. Quests. You could be running Skyrim IN Minecraft. Then it'd be super simple to port Skyrim expansions into Minecraft. Then mods. Then you could start adding support for all past Elder Scrolls games. Morrowind? Oblivion? In Minecraft? You got it. The Fallout games run on the same engine, you could move them in there too. Starfield. Once you've put it all in Minecraft, then you don't even need Bethesda anymore. You can make Elder Scrolls VI in Minecraft without even playing it. Anything is possible so long as you sacrifice your meaningless time to such daunting tasks. Your life is but one of many; if you falter in this quest there will be others. Skyrim will be of them, and of you, for so long as there is life in the body. And even after? You will be of service in Sovngarde.
+
+Regardless, that whole racket is probably not for me. I have better things to do with my life, but if anyone wants to put themselves through such a Sisyphean task, I would be excited to see it happen.
+
+### Lessons Learned
+
+Bethesda's pretty cool for making all of this accessible to the Skyrim modding community, and I'm glad that I got to be able to just root around and have some fun in there. And huge thanks to the folks at UESP for documenting *everything* that I used in this post. This project certainly would not exist without them. So, to sum it up: Modders are cool. Skyrim is cool. Minecraft is cool. And you? You're pretty cool. Thanks for stopping by.
+
+Anyways, check out my other projects! I just released a huge update to my [hobby project, Spider-880](https://ambiguousname.itch.io/spider-880). And I've got many other pies baking in the background. I'm [on Bluesky now](https://bsky.app/profile/ambiguous.name) as [well as Mastodon](https://mathstodon.xyz/@ambiguousname), if you have any questions about what you just read.
+
+Thanks so much for your time. See ya!
