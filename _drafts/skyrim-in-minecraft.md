@@ -491,6 +491,8 @@ I'll skip over a few more hours of debugging and math corrections. After a healt
 
 ![Full stone landscape in Minecraft](/assets/images/skyrim/7,7full.png)
 
+SKYRIM!!! IN MINECRAFT!!!
+
 ## Wrapping Up
 
 Feel free to [download the world](https://drive.proton.me/urls/HVWNDC03T0#VKyc404VoD40) and try things out for yourself!
