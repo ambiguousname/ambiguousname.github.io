@@ -541,6 +541,9 @@ Regardless, that whole racket is probably not for me. I have better things to do
 
 Bethesda's pretty cool for making all of this accessible to the Skyrim modding community, and I'm glad that I got to be able to just root around and have some fun in there. And huge thanks to the folks at UESP for documenting *everything* that I used in this post. This project certainly would not exist without them. So, to sum it up: Modders are cool. Skyrim is cool. Minecraft is cool. And you? You're pretty cool. Thanks for stopping by.
 
-Anyways, check out my other projects! I just released a huge update to my [hobby project, Spider-880](https://ambiguousname.itch.io/spider-880). And I've got many other pies baking in the background. I'm [on Bluesky now](https://bsky.app/profile/ambiguous.name) as [well as Mastodon](https://mathstodon.xyz/@ambiguousname), if you have any questions about what you just read.
+## Epilogue
+Please check out my other projects! I just released a huge update to my [hobby project, Spider-880](https://ambiguousname.itch.io/spider-880). And I've got many other pies baking in the background. I'm [on Bluesky now](https://bsky.app/profile/ambiguous.name) as [well as Mastodon](https://mathstodon.xyz/@ambiguousname), if you have any questions about what you just read. 
 
-Thanks so much for your time. See ya!
+And thank you again for your time.
+
+See ya!
