@@ -82,8 +82,23 @@ h1 {
     max-width: 100%;
 }
 
+.post-content .main-image {
+    float: right;
+    max-width: 40vw;
+    padding: 20px;
+}
+
 .post-content img {
     max-width: 100%;
+}
+
+blockquote {
+    border-left: 0.25em solid #272822;
+    padding-left: 50px;
+}
+
+code {
+    background-color: #272822;
 }
 
 input[type=text], input[type=email] {

@@ -5,15 +5,14 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" href="/assets/images/Identicon.png?v=1" type="image/x-icon" />
-        <meta name="description" content="Tyler's Portfolio/Website thingamajigger" />
-        <meta name="author" content="Tyler K." />
-        <meta name="og:site_name" content="Tyler's Portfolio/Website thingamajigger"></meta>
+        <meta name="author" content="ambiguousname" />
+        <meta name="og:site_name" content="ambiguous.name"></meta>
         <meta name="og:title" content="{{ page.title }}"></meta>
         <meta name="og:type" content="website"></meta>
         {% if page.image %}
             <meta name="og:image" content="{{ page.image }}"></meta>
         {% endif %}
-        <title>{{ page.title }}</title>
+        <title>ambiguous.name - {{ page.title }}</title>
         <link rel="stylesheet" href="/assets/css/stylesheet.css" />
         <link rel="stylesheet" href="/assets/css/monokai.css"/>
         {% if page.hidden %}
@@ -36,6 +35,7 @@
             <h3> Last Updated {{ page.last_modified_at | date: "%D %H:%M %Z" }}</h3>
             {% endif %}
             <div class="post-content">
+                <img src="{{ page.image }}" class="main-image"/>
                 {{ content }}
             </div>
         </div>
