@@ -9,7 +9,7 @@ It's been ported to PC, Xbox, Playstation, Nintendo Switch, PC (Again), Xbox (Ag
 
 ## Background
 
-I got back into Skyrim recently[^back]. Over the course of the past few days, I've been very nostalgic thinking about my childhood and all the things I never actually managed to complete. One of those things was a functional CreationKit mod. I tried to read the tutorials, use the CreationKit tools, and eventually I just gave up. Modding was too hard as someone who barely knew how to interface with his own computer. But now? Now I'm a grown adult. I've paid lots of money to get a certificate proving that I know how computers work. And more importantly, how to make an ambitious project out of thin air.
+I got back into Skyrim recently[^back]. Over the course of the past few days, I've been very nostalgic thinking about my childhood and all the things I never actually managed to complete. One of those things was a functional CreationKit mod. I tried to read the tutorials, use the CreationKit tools, and eventually I just gave up. Modding was too hard as someone who barely knew how to interface with his own computer. But now? Now I'm a grown adult. Now I have a certificate from an accredited institution *proving* that I know how computers work. Now, I will break Skyrim open, oh yes.
 
 [^back]: Which is especially weird because I abandoned my Baldur's Gate 3 playthrough in the middle to instead chop up some Dragur in Bleak Fall's Barrow. The heart wants what it wants, I guess.
 
@@ -38,13 +38,9 @@ Here's what we get when we look at `Data/Skyrim.esm`:
 
 ![Hex editor data](/assets/images/skyrim/esm_start.png)
 
-The first four bytes are recognizable right away: `TES4` (`0x54455334`) refers to The Elder Scrolls IV: Oblivion. A lot of Skyrim's data is based directly on Oblivion, so we'll see some references to that while we go through these files. I'm not sure I understand the rest of these bytes.
+The first four bytes are recognizable right away: `TES4` (`0x54455334`) refers to The Elder Scrolls IV: Oblivion. A lot of Skyrim's data is based directly on Oblivion, so we'll see some references to that while we go through these files. I'm not sure I understand the rest of these bytes. This is where Skyrim's active modding community comes to save the day. After entering a few different search terms, I eventually find this page: [https://en.uesp.net/wiki/Skyrim_Mod:File_Formats](https://en.uesp.net/wiki/Skyrim_Mod:File_Formats).
 
-This is where Skyrim's active modding community comes to save the day. After entering a few different search terms, I eventually find this page: [https://en.uesp.net/wiki/Skyrim_Mod:File_Formats](https://en.uesp.net/wiki/Skyrim_Mod:File_Formats).
-
-Thank you, Unofficial Elder Scrolls Pages! The hard work of reverse engineering this file format has been done for us; we just need to make sure that *we* can understand how `.esm` works.
-
-UESP tells us that all `.esm` files are made up of two things:
+Thank you, Unofficial Elder Scrolls Pages! The hard work of reverse engineering this file format has been done for us; we just need to make sure that *we* can understand how `.esm` works. UESP tells us that all `.esm` files are made up of two things:
 
 - The [TES4 record](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/TES4)
 
@@ -78,7 +74,7 @@ mcarofano�INTV��
 
 In the documentation, UESP tells us that the first field we should see after `TES4` is the `HEDR` structure. But you'll notice `HEDR` is about 20 bytes ahead of `TES4`. What's the big idea?
 
-Reading back through UESP's documentation, we see that "TES4 record" is not just jargon. A record is a [specific type](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format#Records) that we have to parse before we can move on to the information it actually contains.
+Reading back through UESP's documentation, we see that "TES4 record" is not just jargon. [A record is a specific type](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format#Records) that we have to parse before we can move on to the information it actually contains.
 
 So, a Record is made up of:
 
@@ -120,7 +116,7 @@ Wow!
 
 Now that we know how to read records and fields, everything else should be easy!
 
-We have one more data structure to learn about though, and that's the [Group](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format#Groups), or `GRUP`.
+We have one more data structure to learn about though, and that's the [Group structure](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format#Groups), or `GRUP`.
 
 Let's read the `GRUP` that's right after the `TES4` record:
 
@@ -150,7 +146,7 @@ Now we settle back into the routine of reading bytes:
 - Version Control (uint16). We can ignore this one, but its hex value is `0x000A`.
 - Some unknown value (uint32). We ignore this one, and its hex value is `0x00000000`.
 
-Finally, we've hit the second `GMST`. This actually represents the `GMST` record that [UESP documents for us](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/GMST).
+Finally, we've hit the second `GMST`. This actually represents the [`GMST` record that UESP documents for us](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/GMST).
 
 So we have some practice reading `.esm` files! Let's put it all together.
 
@@ -190,15 +186,9 @@ In fact, you may recognize some of these names from somewhere...
 
 ![Creation Kit "Object Window" that shows a list of potential objects. Lots of objects are listed, including Actor, Music Track, Class, and Faction objects.](/assets/images/skyrim/ck_objects.png)
 
-`NPC_` represents actors. `MUST`, music tracks. `CLAS`, classes. `FACT`, factions.
-
-This is all the data you're directly editing when you work with Creation Kit. Except now we have the tools to read through all of these directly. CreationKit isn't even strictly necessarily. You could, if you were so inclined, write a Skyrim mod entirely in a hex editor (or notepad, if you're really twisted inside).
-
-In fact, because there's so much information here, we'll be cross-referencing what we can read ourselves with what CreationKit can tell us[^ck].
+`NPC_` represents actors. `MUST`, music tracks. `CLAS`, classes. `FACT`, factions. This is all the data you're directly editing when you work with Creation Kit. Except now we have the tools to read through all of these directly. CreationKit isn't even strictly necessarily. You could, if you were so inclined, write a Skyrim mod entirely in a hex editor (or notepad, if you're really twisted inside). In fact, because there's so much information here, we'll be cross-referencing what we can read ourselves with what CreationKit can tell us[^ck]. For the purposes of this thought experiment though, we don't need all of it. We're only interested in the `WRLD` group, which contains the information we need. That is, world data!
 
 [^ck]: If you're interested in following along, [please install CreationKit](https://ck.uesp.net/wiki/Category:Getting_Started)! Make sure CreationKit is installed on the same drive as Skyrim, as otherwise you'll encounter a `missing steamapi.dll` error like I did the first time I tried this.
-
-Regardless, there's a lot of data here. For the purposes of this thought experiment, we don't need all of it. We're only interested in the `WRLD` group, which contains the information we need. That is, world data!
 
 ### Part Two: Reading WRLD
 Let's just go to the start of the `WRLD` group and see what's there.
@@ -227,18 +217,14 @@ GRUP™
 ÿ��!���üë��
 ```
 
-We're just going to skip everything up until the second `WRLD`, since we've read all this group information before. That helpfully eliminates 24 bytes, bringing us to the `WRLD` Record.
-
-I'll just print some information about this `WRLD` record before we dig into the real data:
+We're just going to skip everything up until the second `WRLD`, since we've read all this group information before. That helpfully eliminates 24 bytes, bringing us to the `WRLD` Record. I'll just print some information about this `WRLD` record before we dig into the real data:
 
 - Size of 1,446,261 bytes (1.44 MB)
 - No flags
 - FormID of 60 (`0x0000003C`)
 - Internal Version of 44
 
-Skipping over the rest of the information, we can see this `WRLD` record has an `EDID` (Editor ID) of Tamriel.
-
-Where have I seen that name before?
+Skipping over the rest of the information, we can see this `WRLD` record has an `EDID` (Editor ID) of Tamriel. Where have I seen that name before?
 
 ![Skyrim's Tamriel Object information in Creation Kit](/assets/images/skyrim/tamriel.png)
 
@@ -246,11 +232,7 @@ And there's our FormID! Note that it's flipped because CreationKit is trying to 
 
 Before we go any further, let's see what [UESP has to say about `WRLD`](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/WRLD).
 
-Well already, most of this information doesn't look helpful. We're interested in raw vertex data. But we have at least confirmed that we are looking at the World data for Skyrim, which will hold the vertex data we want.
-
-UESP mentions that each `WRLD` record is followed by group containing a `CELL` record and then multiple sub-`GRUP`s, each containing Exterior Cell Block information.
-
-So let's skip ahead 1,446,261 bytes past `WRLD` to get our first sub-`GRUP` record:
+Already, most of this information doesn't look helpful. We're interested in raw vertex data. But we have at least confirmed that we are looking at the World data for Skyrim, which will hold the vertex data we want. UESP mentions that each `WRLD` record is followed by group containing a `CELL` record and then multiple sub-`GRUP`s, each containing Exterior Cell Block information. So let's skip ahead 1,446,261 bytes past `WRLD` to get our first sub-`GRUP` record:
 
 ```
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -278,9 +260,7 @@ You know the drill. We read the `GRUP` information, and then we skip ahead to `C
 
 [^temp]: A persistent cell is a cell that is designed to remember what stuff is in it when you leave. It's what allows bodies to persist in towns once you come back. A temporary cell is just the opposite: it will be unloaded when you leave and will reset when you come back.
 
-While we might be interested in this `CELL` later on, [`CELL` does not contain any useful terrain data](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/CELL) that we're interested in. It's used for location, lighting, and placing objects. This will be useful for knowing *where* to place terrain data, but we're still not there just yet.
-
-Theoretically you could keep reading through `GRUP`s and sub-`GRUP`s until you get to the right `GRUP` that has the information you need, but let's just skip there for convenience's sake. That is, we're interested in the `LAND` record:
+While we might be interested in this `CELL` later on, [`CELL` does not contain any useful terrain data](https://en.uesp.net/wiki/Skyrim_Mod:Mod_File_Format/CELL) that we're interested in. It's used for location, lighting, and placing objects. This will be useful for knowing *where* to place terrain data, but we're still not there just yet. Theoretically you could keep reading through `GRUP`s and sub-`GRUP`s until you get to the right `GRUP` that has the information you need, but let's just skip there for convenience's sake. That is, we're interested in the first `LAND` record in the hex data:
 
 ```
                                  47 52 55 50 84
@@ -303,7 +283,7 @@ The group:
 	- This group holds the temporary children of a cell[^tempchild].
 	- The cell associated with this `GRUP` is a `CELL`, FormID `0x000090E3`.
 
-[^tempchild]: These are children that the game does not keep track of when we have unloaded.
+[^tempchild]: These are records belonging to this `CELL` that the game does not keep track of when we have unloaded it.
 
 Meanwhile, `LAND`:
 
@@ -370,9 +350,7 @@ Now UESP tells us how we can exactly [read vertex heights](https://en.uesp.net/w
 	- The next byte `0xF9` represents a change in height by -7 at Row 0, Column 2.
 	- And so on.
 
-Congrats, now we're reading height data!
-
-We can verify this is the correct height data by opening the heightmap in Creation Kit. Looking at our Cell's reference, the Cell is at coordinates (7, 7). We look at the southwest corner of the cell:
+Congrats, now we're reading height data! We can verify this is the correct height data by opening the heightmap in Creation Kit. Looking at our Cell's reference, the Cell is at coordinates (7, 7). We look at the southwest corner of the cell:
 
 ![Cursor hovering over the southwest corner of Cell (7, 7). Z = -5936 at this position.](/assets/images/skyrim/cell_height.png)
 
@@ -384,15 +362,11 @@ Alright. We know how to read `.esm`. We know how to interpret vertex data. Let's
 
 ### Part Three: Minecraft!
 
-Forget everything you know about video games. We're going to put Skyrim in Minecraft.
+Forget everything you know about video games. We're going to put Skyrim in Minecraft. Or at least, Skyrim's terrain. Now that we've actually got Skyrim's terrain data, there are two things we need to deal with before we have a working map:
 
-Or at least, Skyrim's terrain.
+1. Converting Skyrim units to Minecraft blocks.
 
-Now that we've actually got Skyrim's terrain data, there are two things we need to deal with before we have a working map.
-
-First, converting Skyrim units to Minecraft blocks.
-
-Second, knowing how to make Minecraft parse that block data.
+2. Knowing how to make Minecraft parse that block data.
 
 #### Unit Conversion
 
@@ -404,7 +378,7 @@ There are so many debates about this, but we don't want to jump into the deep en
 
 A Minecraft block's length is 1 meter. So one Minecraft block length is 70 in-game units.
 
-70 does not create nice and even divisions however, so we're going to instead scale Skyrim up just a little, by about 9.4%. This way, we can say that one Minecraft block will be 64 Skyrim Units.
+70 units do not create nice and even divisions into 4096 units however, so we're going to instead scale Skyrim up just a little, by about 9.4%. This way, we can say that one Minecraft block will be 64 Skyrim Units.
 
 A Minecraft chunk is 16 x 16 blocks, so about 1,024 x 1,1024 Skyrim units. So we say one Skyrim Cell is 4 Minecraft Chunks. Skyrim has a grid of 119 x 94 cells in the Tamriel `WRLD`, so our Minecraft world is going to be roughly 476 * 376 Chunks.
 
@@ -447,11 +421,7 @@ We can have a program generate a Minecraft save for us to use.
 
 This is the most convenient, as all Minecraft Java worlds use the `.mca` file format for terrain data. If we can just write chunk data into these files, then we're golden.
 
-I found the [Fastanvil](https://docs.rs/fastanvil/0.31.0/fastanvil/) Rust library for parsing Chunk data. It even has a function for writing Chunk byte data to `.mca` files!
-
-Unfortunately, I did not realize that Fastanvil is primarily designed for *reading* Chunk data, and does not provide any helpers for creating Chunk byte data in Rust.
-
-That's okay! We'll just have to write our own serializer. Fastanvil uses serde, which is great news for us because I can just define a few structs:
+I found the [Fastanvil](https://docs.rs/fastanvil/0.31.0/fastanvil/) Rust library for parsing Chunk data. It even has a function for writing Chunk byte data to `.mca` files! Unfortunately, I did not realize that Fastanvil is primarily designed for *reading* Chunk data, and does not provide any helpers for creating Chunk byte data in Rust. That's okay! We'll just have to write our own serializer. Fastanvil uses serde, which is great news for us because I can just define a few structs:
 
 ```rs
 #[derive(Serialize, Debug)]
@@ -475,15 +445,11 @@ pub struct Chunk {
 
 And serde handles the serialization into Minecraft's NBT format for us!
 
-So, hack out a Rust parser of the `.esm` file format (like we talked about) and a Rust Minecraft save file writer over the course of a few days or so, and we can finally test the results of all our hard work.
-
-Let's generate the first Cell we found at (7, 7) to see what we get:
+So, I can hack out a Rust parser of the `.esm` file format (like we talked about) and a Rust Minecraft save file writer over the course of a few days or so, and we can finally test the results of all our hard work. Let's generate the first Cell we found at (7, 7) to see what we get:
 
 ![Huge chunk of stone rising into the air that eventually flattens out](/assets/images/skyrim/7,7huge.png)
 
-Well, clearly there's something wrong here. No way that we should be getting such huge jumps between our vertices.
-
-Thankfully, this was just an issue of me reading vertex offset data as an unsigned byte instead of a signed byte. A quick fix and:
+Well, clearly there's something wrong here. No way that we should be getting such huge jumps between our vertices. Thankfully, this was just an issue of me reading vertex offset data as an unsigned byte instead of a signed byte. A quick fix and:
 
 ![More reasonable chunk of stone, that looks like a descending gradient](/assets/images/skyrim/7,7chunk.png)
 
@@ -536,6 +502,8 @@ There are a few things I can think of off the top of my head that I might (or an
 	- Each `CELL` record holds information about the height of associated bodies of water. It'd be a cinch to read that data and turn it into `minecraft:water` blocks.
 - Vertex Color/Texture Sampling
 	- Everything is all stone, all the time, forever. `LAND` records also hold information about the colors of each vertex (and their texture information!) so this would be a super simple first step to actually adding life and color by swapping out blocks based on this info.
+- Slabs and averaging heights
+	- The current implementation assumes that every block is managed by one vertex exactly. Not only does this lead to really chunky looking terrain, but it means we have to drop some vertices; the `VHGT` array is 33 x 33 vertices, and so we drop any vertices in the 33rd column or row. Adding a way to average heights of blocks based on nearby vertices would be a good improvement to how the terrain looks; adding support for slabs would also help make the terrain feel more variable as height changes.
 
 Of course, if anyone really wanted to take this project to its logical conclusion, they could develop a Minecraft mod that streams all this data live and on-the-fly in-game. Then you could convert object models to Minecraft models in real-time. Then weapons. Spells. NPCs. Quests. You could be running Skyrim IN Minecraft. Then it'd be super simple to port Skyrim expansions into Minecraft. Then mods. Then you could start adding support for all past Elder Scrolls games. Morrowind? Oblivion? In Minecraft? You got it. The Fallout games run on the same engine, you could move them in there too. Starfield. Once you've put it all in Minecraft, then you don't even need Bethesda anymore. You can make Elder Scrolls VI in Minecraft without even playing it. Anything is possible so long as you sacrifice your meaningless time to such daunting tasks. Your life is but one of many; if you falter in this quest there will be others. Skyrim will be of them, and of you, for so long as there is life in the body. And even after? You will be of service in Sovngarde.
 
