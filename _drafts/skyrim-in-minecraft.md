@@ -2,6 +2,7 @@
 layout: post
 title: Porting Skyrim's Terrain to Minecraft
 image: /assets/images/skyrim/skyrim-in-minecraft.png
+image-alt: The moon of Masser (from Skyrim) and a cacophony of stars are obscured by clouds, overlooking a small voxel mountain.
 ---
 
 It's been ported to PC, Xbox, Playstation, Nintendo Switch, PC (Again), Xbox (Again), Playstation (Again), PC (Again Again), Xbox (Again Again), Playstation (Again Again), and even Alexa. Why not Minecraft<!--more-->?
