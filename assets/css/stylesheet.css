@@ -1,10 +1,6 @@
 ::selection{
     color: #282828;
     background-color: #ffffff;
-  }
-  ::-moz-selection{
-    color: #282828;
-    background-color: #ffffff;
 }
 body {
     color: #ffffff;
@@ -18,10 +14,6 @@ body {
     text-align: center;
 }
 
-.post-content{
-    font-size: 25px;
-}
-
 a {
     color: #7adca9;
 }
@@ -32,10 +24,12 @@ a:visited {
 
 .jumbotron {
     margin: 20px 10px 20px 10px;
-    width: 500px;
-    max-width: 100%;
-    height: 500px;
+    aspect-ratio: 1 / 1;
+    max-width: 500px;
     display: inline-grid;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .jumbotron video {
@@ -48,7 +42,6 @@ a:visited {
     padding: 40px;
     padding-bottom: 40px;
     transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
     overflow: hidden;
 }
 
@@ -60,9 +53,6 @@ a:visited {
 .jumbotron-content:active{
     background-color: #000000dd;
 }
-h1 {
-    font-size: 50px;
-}
 
 .post-excerpt > p:last-child::after {
     content: '...';
@@ -71,7 +61,6 @@ h1 {
 .post-content{
     margin: 20px 10px;
     transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
     text-align: left;
     line-height: 2em;
     background-color: #00000055;
@@ -137,4 +126,35 @@ button:hover {
     font-size: 0.7em;
     line-height: 1.5em;
     tab-size: 2;
+}
+
+
+@media (max-width: 500px) {
+    .content {
+        padding: 5px 1%;
+        width: 100%;
+    }
+
+    .jumbotron-content {
+        font-size: 0.9em;
+    }
+
+    .post-content {
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .jumbotron-content {
+        font-size: 0.9em;
+        padding: 3px;
+    }
+}
+
+@media (max-width: 340px) {
+    .jumbotron-content {
+        font-size: 0.6em;
+        padding: 1px;
+    }
 }
