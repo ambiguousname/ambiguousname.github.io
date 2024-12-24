@@ -1,3 +1,12 @@
+.social-img,.social-img:visited {
+    color: #ffffff;
+}
+
+.social-img img,svg {
+    width: 4em;
+    height: 4em;
+}
+
 ::selection{
     color: #282828;
     background-color: #ffffff;
