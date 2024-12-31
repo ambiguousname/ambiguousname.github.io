@@ -10,7 +10,7 @@ Look at this if you want, makes no difference to me.
 - Miscellaneous
 	- Legos.
 - Books
-	- [Play Nice](https://www.hachettebookgroup.com/titles/jason-schreier/play-nice/9781538725429/)
+	- [Interior Chinatown](https://www.charlesyuauthor.com/book/interior-chinatown/)
 	- [The Elusive Shift](https://mitpress.mit.edu/9780262544900/the-elusive-shift/)
 - Video Games
 	- [Dread Templar](https://www.gog.com/en/game/dread_templar/)
