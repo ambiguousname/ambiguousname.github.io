@@ -168,7 +168,7 @@ Now that we've read UESP's documentation on `.esm`, I think we can extrapolate a
 
 [^subgroup]: We treat the subgroup the same as a Group, just with a different type.
 
-So this makes reasing `.esm` a cinch. We just need to find the right group associated with the data we want, and read from that. UESP lists all of the groups that Skyrim contains:
+So this makes reading `.esm` a cinch. We just need to find the right group associated with the data we want, and read from that. UESP lists all of the groups that Skyrim contains:
 
 ```
 GMST, KYWD, LCRT, AACT, TXST, GLOB, CLAS, FACT, HDPT, HAIR, EYES, RACE, SOUN, ASPC,
