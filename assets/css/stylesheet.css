@@ -167,3 +167,13 @@ button:hover {
         padding: 1px;
     }
 }
+
+.home-grid * {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.page-title {
+    text-decoration: none;
+}

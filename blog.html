@@ -6,8 +6,13 @@
 	<title>ambiguous.name Blog Posts</title>
 	<body>
 		<div class="content">
-			<a href="/" style="text-decoration: none;"><h1>Blog Posts</h1></a>
-			<a href="/feed.xml"><h2>RSS Feed</h2></a>
+			<a href="/blog" class="page-title"><h1>Blog Posts</h1></a>
+
+			<div class="home-grid">
+				<a href="/"><h2>Home</h2></a>
+
+				<a href="/feed.xml"><h2>RSS</h2></a>
+			</div>
 			<h3>If you like my stuff, email me! <code>ambiguousname (at) ambiguous.name</code></h3>
 			{% for post in site.posts %}
 			<div class="jumbotron" style="background-image: url({{ post.image }}); {% if post.scale %} background-size: {{ post.scale }}; {% endif %}">
