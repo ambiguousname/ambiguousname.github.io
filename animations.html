@@ -8,12 +8,15 @@
     </head>
     <body>
         <div class="content">
-            <a href="/" style="text-decoration: none;"><h1>My Animations</h1></a>
+            <a href="/animations" class="page-title"><h1>My Animations</h1></a>
+            <div class="home-grid">
+                <a href="/"><h2>Home</h2></a>
+            </div>
             {% assign animations = site.animations | sort: 'date' | reverse%}
             {% for animation in animations %}
             <div class="jumbotron">
                 <div class="jumbotron-content">
-                    <h1>{{animation.title}}</h1>
+                    <h1 id="{{animation.title}}">{{animation.title}}</h1>
                     <video src="/assets/animations/{{ animation.name }}" controls="true" {% if animation.loop %} loop="" {% endif %} ></video>
                 </div>
             </div>
