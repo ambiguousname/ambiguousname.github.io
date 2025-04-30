@@ -21,7 +21,7 @@ Our starting point is the project still called [`Skyrim2Minecraft`](https://gith
 ### Differences in `Skyrim.esm` and `Oblivion.esm`
 
 ### Miscellaneous Improvements
-It used to take me 45 minutes (or longer) to run the program on Skyrim's data on my gaming desktop, now it takes about 12 minutes on my work laptop. The project now uses [rayon](https://docs.rs/crate/rayon/latest) for some quick and dirty parallellism.
+It used to take me 45 minutes (or longer) to run the program on Skyrim's data, now it takes about 4 minutes. The project now uses [rayon](https://docs.rs/crate/rayon/latest) for some quick and dirty parallellism.
 
 ## Wrapping Up
 
