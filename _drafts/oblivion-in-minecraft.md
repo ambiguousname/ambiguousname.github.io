@@ -3,7 +3,7 @@ layout: post
 title: Porting Oblivion's Terrain to Minecraft
 ---
 
-The Oblivion Remaster has ensorcelled me<!--more-->[^oblivion]. As [some](https://www.pcgamer.com/games/the-elder-scrolls/hot-damn-the-oblivion-remaster-is-125-gb-2600-percent-heavier-than-the-original-game-from-2006/) [headlines](https://www.polygon.com/news/562217/the-elder-scrolls-4-oblivion-remastered-released) mention, there is no remake of the game's core data. Unreal Engine 5 is handling most of the rendering, while Gamebryo . Underneath *all* of these intersecting game engines, there are still the core `.esm` and `.esp` files.
+The Oblivion Remaster has ensorceled me<!--more-->[^oblivion]. As [some](https://www.pcgamer.com/games/the-elder-scrolls/hot-damn-the-oblivion-remaster-is-125-gb-2600-percent-heavier-than-the-original-game-from-2006/) [headlines](https://www.polygon.com/news/562217/the-elder-scrolls-4-oblivion-remastered-released) mention, there is no remake of the game's core data. Unreal Engine 5 is handling most of the rendering, while Gamebryo . Underneath *all* of these intersecting game engines, there are still the core `.esm` and `.esp` files.
 
 [^oblivion]: After I finished playing Skyrim, along with finishing ALL of the DLCs, I tried turning back to Oblivion. I couldn't really make it work, as it just felt so different from Skyrim that going back-to-back on Elder Scrolls titles didn't feel great. The Oblivion Remaster gave me a handy excuse to revisit all of this.
 
@@ -27,6 +27,8 @@ It used to take me 45 minutes (or longer) to run the program on Skyrim's data, n
 
 ### Future Improvements
 - Profiling and improving Chunk writing speeds
+
+So it should be pretty clear by now, this terrain format is not exclusive to Skyrim. Oblivion has it, Morrowind has it and, somewhat surprisingly, [The Elder Scrolls Adventures: Redguard](https://en.uesp.net/wiki/Mod:World_Files) has something similar. As I also mentioned in the last post, the 3D Fallout games also use this file format. With additional support for Oblivion's file format (and some light modifications to the existing code), we now have support for Fallout 3 *and* Fallout New Vegas. TODO: Actually do this.
 
 ## Epilogue
 
