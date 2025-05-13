@@ -28,7 +28,9 @@ It used to take me 45 minutes (or longer) to run the program on Skyrim's data, n
 ### Future Improvements
 - Profiling and improving Chunk writing speeds
 
-So it should be pretty clear by now, this terrain format is not exclusive to Skyrim. Oblivion has it, Morrowind has it and, somewhat surprisingly, [The Elder Scrolls Adventures: Redguard](https://en.uesp.net/wiki/Mod:World_Files) has something similar. As I also mentioned in the last post, the 3D Fallout games also use this file format. With additional support for Oblivion's file format (and some light modifications to the existing code), we now have support for Fallout 3 *and* Fallout New Vegas. TODO: Actually do this.
+So it should be pretty clear by now, this terrain format is not exclusive to Skyrim. Oblivion has it, Morrowind has it, even Daggerfall has it[^daggerfall]. Even more surprisingly, [The Elder Scrolls Adventures: Redguard](https://en.uesp.net/wiki/Mod:World_Files) has something similar. As I also mentioned in the last post, the 3D Fallout games also use this file format. With additional support for Oblivion's file format (and some light modifications to the existing code), we now have support for Fallout 3 *and* Fallout New Vegas. TODO: Actually do this.
+
+[^daggerfall]: I have two conflicting sources as to how Daggerfall actually uses terrain data. [UESP claims](https://en.uesp.net/wiki/Daggerfall_Mod:WOODS.WLD_format#Elevation_Map) that height data is unused, and that Daggerfall just relies on `ElevationNoise` data to randomly generate terrain. This [blog post from the Daggerfall Unity project](https://www.dfworkshop.net/streaming-world-part-1/) claims that the height map is actually used, but it just doesn't appear to be the case because Daggerfall is a gigantic map. I'm inclined to believe the developers of Daggerfall Unity, since it doesn't make sense to me that the developers would create heightmap data for it to go completely unused. I buy the explanation that Daggerfall has such a large map that even one pixel of its heightmap covers an area so big that it appears uniformly flat.
 
 ## Epilogue
 
