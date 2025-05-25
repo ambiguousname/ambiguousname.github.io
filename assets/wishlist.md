@@ -3,9 +3,9 @@ title: "My Wishlist"
 layout: post
 hidden: true
 ---
-This is a private page. Not that I mind you being here, it's just weird that you are. This is a private wishlist for things I want because Amazon's wishlist system is weird.
+This is a private page. Not that I mind you being here, it's just weird that you are. This is a private wishlist for things I want. Look at this if you want, makes no difference to me.
 
-Look at this if you want, makes no difference to me.
+Please don't buy any of these gifts off of Amazon, and avoid Steam for games if you can.
 
 - Miscellaneous
 	- Legos.
@@ -21,6 +21,9 @@ Look at this if you want, makes no difference to me.
 	- [Animal Well](https://store.steampowered.com/app/813230/)
 	- [Bomb Rush Cyberfunk](https://www.gog.com/en/game/bomb_rush_cyberfunk)
 	- [Tiny Glade](https://store.steampowered.com/app/2198150/Tiny_Glade)
+	- [Rise of the Golden Idol](https://store.steampowered.com/app/2716400/The_Rise_of_the_Golden_Idol?snr=1_25_4__318)
+	- [Cryptmaster](https://store.steampowered.com/app/1885110/Cryptmaster?snr=1_25_4__318)
+	- [Skin Deep](https://www.gog.com/en/game/cryptmaster)
 - Board Games
 	- Anything from [Always Checkers Publishing](https://alwayscheckers.com/)
 		- Already have A Complicated Profession and LAST SENTINELS
@@ -31,6 +34,10 @@ Look at this if you want, makes no difference to me.
 	- [Steve Jackson Dice](http://www.sjgames.com/dice/)
 	- Asunder, [The Seeker's Guide](https://giftedrebels.com/products/the-seekers-guide-hardcover?variant=41151010734246) and [The Keeper's Tome](https://giftedrebels.com/products/the-keepers-tome-hardcover)
 - Fun Things that would be nice
+	- Any Single Board Computer
+		- [Raspberry Pi (3, 4, or 5)](https://www.raspberrypi.com/products/)
+		- [Almost anything from DigiKey with an HDMI port is good enough](https://www.digikey.com/en/products/filter/single-board-computers-sbcs/933)
+	- [Raspberry Pi Compute Module 5 Dev Kit](https://www.digikey.com/en/products/detail/raspberry-pi/SC1750/25697951?s=N4IgTCBcDa4GwBYAcBaAygYQIwHYCsADCgHIAiIAugL5A&src=raspberrypi)
 	- EEPROM Programmer
 	- Hak 5 tools
 		- [Rubber ducky](https://hak5.org/products/usb-rubber-ducky)
