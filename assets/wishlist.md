@@ -13,17 +13,12 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- [Interior Chinatown](https://www.charlesyuauthor.com/book/interior-chinatown/)
 	- [The Elusive Shift](https://mitpress.mit.edu/9780262544900/the-elusive-shift/)
 - Video Games
-	- [Dread Templar](https://www.gog.com/en/game/dread_templar/)
 	- [Gloomwood](https://store.steampowered.com/app/1150760/)
 	- [RimWorld - Biotech](https://store.steampowered.com/app/1826140/)
-	- [Turbo Overkill](https://www.gog.com/en/game/turbo_overkill)
-	- [Slay the Princess](https://www.gog.com/en/game/slay_the_princess)
 	- [Animal Well](https://store.steampowered.com/app/813230/)
-	- [Bomb Rush Cyberfunk](https://www.gog.com/en/game/bomb_rush_cyberfunk)
 	- [Tiny Glade](https://store.steampowered.com/app/2198150/Tiny_Glade)
 	- [Rise of the Golden Idol](https://store.steampowered.com/app/2716400/The_Rise_of_the_Golden_Idol?snr=1_25_4__318)
-	- [Cryptmaster](https://store.steampowered.com/app/1885110/Cryptmaster?snr=1_25_4__318)
-	- [Skin Deep](https://www.gog.com/en/game/cryptmaster)
+	- [Skin Deep](https://store.steampowered.com/app/301280/Skin_Deep/)
 - Board Games
 	- Anything from [Always Checkers Publishing](https://alwayscheckers.com/)
 		- Already have A Complicated Profession and LAST SENTINELS
