@@ -9,7 +9,7 @@
         <meta name="og:site_name" content="ambiguous.name"/>
         <meta name="og:title" content="{{ page.title }}"/>
         <meta name="og:type" content="website"/>
-        <meta name="og:description" content="{{ page.excerpt }}"/>
+        <meta name="og:description" content="{{ page.excerpt | xml_escape }}"/>
         <meta name="og:locale" content="en-US"/>
         {% if page.image %}
             <meta name="og:image" content="{{ page.image }}"/>
