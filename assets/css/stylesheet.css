@@ -91,6 +91,11 @@ a:visited {
     max-width: 100%;
 }
 
+.post-content .embed-iframe {
+    width: 100%;
+    border: none;
+}
+
 blockquote {
     border-left: 0.25em solid #272822;
     padding-left: 50px;
