@@ -90,3 +90,5 @@ These are also just called "fields" in some other articles online
 
 ## Sources
 [GNU's Fortran Docs](https://gcc.gnu.org/onlinedocs/gfortran/index.html#SEC_Contents) and [Oracle's FORTRAN 77 Reference](https://docs.oracle.com/cd/E19957-01/805-4939/index.html) were both utilized for a lot of the terminology described here. The first [FORTRAN manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf) was also a huge help.
+
+Since it is also the basis of the web demo, I've used the [LLVM Fortran Runtime docs/source extensively](https://github.com/llvm/llvm-project/tree/main/flang).
