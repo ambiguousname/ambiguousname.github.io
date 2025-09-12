@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Explaining Fortran's FORMAT statement
+title: Explaining FORTRAN's FORMAT statement
 ---
 
 If you've ever done any amount of programming, you may be familiar with formatted printing<!--more-->. It's used in almost every modern language I can think of, from Python to Lisp.
@@ -12,18 +12,14 @@ printf("I have exactly %i %s", 20, "apples");
 ```
 Which outputs `I have exactly 20 apples`.
 
-Here's what that same print statement looks like in Fortran:
+Here's what that same print statement looks like in FORTRAN:
 
 
-TODO: Replace with web tool.
-```fortran
-PRINT '("I have exactly" I2 "apples")', 20
-```
-
-Which outputs `I have exactly20apples`
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=('I%20have%20exactly'%20I2%20'apples')#output-text"></iframe>
 
 But you can also write it:
 
+TODO: Replace with web tool.
 ```fortran
 PRINT*, "I have exactly", 20, "apples"
 ```
@@ -52,7 +48,7 @@ Let's get into it.
 
 ## Background
 
-FORTRAN (FORmula TRANslating system, as described in The FORTRAN programmer's reference manual[^manual]), is old. At least, by computer science standards. This language is so old, my grandfather has floppy disks of FORTRAN IV code he commissioned for his ship salvage work in the 1960s. My father programmed in Fortran 77 in college. I'm programming in Fortran 90 as a graduate student. It is a generational beast[^thoughts].
+FORTRAN (FORmula TRANslating system, as described in The FORTRAN programmer's reference manual[^manual]), is old. At least, by computer science standards. This language is so old, my grandfather has floppy disks of FORTRAN IV code he commissioned for his ship salvage work in the 1960s. My father programmed in FORTRAN 77 in college. I'm programming in FORTRAN 90 as a graduate student. It is a generational beast[^thoughts].
 
 [^manual]: [The FORTRAN Automatic Coding System for the IBM 704 EDPM: Programmer's Reference Manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf), October 15th, 1956.
 
@@ -60,7 +56,13 @@ FORTRAN (FORmula TRANslating system, as described in The FORTRAN programmer's re
 
 I tell you all this to give you some dire context: FORTRAN has so many ways to format I/O, and is so unintuitive compared to other languages simply because it is so old. The `FORMAT` statement dates to the first iteration of the language[^manual]. The statement `FORMAT(I2 /(E12.4, F10.4))` must work on punch cards just as well as (if not better than) any modern compiler.
 
-With that said, how many ways are there to skin FORTRAN's `FORMAT` statements?
+In an attempt to understand the `FORMAT` statement, I built a web tool to try and pick things apart. Let's talk about how that works.
+
+## Assumptions
+
+The [source code for this tool is available on GitHub](https://github.com/ambiguousname/fortran-format-web-demo).
+
+With all that said, how many ways are there to skin FORTRAN's `FORMAT` statements?
 
 ## Possible values of `FORMAT`
 
