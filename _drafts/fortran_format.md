@@ -59,8 +59,16 @@ I tell you all this to give you some dire context: FORTRAN has so many ways to f
 In an attempt to understand the `FORMAT` statement, I built a web tool to try and pick things apart. Let's talk about how that works.
 
 ## Assumptions
+A huge amount of thanks goes to Dr. George W Stagg, [whose post on LLVM's Flang runtime library running in WebAssembly](https://gws.phd/posts/fortran_wasm/) was instrumental to getting the web tool to work. LLVM Flang is really the only modern solution we have available for running Fortran components on the web. Which by necessity, imposes a few assumptions that we will have to make going forward:
 
-The [source code for this tool is available on GitHub](https://github.com/ambiguousname/fortran-format-web-demo).
+1. You're using a modern FORTRAN compiler.
+	- LLVM is very new in the grand scheme of things. Other FORTRAN compilers might not work exactly the same way that LLVM does for `FORMAT` statements.
+	- Some of the examples I showcase below might work on very old FORTRAN compilers, but I can't make that guarantee.
+2. You're not locked in to any specific FORTRAN version.
+	- Although [Flang supports building to multiple standards](https://github.com/llvm/llvm-project/blob/main/flang/docs/FortranStandardsSupport.md), these are more specific to compiler features.
+	- The `FORMAT` statement is primarily implemented through the Flang runtime library, which means that if you're using the most modern version (as I am), you're able to use more modern `FORMAT` features (even if your intended target is a lower version of FORTRAN).
+
+You can [view the tool online](https://ambiguous.name/fortran-format-web-demo/). The [source code for this tool is available on GitHub](https://github.com/ambiguousname/fortran-format-web-demo).
 
 With all that said, how many ways are there to skin FORTRAN's `FORMAT` statements?
 
