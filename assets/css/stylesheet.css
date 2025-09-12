@@ -69,7 +69,6 @@ a:visited {
 
 .post-content{
     margin: 20px 10px;
-    transition-duration: 0.5s;
     text-align: left;
     line-height: 2em;
     background-color: #00000055;
@@ -143,10 +142,15 @@ button:hover {
     tab-size: 2;
 }
 
+@media (max-width: 1400px) {
+    .content {
+        padding: 5px 5%;
+    }
+}
 
 @media (max-width: 500px) {
     .content {
-        padding: 5px 1%;
+        padding: 5px 0px;
         width: 100%;
     }
 
