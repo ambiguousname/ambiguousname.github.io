@@ -15,7 +15,7 @@ Which outputs `I have exactly 20 apples`.
 Here's what that same print statement looks like in FORTRAN:
 
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=('I%20have%20exactly'%20I2%20'apples')#output-text"></iframe>
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly'%20I2%20'apples'#output-text"></iframe>
 
 But you can also write it:
 
