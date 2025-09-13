@@ -15,8 +15,8 @@ Which outputs `I have exactly 20 apples`.
 Here's what that same print statement looks like in FORTRAN:
 
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly'%20I2%20'apples'#output-text" height="300" class="embed-iframe">
-<a href="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly'%20I2%20'apples'#output-text"></a>
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly'%20I2%20'apples'&variables=i:20#output-text" height="300" class="embed-iframe">
+<a href="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly'%20I2%20'apples'&variables=i:20#output-text"></a>
 </iframe>
 
 But you can also write it:
@@ -58,17 +58,11 @@ FORTRAN (FORmula TRANslating system, as described in The FORTRAN programmer's re
 
 I tell you all this to give you some dire context: FORTRAN has so many ways to format I/O, and is so unintuitive compared to other languages simply because it is so old. The `FORMAT` statement dates to the first iteration of the language[^manual]. The statement `FORMAT(I2 /(E12.4, F10.4))` must work on punch cards just as well as (if not better than) any modern compiler.
 
-In an attempt to understand the `FORMAT` statement, I built a web tool to try and pick things apart. Let's talk about how that works.
+In an attempt to understand the `FORMAT` statement, I built a web tool to try and pick things apart.
 
-## Assumptions
-A huge amount of thanks goes to Dr. George W Stagg, [whose post on LLVM's Flang runtime library running in WebAssembly](https://gws.phd/posts/fortran_wasm/) was instrumental to getting the web tool to work. LLVM Flang is really the only modern solution we have available for running Fortran components on the web. Which by necessity, imposes a few assumptions that we will have to make going forward:
+## The Tool
 
-1. You're using a modern FORTRAN compiler.
-	- LLVM is very new in the grand scheme of things. Other FORTRAN compilers might not work exactly the same way that LLVM does for `FORMAT` statements.
-	- Some of the examples I showcase below might work on very old FORTRAN compilers, but I can't make that guarantee.
-2. You're not locked in to any specific FORTRAN version.
-	- Although [Flang supports building to multiple standards](https://github.com/llvm/llvm-project/blob/main/flang/docs/FortranStandardsSupport.md), these are more specific to compiler features.
-	- The `FORMAT` statement is primarily implemented through the Flang runtime library, which means that if you're using the most modern version (as I am), you're able to use more modern `FORMAT` features (even if your intended target is a lower version of FORTRAN).
+A huge amount of thanks goes to Dr. George W Stagg, [whose post on LLVM's Flang runtime library running in WebAssembly](https://gws.phd/posts/fortran_wasm/) was instrumental to getting the web tool to work. Flang-RT is really the only modern solution we have available for running Fortran components on the web.
 
 You can [view the tool online](https://ambiguous.name/fortran-format-web-demo/). The [source code for this tool is available on GitHub](https://github.com/ambiguousname/fortran-format-web-demo).
 
@@ -99,6 +93,12 @@ These are also just called "fields" in some other articles online
 
 ### `advance=no`
 
+TODO:
+## Printing Multiple Variables
+
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%20I2&variables=i:0,i:10,i:20,i:30#output-text" height="300" class="embed-iframe">
+<a href="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%20I2&variables=i:0,i:10,i:20,i:30#output-text"></a>
+</iframe>
 
 ## Sources
 [GNU's Fortran Docs](https://gcc.gnu.org/onlinedocs/gfortran/index.html#SEC_Contents) and [Oracle's FORTRAN 77 Reference](https://docs.oracle.com/cd/E19957-01/805-4939/index.html) were both utilized for a lot of the terminology described here. The first [FORTRAN manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf) was also a huge help.
