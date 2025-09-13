@@ -15,8 +15,8 @@ Which outputs `I have exactly 20 apples`.
 Here's what that same print statement looks like in FORTRAN:
 
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly'%20I2%20'apples'&variables=i:20#output-text" height="300" class="embed-iframe">
-<a href="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly'%20I2%20'apples'&variables=i:20#output-text"></a>
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly',%20I2,%20'apples'&variables=i:20#output-text" height="300" class="embed-iframe">
+<a href="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly',%20I2,%20'apples'&variables=i:20#output-text"></a>
 </iframe>
 
 But you can also write it:
@@ -96,8 +96,8 @@ These are also just called "fields" in some other articles online
 TODO:
 ## Printing Multiple Variables
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%20I2&variables=i:0,i:10,i:20,i:30#output-text" height="300" class="embed-iframe">
-<a href="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%20I2&variables=i:0,i:10,i:20,i:30#output-text"></a>
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=I2,%20I2&variables=i:0,i:10,i:20,i:30#output-text" height="300" class="embed-iframe">
+<a href="https://ambiguous.name/fortran-format-web-demo/?stmt=I2,%20I2&variables=i:0,i:10,i:20,i:30#output-text"></a>
 </iframe>
 
 ## Sources
