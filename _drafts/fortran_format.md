@@ -12,45 +12,55 @@ printf("I have exactly %i %s", 20, "apples");
 ```
 Which outputs `I have exactly 20 apples`.
 
-Here's what that same print statement looks like in FORTRAN:
+If you're new to formatted printing in FORTRAN, you're probably familiar with the `PRINT*,` statement:
 
+TODO: List-directed formatting in the web tool.
+```fortran
+PRINT*, "I have exactly ", 20, " apples"
+```
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly',%20I2,%20'apples'&variables=i:20#output-text" height="300" class="embed-iframe">
-<a href="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly',%20I2,%20'apples'&variables=i:20#output-text"></a>
+This is a simple, hassle-free way to output whatever variables you'd like.
+
+But you'll notice this outputs:
+```
+ I have exactly  20  apples
+```
+
+Why is there a space in front of the line? Why are there multiple spaces in between the number `20`? So you go back to some new tutorials, and you find you can define custom formatting statements with `PRINT "()",` or `WRITE(*, "()")`[^printing]:
+
+[^printing]: `PRINT U,` and `WRITE(*, U)` are the same statement. For consistency, we'll be using `WRITE(*, U)` for the rest of this post.
+
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=A14,%20I2,%20A6&variables=i:20,s:'I%20have%20exactly%20',s:'%20apples'#output-text" height="300" class="embed-iframe">
 </iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly',%20I2,%20'apples'&variables=i:20#output-text>
+</noscript>
 
-But you can also write it:
+Someone online tells you `I2` is an edit descriptor for integers, and `A` represents strings. You also read somewhere that you need to put the length of the string after `A`. This is only true for [FORTRAN 66](https://wg5-fortran.org/ARCHIVE/Fortran66.pdf) and below[^hollerith], you don't need to include string lengths:
 
-TODO: Replace with web tool.
-```fortran
-PRINT*, "I have exactly", 20, "apples"
-```
+[^hollerith]: Before the `A` format descriptor (introduced in FORTRAN 66), there were [Hollerith Constants](https://en.wikipedia.org/wiki/Hollerith_constant), which have existed since the first FORTRAN manual[^manual].
 
-Which outputs
-```
- I have exactly 20 apples
-```
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=A,%20I2,%20A&variables=i:20,s:'I%20have%20exactly%20',s:'%20apples'#output-text" height="300" class="embed-iframe">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=A,%20I2,%20A&variables=i:20,s:'I%20have%20exactly%20',s:'%20apples'#output-text>
+</noscript>
 
-You could even write it:
+You don't even need to use `A` for constant strings:
 
-```fortran
-PRINT 10, "I have exactly", 20, " apples"
-10 	FORMAT(A14, I1, A7)
-```
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly%20',%20I2,%20'%20apples'&variables=i:20#output-text" height="300" class="embed-iframe">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly%20',%20I2,%20'%20apples'&variables=i:20#output-text>
+</noscript>
 
-Which outputs `I have exactly* apples`
-
-You may have noticed a few problems already:
-- What's up with the whitespacing in general with some of these?
-	- Why is a space in front of one, but not the other?
-	- Why is the space of some smushed together?
-- Why are there so many ways to express one `FORMAT` statement?
-
-Let's get into it.
+The more you experiment with FORTRAN's print statements, the more you'll notice weird overlaps and strange, seemingly useless features. What's up with all these different ways to do printing? Who invented this language, anyways?
 
 ## Background
 
-FORTRAN (FORmula TRANslating system, as described in The FORTRAN programmer's reference manual[^manual]), is old. At least, by computer science standards. This language is so old, my grandfather has floppy disks of FORTRAN IV code he commissioned for his ship salvage work in the 1960s. My father programmed in FORTRAN 77 in college. I'm programming in FORTRAN 90 as a graduate student. It is a generational beast[^thoughts].
+FORTRAN (FORmula TRANslating system, as described in The FORTRAN programmer's reference manual[^manual]), was released by IBM in 1956. It's ancient by computer science standards. This language is so old, my grandfather has floppy disks of FORTRAN IV code he commissioned for his ship salvage work in the 1960s[^floppy]. My father programmed in FORTRAN 77 in college. I'm programming in FORTRAN 90 as a graduate student. It is a generational beast[^thoughts].
+
+[^floppy]: Apparently they would digitize punchcards onto magnetic tape to run on Boeing's timeshare. Those would be later digitized into floppy disks, as well.
 
 [^manual]: [The FORTRAN Automatic Coding System for the IBM 704 EDPM: Programmer's Reference Manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf), October 15th, 1956.
 
@@ -58,13 +68,17 @@ FORTRAN (FORmula TRANslating system, as described in The FORTRAN programmer's re
 
 I tell you all this to give you some dire context: FORTRAN has so many ways to format I/O, and is so unintuitive compared to other languages simply because it is so old. The `FORMAT` statement dates to the first iteration of the language[^manual]. The statement `FORMAT(I2 /(E12.4, F10.4))` must work on punch cards just as well as (if not better than) any modern compiler.
 
-In an attempt to understand the `FORMAT` statement, I built a web tool to try and pick things apart.
+Which is why you'll run into 5 different ways to handle `PRINT`, or `WRITE`, or `FORMAT` statements online. Improvements are present in every iteration of the language, but a million pieces of computing history are wedged underneath.
 
-## The Tool
+So, if you're a modern FORTRAN programmer, what are the conventions that you should be using?
+
+## The Web Tool
 
 A huge amount of thanks goes to Dr. George W Stagg, [whose post on LLVM's Flang runtime library running in WebAssembly](https://gws.phd/posts/fortran_wasm/) was instrumental to getting the web tool to work. Flang-RT is really the only modern solution we have available for running Fortran components on the web.
 
 You can [view the tool online](https://ambiguous.name/fortran-format-web-demo/). The [source code for this tool is available on GitHub](https://github.com/ambiguousname/fortran-format-web-demo).
+
+TODO: Transition?
 
 With all that said, how many ways are there to skin FORTRAN's `FORMAT` statements?
 
@@ -101,6 +115,6 @@ TODO:
 </iframe>
 
 ## Sources
-[GNU's Fortran Docs](https://gcc.gnu.org/onlinedocs/gfortran/index.html#SEC_Contents) and [Oracle's FORTRAN 77 Reference](https://docs.oracle.com/cd/E19957-01/805-4939/index.html) were both utilized for a lot of the terminology described here. The first [FORTRAN manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf) was also a huge help.
+[GNU's Fortran Docs](https://gcc.gnu.org/onlinedocs/gfortran/index.html#SEC_Contents) and [Oracle's FORTRAN 77 Reference](https://docs.oracle.com/cd/E19957-01/805-4939/index.html) were both utilized for a lot of the terminology described here. The first [FORTRAN manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf) was also a huge help, as well as [fortran90.org's list of old standards](https://www.fortran90.org/).
 
 Since it is also the basis of the web demo, I've used the [LLVM Fortran Runtime docs/source extensively](https://github.com/llvm/llvm-project/tree/main/flang).
