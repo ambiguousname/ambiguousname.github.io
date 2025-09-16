@@ -14,10 +14,11 @@ Which outputs `I have exactly 20 apples`.
 
 If you're new to formatted printing in FORTRAN, you're probably familiar with the `PRINT*,` statement:
 
-TODO: List-directed formatting in the web tool.
-```fortran
-PRINT*, "I have exactly ", 20, " apples"
-```
+TODO: This does not work, I think whitespace is getting culled:
+<iframe src='https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"+apples"#output-text'></iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"+apples"#output-text>
+</noscript>
 
 This is a simple, hassle-free way to output whatever variables you'd like.
 
@@ -30,28 +31,28 @@ Why is there a space in front of the line? Why are there multiple spaces in betw
 
 [^printing]: `PRINT U,` and `WRITE(*, U)` are the same statement. For consistency, we'll be using `WRITE(*, U)` for the rest of this post.
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=A14,%20I2,%20A6&variables=i:20,s:'I%20have%20exactly%20',s:'%20apples'#output-text" height="300" class="embed-iframe">
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=A15%2C+I2%2C+A7&type=Format+Specification&variables=s%3D%22I+have+exactly+%22%3Bi%3D20%3Bs%3D%22+apples%22#output-text" height="300" class="embed-iframe">
 </iframe>
 <noscript>
-<https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly',%20I2,%20'apples'&variables=i:20#output-text>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=A15%2C+I2%2C+A7&type=Format+Specification&variables=s%3D%22I+have+exactly+%22%3Bi%3D20%3Bs%3D%22+apples%22#output-text>
 </noscript>
 
 Someone online tells you `I2` is an edit descriptor for integers, and `A` represents strings. You also read somewhere that you need to put the length of the string after `A`. This is only true for [FORTRAN 66](https://wg5-fortran.org/ARCHIVE/Fortran66.pdf) and below[^hollerith], you don't need to include string lengths:
 
 [^hollerith]: Before the `A` format descriptor (introduced in FORTRAN 66), there were [Hollerith Constants](https://en.wikipedia.org/wiki/Hollerith_constant), which have existed since the first FORTRAN manual[^manual].
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=A,%20I2,%20A&variables=i:20,s:'I%20have%20exactly%20',s:'%20apples'#output-text" height="300" class="embed-iframe">
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=A%2C+I2%2C+A&type=Format+Specification&variables=s%3D%22I+have+exactly+%22%3Bi%3D20%3Bs%3D%22+apples%22#output-text" height="300" class="embed-iframe">
 </iframe>
 <noscript>
-<https://ambiguous.name/fortran-format-web-demo/?stmt=A,%20I2,%20A&variables=i:20,s:'I%20have%20exactly%20',s:'%20apples'#output-text>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=A%2C+I2%2C+A&type=Format+Specification&variables=s%3D%22I+have+exactly+%22%3Bi%3D20%3Bs%3D%22+apples%22#output-text>
 </noscript>
 
 You don't even need to use `A` for constant strings:
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly%20',%20I2,%20'%20apples'&variables=i:20#output-text" height="300" class="embed-iframe">
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%27I%20have%20exactly%20%27,%20I2,%20%27%20apples%27&variables=i=20#output-text" height="300" class="embed-iframe">
 </iframe>
 <noscript>
-<https://ambiguous.name/fortran-format-web-demo/?stmt='I%20have%20exactly%20',%20I2,%20'%20apples'&variables=i:20#output-text>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%27I%20have%20exactly%20%27,%20I2,%20%27%20apples%27&variables=i=20#output-text>
 </noscript>
 
 The more you experiment with FORTRAN's print statements, the more you'll notice weird overlaps and strange, seemingly useless features. What's up with all these different ways to do printing? Who invented this language, anyways?
@@ -110,8 +111,8 @@ These are also just called "fields" in some other articles online
 TODO:
 ## Printing Multiple Variables
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=I2,%20I2&variables=i:0,i:10,i:20,i:30#output-text" height="300" class="embed-iframe">
-<a href="https://ambiguous.name/fortran-format-web-demo/?stmt=I2,%20I2&variables=i:0,i:10,i:20,i:30#output-text"></a>
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%2C+I2&type=Format+Specification&variables=i%3D0%3Bi%3D10%3Bi%3D20%3Bi%3D30#output-text" height="300" class="embed-iframe">
+<a href="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%2C+I2&type=Format+Specification&variables=i%3D0%3Bi%3D10%3Bi%3D20%3Bi%3D30#output-text"></a>
 </iframe>
 
 ## Sources
