@@ -23,8 +23,7 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- [Steve Jackson Dice](http://www.sjgames.com/dice/)
 	- Asunder, [The Seeker's Guide](https://giftedrebels.com/products/the-seekers-guide-hardcover?variant=41151010734246) and [The Keeper's Tome](https://giftedrebels.com/products/the-keepers-tome-hardcover)
 - Fun Things that would be nice
-	- Any Single Board Computer
-		- [Elgato HD 60 X or equivalent](https://www.elgato.com/us/en/p/game-capture-hd60-x)
+	- [Elgato HD 60 X or equivalent](https://www.elgato.com/us/en/p/game-capture-hd60-x)
 	- EEPROM Programmer
 	- Hak 5 tools
 		- [Rubber ducky](https://hak5.org/products/usb-rubber-ducky)
