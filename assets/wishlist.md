@@ -24,9 +24,7 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- Asunder, [The Seeker's Guide](https://giftedrebels.com/products/the-seekers-guide-hardcover?variant=41151010734246) and [The Keeper's Tome](https://giftedrebels.com/products/the-keepers-tome-hardcover)
 - Fun Things that would be nice
 	- Any Single Board Computer
-		- [Raspberry Pi (3, 4, or 5)](https://www.raspberrypi.com/products/)
-		- [Almost anything from DigiKey with an HDMI port is good enough](https://www.digikey.com/en/products/filter/single-board-computers-sbcs/933)
-	- [Raspberry Pi Compute Module 5 Dev Kit](https://www.digikey.com/en/products/detail/raspberry-pi/SC1750/25697951?s=N4IgTCBcDa4GwBYAcBaAygYQIwHYCsADCgHIAiIAugL5A&src=raspberrypi)
+		- [Elgato HD 60 X or equivalent](https://www.elgato.com/us/en/p/game-capture-hd60-x)
 	- EEPROM Programmer
 	- Hak 5 tools
 		- [Rubber ducky](https://hak5.org/products/usb-rubber-ducky)
