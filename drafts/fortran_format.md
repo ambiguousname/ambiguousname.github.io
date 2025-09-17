@@ -2,6 +2,7 @@
 layout: post
 title: Explaining FORTRAN's FORMAT statement
 ---
+<!--TODO: On finish, go back and add title text to all iframes to describe output -->
 
 If you've ever done any amount of programming, you may be familiar with formatted printing<!--more-->. It's used in almost every modern language I can think of, from Python to Lisp.
 
@@ -14,7 +15,7 @@ Which outputs `I have exactly 20 apples`.
 
 FORTRAN is in a bit of a stranger spot though. For beginners, the most convenient way to print out variables is with list-directed formatting, or the `PRINT*,` and `WRITE(*, *)` statements[^printing]:
 
-<iframe tabindex="-1" src='https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"apples"#output-text' class="embed-iframe" height="160"></iframe>
+<iframe tabindex="-1" src='https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"apples"#output-text' class="embed-iframe" height="160" title="WRITE(*, *) 'I have exactly', 20, 'apples': 'I have exactly 20 apples'"></iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"apples"#output-text>
 </noscript>
