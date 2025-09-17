@@ -37,23 +37,21 @@ Like with [C's printf arguments](https://www.man7.org/linux/man-pages/man3/print
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D2#output-text>
 </noscript>
 
-The more that you experiment with FORTRAN's print statements, the more you'll notice weird overlaps and strange, seemingly useless features. What's up with all these different ways to do printing? Who invented this language, anyways?
+The more that you experiment with FORTRAN's print statements, the more you'll notice weird overlaps and strange, seemingly useless features. What's up with all these different ways to do printing?
 
 ## Background
 
-FORTRAN (FORmula TRANslating system, as described in The FORTRAN programmer's reference manual[^manual]), was released by IBM in 1956. It's ancient by computer science standards. This language is so old, my grandfather has floppy disks of FORTRAN IV code he commissioned for his ship salvage work in the 1960s[^floppy]. My father programmed in FORTRAN 77 in college. I'm programming in FORTRAN 90 as a graduate student. It is a generational beast[^thoughts].
+FORTRAN (FORmula TRANslating system, as described in The FORTRAN programmer's reference manual[^manual]), was released by IBM in 1956. It's ancient by computer science standards[^ancient]. The fact that is still relevant nearly 70 years after its creation is a testament, at least in part, to FORTRAN's efficiency. Widespread adoption amongst computational mathematicians doesn't hurt either.
 
-[^floppy]: Apparently they would digitize punchcards onto magnetic tape to run on Boeing's timeshare. Those would be later digitized into floppy disks, as well.
+[^ancient]: My father worked with FORTRAN IV in college. My grandfather has floppy disks of code he commissioned for his ship salvage work in the 1960s. Apparently they would digitize punchcards onto magnetic tape to run on Boeing's timeshare. Those would be later digitized into the floppy disks we have now.
 
 [^manual]: [The FORTRAN Automatic Coding System for the IBM 704 EDPM: Programmer's Reference Manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf), October 15th, 1956.
 
-[^thoughts]: The fact that is still relevant nearly 70 years after its creation is a testament, at least in part, to FORTRAN's efficiency. Widespread adoption amongst computational mathematicians doesn't hurt either.
-
 I tell you all this to give you some dire context: FORTRAN has so many ways to format I/O, and is so unintuitive compared to other languages simply because it is so old. The `FORMAT` statement dates to the first iteration of the language[^manual]. The statement `FORMAT(I2 /(E12.4, F10.4))` must work on punch cards just as well as (if not better than) any modern compiler.
 
-Which is why you'll run into 5 different ways to handle `PRINT`, or `WRITE`, or `FORMAT` statements online. Improvements are present in every iteration of the language, but a million pieces of computing history are wedged underneath.
+Which is why you'll run into 5 different ways to handle `PRINT`, or `WRITE`, or `FORMAT` statements online. Improvements are present in every iteration of the language, but a million pieces of computing history are wedged underneath. This makes compatibility easier, at the cost of being quite confusing for new learners.
 
-So, if you're a modern FORTRAN programmer, what are the conventions that you should be using?
+My hope is that this post, and the associated web tool, will de-mystify part of your `FORMAT`ting options.
 
 ## The Web Tool
 
@@ -61,8 +59,10 @@ A huge amount of thanks goes to Dr. George W Stagg, [whose post on LLVM's Flang 
 
 You can [view the tool online](https://ambiguous.name/fortran-format-web-demo/). The [source code for this tool is available on GitHub](https://github.com/ambiguousname/fortran-format-web-demo).
 
-## The Edit Descriptors
+With all that said, let's talk about the core of FORTRAN's formatted I/O.
 
+## The Edit Descriptors
+ 
 ### Integers
 
 
@@ -70,11 +70,21 @@ You can [view the tool online](https://ambiguous.name/fortran-format-web-demo/).
 
 ### Characters
 
-#### Hollerinth Constants
+#### Hollerith Constants
 
-Before the `A` format descriptor (introduced in FORTRAN 66), there were [Hollerith Constants](https://en.wikipedia.org/wiki/Hollerith_constant), which have existed since the first FORTRAN manual[^manual].
+Before the `A` format descriptor (introduced in FORTRAN 66), there were [Hollerith Constants](https://en.wikipedia.org/wiki/Hollerith_constant), which have existed since the first FORTRAN manual[^manual]:
+
+<iframe src="
+https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specification&variables=#output-text" class="embed-iframe">
+</iframe>
+<noscript>
+<
+https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specification&variables=#output-text>
+</noscript>
+
 ### Logicals
 
+<!-- 
 ## Possible values of `FORMAT`
 
 There are probably only three statements you'll ever want to use for I/O control:
@@ -105,9 +115,14 @@ TODO:
 
 <iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%2C+I2&type=Format+Specification&variables=i%3D0%3Bi%3D10%3Bi%3D20%3Bi%3D30#output-text" height="300" class="embed-iframe">
 <a href="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%2C+I2&type=Format+Specification&variables=i%3D0%3Bi%3D10%3Bi%3D20%3Bi%3D30#output-text"></a>
-</iframe>
+</iframe> -->
 
 ## Sources
-[GNU's Fortran Docs](https://gcc.gnu.org/onlinedocs/gfortran/index.html#SEC_Contents) and [Oracle's FORTRAN 77 Reference](https://docs.oracle.com/cd/E19957-01/805-4939/index.html) were both utilized for a lot of the terminology described here. The first [FORTRAN manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf) was also a huge help, as well as [fortran90.org's list of old standards](https://www.fortran90.org/).
+All of the following were utilized heavily when referencing the behavior of FORTRAN functions:
+- [Intel's Fortran Documentation](https://www.intel.com/content/www/us/en/docs/fortran-compiler/developer-guide-reference/2023-0/write-statement.html)
+- [GNU's Fortran Docs](https://gcc.gnu.org/onlinedocs/gfortran/index.html#SEC_Contents) 
+- [Oracle's FORTRAN 77 Reference](https://docs.oracle.com/cd/E19957-01/805-4939/index.html)
 
-Since it is also the basis of the web demo, I've used the [LLVM Fortran Runtime docs/source extensively](https://github.com/llvm/llvm-project/tree/main/flang).
+For describing the intended behaviors of FORTRAN, both [Computerhistory.org's archive of the first FORTRAN manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf) and [fortran90.org/wg5-fortran.org's archive of FORTRAN standards](https://www.fortran90.org/) were extremely useful.
+
+Since it is also the basis of the web demo, I've used the [LLVM Fortran Runtime docs/source code extensively](https://github.com/llvm/llvm-project/tree/main/flang).
