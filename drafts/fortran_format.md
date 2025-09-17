@@ -61,10 +61,43 @@ You can [view the tool online](https://ambiguous.name/fortran-format-web-demo/).
 
 With all that said, let's talk about the core of FORTRAN's formatted I/O.
 
-## The Edit Descriptors
- 
+## Edit Descriptors
+
+Recall `FORMAT("I have", I2, "apples")`? `I2` is an edit descriptor, specifying that we expect an integer of width 2 to be either read into a variable, or written from a variable; this depends on whether or not we use `READ` or `WRITE`.
+
+To give some greater context as to why these are called "edit descriptors", in the original manual[^manual] for FORTRAN, being able to control variables with I/O was called "conversions". You would be "converting" a variable from the program's internal memory to an external medium (such as STDOUT). FORTRAN 66 called these "field descriptors"; [FORTRAN 77 (pg. 13-2)](https://wg5-fortran.org/ARCHIVE/Fortran77.html) introduced some descriptors that were dependent on other descriptors. For instance, the [blank control descriptors](#blank-control) are tied to the next descriptor, they are not responsible for any output themselves.
+
+A good understanding of how `FORMAT` works involves understanding a good deal of what edit descriptors are available:
+
 ### Integers
 
+#### `Iw`
+
+`w` represents the width of the integer in the resulting print:
+
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D10#output-text" class="embed-iframe">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D10#output-text>
+</noscript>
+
+If the integer exceeds the width, the text will be replaced with `*`:
+
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D1000#output-text" class="embed-iframe">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D1000#output-text>
+</noscript>
+
+#### `Iw.m`
+
+`m` represents the minimum number of characters to be displayed.
+
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3.3&type=Format+Specification&variables=i%3D10#output-text" class="embed-iframe">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3.3&type=Format+Specification&variables=i%3D10#output-text>
+</noscript>
 
 ### Real Numbers
 
@@ -78,11 +111,18 @@ Before the `A` format descriptor (introduced in FORTRAN 66), there were [Holleri
 https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specification&variables=#output-text" class="embed-iframe">
 </iframe>
 <noscript>
-<
-https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specification&variables=#output-text>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specification&variables=#output-text>
 </noscript>
 
 ### Logicals
+
+### Blank Control
+
+### Representations
+
+#### Binary `Bw[.m]`
+
+#### Octal `Ow[.m]`
 
 <!-- 
 ## Possible values of `FORMAT`
@@ -110,7 +150,6 @@ These are also just called "fields" in some other articles online
 
 ### `advance=no`
 
-TODO:
 ## Printing Multiple Variables
 
 <iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%2C+I2&type=Format+Specification&variables=i%3D0%3Bi%3D10%3Bi%3D20%3Bi%3D30#output-text" height="300" class="embed-iframe">
@@ -123,6 +162,12 @@ All of the following were utilized heavily when referencing the behavior of FORT
 - [GNU's Fortran Docs](https://gcc.gnu.org/onlinedocs/gfortran/index.html#SEC_Contents) 
 - [Oracle's FORTRAN 77 Reference](https://docs.oracle.com/cd/E19957-01/805-4939/index.html)
 
-For describing the intended behaviors of FORTRAN, both [Computerhistory.org's archive of the first FORTRAN manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf) and [fortran90.org/wg5-fortran.org's archive of FORTRAN standards](https://www.fortran90.org/) were extremely useful.
+For describing the intended behaviors of FORTRAN, both [The Computer History museum's archive of the first FORTRAN manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf) and [fortran90.org/wg5-fortran.org's archive of FORTRAN standards](https://www.fortran90.org/) were extremely useful.
 
 Since it is also the basis of the web demo, I've used the [LLVM Fortran Runtime docs/source code extensively](https://github.com/llvm/llvm-project/tree/main/flang).
+
+## Conclusion
+
+Thank you for reading!
+
+TODO:
