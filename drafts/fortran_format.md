@@ -119,7 +119,7 @@ TODO:
 
 ## Sources
 All of the following were utilized heavily when referencing the behavior of FORTRAN functions:
-- [Intel's Fortran Documentation](https://www.intel.com/content/www/us/en/docs/fortran-compiler/developer-guide-reference/2023-0/write-statement.html)
+- [Intel's Fortran Documentation](https://www.intel.com/content/www/us/en/docs/fortran-compiler/developer-guide-reference/2023-0/overview.html)
 - [GNU's Fortran Docs](https://gcc.gnu.org/onlinedocs/gfortran/index.html#SEC_Contents) 
 - [Oracle's FORTRAN 77 Reference](https://docs.oracle.com/cd/E19957-01/805-4939/index.html)
 
