@@ -59,6 +59,18 @@ A huge amount of thanks goes to Dr. George W Stagg, [whose post on LLVM's Flang 
 
 You can [view the tool online](https://ambiguous.name/fortran-format-web-demo/). The [source code for this tool is available on GitHub](https://github.com/ambiguousname/fortran-format-web-demo).
 
+### Disclaimer
+
+This post will not attempt to distinguish between what is or isn't supported between different FORTRAN versions, since Fortran-RT doesn't make this distinction either. For instance, the following code will compile for most FORTRAN compilers (although most will throw a warning if you set the standard):
+
+```fortran
+Program Main
+	WRITE(*, "(5HHello)")
+End Program
+```
+
+This is despite the fact that [Hollerith Constants have deprecated from the FORTRAN standard since FORTRAN 77 (pg. A-2)](https://wg5-fortran.org/ARCHIVE/Fortran77.html), and were removed in Fortran 95.
+
 With all that said, let's talk about the core of FORTRAN's formatted I/O.
 
 ## Edit Descriptors
@@ -67,9 +79,13 @@ Recall `10 FORMAT("I have", I2, "apples")`. `I2` is an edit descriptor specifyin
 
 Simply, edit descriptors describe "edits" that modify how we will either read from or write to different files.  A good understanding of how `FORMAT` works involves understanding a good deal of what edit descriptors are available to us:
 
-### Integers
+### Data Edit Descriptors
 
-#### `Iw`
+These are descriptors that describe how to read into or write from variables.
+
+#### Integers
+
+##### `Iw`
 
 `w` represents the width of the integer in the resulting print:
 
@@ -87,7 +103,7 @@ If the integer exceeds the width, the text will be replaced with `*`:
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D1000#output-text>
 </noscript>
 
-#### `Iw.m`
+##### `Iw.m`
 
 `m` represents the minimum number of characters to be displayed.
 
@@ -125,6 +141,34 @@ https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specific
 #### Binary `Bw[.m]`
 
 #### Octal `Ow[.m]`
+
+### Control Edit Descriptors
+
+
+### Character String Edit Descriptors
+
+
+
+### Repeatability
+
+Some edit descriptors can have an integer in front to describe how many times you wish to repeat the edit descriptor. All data edit descriptors are repeatable:
+
+TODO:
+
+You can also use `()` to create a group for repeatability:
+
+TODO:
+
+#### Unlimited Format Item
+
+You can also place `*` in front of a group to show that it repeats infinitely:
+
+TODO: 
+
+You cannot place further format items after an unlimited format item:
+
+TODO: https://ambiguous.name/fortran-format-web-demo/?stmt=*%28I3%2C+X%29+I2&type=Format+Specification&variables=i%3D0%3Bi%3D0%3Bi%3D0#output-text
+
 
 <!-- 
 ## Possible values of `FORMAT`
