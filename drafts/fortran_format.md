@@ -12,7 +12,7 @@ printf("I have exactly %i %s", 20, "apples");
 ```
 Which outputs `I have exactly 20 apples`.
 
-If you're new to formatted printing in FORTRAN, you're probably familiar with the `PRINT*,` or `WRITE(*, *)` statements[^printing]:
+FORTRAN is in a bit of a stranger spot though. For beginners, the most convenient way to print out variables is with list-directed formatting, or the `PRINT*,` and `WRITE(*, *)` statements[^printing]:
 
 <iframe src='https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"apples"#output-text' class="embed-iframe"></iframe>
 <noscript>
@@ -21,7 +21,7 @@ If you're new to formatted printing in FORTRAN, you're probably familiar with th
 
 [^printing]: `PRINT F,` and `WRITE(*, F)` are the same statement. For consistency, we'll be using `WRITE(*, F)` for the rest of this post.
 
-This is what you might want to use for printing in most cases, since it formats most variables correctly. However, you'll notice in the above example that there's a space in front of `I`. In fact, by convention, [all of FORTRAN's list-directed output requires a "blank character" at the beginning of each new line](https://wg5-fortran.org/N001-N1100/N692.pdf#G15.74858). If you want greater control of whitespacing, you'll need to use a format specifier:
+This can have undesirable behavior. Notice in the above example that there's a space in front of `I`. That tends to really bug me when it comes to printing out variables, personally. In fact, by convention, [all of FORTRAN's list-directed output requires a "blank character" at the beginning of each new line](https://wg5-fortran.org/N001-N1100/N692.pdf#G15.74858). If you want greater control of whitespacing, you'll need to use a format specifier:
 
 <iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D20#output-text" class="embed-iframe">
 </iframe>
@@ -37,7 +37,7 @@ Like with [C's printf arguments](https://www.man7.org/linux/man-pages/man3/print
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D2#output-text>
 </noscript>
 
-The more that you experiment with FORTRAN's print statements, the more you'll notice weird overlaps and strange, seemingly useless features. What's up with all these different ways to do printing?
+FORTRAN has a lot of oddities and peculiarities when it comes to dealing with I/O; the more that you experiment, the more you'll notice weird overlaps and seemingly useless features. What's up with all these odd ways to handle printing?
 
 ## Background
 
