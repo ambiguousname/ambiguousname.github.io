@@ -14,7 +14,7 @@ Which outputs `I have exactly 20 apples`.
 
 FORTRAN is in a bit of a stranger spot though. For beginners, the most convenient way to print out variables is with list-directed formatting, or the `PRINT*,` and `WRITE(*, *)` statements[^printing]:
 
-<iframe src='https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"apples"#output-text' class="embed-iframe" height="160"></iframe>
+<iframe tabindex="-1"src='https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"apples"#output-text' class="embed-iframe" height="160"></iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"apples"#output-text>
 </noscript>
@@ -23,7 +23,7 @@ FORTRAN is in a bit of a stranger spot though. For beginners, the most convenien
 
 This can have undesirable behavior. Notice in the above example that there's a space in front of `I`. That tends to really bug me when it comes to printing out variables, personally. In fact, by convention, [all of FORTRAN's list-directed output requires a "blank character" at the beginning of each new line](https://wg5-fortran.org/N001-N1100/N692.pdf#G15.74858). If you want greater control of whitespacing, you'll need to use a format specifier:
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D20#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1"src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D20#output-text" class="embed-iframe" height="180">
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D20#output-text>
@@ -31,7 +31,7 @@ This can have undesirable behavior. Notice in the above example that there's a s
 
 Like with [C's printf arguments](https://www.man7.org/linux/man-pages/man3/printf.3.html), in FORTRAN we have edit descriptors. In this case, `I2` represents an integer, where `2` is the "width" or number of characters that an integer takes up when printing. For instance, when we have two apples, we now have a space in place of a digit:
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D2#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1"src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D2#output-text" class="embed-iframe" height="180">
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D2#output-text>
@@ -89,7 +89,7 @@ These are descriptors that describe how to read into or write from variables.
 
 `w` represents the width of the integer in the resulting print:
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D10#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1"src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D10#output-text" class="embed-iframe" height="180">
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D10#output-text>
@@ -97,7 +97,7 @@ These are descriptors that describe how to read into or write from variables.
 
 If the integer exceeds the width, the text will be replaced with `*`:
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D1000#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1"src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D1000#output-text" class="embed-iframe" height="180">
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D1000#output-text>
@@ -107,7 +107,7 @@ If the integer exceeds the width, the text will be replaced with `*`:
 
 `m` represents the minimum number of characters to be displayed.
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3.3&type=Format+Specification&variables=i%3D10#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1"src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3.3&type=Format+Specification&variables=i%3D10#output-text" class="embed-iframe" height="180">
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3.3&type=Format+Specification&variables=i%3D10#output-text>
@@ -121,7 +121,7 @@ If the integer exceeds the width, the text will be replaced with `*`:
 
 Before the `A` format descriptor (introduced in FORTRAN 66), there were [Hollerith Constants](https://en.wikipedia.org/wiki/Hollerith_constant), which have existed since the first FORTRAN manual[^manual]:
 
-<iframe src="
+<iframe tabindex="-1"src="
 https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specification&variables=#output-text" class="embed-iframe" height="180">
 </iframe>
 <noscript>
@@ -198,7 +198,7 @@ These are also just called "fields" in some other articles online
 
 ## Printing Multiple Variables
 
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%2C+I2&type=Format+Specification&variables=i%3D0%3Bi%3D10%3Bi%3D20%3Bi%3D30#output-text" height="300" class="embed-iframe">
+<iframe tabindex="-1"src="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%2C+I2&type=Format+Specification&variables=i%3D0%3Bi%3D10%3Bi%3D20%3Bi%3D30#output-text" height="300" class="embed-iframe">
 <a href="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%2C+I2&type=Format+Specification&variables=i%3D0%3Bi%3D10%3Bi%3D20%3Bi%3D30#output-text"></a>
 </iframe> -->
 
