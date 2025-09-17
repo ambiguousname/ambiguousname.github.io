@@ -12,50 +12,32 @@ printf("I have exactly %i %s", 20, "apples");
 ```
 Which outputs `I have exactly 20 apples`.
 
-If you're new to formatted printing in FORTRAN, you're probably familiar with the `PRINT*,` statement:
+If you're new to formatted printing in FORTRAN, you're probably familiar with the `PRINT*,` or `WRITE(*, *)` statements[^printing]:
 
-TODO: This does not work, I think whitespace is getting culled:
-<iframe src='https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"+apples"#output-text'></iframe>
+<iframe src='https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"apples"#output-text' class="embed-iframe"></iframe>
 <noscript>
-<https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"+apples"#output-text>
+<https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"apples"#output-text>
 </noscript>
 
-This is a simple, hassle-free way to output whatever variables you'd like.
+[^printing]: `PRINT F,` and `WRITE(*, F)` are the same statement. For consistency, we'll be using `WRITE(*, F)` for the rest of this post.
 
-But you'll notice this outputs:
-```
- I have exactly  20  apples
-```
+This is what you might want to use for printing in most cases, since it formats most variables correctly. However, you'll notice in the above example that there's a space in front of `I`. In fact, by convention, [all of FORTRAN's list-directed output requires a "blank character" at the beginning of each new line](https://wg5-fortran.org/N001-N1100/N692.pdf#G15.74858). If you want greater control of whitespacing, you'll need to use a format specifier:
 
-Why is there a space in front of the line? Why are there multiple spaces in between the number `20`? So you go back to some new tutorials, and you find you can define custom formatting statements with `PRINT "()",` or `WRITE(*, "()")`[^printing]:
-
-[^printing]: `PRINT U,` and `WRITE(*, U)` are the same statement. For consistency, we'll be using `WRITE(*, U)` for the rest of this post.
-
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=A15%2C+I2%2C+A7&type=Format+Specification&variables=s%3D%22I+have+exactly+%22%3Bi%3D20%3Bs%3D%22+apples%22#output-text" height="300" class="embed-iframe">
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D20#output-text" class="embed-iframe">
 </iframe>
 <noscript>
-<https://ambiguous.name/fortran-format-web-demo/?stmt=A15%2C+I2%2C+A7&type=Format+Specification&variables=s%3D%22I+have+exactly+%22%3Bi%3D20%3Bs%3D%22+apples%22#output-text>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D20#output-text>
 </noscript>
 
-Someone online tells you `I2` is an edit descriptor for integers, and `A` represents strings. You also read somewhere that you need to put the length of the string after `A`. This is only true for [FORTRAN 66](https://wg5-fortran.org/ARCHIVE/Fortran66.pdf) and below[^hollerith], you don't need to include string lengths:
+Like with [C's printf arguments](https://www.man7.org/linux/man-pages/man3/printf.3.html), in FORTRAN we have edit descriptors. In this case, `I2` represents an integer, where `2` is the number of "positions" that an integer takes up when printing. For instance, when we have two apples:
 
-[^hollerith]: Before the `A` format descriptor (introduced in FORTRAN 66), there were [Hollerith Constants](https://en.wikipedia.org/wiki/Hollerith_constant), which have existed since the first FORTRAN manual[^manual].
-
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=A%2C+I2%2C+A&type=Format+Specification&variables=s%3D%22I+have+exactly+%22%3Bi%3D20%3Bs%3D%22+apples%22#output-text" height="300" class="embed-iframe">
+<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D2#output-text" class="embed-iframe">
 </iframe>
 <noscript>
-<https://ambiguous.name/fortran-format-web-demo/?stmt=A%2C+I2%2C+A&type=Format+Specification&variables=s%3D%22I+have+exactly+%22%3Bi%3D20%3Bs%3D%22+apples%22#output-text>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D2#output-text>
 </noscript>
 
-You don't even need to use `A` for constant strings:
-
-<iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%27I%20have%20exactly%20%27,%20I2,%20%27%20apples%27&variables=i=20#output-text" height="300" class="embed-iframe">
-</iframe>
-<noscript>
-<https://ambiguous.name/fortran-format-web-demo/?stmt=%27I%20have%20exactly%20%27,%20I2,%20%27%20apples%27&variables=i=20#output-text>
-</noscript>
-
-The more you experiment with FORTRAN's print statements, the more you'll notice weird overlaps and strange, seemingly useless features. What's up with all these different ways to do printing? Who invented this language, anyways?
+The more that you experiment with FORTRAN's print statements, the more you'll notice weird overlaps and strange, seemingly useless features. What's up with all these different ways to do printing? Who invented this language, anyways?
 
 ## Background
 
@@ -79,9 +61,19 @@ A huge amount of thanks goes to Dr. George W Stagg, [whose post on LLVM's Flang 
 
 You can [view the tool online](https://ambiguous.name/fortran-format-web-demo/). The [source code for this tool is available on GitHub](https://github.com/ambiguousname/fortran-format-web-demo).
 
-TODO: Transition?
+## The Edit Descriptors
 
-With all that said, how many ways are there to skin FORTRAN's `FORMAT` statements?
+### Integers
+
+
+### Real Numbers
+
+### Characters
+
+#### Hollerinth Constants
+
+Before the `A` format descriptor (introduced in FORTRAN 66), there were [Hollerith Constants](https://en.wikipedia.org/wiki/Hollerith_constant), which have existed since the first FORTRAN manual[^manual].
+### Logicals
 
 ## Possible values of `FORMAT`
 
