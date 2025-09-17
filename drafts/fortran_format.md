@@ -29,7 +29,7 @@ This is what you might want to use for printing in most cases, since it formats 
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D20#output-text>
 </noscript>
 
-Like with [C's printf arguments](https://www.man7.org/linux/man-pages/man3/printf.3.html), in FORTRAN we have edit descriptors. In this case, `I2` represents an integer, where `2` is the number of "positions" that an integer takes up when printing. For instance, when we have two apples:
+Like with [C's printf arguments](https://www.man7.org/linux/man-pages/man3/printf.3.html), in FORTRAN we have edit descriptors. In this case, `I2` represents an integer, where `2` is the "width" or number of characters that an integer takes up when printing. For instance, when we have two apples, we now have a space in place of a digit:
 
 <iframe src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D2#output-text" class="embed-iframe">
 </iframe>
@@ -69,7 +69,7 @@ Program Main
 End Program
 ```
 
-This is despite the fact that [Hollerith Constants have deprecated from the FORTRAN standard since FORTRAN 77 (pg. A-2)](https://wg5-fortran.org/ARCHIVE/Fortran77.html), and were removed in Fortran 95.
+This is despite the fact that [Hollerith Constants](#hollerith-constants) [have deprecated from the FORTRAN standard since FORTRAN 77 (pg. A-2)](https://wg5-fortran.org/ARCHIVE/Fortran77.html), and were removed in Fortran 95.
 
 With all that said, let's talk about the core of FORTRAN's formatted I/O.
 
