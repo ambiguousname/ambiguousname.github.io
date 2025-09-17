@@ -63,11 +63,9 @@ With all that said, let's talk about the core of FORTRAN's formatted I/O.
 
 ## Edit Descriptors
 
-Recall `FORMAT("I have", I2, "apples")`? `I2` is an edit descriptor, specifying that we expect an integer of width 2 to be either read into a variable, or written from a variable; this depends on whether or not we use `READ` or `WRITE`.
+Recall `10 FORMAT("I have", I2, "apples")`. `I2` is an edit descriptor specifying an "Integer edit" of width 2: when we `READ(*, 10)`, expect an integer with at most two digits; when we `WRITE(*, 10)`, we print out an integer of at most two digits.
 
-To give some greater context as to why these are called "edit descriptors", in the original manual[^manual] for FORTRAN, being able to control variables with I/O was called "conversions". You would be "converting" a variable from the program's internal memory to an external medium (such as STDOUT). FORTRAN 66 called these "field descriptors"; [FORTRAN 77 (pg. 13-2)](https://wg5-fortran.org/ARCHIVE/Fortran77.html) introduced some descriptors that were dependent on other descriptors. For instance, the [blank control descriptors](#blank-control) are tied to the next descriptor, they are not responsible for any output themselves.
-
-A good understanding of how `FORMAT` works involves understanding a good deal of what edit descriptors are available:
+Simply, edit descriptors describe "edits" that modify how we will either read from or write to different files.  A good understanding of how `FORMAT` works involves understanding a good deal of what edit descriptors are available to us:
 
 ### Integers
 
@@ -117,6 +115,10 @@ https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specific
 ### Logicals
 
 ### Blank Control
+
+### Carriage Control
+
+#### `/`
 
 ### Representations
 
