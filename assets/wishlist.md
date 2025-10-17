@@ -10,6 +10,7 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 - Miscellaneous
 	- Legos.
 - Books
+	- [The Sierra Adventure](https://shawnmills.co/sierra-adventure/)
 - Video Games
 	- [Gloomwood](https://store.steampowered.com/app/1150760/)
 	- [Animal Well](https://store.steampowered.com/app/813230/)
