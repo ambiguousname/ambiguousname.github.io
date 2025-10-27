@@ -114,11 +114,73 @@ If the integer exceeds the width, the text will be replaced with `*`:
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3.3&type=Format+Specification&variables=i%3D10#output-text>
 </noscript>
 
-### Real Numbers
+#### Real Numbers
 
-### Characters
+##### Decimal - `Fw.d`
 
-#### Hollerith Constants
+As with integers, `Fw.d` is an edit descriptor:
+
+- `F` represents a floating point number
+- `w` the width of the decimal in characters, including the decimal point
+- `d` the number of digits expected after the decimal point
+
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+F10.5&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+F10.5&type=Format+Specification&variables=r%3D3.1415#output-text>
+</noscript>
+
+##### Exponential Form - `Ew.d`
+
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E7.1&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E7.1&type=Format+Specification&variables=r%3D3.1415#output-text>
+</noscript>
+
+Note that `w` always represents a width in characters of the displayed output. So even though `0.3E+01` is comprised of only two digits, it makes up 7 characters in total. So if we were to shrink the number of characters:
+
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E5.1&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E5.1&type=Format+Specification&variables=r%3D3.1415#output-text>
+</noscript>
+
+##### Scientific Form - `ESw.d`
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+ES8.2&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+ES8.2&type=Format+Specification&variables=r%3D3.1415#output-text>
+</noscript>
+
+##### Engineering Form - `ENw.d`
+
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+EN12&type=Format+Specification&variables=r%3D10000#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+EN12&type=Format+Specification&variables=r%3D10000#output-text>
+</noscript>
+
+The only difference between engineering notation and scientific notation is that engineering notation uses multiples of three. Contrast with `ES` of the same number:
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+ES12&type=Format+Specification&variables=r%3D10000#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+ES12&type=Format+Specification&variables=r%3D10000#output-text>
+</noscript>
+
+##### Digits in Exponent - `Ee`
+
+`Ee` can be appended to any real-number edit descriptor that has an exponential component, where `E` is an edit descriptor of exponential form, and `e` the number of digits to be shown in the exponent. For instance, in specifying the exponential form edit descriptor's exponent:
+
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E10.2E3&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E10.2E3&type=Format+Specification&variables=r%3D3.1415#output-text>
+</noscript>
+
+#### Characters
+
+##### Hollerith Constants
 
 Before the `A` format descriptor (introduced in FORTRAN 66), there were [Hollerith Constants](https://en.wikipedia.org/wiki/Hollerith_constant), which have existed since the first FORTRAN manual[^manual]:
 
@@ -129,19 +191,19 @@ https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specific
 <https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specification&variables=#output-text>
 </noscript>
 
-### Logicals
+#### Logicals
 
-### Blank Control
+#### Blank Control
 
-### Carriage Control
+#### Carriage Control
 
-#### `/`
+##### `/`
 
-### Representations
+#### Representations
 
-#### Binary `Bw[.m]`
+##### Binary `Bw[.m]`
 
-#### Octal `Ow[.m]`
+##### Octal `Ow[.m]`
 
 ### Control Edit Descriptors
 
