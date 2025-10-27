@@ -146,6 +146,15 @@ Note that `w` always represents a width in characters of the displayed output. S
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E5.1&type=Format+Specification&variables=r%3D3.1415#output-text>
 </noscript>
 
+###### `D`
+
+The `D` functions the same as the `E` edit descriptor, with one minor cosmetic change:
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+D7.1&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+D7.1&type=Format+Specification&variables=r%3D3.1415#output-text>
+</noscript>
+
 ##### Scientific Form - `ESw.d`
 <iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+ES8.2&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
 </iframe>
@@ -178,9 +187,43 @@ The only difference between engineering notation and scientific notation is that
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E10.2E3&type=Format+Specification&variables=r%3D3.1415#output-text>
 </noscript>
 
+##### The `G` Edit Descriptor
+
+Automatically selects between `F` and `E` when appropriate:
+
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+G10.2&type=Format+Specification&variables=r%3D10.2#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+G10.2&type=Format+Specification&variables=r%3D10.2#output-text>
+</noscript>
+
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+G10.1&type=Format+Specification&variables=r%3D10.2#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+G10.1&type=Format+Specification&variables=r%3D10.2#output-text>
+</noscript>
+
 #### Characters
 
-##### Hollerith Constants
+##### Character - `A`
+
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A&type=Format+Specification&variables=s%3D%22Howdy%22#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A&type=Format+Specification&variables=s%3D%22Howdy%22#output-text>
+</noscript>
+
+
+###### Specifying Character Width - `w`
+
+You can set a maximum number of characters with `Aw`. These truncate if width is exceeded:
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A3&type=Format+Specification&variables=s%3D%22Howdy%22#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A3&type=Format+Specification&variables=s%3D%22Howdy%22#output-text>
+</noscript>
+
+##### Hollerith Constants - `wH`
 
 Before the `A` format descriptor (introduced in FORTRAN 66), there were [Hollerith Constants](https://en.wikipedia.org/wiki/Hollerith_constant), which have existed since the first FORTRAN manual[^manual]:
 
@@ -191,7 +234,26 @@ https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specific
 <https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specification&variables=#output-text>
 </noscript>
 
-#### Logicals
+#### Logicals - `L`
+
+Booleans in FORTRAN:
+
+<iframe tabindex="-1" src="
+https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C+L&type=Format+Specification&variables=l%3D.TRUE.#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C+L&type=Format+Specification&variables=l%3D.TRUE.#output-text>
+</noscript>
+
+##### Logical Width - `Lw`
+
+You can also set the width of logicals for whatever reason:
+<iframe tabindex="-1" src="
+https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C+L2&type=Format+Specification&variables=l%3D.TRUE.#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C+L2&type=Format+Specification&variables=l%3D.TRUE.#output-text>
+</noscript>
 
 #### Blank Control
 
