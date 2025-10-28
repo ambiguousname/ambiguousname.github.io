@@ -287,8 +287,9 @@ FORTRAN's edit descriptors offer something of a strange deviation to the string 
 For brevity, this post does not cover "Control Edit Descriptors", which do not directly display variable outputs or inputs. Nor does it cover edit descriptors in a context of recieving input. If you're interested in seeing either being covered (or added to the FORTRAN WASM demo), be sure to reach out!
 
 In the meantime, feel free to use the [FORTRAN WASM demo](https://ambiguous.name/fortran-format-web-demo/) for any purposes you might have. Thank you for your time!
-<!--
+
 {%comment%}
+<!--
 ### Control Edit Descriptors
 
 
@@ -329,8 +330,8 @@ TODO:
 You cannot place further format items after an unlimited format item:
 
 TODO: https://ambiguous.name/fortran-format-web-demo/?stmt=*%28I3%2C+X%29+I2&type=Format+Specification&variables=i%3D0%3Bi%3D0%3Bi%3D0#output-text
-{%endcomment%}
 -->
+{%endcomment%}
 
 ## Sources
 All of the following were utilized heavily when referencing the behavior of FORTRAN functions:
