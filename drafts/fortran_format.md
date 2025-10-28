@@ -177,6 +177,13 @@ The only difference between engineering notation and scientific notation is that
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+ES12&type=Format+Specification&variables=r%3D10000#output-text>
 </noscript>
 
+##### Hexadecimal Significand - `EX`
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+EX12&type=Format+Specification&variables=r%3D10000#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+EX12&type=Format+Specification&variables=r%3D10000#output-text>
+</noscript>
+
 ##### Digits in Exponent - `Ee`
 
 `Ee` can be appended to any real-number edit descriptor that has an exponential component, where `E` is an edit descriptor of exponential form, and `e` the number of digits to be shown in the exponent. For instance, in specifying the exponential form edit descriptor's exponent:
@@ -187,34 +194,25 @@ The only difference between engineering notation and scientific notation is that
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E10.2E3&type=Format+Specification&variables=r%3D3.1415#output-text>
 </noscript>
 
-##### The `G` Edit Descriptor
+##### Generalized Edit Descriptor - `Gw.d`
 
-Automatically selects between `F` and `E` when appropriate:
+Automatically selects an appropriate underlying data descriptor:
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+G10.2&type=Format+Specification&variables=r%3D10.2#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=G10.2+G8.2+G3&type=Format+Specification&variables=r%3D1000002.04%3Br%3D12%3Bs%3D%22+Te%22#output-text" class="embed-iframe" height="180">
 </iframe>
 <noscript>
-<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+G10.2&type=Format+Specification&variables=r%3D10.2#output-text>
-</noscript>
-
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+G10.1&type=Format+Specification&variables=r%3D10.2#output-text" class="embed-iframe" height="180">
-</iframe>
-<noscript>
-<https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+G10.1&type=Format+Specification&variables=r%3D10.2#output-text>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=G10.2+G8.2+G3&type=Format+Specification&variables=r%3D1000002.04%3Br%3D12%3Bs%3D%22+Te%22#output-text>
 </noscript>
 
 #### Characters
 
-##### Character - `A`
+##### Character - `Aw`
 
 <iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A&type=Format+Specification&variables=s%3D%22Howdy%22#output-text" class="embed-iframe" height="180">
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A&type=Format+Specification&variables=s%3D%22Howdy%22#output-text>
 </noscript>
-
-
-###### Specifying Character Width - `w`
 
 You can set a maximum number of characters with `Aw`. These truncate if width is exceeded:
 <iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A3&type=Format+Specification&variables=s%3D%22Howdy%22#output-text" class="embed-iframe" height="180">
@@ -255,24 +253,61 @@ https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C+L2&type=Format+Specification&variables=l%3D.TRUE.#output-text>
 </noscript>
 
-#### Blank Control
-
-#### Carriage Control
-
-##### `/`
-
 #### Representations
 
-##### Binary `Bw[.m]`
+##### Binary `Bw.m`
+Represents any variable in its binary form:
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=B80.47&type=Format+Specification&variables=s%3D%22Hello%21%22#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=B80.47&type=Format+Specification&variables=s%3D%22Hello%21%22#output-text>
+</noscript>
 
-##### Octal `Ow[.m]`
 
+##### Octal `Ow.m`
+Represents any variable in its octal form:
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=O20&type=Format+Specification&variables=i%3D200#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=O20&type=Format+Specification&variables=i%3D200#output-text>
+</noscript>
+
+##### Hexadecimal `Zw.m`
+Represents any variable in its hexadecimal form:
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=Z30&type=Format+Specification&variables=r%3D162.04#output-text" class="embed-iframe" height="180">
+</iframe>
+<noscript>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=Z30&type=Format+Specification&variables=r%3D162.04#output-text>
+</noscript>
+
+## Conclusion
+
+FORTRAN's edit descriptors offer something of a strange deviation to the string formatting that you might be familiar with in other languages. This post should hopefully offer a limited example of how you might be able to begin to work with different data types, at least when it comes to interfacing with variables directly.
+
+For brevity, this post does not cover "Control Edit Descriptors", which do not directly display variable outputs or inputs. Nor does it cover edit descriptors in a context of recieving input. If you're interested in seeing either being covered (or added to the FORTRAN WASM demo), be sure to reach out!
+
+In the meantime, feel free to use the [FORTRAN WASM demo](https://ambiguous.name/fortran-format-web-demo/) for any purposes you might have. Thank you for your time!
+<!--
 ### Control Edit Descriptors
 
 
-### Character String Edit Descriptors
+#### Position Editing
+
+##### Tabbing
 
 
+##### Next Character - `nX`
+
+
+#### End of Data Transfer - `/`
+
+#### Terminate Formatting - `:`
+
+#### Sign Control
+
+##### Scale Factor - `P`
+
+#### Blank Control
 
 ### Repeatability
 
@@ -294,38 +329,7 @@ You cannot place further format items after an unlimited format item:
 
 TODO: https://ambiguous.name/fortran-format-web-demo/?stmt=*%28I3%2C+X%29+I2&type=Format+Specification&variables=i%3D0%3Bi%3D0%3Bi%3D0#output-text
 
-
-<!-- 
-## Possible values of `FORMAT`
-
-There are probably only three statements you'll ever want to use for I/O control:
-
-- `PRINT F, ! I/O variable list` Prints the values of the I/O variable list according to `F`.
-- `READ(U, F ...) ! I/O variable list` - Takes a file descriptor under `U` (use `*` for stdin), and will read from the file into the input variables according to `F`. 
-- `WRITE(U, F ...) ! I/O variable list` - Takes a file descriptor under `U` (use `*` for stdout), and will write to the file from the output variables according to `F`.
-
-For any place where `F` can be input, there are multiple ways to provide a formatted statement.
-
-### `*` - List Directed Formatting
-
-The most set-it and forget-it option you could ever possibly find.
-
-### `(...)` - 
-
-### `U FORMAT(...)`
-
-## Conversion fields
-These are also just called "fields" in some other articles online
-
-## Whitespace Control
-
-### `advance=no`
-
-## Printing Multiple Variables
-
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%2C+I2&type=Format+Specification&variables=i%3D0%3Bi%3D10%3Bi%3D20%3Bi%3D30#output-text" height="300" class="embed-iframe">
-<a href="https://ambiguous.name/fortran-format-web-demo/?stmt=I2%2C+I2&type=Format+Specification&variables=i%3D0%3Bi%3D10%3Bi%3D20%3Bi%3D30#output-text"></a>
-</iframe> -->
+-->
 
 ## Sources
 All of the following were utilized heavily when referencing the behavior of FORTRAN functions:
