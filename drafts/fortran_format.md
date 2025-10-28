@@ -288,6 +288,7 @@ For brevity, this post does not cover "Control Edit Descriptors", which do not d
 
 In the meantime, feel free to use the [FORTRAN WASM demo](https://ambiguous.name/fortran-format-web-demo/) for any purposes you might have. Thank you for your time!
 <!--
+{%comment%}
 ### Control Edit Descriptors
 
 
@@ -328,7 +329,7 @@ TODO:
 You cannot place further format items after an unlimited format item:
 
 TODO: https://ambiguous.name/fortran-format-web-demo/?stmt=*%28I3%2C+X%29+I2&type=Format+Specification&variables=i%3D0%3Bi%3D0%3Bi%3D0#output-text
-
+{%endcomment%}
 -->
 
 ## Sources
@@ -340,9 +341,3 @@ All of the following were utilized heavily when referencing the behavior of FORT
 For describing the intended behaviors of FORTRAN, both [The Computer History museum's archive of the first FORTRAN manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf) and [fortran90.org/wg5-fortran.org's archive of FORTRAN standards](https://www.fortran90.org/) were extremely useful.
 
 Since it is also the basis of the web demo, I've used the [LLVM Fortran Runtime docs/source code extensively](https://github.com/llvm/llvm-project/tree/main/flang).
-
-## Conclusion
-
-Thank you for reading!
-
-TODO:
