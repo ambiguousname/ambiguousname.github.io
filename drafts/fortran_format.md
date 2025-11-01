@@ -146,7 +146,7 @@ Note that `w` always represents a width in characters of the displayed output. S
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E5.1&type=Format+Specification&variables=r%3D3.1415#output-text>
 </noscript>
 
-###### `D`
+##### Exponential Form - `Dw.d`
 
 The `D` functions the same as the `E` edit descriptor, with one minor cosmetic change:
 <iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+D7.1&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
