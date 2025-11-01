@@ -284,7 +284,9 @@ Represents any variable in its hexadecimal form:
 
 FORTRAN's edit descriptors offer something of a strange deviation to the string formatting that you might be familiar with in other languages. This post should hopefully offer a limited example of how you might be able to begin to work with different data types, at least when it comes to interfacing with variables directly.
 
-For brevity, this post does not cover "Control Edit Descriptors", which do not directly display variable outputs or inputs. Nor does it cover edit descriptors in a context of recieving input. If you're interested in seeing either being covered (or added to the FORTRAN WASM demo), be sure to reach out!
+For brevity, this post does not cover "Control Edit Descriptors", which do not directly display variable outputs or inputs. Nor does it cover edit descriptors in a context of recieving input.
+
+If I've made a mistake with any of the above, or if you're interested in seeing more FORTRAN I/O coverage in this space, please reach out! My email is <code>ambiguousname (at) ambiguous.name</code>.
 
 In the meantime, feel free to use the [FORTRAN WASM demo](https://ambiguous.name/fortran-format-web-demo/) for any purposes you might have. Thank you for your time!
 
