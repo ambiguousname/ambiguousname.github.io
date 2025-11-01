@@ -75,7 +75,7 @@ With all that said, let's talk about the core of FORTRAN's formatted I/O.
 
 ## Edit Descriptors
 
-Recall `10 FORMAT("I have", I2, "apples")`. `I2` is an edit descriptor specifying an "Integer edit" of width 2: when we `READ(*, 10)`, expect an integer with at most two digits; when we `WRITE(*, 10)`, we print out an integer of at most two digits.
+Recall `10 FORMAT("I have", I2, "apples")`. `I2` is an edit descriptor specifying an *Integer Edit* of width 2: when we `READ(*, 10)`, we expect an integer represented by at most two characters; when we `WRITE(*, 10)`, we print out an integer of at most two characters.
 
 Simply, edit descriptors describe "edits" that modify how we will either read from or write to different files.  A good understanding of how `FORMAT` works involves understanding a good deal of what edit descriptors are available to us:
 
