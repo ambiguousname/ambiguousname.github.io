@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Explaining FORTRAN's FORMAT statement
+image: /assets/images/fortran_logo.svg
+image-alt: The FORTRAN logo
 ---
 
 If you've ever done any amount of programming, you may be familiar with formatted printing<!--more-->. It's used in almost every modern language I can think of, from Python to Lisp.
@@ -343,3 +345,5 @@ All of the following were utilized heavily when referencing the behavior of FORT
 For describing the intended behaviors of FORTRAN, both [The Computer History museum's archive of the first FORTRAN manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf) and [fortran90.org/wg5-fortran.org's archive of FORTRAN standards](https://www.fortran90.org/) were extremely useful.
 
 Since it is also the basis of the web demo, I've used the [LLVM Fortran Runtime docs/source code extensively](https://github.com/llvm/llvm-project/tree/main/flang).
+
+The [FORTRAN logo is from FORTRAN's own GitHub page](https://github.com/fortran-lang/fortran-lang.org/blob/master/assets/img/fortran-logo.svg).
