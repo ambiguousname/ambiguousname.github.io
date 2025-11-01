@@ -57,13 +57,13 @@ My hope is that this post, and the associated web tool, will de-mystify part of 
 
 ## The Web Tool
 
-A huge amount of thanks goes to Dr. George W Stagg, [whose post on LLVM's Flang runtime library running in WebAssembly](https://gws.phd/posts/fortran_wasm/) was instrumental to getting the web tool to work. Flang-RT is really the only modern solution we have available for running Fortran components on the web.
+A huge amount of thanks goes to Dr. George W Stagg, [whose post on LLVM's Flang runtime library running in WebAssembly](https://gws.phd/posts/fortran_wasm/) was instrumental to getting the web tool to work. Flang-RT is really the only modern solution we have available for running FORTRAN components on the web.
 
 You can [view the tool online](https://ambiguous.name/fortran-format-web-demo/). The [source code for this tool is available on GitHub](https://github.com/ambiguousname/fortran-format-web-demo).
 
 ### Disclaimer
 
-This post will not attempt to distinguish between what is or isn't supported between different FORTRAN versions, since Fortran-RT doesn't make this distinction either. For instance, the following code will compile for most FORTRAN compilers (although most will throw a warning if you set the standard):
+This post will not attempt to distinguish between what is or isn't supported between different FORTRAN versions, since Flang-RT doesn't make this distinction either. For instance, the following code will compile for most FORTRAN compilers (although most will throw a warning if you set the standard):
 
 ```fortran
 Program Main
@@ -71,7 +71,7 @@ Program Main
 End Program
 ```
 
-This is despite the fact that [Hollerith Constants](#hollerith-constants) [have deprecated from the FORTRAN standard since FORTRAN 77 (pg. A-2)](https://wg5-fortran.org/ARCHIVE/Fortran77.html), and were removed in Fortran 95.
+This is despite the fact that [Hollerith Constants](#hollerith-constants) [have deprecated from the FORTRAN standard since FORTRAN 77 (pg. A-2)](https://wg5-fortran.org/ARCHIVE/Fortran77.html), and were removed in FORTRAN 95.
 
 With all that said, let's talk about the core of FORTRAN's formatted I/O.
 
@@ -338,12 +338,12 @@ TODO: https://ambiguous.name/fortran-format-web-demo/?stmt=*%28I3%2C+X%29+I2&typ
 
 ## Sources
 All of the following were utilized heavily when referencing the behavior of FORTRAN functions:
-- [Intel's Fortran Documentation](https://www.intel.com/content/www/us/en/docs/fortran-compiler/developer-guide-reference/2023-0/overview.html)
-- [GNU's Fortran Docs](https://gcc.gnu.org/onlinedocs/gfortran/index.html#SEC_Contents) 
+- [Intel's FORTRAN Documentation](https://www.intel.com/content/www/us/en/docs/fortran-compiler/developer-guide-reference/2023-0/overview.html)
+- [GNU's FORTRAN Docs](https://gcc.gnu.org/onlinedocs/gfortran/index.html#SEC_Contents) 
 - [Oracle's FORTRAN 77 Reference](https://docs.oracle.com/cd/E19957-01/805-4939/index.html)
 
 For describing the intended behaviors of FORTRAN, both [The Computer History museum's archive of the first FORTRAN manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf) and [fortran90.org/wg5-fortran.org's archive of FORTRAN standards](https://www.fortran90.org/) were extremely useful.
 
-Since it is also the basis of the web demo, I've used the [LLVM Fortran Runtime docs/source code extensively](https://github.com/llvm/llvm-project/tree/main/flang).
+Since it is also the basis of the web demo, I've used the [LLVM FORTRAN Runtime docs/source code extensively](https://github.com/llvm/llvm-project/tree/main/flang).
 
 The [FORTRAN logo is from FORTRAN's own GitHub page](https://github.com/fortran-lang/fortran-lang.org/blob/master/assets/img/fortran-logo.svg).
