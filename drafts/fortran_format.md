@@ -2,7 +2,6 @@
 layout: post
 title: Explaining FORTRAN's FORMAT statement
 ---
-<!--TODO: On finish, go back and add title text to all iframes to describe output -->
 
 If you've ever done any amount of programming, you may be familiar with formatted printing<!--more-->. It's used in almost every modern language I can think of, from Python to Lisp.
 
@@ -13,9 +12,9 @@ printf("I have exactly %i %s", 20, "apples");
 ```
 Which outputs `I have exactly 20 apples`.
 
-FORTRAN is in a bit of a stranger spot though. For beginners, the most convenient way to print out variables is with list-directed formatting, or the `PRINT*,` and `WRITE(*, *)` statements[^printing]:
+FORTRAN is in a bit of a stranger spot though. Generally, the most convenient way to print out variables is with list-directed formatting. We perform this with the `PRINT*,` and `WRITE(*, *)` statements[^printing]:
 
-<iframe tabindex="-1" src='https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"apples"#output-text' class="embed-iframe" height="160" title="WRITE(*, *) 'I have exactly', 20, 'apples': 'I have exactly 20 apples'"></iframe>
+<iframe tabindex="-1" src='https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"apples"#output-text' class="embed-iframe" height="160" title='WRITE(*, *) "I have exactly", 20, "apples" ! OUTPUTS " I have exactly 20 apples"'></iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?type=List+Directed+Formatting&variables=s%3D"I+have+exactly"%3Bi%3D20%3Bs%3D"apples"#output-text>
 </noscript>
@@ -24,7 +23,7 @@ FORTRAN is in a bit of a stranger spot though. For beginners, the most convenien
 
 This can have undesirable behavior. Notice in the above example that there's a space in front of `I`. That tends to really bug me when it comes to printing out variables, personally. In fact, by convention, [all of FORTRAN's list-directed output requires a "blank character" at the beginning of each new line](https://wg5-fortran.org/N001-N1100/N692.pdf#G15.74858). If you want greater control of whitespacing, you'll need to use a format specifier:
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D20#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D20#output-text" class="embed-iframe" height="180" title='10 FORMAT("I have exactly", I2, "apples") WRITE(*, 10) 20 ! OUTPUTS "I have exactly20apples"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D20#output-text>
@@ -32,7 +31,7 @@ This can have undesirable behavior. Notice in the above example that there's a s
 
 Like with [C's printf arguments](https://www.man7.org/linux/man-pages/man3/printf.3.html), in FORTRAN we have edit descriptors. In this case, `I2` represents an integer, where `2` is the "width" or number of characters that an integer takes up when printing. For instance, when we have two apples, we now have a space in place of a digit:
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D2#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D2#output-text" class="embed-iframe" height="180" title='10 FORMAT("I have exactly", I2, "apples") WRITE(*, 10) 2 ! OUTPUTS "I have exactly 2apples"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D2#output-text>
@@ -90,7 +89,7 @@ These are descriptors that describe how to read into or write from variables.
 
 `w` represents the width of the integer in the resulting print:
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D10#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D10#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", I3) WRITE(*, 10) 10 ! OUTPUTS "Value: 10"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D10#output-text>
@@ -98,7 +97,7 @@ These are descriptors that describe how to read into or write from variables.
 
 If the integer exceeds the width, the text will be replaced with `*`:
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D1000#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D1000#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", I3) WRITE(*, 10) 1000 ! OUTPUTS "Value:***"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3&type=Format+Specification&variables=i%3D1000#output-text>
@@ -108,7 +107,7 @@ If the integer exceeds the width, the text will be replaced with `*`:
 
 `m` represents the minimum number of characters to be displayed.
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3.3&type=Format+Specification&variables=i%3D10#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3.3&type=Format+Specification&variables=i%3D10#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", I3.3) WRITE(*, 10) 10 ! OUTPUTS "Value:010"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+I3.3&type=Format+Specification&variables=i%3D10#output-text>
@@ -124,7 +123,7 @@ As with integers, `Fw.d` is an edit descriptor:
 - `w` the width of the decimal in characters, including the decimal point
 - `d` the number of digits expected after the decimal point
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+F10.5&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+F10.5&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", F10.5) WRITE(*, 10) 3.1415 ! OUTPUTS "Value:   3.14150"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+F10.5&type=Format+Specification&variables=r%3D3.1415#output-text>
@@ -132,7 +131,7 @@ As with integers, `Fw.d` is an edit descriptor:
 
 ##### Exponential Form - `Ew.d`
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E7.1&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E7.1&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", E7.1) WRITE(*, 10) 3.1415 ! OUTPUTS "Value:0.3E+01"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E7.1&type=Format+Specification&variables=r%3D3.1415#output-text>
@@ -140,7 +139,7 @@ As with integers, `Fw.d` is an edit descriptor:
 
 Note that `w` always represents a width in characters of the displayed output. So even though `0.3E+01` is comprised of only two digits, it makes up 7 characters in total. So if we were to shrink the number of characters:
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E5.1&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E5.1&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", E5.1) WRITE(*, 10) 3.1415 ! OUTPUTS "Value:*****"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E5.1&type=Format+Specification&variables=r%3D3.1415#output-text>
@@ -149,14 +148,14 @@ Note that `w` always represents a width in characters of the displayed output. S
 ##### Exponential Form - `Dw.d`
 
 The `D` functions the same as the `E` edit descriptor, with one minor cosmetic change:
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+D7.1&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+D7.1&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", D7.1) WRITE(*, 10) 3.1415 ! OUTPUTS "Value:0.3D+01"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+D7.1&type=Format+Specification&variables=r%3D3.1415#output-text>
 </noscript>
 
 ##### Scientific Form - `ESw.d`
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+ES8.2&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+ES8.2&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", ES8.2) WRITE(*, 10) 3.1415 ! OUTPUTS "Value:3.14E+00"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+ES8.2&type=Format+Specification&variables=r%3D3.1415#output-text>
@@ -164,21 +163,21 @@ The `D` functions the same as the `E` edit descriptor, with one minor cosmetic c
 
 ##### Engineering Form - `ENw.d`
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+EN12&type=Format+Specification&variables=r%3D10000#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+EN12&type=Format+Specification&variables=r%3D10000#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", EN12) WRITE(*, 10) 10000 ! OUTPUTS "Value:     10.E+03"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+EN12&type=Format+Specification&variables=r%3D10000#output-text>
 </noscript>
 
 The only difference between engineering notation and scientific notation is that engineering notation uses multiples of three. Contrast with `ES` of the same number:
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+ES12&type=Format+Specification&variables=r%3D10000#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+ES12&type=Format+Specification&variables=r%3D10000#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", ES12) WRITE(*, 10) 10000 ! OUTPUTS "Value:      1.E+04"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+ES12&type=Format+Specification&variables=r%3D10000#output-text>
 </noscript>
 
 ##### Hexadecimal Significand - `EX`
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+EX12&type=Format+Specification&variables=r%3D10000#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+EX12&type=Format+Specification&variables=r%3D10000#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", EX12) WRITE(*, 10) 10000 ! OUTPUTS "Value:  0X9.C4P+10"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+EX12&type=Format+Specification&variables=r%3D10000#output-text>
@@ -188,7 +187,7 @@ The only difference between engineering notation and scientific notation is that
 
 `Ee` can be appended to any real-number edit descriptor that has an exponential component, where `E` is an edit descriptor of exponential form, and `e` the number of digits to be shown in the exponent. For instance, in specifying the exponential form edit descriptor's exponent:
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E10.2E3&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E10.2E3&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", E10.2E3) WRITE(*, 10) 3.1415 ! OUTPUTS "Value: 0.31E+001"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E10.2E3&type=Format+Specification&variables=r%3D3.1415#output-text>
@@ -198,24 +197,24 @@ The only difference between engineering notation and scientific notation is that
 
 Automatically selects an appropriate underlying data descriptor:
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=G10.2+G8.2+G3&type=Format+Specification&variables=r%3D1000002.04%3Br%3D12%3Bs%3D%22+Te%22#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=G10.2%2C+G8.2%2C+G3&type=Format+Specification&variables=r%3D1000002.04%3Br%3D12%3Bs%3D%22+Te%22#output-text" class="embed-iframe" height="180" title='10 FORMAT(G10.2, G8.2, G3) WRITE(*, 10) 1000002.04, 12, " Te" ! OUTPUTS "  0.10E+07 12.     Te"'>
 </iframe>
 <noscript>
-<https://ambiguous.name/fortran-format-web-demo/?stmt=G10.2+G8.2+G3&type=Format+Specification&variables=r%3D1000002.04%3Br%3D12%3Bs%3D%22+Te%22#output-text>
+<https://ambiguous.name/fortran-format-web-demo/?stmt=G10.2%2C+G8.2%2C+G3&type=Format+Specification&variables=r%3D1000002.04%3Br%3D12%3Bs%3D%22+Te%22#output-text>
 </noscript>
 
 #### Characters
 
 ##### Character - `Aw`
 
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A&type=Format+Specification&variables=s%3D%22Howdy%22#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A&type=Format+Specification&variables=s%3D%22Howdy%22#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", A) WRITE(*, 10) "Howdy" ! OUTPUTS "Value:Howdy"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A&type=Format+Specification&variables=s%3D%22Howdy%22#output-text>
 </noscript>
 
 You can set a maximum number of characters with `Aw`. These truncate if width is exceeded:
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A3&type=Format+Specification&variables=s%3D%22Howdy%22#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A3&type=Format+Specification&variables=s%3D%22Howdy%22#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", A3) WRITE(*, 10) "Howdy" ! OUTPUTS "Value:How"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+A3&type=Format+Specification&variables=s%3D%22Howdy%22#output-text>
@@ -226,7 +225,7 @@ You can set a maximum number of characters with `Aw`. These truncate if width is
 Before the `A` format descriptor (introduced in FORTRAN 66), there were [Hollerith Constants](https://en.wikipedia.org/wiki/Hollerith_constant), which have existed since the first FORTRAN manual[^manual]:
 
 <iframe tabindex="-1" src="
-https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specification&variables=#output-text" class="embed-iframe" height="180">
+https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specification&variables=#output-text" class="embed-iframe" height="180" title='10 FORMAT(4HTest) WRITE(*, 10) ! OUTPUTS "Test"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specification&variables=#output-text>
@@ -237,7 +236,7 @@ https://ambiguous.name/fortran-format-web-demo/?stmt=4HTest&type=Format+Specific
 Booleans in FORTRAN:
 
 <iframe tabindex="-1" src="
-https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C+L&type=Format+Specification&variables=l%3D.TRUE.#output-text" class="embed-iframe" height="180">
+https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C+L&type=Format+Specification&variables=l%3D.TRUE.#output-text" class="embed-iframe" height="180" title='10 FORMAT("This statement is ", L) WRITE(*, 10) .TRUE. ! OUTPUTS "This statement is T"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C+L&type=Format+Specification&variables=l%3D.TRUE.#output-text>
@@ -247,7 +246,7 @@ https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C
 
 You can also set the width of logicals for whatever reason:
 <iframe tabindex="-1" src="
-https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C+L2&type=Format+Specification&variables=l%3D.TRUE.#output-text" class="embed-iframe" height="180">
+https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C+L2&type=Format+Specification&variables=l%3D.TRUE.#output-text" class="embed-iframe" height="180" title='10 FORMAT("This statement is ", L2) WRITE(*, 10) .TRUE. ! OUTPUTS "This statement is  T"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C+L2&type=Format+Specification&variables=l%3D.TRUE.#output-text>
@@ -257,7 +256,7 @@ https://ambiguous.name/fortran-format-web-demo/?stmt=%22This+statement+is+%22%2C
 
 ##### Binary `Bw.m`
 Represents any variable in its binary form:
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=B80.47&type=Format+Specification&variables=s%3D%22Hello%21%22#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=B80.47&type=Format+Specification&variables=s%3D%22Hello%21%22#output-text" class="embed-iframe" height="180" title='10 FORMAT(B80.47) WRITE(*, 10) "Hello!" ! OUTPUTS "                                 01000010110111101101100011011000110010101001000"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=B80.47&type=Format+Specification&variables=s%3D%22Hello%21%22#output-text>
@@ -266,7 +265,7 @@ Represents any variable in its binary form:
 
 ##### Octal `Ow.m`
 Represents any variable in its octal form:
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=O20&type=Format+Specification&variables=i%3D200#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=O20&type=Format+Specification&variables=i%3D200#output-text" class="embed-iframe" height="180" title='10 FORMAT(O20) WRITE(*, 10) 200 ! OUTPUTS "                 310"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=O20&type=Format+Specification&variables=i%3D200#output-text>
@@ -274,7 +273,7 @@ Represents any variable in its octal form:
 
 ##### Hexadecimal `Zw.m`
 Represents any variable in its hexadecimal form:
-<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=Z30&type=Format+Specification&variables=r%3D162.04#output-text" class="embed-iframe" height="180">
+<iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=Z30&type=Format+Specification&variables=r%3D162.04#output-text" class="embed-iframe" height="180" title='10 FORMAT(Z30) WRITE(*, 10) 162.04 ! OUTPUTS "              40644147AE147AE1"'>
 </iframe>
 <noscript>
 <https://ambiguous.name/fortran-format-web-demo/?stmt=Z30&type=Format+Specification&variables=r%3D162.04#output-text>
