@@ -185,7 +185,7 @@ The only difference between engineering notation and scientific notation is that
 
 ##### Digits in Exponent - `Ee`
 
-`Ee` can be appended to any real-number edit descriptor that has an exponential component, where `E` is an edit descriptor of exponential form, and `e` the number of digits to be shown in the exponent. For instance, in specifying the exponent of `Ew.d`, we can add to create the form `Ew.dEe`:
+`Ee` can be appended to any real-number edit descriptor that has an exponential component, where `E` is an edit descriptor of exponential form, and `e` the number of digits to be shown in the exponent. For instance, in specifying the exponent of `Ew.d`, we create the edit descriptor `Ew.dEe`:
 
 <iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E10.2E3&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", E10.2E3) WRITE(*, 10) 3.1415 ! OUTPUTS "Value: 0.31E+001"'>
 </iframe>
