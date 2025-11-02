@@ -5,9 +5,7 @@ image: /assets/images/fortran_logo.svg
 image-alt: The FORTRAN logo
 ---
 
-If you've ever done any amount of programming, you may be familiar with formatted printing<!--more-->. It's used in almost every modern language I can think of, from Python to Lisp.
-
-Here's an example of a formatted print in C:
+Anyone who's moved beyond a `Hello World!` on the command line is likely to discover formatted printing<!--more-->. It's used in almost every modern language I can think of, from Python to Lisp. Here's an example of a formatted print in C:
 
 ```c
 printf("I have exactly %i %s", 20, "apples");
@@ -23,7 +21,7 @@ FORTRAN is in a bit of a stranger spot though. Generally, the most convenient wa
 
 [^printing]: `PRINT F,` and `WRITE(*, F)` are the same statement. For consistency, we'll be using `WRITE(*, F)` for the rest of this post.
 
-This can have undesirable behavior. Notice in the above example that there's a space in front of `I`. That tends to really bug me when it comes to printing out variables, personally. In fact, by convention, [all of FORTRAN's list-directed output requires a "blank character" at the beginning of each new line](https://wg5-fortran.org/N001-N1100/N692.pdf#G15.74858). If you want greater control of whitespacing, you'll need to use a format specifier:
+This can have undesirable consequences. Notice in the above example that there's a space in front of `I`. That can be irritating if you're exacting in your whitespacing standards. In fact, by convention, [all of FORTRAN's list-directed output requires a "blank character" at the beginning of each new line](https://wg5-fortran.org/N001-N1100/N692.pdf#G15.74858). If you want greater control of whitespacing, you'll need to use a format specifier:
 
 <iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D20#output-text" class="embed-iframe" height="180" title='10 FORMAT("I have exactly", I2, "apples") WRITE(*, 10) 20 ! OUTPUTS "I have exactly20apples"'>
 </iframe>
@@ -39,19 +37,19 @@ Like with [C's printf arguments](https://www.man7.org/linux/man-pages/man3/print
 <https://ambiguous.name/fortran-format-web-demo/?stmt=%22I+have+exactly%22%2C+I2%2C+%22apples%22&type=Format+Specification&variables=i%3D2#output-text>
 </noscript>
 
-FORTRAN has a lot of oddities and peculiarities when it comes to dealing with I/O; the more that you experiment, the more you'll notice weird overlaps and seemingly useless features. What's up with all these odd ways to handle printing?
+FORTRAN has a lot of oddities and peculiarities when it comes to dealing with I/O; the more that you experiment, the more you'll notice weird overlaps and seemingly useless features. So what gives with all of these odd ways to handle printing?
 
 ## Background
 
-FORTRAN (FORmula TRANslating system, as described in The FORTRAN programmer's reference manual[^manual]), was released by IBM in 1956. It's ancient by computer science standards[^ancient]. The fact that it is still relevant nearly 70 years after its creation is a testament, at least in part, to FORTRAN's efficiency. Widespread adoption amongst computational mathematicians doesn't hurt either.
+FORTRAN (FORmula TRANslating system, as described in The FORTRAN programmer's reference manual[^manual]), was released by IBM in 1956. It's ancient by computer science standards[^ancient]. The fact that it is still relevant nearly 70 years after its creation is a testament, at least in part, to FORTRAN's runtime performance. Widespread adoption amongst computational mathematicians doesn't hurt either.
 
 [^ancient]: My father worked with FORTRAN IV in college. My grandfather has floppy disks of code he commissioned for his ship salvage work in the 1960s. Apparently they would digitize punchcards onto magnetic tape to run on Boeing's timeshare. Those would be later digitized into the floppy disks we have now.
 
 [^manual]: [The FORTRAN Automatic Coding System for the IBM 704 EDPM: Programmer's Reference Manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf), October 15th, 1956.
 
-I tell you all this to give you some dire context: FORTRAN has so many ways to format I/O, and is so unintuitive compared to other languages simply because it is so old. The `FORMAT` statement dates to the first iteration of the language[^manual]. The statement `FORMAT(I2 /(E12.4, F10.4))` must work on punch cards just as well as (if not better than) any modern compiler.
+I tell you all this merely for context: FORTRAN has many ways to format I/O, and is unintuitive compared to other languages simply because it is so old. The `FORMAT` statement dates to the first iteration of the language[^manual]. The statement `FORMAT(I2 /(E12.4, F10.4))` must work on punch cards just as well as (if not better than) any modern compiler.
 
-Which is why you'll run into 5 different ways to handle `PRINT`, or `WRITE`, or `FORMAT` statements online. Improvements are present in every iteration of the language, but a million pieces of computing history are wedged underneath. This makes compatibility easier, at the cost of being quite confusing for new learners.
+Which is why you'll run into 5 different ways to handle `PRINT`, or `WRITE`, or `FORMAT` statements online. Improvements are present in every iteration of the language, with a million pieces of computing history wedged underneath. This makes compatibility easier, at the cost of being quite confusing for new learners.
 
 My hope is that this post, and the associated web tool, will de-mystify part of your `FORMAT`ting options.
 
@@ -63,7 +61,7 @@ You can [view the tool online](https://ambiguous.name/fortran-format-web-demo/).
 
 ### Disclaimer
 
-This post will not attempt to distinguish between what is or isn't supported between different FORTRAN versions, since Flang-RT doesn't make this distinction either. For instance, the following code will compile for most FORTRAN compilers (although most will throw a warning if you set the standard):
+This post will not attempt to distinguish between what is or isn't supported between different FORTRAN standards, since Flang-RT doesn't make this distinction either. For instance, the following code will compile for most FORTRAN compilers (although most will throw a warning if you set the FORTRAN standard):
 
 ```fortran
 Program Main
@@ -79,7 +77,7 @@ With all that said, let's talk about the core of FORTRAN's formatted I/O.
 
 Recall `10 FORMAT("I have", I2, "apples")`. `I2` is an edit descriptor specifying an *Integer Edit* of width 2: when we `READ(*, 10)`, we expect an integer represented by at most two characters; when we `WRITE(*, 10)`, we print out an integer of at most two characters.
 
-Simply, edit descriptors describe "edits" that modify how we will either read from or write to different files.  A good understanding of how `FORMAT` works involves understanding a good deal of what edit descriptors are available to us:
+Simply, edit descriptors describe "edits" that modify how we will either read from or write to different files.  A good understanding of how `FORMAT` works involves understanding a good deal of what edit descriptors are available to us.
 
 ### Data Edit Descriptors
 
@@ -187,7 +185,7 @@ The only difference between engineering notation and scientific notation is that
 
 ##### Digits in Exponent - `Ee`
 
-`Ee` can be appended to any real-number edit descriptor that has an exponential component, where `E` is an edit descriptor of exponential form, and `e` the number of digits to be shown in the exponent. For instance, in specifying the exponential form edit descriptor's exponent:
+`Ee` can be appended to any real-number edit descriptor that has an exponential component, where `E` is an edit descriptor of exponential form, and `e` the number of digits to be shown in the exponent. For instance, in specifying the exponent of `Ew.d`, we can add to create the form `Ew.dEe`:
 
 <iframe tabindex="-1" src="https://ambiguous.name/fortran-format-web-demo/?stmt=%22Value%3A%22%2C+E10.2E3&type=Format+Specification&variables=r%3D3.1415#output-text" class="embed-iframe" height="180" title='10 FORMAT("Value:", E10.2E3) WRITE(*, 10) 3.1415 ! OUTPUTS "Value: 0.31E+001"'>
 </iframe>
