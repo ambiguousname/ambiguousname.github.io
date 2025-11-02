@@ -71,7 +71,7 @@ Program Main
 End Program
 ```
 
-This is despite [Hollerith Constants](#hollerith-constants---wh) [having been deprecated from the FORTRAN standard since FORTRAN 77 (pg. A-2)](https://wg5-fortran.org/ARCHIVE/Fortran77.html), and were removed in FORTRAN 95.
+This is despite [Hollerith Constants](#hollerith-constants---wh) [having been deprecated from the FORTRAN standard since FORTRAN 77 (pg. A-2)](https://wg5-fortran.org/ARCHIVE/Fortran77.html), and removed in FORTRAN 95.
 
 With all that said, let's talk about the core of FORTRAN's formatted I/O.
 
