@@ -7,8 +7,15 @@ This is a private page. Not that I mind you being here, it's just weird that you
 
 Please don't buy any of these gifts off of Amazon, and avoid Steam for games if you can.
 
-- Miscellaneous
-	- Legos.
+- Two new hard drives to replace my old ones (500 GB+ preferred)
+- Legos
+	- [The Milano](https://www.lego.com/en-us/product/guardians-of-the-galaxy-the-milano-76286)
+	- [R2D2](https://www.lego.com/en-us/product/r2-d2-75379)
+	- [Mini Biomes](https://www.lego.com/en-us/product/mini-biomes-21589)
+	- [Batman Gotham City](https://www.lego.com/en-us/product/batman-the-animated-series-gotham-city-76271)
+	- [London](https://www.lego.com/en-us/product/london-21034)
+	- [Paris](https://www.lego.com/en-us/product/paris-21044)
+	- [Trevi Fountain](https://www.lego.com/en-us/product/trevi-fountain-21062)
 - Books
 	- [The Sierra Adventure](https://shawnmills.co/sierra-adventure/)
 - Video Games
