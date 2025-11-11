@@ -9,7 +9,7 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 
 - Two new hard drives to replace my old ones (500 GB+ preferred)
 - Legos
-  - [Enterprise NCC 1701](https://www.lego.com/en-us/product/star-trek-u-s-s-enterprise-ncc-1701-d-10356)
+	- [Enterprise NCC 1701](https://www.lego.com/en-us/product/star-trek-u-s-s-enterprise-ncc-1701-d-10356)
 	- [The Milano](https://www.lego.com/en-us/product/guardians-of-the-galaxy-the-milano-76286)
 	- [R2D2](https://www.lego.com/en-us/product/r2-d2-75379)
 	- [Mini Biomes](https://www.lego.com/en-us/product/mini-biomes-21589)
