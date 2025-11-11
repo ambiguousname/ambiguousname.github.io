@@ -10,6 +10,7 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 - Two new hard drives to replace my old ones (500 GB+ preferred)
 - Legos
 	- [Enterprise NCC 1701](https://www.lego.com/en-us/product/star-trek-u-s-s-enterprise-ncc-1701-d-10356)
+	- [WALL-E and EVE](https://www.lego.com/en-us/product/wall-e-and-eve-43279)
 	- [The Milano](https://www.lego.com/en-us/product/guardians-of-the-galaxy-the-milano-76286)
 	- [R2D2](https://www.lego.com/en-us/product/r2-d2-75379)
 	- [Mini Biomes](https://www.lego.com/en-us/product/mini-biomes-21589)
@@ -17,6 +18,9 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- [London](https://www.lego.com/en-us/product/london-21034)
 	- [Paris](https://www.lego.com/en-us/product/paris-21044)
 	- [Trevi Fountain](https://www.lego.com/en-us/product/trevi-fountain-21062)
+	- [Eeyore](https://www.lego.com/en-us/product/eeyore-40797)
+	- [PAC-MAN Arcade](https://www.lego.com/en-us/product/pac-man-arcade-10323)
+	- [Gameboy](https://www.lego.com/en-us/product/game-boy-72046)
 - Books
 	- [The Sierra Adventure](https://shawnmills.co/sierra-adventure/)
 - Video Games
