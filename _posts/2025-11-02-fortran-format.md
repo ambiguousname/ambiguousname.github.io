@@ -3,6 +3,7 @@ layout: post
 title: Explaining FORTRAN's FORMAT statement
 image: /assets/images/fortran_logo.svg
 image-alt: The FORTRAN logo
+last_modified_at: 2025-11-27 13:16 PST
 ---
 
 Anyone who's moved beyond a `Hello World!` on the command line is likely to discover formatted printing<!--more-->. It's used in almost every modern language I can think of, from Python to Lisp. Here's an example of a formatted print in C:
@@ -43,7 +44,7 @@ FORTRAN has a lot of oddities and peculiarities when it comes to dealing with I/
 
 FORTRAN (FORmula TRANslating system, as described in The FORTRAN programmer's reference manual[^manual]), was released by IBM in 1956. It's ancient by computer science standards[^ancient]. The fact that it is still relevant nearly 70 years after its creation is a testament, at least in part, to FORTRAN's runtime performance. Widespread adoption amongst computational mathematicians doesn't hurt either.
 
-[^ancient]: My father worked with FORTRAN IV in college. My grandfather has floppy disks of code he commissioned for his ship salvage work in the 1960s. Apparently they would digitize punchcards onto magnetic tape to run on Boeing's timeshare. Those would be later digitized into the floppy disks we have now.
+[^ancient]: My father worked with FORTRAN IV in college. My grandfather has floppy disks of code he commissioned for his ship salvage work in the 1970s. Apparently they would digitize punchcards onto magnetic tape to run on Boeing's timeshare. Those would be later digitized into the floppy disks we have now.
 
 [^manual]: [The FORTRAN Automatic Coding System for the IBM 704 EDPM: Programmer's Reference Manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf), October 15th, 1956.
 
