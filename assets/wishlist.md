@@ -7,7 +7,6 @@ This is a private page. Not that I mind you being here, it's just weird that you
 
 Please don't buy any of these gifts off of Amazon, and avoid Steam for games if you can.
 
-- Two new hard drives to replace my old ones (500 GB+ preferred)
 - Legos
 	- [Enterprise NCC 1701](https://www.lego.com/en-us/product/star-trek-u-s-s-enterprise-ncc-1701-d-10356)
 	- [WALL-E and EVE](https://www.lego.com/en-us/product/wall-e-and-eve-43279)
@@ -20,13 +19,9 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- [Trevi Fountain](https://www.lego.com/en-us/product/trevi-fountain-21062)
 	- [Eeyore](https://www.lego.com/en-us/product/eeyore-40797)
 	- [PAC-MAN Arcade](https://www.lego.com/en-us/product/pac-man-arcade-10323)
-	- [Gameboy](https://www.lego.com/en-us/product/game-boy-72046)
 - Books
-	- [The Sierra Adventure](https://shawnmills.co/sierra-adventure/)
 - Video Games
 	- [Gloomwood](https://store.steampowered.com/app/1150760/)
-	- [Animal Well](https://store.steampowered.com/app/813230/)
-	- [Judero](https://store.steampowered.com/app/1960900/Judero?snr=1_25_4__318)
 	- [Split Fiction](https://store.steampowered.com/app/2001120/Split_Fiction?snr=1_25_4__318)
 - Board Games
 	- Anything from [Always Checkers Publishing](https://alwayscheckers.com/)
