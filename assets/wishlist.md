@@ -17,7 +17,7 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- [Trevi Fountain](https://www.lego.com/en-us/product/trevi-fountain-21062)
 	- [Eeyore](https://www.lego.com/en-us/product/eeyore-40797)
 	- [PAC-MAN Arcade](https://www.lego.com/en-us/product/pac-man-arcade-10323)
-- Books
+- Books (physical or DRM free e-books, please)
 	- Foreigner by C. J. Cherryh
 	- The Tombs of Atuan by Ursula K. Le Guin
 	- Arzach by Moebius
