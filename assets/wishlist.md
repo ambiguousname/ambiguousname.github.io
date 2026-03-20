@@ -29,6 +29,11 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- The Murderbot Diaries by Martha Wells
 	- The Maker of Universes by Philip José Farmer
 	- Borders of Infinity by Lois McMaster Bujold
+	- The Hundred Thousand Kingdoms by N. K. Jesmin
+	- Tales of Nevèryon by Samuel Delany
+	- Mindscape by Andrea Hairston
+	- The Last Colony by John Scalzi
+	- The Salt Roads by Nalo Hopkinson
 - Video Games
 	- [Gloomwood](https://store.steampowered.com/app/1150760/)
 	- [Split Fiction](https://store.steampowered.com/app/2001120/Split_Fiction?snr=1_25_4__318)
