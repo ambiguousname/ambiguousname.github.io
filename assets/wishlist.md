@@ -18,6 +18,17 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- [Eeyore](https://www.lego.com/en-us/product/eeyore-40797)
 	- [PAC-MAN Arcade](https://www.lego.com/en-us/product/pac-man-arcade-10323)
 - Books
+	- Foreigner by C. J. Cherryh
+	- The Tombs of Atuan by Ursula K. Le Guin
+	- Arzach by Moebius
+	- Nausicä of the Valley of the Wind (the manga series)
+	- Patternmaster by Octavia Butler
+	- The Crying of Lot 49 by Thomas Pynchon
+	- The Dark is Rising Sequence by Susan Cooper
+	- The Dark World by Henry Kuttner
+	- The Murderbot Diaries by Martha Wells
+	- The Maker of Universes by Philip José Farmer
+	- Borders of Infinity by Lois McMaster Bujold
 - Video Games
 	- [Gloomwood](https://store.steampowered.com/app/1150760/)
 	- [Split Fiction](https://store.steampowered.com/app/2001120/Split_Fiction?snr=1_25_4__318)
