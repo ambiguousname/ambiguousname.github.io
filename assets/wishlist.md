@@ -30,7 +30,7 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- The Maker of Universes by Philip José Farmer
 	- Borders of Infinity by Lois McMaster Bujold
 	- The Hundred Thousand Kingdoms by N. K. Jesmin
-	- Tales of Nevèryon by Samuel Delany
+	- Tales of Nevèrÿon by Samuel Delany
 	- Mindscape by Andrea Hairston
 	- The Last Colony by John Scalzi
 	- The Salt Roads by Nalo Hopkinson
