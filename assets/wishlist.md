@@ -36,7 +36,6 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- The Salt Roads by Nalo Hopkinson
 - Video Games
 	- [Gloomwood](https://store.steampowered.com/app/1150760/)
-	- [Split Fiction](https://store.steampowered.com/app/2001120/Split_Fiction?snr=1_25_4__318)
 - Board Games
 	- Anything from [Always Checkers Publishing](https://alwayscheckers.com/)
 		- Already have A Complicated Profession and LAST SENTINELS
