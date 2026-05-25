@@ -35,7 +35,15 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- The Last Colony by John Scalzi
 	- The Salt Roads by Nalo Hopkinson
 - Video Games
-	- [Gloomwood](https://store.steampowered.com/app/1150760/)
+	- [007 First Light](https://store.steampowered.com/app/3768760/007_First_Light/)
+	- [Keeper](https://store.steampowered.com/app/3043580/Keeper?snr=1_25_4__318)
+	- [RimWorld - Anomaly](https://store.steampowered.com/app/2380740/RimWorld__Anomaly?snr=1_25_4__318)
+	- [Heart of the Machine](https://store.steampowered.com/app/2001070/Heart_of_the_Machine/)
+	- [Shadows Over Loathing](https://store.steampowered.com/app/1939160/Shadows_Over_Loathing?snr=1_25_4__318)
+- Baking
+	- Stand Mixer
+	- More cookbooks
+	- More tall metal bowls
 - Board Games
 	- Anything from [Always Checkers Publishing](https://alwayscheckers.com/)
 		- Already have A Complicated Profession and LAST SENTINELS
