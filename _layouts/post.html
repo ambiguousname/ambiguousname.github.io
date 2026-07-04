@@ -12,7 +12,7 @@
         <meta name="og:description" content="{{ page.excerpt | xml_escape }}"/>
         <meta name="og:locale" content="en-US"/>
         {% if page.image %}
-            <meta name="og:image" content="{{ page.image }}"/>
+            <meta name="og:image" content="{{page.url}}{{ page.image }}"/>
             <meta name="og:image:alt" content="{{ page.image-alt }}"/>
         {% endif %}
         <title>{{ page.title }} - ambiguous.name</title>
