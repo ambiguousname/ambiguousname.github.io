@@ -9,7 +9,6 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 
 - Legos
 	- [Enterprise NCC 1701](https://www.lego.com/en-us/product/star-trek-u-s-s-enterprise-ncc-1701-d-10356)
-	- [WALL-E and EVE](https://www.lego.com/en-us/product/wall-e-and-eve-43279)
 	- [The Milano](https://www.lego.com/en-us/product/guardians-of-the-galaxy-the-milano-76286)
 	- [Batman Gotham City](https://www.lego.com/en-us/product/batman-the-animated-series-gotham-city-76271)
 	- [London](https://www.lego.com/en-us/product/london-21034)
@@ -17,16 +16,15 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- [Trevi Fountain](https://www.lego.com/en-us/product/trevi-fountain-21062)
 	- [Eeyore](https://www.lego.com/en-us/product/eeyore-40797)
 	- [PAC-MAN Arcade](https://www.lego.com/en-us/product/pac-man-arcade-10323)
+	- [Arcade Pinball Machine](https://www.lego.com/en-us/product/arcade-pinball-machine-11374)
+	- [Derpy Tiger and Sussie Bird](https://www.lego.com/en-us/product/derpy-tiger-and-sussie-bird-72537)
+	- [Ancient Moon-Gazing Inn](https://www.lego.com/en-us/product/ancient-moon-gazing-inn-80121)
 - Books (physical or DRM free e-books, please)
 	- Foreigner by C. J. Cherryh
 	- The Tombs of Atuan by Ursula K. Le Guin
 	- Arzach by Moebius
-	- Nausicä of the Valley of the Wind (the manga series)
-	- Patternmaster by Octavia Butler
 	- The Crying of Lot 49 by Thomas Pynchon
-	- The Dark is Rising Sequence by Susan Cooper
 	- The Dark World by Henry Kuttner
-	- The Murderbot Diaries by Martha Wells
 	- The Maker of Universes by Philip José Farmer
 	- Borders of Infinity by Lois McMaster Bujold
 	- The Hundred Thousand Kingdoms by N. K. Jesmin
@@ -34,16 +32,13 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- Mindscape by Andrea Hairston
 	- The Last Colony by John Scalzi
 	- The Salt Roads by Nalo Hopkinson
+	- The River Between by Ngũgĩ wa Thiong'o
+	- The Rise of the African Novel: Politics of Language, Identity, and Ownership by Mũkoma wa Ngũgĩ
 - Video Games
-	- [007 First Light](https://store.steampowered.com/app/3768760/007_First_Light/)
 	- [Keeper](https://store.steampowered.com/app/3043580/Keeper?snr=1_25_4__318)
 	- [RimWorld - Anomaly](https://store.steampowered.com/app/2380740/RimWorld__Anomaly?snr=1_25_4__318)
 	- [Heart of the Machine](https://store.steampowered.com/app/2001070/Heart_of_the_Machine/)
 	- [Shadows Over Loathing](https://store.steampowered.com/app/1939160/Shadows_Over_Loathing?snr=1_25_4__318)
-- Baking
-	- Stand Mixer
-	- More cookbooks
-	- More tall metal bowls
 - Board Games
 	- Anything from [Always Checkers Publishing](https://alwayscheckers.com/)
 		- Already have A Complicated Profession and LAST SENTINELS
