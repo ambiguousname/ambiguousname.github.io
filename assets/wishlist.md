@@ -34,6 +34,7 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- The Salt Roads by Nalo Hopkinson
 	- The River Between by Ngũgĩ wa Thiong'o
 	- The Rise of the African Novel: Politics of Language, Identity, and Ownership by Mũkoma wa Ngũgĩ
+	- Offa: King of The Mercians by Rory Naismith
 - Video Games
 	- [Keeper](https://store.steampowered.com/app/3043580/Keeper?snr=1_25_4__318)
 	- [RimWorld - Anomaly](https://store.steampowered.com/app/2380740/RimWorld__Anomaly?snr=1_25_4__318)
