@@ -187,3 +187,13 @@ button:hover {
 .page-title {
     text-decoration: none;
 }
+
+.webring-link {
+    max-width: 32vw;
+    display: inline-block;
+}
+
+.webring-link-square {
+    max-width: calc(32vw * 0.3522);
+    display: inline-block;
+}
