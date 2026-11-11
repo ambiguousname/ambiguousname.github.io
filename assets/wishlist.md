@@ -7,6 +7,10 @@ This is a private page. Not that I mind you being here, it's just weird that you
 
 Please don't buy any of these gifts off of Amazon, and avoid Steam for games if you can.
 
+- DVDs and Blu-Rays
+	- Columbo: The Complete Series
+	- [Seven Samurai](https://www.criterion.com/films/165-seven-samurai)
+	- [Brazil](https://www.criterion.com/films/211-brazil)
 - Legos
 	- [Enterprise NCC 1701](https://www.lego.com/en-us/product/star-trek-u-s-s-enterprise-ncc-1701-d-10356)
 	- [The Milano](https://www.lego.com/en-us/product/guardians-of-the-galaxy-the-milano-76286)
