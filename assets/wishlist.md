@@ -21,8 +21,9 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- [Eeyore](https://www.lego.com/en-us/product/eeyore-40797)
 	- [PAC-MAN Arcade](https://www.lego.com/en-us/product/pac-man-arcade-10323)
 	- [Arcade Pinball Machine](https://www.lego.com/en-us/product/arcade-pinball-machine-11374)
-	- [Derpy Tiger and Sussie Bird](https://www.lego.com/en-us/product/derpy-tiger-and-sussie-bird-72537)
+	- [KPop Demon Hunters: Derpy Tiger and Sussie Bird](https://www.lego.com/en-us/product/derpy-tiger-and-sussie-bird-72537)
 	- [Ancient Moon-Gazing Inn](https://www.lego.com/en-us/product/ancient-moon-gazing-inn-80121)
+	- [Wallace and Gromit](https://www.lego.com/en-us/product/wallace-gromit-21371)
 - Books (physical or DRM free e-books, please)
 	- Foreigner by C. J. Cherryh
 	- The Tombs of Atuan by Ursula K. Le Guin
@@ -39,6 +40,10 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- The River Between by Ngũgĩ wa Thiong'o
 	- The Rise of the African Novel: Politics of Language, Identity, and Ownership by Mũkoma wa Ngũgĩ
 	- Offa: King of The Mercians by Rory Naismith
+	- Against Technoableism by Ashley Shew
+	- The will to change: men, masculinity, and love by bell hooks
+	- Bloodchild and Other Stories by Octavia Butler
+	- Piranesi by Susanna Clarke
 - Video Games
 	- [Keeper](https://store.steampowered.com/app/3043580/Keeper?snr=1_25_4__318)
 	- [RimWorld - Anomaly](https://store.steampowered.com/app/2380740/RimWorld__Anomaly?snr=1_25_4__318)
