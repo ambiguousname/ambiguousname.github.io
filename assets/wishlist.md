@@ -24,6 +24,7 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- [KPop Demon Hunters: Derpy Tiger and Sussie Bird](https://www.lego.com/en-us/product/derpy-tiger-and-sussie-bird-72537)
 	- [Ancient Moon-Gazing Inn](https://www.lego.com/en-us/product/ancient-moon-gazing-inn-80121)
 	- [Wallace and Gromit](https://www.lego.com/en-us/product/wallace-gromit-21371)
+	- [London Postcard](https://www.lego.com/en-us/product/london-postcard-40569)
 - Books (physical or DRM free e-books, please)
 	- Foreigner by C. J. Cherryh
 	- The Tombs of Atuan by Ursula K. Le Guin
