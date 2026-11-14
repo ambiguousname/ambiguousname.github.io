@@ -7,6 +7,10 @@ This is a private page. Not that I mind you being here, it's just weird that you
 
 Please don't buy any of these gifts off of Amazon, and avoid Steam for games if you can.
 
+- Arts and Crafts
+	- Digital Kitchen Scale
+	- Felting Starter Kit
+		- [Maybe something like this?](https://woolbuddy.com/collections/needle-felting-kits/products/dinosaur-kit)
 - DVDs and Blu-Rays
 	- Columbo: The Complete Series
 	- [Seven Samurai](https://www.criterion.com/films/165-seven-samurai)
