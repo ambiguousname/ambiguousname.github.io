@@ -9,6 +9,7 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 
 - Arts and Crafts
 	- Digital Kitchen Scale
+	- Wooden cutting board
 	- Felting Starter Kit
 		- [Maybe something like this?](https://woolbuddy.com/collections/needle-felting-kits/products/dinosaur-kit)
 - DVDs and Blu-Rays
