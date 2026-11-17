@@ -50,6 +50,7 @@ Please don't buy any of these gifts off of Amazon, and avoid Steam for games if 
 	- The will to change: men, masculinity, and love by bell hooks
 	- Bloodchild and Other Stories by Octavia Butler
 	- Piranesi by Susanna Clarke
+	- The Fifth Season by N. K. Jemisin
 - Video Games
 	- [Keeper](https://store.steampowered.com/app/3043580/Keeper?snr=1_25_4__318)
 	- [RimWorld - Anomaly](https://store.steampowered.com/app/2380740/RimWorld__Anomaly?snr=1_25_4__318)
